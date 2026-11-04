@@ -1,0 +1,831 @@
+========== HELIVANTA INVENTOR RUNTIME AUDIT ==========
+Version: 2.7.197
+Inventor: 2027.1 (build 311270010)
+Run ID: 20261104-193059
+Started: 2026-11-04 19:30:59.088
+Completed: 2026-11-04 19:34:57.301
+Overall: PASS
+PASS=31 FAIL=0 SKIP=0 WARN=0 Duration=238.21 sec
+
+[PASS] COM-IDENTITY (1 ms)
+All assertions passed.
+
+[PASS] BROWSER-FOLDER-RENAME-POST-SET-FAILURE-RESTORE (0 ms)
+Post-set COM failure was injected into the policy seam; the prior folder name was restored and verified. The mutation flag remained true so the enclosing Inventor edit transaction cannot take the best-effort commit path.
+  InjectedSetterCalls=2
+  RestoredFolderName=CapNeck original parameters
+  MutationAttemptedAfterInjectedFailure=True
+  SuccessfulRenameReadback=CapNeck replacement parameters
+
+[PASS] BROWSER-FOLDER-NAME-INVENTORY-FAIL-CLOSED (1 ms)
+Production unique-name and exact-lookup policies were exercised with a complete folder inventory, numbered siblings, duplicate exact labels and injected enumeration failures. Incomplete COM inventory is rejected; no unsuffixed fallback or competing-folder creation is permitted.
+  ResolvedUniqueFolderName=Thread — ISO · M10 #5
+  ExactLookupIndex=1
+  DuplicateExactNameRejected=True
+  EnumerationFailureRejected=True
+
+[PASS] LOCALIZATION-RU-EN-RESOURCES-AND-DISPLAY-CULTURE (3 ms)
+All assertions passed.
+  LocalizedResourceKeysChecked=10
+  RussianDecimalFormat=12,5
+  EnglishDecimalFormat=12.5
+  CapNeckSummaryRu=Создана экспериментальная наружная (положительный валик наружу) 2-заходная резьба: D=12,5 мм; шаг P=1,25 мм; ход L=1,25 мм; основная длина=8,5 мм; сбег в начале=1,25 мм; сбег в конце=1,25 мм; высота=0,625 мм; направление=правая; фазы заходов: 0°, 180°.
+Вентиляционные каналы: 2 шт. по 14,5°; центры 0/180; расположение проверено по фазам концов; очистка хвостов не применяется.
+Зазор сопряжения C=0,125 мм применён к цилиндрической основе; цилиндрических компенсаций: 1.
+Фаски: режим 1, размер 0,25 мм.
+Все построения собраны в папку «Thread 12.5x1.25».
+  CapNeckSummaryEn=Created experimental external (positive rib outward) 2-start thread: D=12.5 mm; pitch P=1.25 mm; lead L=1.25 mm; core length=8.5 mm; start runout=1.25 mm; end runout=1.25 mm; height=0.625 mm; hand=right-hand; start phases: 0°, 180°.
+Vent channels: 2 at 14.5°; centres 0/180; placement validated against thread-end phases; runout tail cleanup is not applied.
+Fit clearance C=0.125 mm was applied to the cylindrical base; cylindrical reliefs: 1.
+Chamfers: mode 1, size 0.25 mm.
+All features were grouped in folder “Thread 12.5x1.25”.
+
+[PASS] THREAD-TEMPLATE-COMBO-LOCALIZATION-SETTINGS-RELOAD (10 ms)
+Reloaded persisted Settings and rebuilt the production Template ComboBox display list through the same RU/EN policy used by the main-dialog Load handler; verified all nine cylindrical standards, order and language-specific text.
+  WinFormsComboItemCount=9
+  WinFormsComboSelectedIndex=4
+  WinFormsComboFirstItem=ISO (метрическая, 60°)
+  SettingsFile=C:\Users\ALEX\AppData\Local\Helivanta\settings.json
+  SettingsFileExists=True
+  SettingsFileLanguage=ru
+  PersistedSettingsLanguage=ru
+  TemplateItemCount=9
+  TemplateFirstItem=ISO (метрическая, 60°)
+
+[PASS] BROWSER-FOLDER-OWNERSHIP-COM-IDENTITY-FAIL-CLOSED (0 ms)
+Executed production COM ownership paths plus the diagnostic-driven BuiltIn structural-row case: only a readable null NativeObject, positive built-in classification and confirmed BrowserNode identity mismatch yield a complete non-owner; unreadable/custom/unknown cases remain fail-closed. No name/label ownership fallback is accepted.
+  BrowserNodeIdentityMatch=True
+  BrowserFolderApiObjectIdentityMatch=True
+  FolderNodeNativeIdentityMatch=True
+  NameOnlyOwnershipAccepted=False
+  UnavailableIdentityAccepted=False
+  ConfirmedDifferentIdentityIsCompleteNonOwner=True
+  KnownBuiltInStructuralNullNativeIsNonOwner=True
+  StructuralNullNativeReadFailureAccepted=False
+  CustomNullNativeAcceptedAsStructural=False
+  StructuralNodeUnknownIdentityAccepted=False
+
+[PASS] BROWSER-TREE-REPAIR-SNAPSHOT-COMPLETENESS (0 ms)
+Executed the production BrowserTree repair snapshot gate for complete, truncated, null-child and combined incomplete states. Only a complete tree without null entries is eligible for folder ownership/mutation decisions.
+  CompleteTreeAccepted=True
+  PartialTreeRejected=True
+  NullChildTreeRejected=True
+
+[PASS] RUNOUT-LOFT-TEMPORARY-CLEANUP-FAIL-CLOSED (0 ms)
+Executed the production cleanup policy with injected Delete failure: every helper deletion was attempted in reverse dependency order, the incomplete cleanup was rejected, and fallback remained permitted only after a complete cleanup. Inventor geometry was not mutated by this synthetic policy control.
+  CleanupFailureReported=True
+  DeleteAttemptsAfterFailure=3
+  CleanupOrder=reverse-dependency
+  FallbackAllowedAfterCompleteCleanup=True
+
+[PASS] NATIVE-THREAD-OPPOSITE-END-INSPECTION-FAIL-CLOSED (0 ms)
+Executed the production opposite-end inspection gate with complete, per-edge read-failure, truncated-count and unknown-inventory controls. Only a fully inspected candidate set may proceed to the separate uniqueness check; no Inventor geometry was modified by this synthetic negative control.
+  CompleteInventoryAccepted=True
+  PerEdgeReadFailureRejected=True
+  TruncatedInventoryRejected=True
+  UnknownInventoryRejected=True
+
+[PASS] DIALOG-SELECTION-RESTORATION-FAIL-CLOSED (0 ms)
+Executed the production selection-restoration policy with unique, empty and ambiguous BindKeyToObject results, captured-key stale-Edge fallback, exact SelectSet restoration, truncated/mismatched snapshots and unavailable COM identity. The synthetic negative control modifies no Inventor document.
+  UniqueReferenceKeyAccepted=True
+  AmbiguousReferenceKeyRejected=True
+  StaleEdgeFallbackRejected=True
+  ExactSelectionSnapshotAccepted=True
+  IdentityMismatchRejected=True
+  UnavailableIdentityRejected=True
+
+[PASS] STANDARD-GOST-TR-S-CATALOGUE-ISOLATION (2 ms)
+Separate catalogue counts and shared/GOST-only/DIN-only sentinel pairs verified for Tr and S; legacy IDs 3/4/6 preserved.
+  GostTrPairCount=222
+  DinTrPairCount=378
+  GostSPairCount=232
+  DinSPairCount=62
+  LegacyStandardIdsPreserved=3,4,6
+  NewGostStandardIds=7,8
+
+[PASS] TAPERED-GOST-6211-DATA-POLICY (2 ms)
+ГОСТ 6211-81: 16 табличных размеров, 16 R + 16 Rc, профиль 55°, конусность 1:16; G/Rp отвергнуты.
+  GostPipeTaperRows=16
+  GostPipeExternalDesignations=16
+  GostPipeInternalDesignations=16
+  GostPipeTaperRatio=1:16
+  GostPipeProfileAngleDegrees=55
+  GostPipeExcludedDesignations=G;Rp
+
+[PASS] STANDARD-EXTERNAL-ISO (19509 ms)
+Создано объектов Helivanta: 1; ThreadId=dd83ac68954b404883a0f2ea5154db4a;  Feature suppression probe: candidateFeatures=3; candidatesSuppressed=3; groupCascadeSuppressions=0; groupHealthChanges=0; externalSuppressionChanges=0; externalHealthChanges=0; geometryChanged=True; restoration=verified.
+  CanUndoImmediatelyAfterBuild=True
+  CommittedTransactionsImmediatelyAfterBuild=count=6; order=enum[1]=9:Создание эскиза на рабочей плоскости || enum[2]=13:Создание окружности указанием центра и радиуса. || enum[3]=17:Создание контура || enum[4]=21:Создание элемента выдавливания || enum[5]=27:Обновить документ детали || enum[6]=31:Helivanta: построение резьбы
+  standard-ISO.MetadataPartFeatures=3
+  standard-ISO.AllPartFeatures=4
+  standard-ISO.CoilLoftCandidates=3
+  standard-ISO.CandidatesSuppressed=3
+  standard-ISO.ExternalSuppressionChanges=0
+  standard-ISO.ExternalHealthChanges=0
+  standard-ISO.GroupCascadeSuppressions=0
+  standard-ISO.GroupHealthChanges=0
+  standard-ISO.SuppressionChangedBRep=True
+  standard-ISO.GroupCascadeNames=none
+  standard-ISO.ExternalChangeNames=none
+  standard-ISO.SuppressionProbeRestoration=VERIFIED
+  standard-ISO.SuppressionProbeStatus=PASS
+  BrowserNodesVisited=175
+  BrowserNativeObjectReadFailures=0
+  BrowserFolderNativeTypes=1
+  BrowserRootFoldersVisited=1
+  ExpectedFolderLabelFound=True
+  ExpectedFolderExactRootMatches=1
+  ExpectedFolderNumberedDuplicates=0
+  SeparateRunoutFolderCount=0
+  RunoutFeatureCountInThreadFolder=2
+  RunoutHelperObjectCount=106
+  VisibleRunoutHelperObjectCount=0
+  ThreadFolderNodesVisited=111
+  CanUndoBeforeRejectedEdit=False
+  CommittedTransactionsBeforeRejectedEdit=count=8; enumerated=8; current=2083:Unidentified transaction; order=enum[1]=9:Создание эскиза на рабочей плоскости || enum[2]=13:Создание окружности указанием центра и радиуса. || enum[3]=17:Создание контура || enum[4]=21:Создание элемента выдавливания || enum[5]=27:Обновить документ детали || enum[6]=31:Helivanta: построение резьбы || enum[7]=2033:Обновить документ детали || enum[8]=2081:Обновить документ детали
+  RollbackSnapshotVerified=True
+  RollbackSnapshotDetail=abortSucceeded=True; updateSucceeded=True; activeDocumentMatches=True; restoredSnapshotCaptured=True; original=document={FD0077AE-4F84-CFEB-EC15-15A08EF99046}; bodies=1; faces=28; edges=66; workPlanes=40; sketches=38; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=64.0561345877225; volumeCm3=31.071645263903395; centerOfMassCm=0.00021520810779308147,-0.000813449769401806,2.219165634723191; restored=document={FD0077AE-4F84-CFEB-EC15-15A08EF99046}; bodies=1; faces=28; edges=66; workPlanes=40; sketches=38; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=64.0561345877225; volumeCm3=31.071645263903395; centerOfMassCm=0.00021520810779308147,-0.000813449769401806,2.219165634723191
+  CanUndoAfterAbort=False
+  CommittedTransactionsAfterAbort=count=10; enumerated=10; current=2255:Unidentified transaction; order=enum[1]=9:Создание эскиза на рабочей плоскости || enum[2]=13:Создание окружности указанием центра и радиуса. || enum[3]=17:Создание контура || enum[4]=21:Создание элемента выдавливания || enum[5]=27:Обновить документ детали || enum[6]=31:Helivanta: построение резьбы || enum[7]=2033:Обновить документ детали || enum[8]=2081:Обновить документ детали || enum[9]=2249:Обновить документ детали || enum[10]=2253:Обновить документ детали
+  NewCommittedHelivantaTransactionsAfterAbort=<none>
+  LastCommittedTransactionAfterAbortIsHelivanta=False
+  GeometryChangedAfterSuccessfulEdit=True
+  VolumeBeforeEditCm3=31.071645263903395
+  VolumeAfterEditCm3=30.938746853659595
+  CanUndoAfterSuccessfulEdit=True
+  CanUndoExactEdit=True
+  CommittedTransactionsAfterSuccessfulEdit=count=11; enumerated=11; current=4211:Unidentified transaction; order=enum[1]=9:Создание эскиза на рабочей плоскости || enum[2]=13:Создание окружности указанием центра и радиуса. || enum[3]=17:Создание контура || enum[4]=21:Создание элемента выдавливания || enum[5]=27:Обновить документ детали || enum[6]=31:Helivanta: построение резьбы || enum[7]=2033:Обновить документ детали || enum[8]=2081:Обновить документ детали || enum[9]=2249:Обновить документ детали || enum[10]=2253:Обновить документ детали || enum[11]=2257:Helivanta: редактирование резьбы dd83ac68954b404883a0f2ea5154db4a
+  CanUndoAfterUndo=False
+  LastCommittedTransactionAfterUndoIsHelivanta=False
+  CommittedTransactionsAfterUndo=count=12; enumerated=12; current=4221:Unidentified transaction; order=enum[1]=9:Создание эскиза на рабочей плоскости || enum[2]=13:Создание окружности указанием центра и радиуса. || enum[3]=17:Создание контура || enum[4]=21:Создание элемента выдавливания || enum[5]=27:Обновить документ детали || enum[6]=31:Helivanta: построение резьбы || enum[7]=2033:Обновить документ детали || enum[8]=2081:Обновить документ детали || enum[9]=2249:Обновить документ детали || enum[10]=2253:Обновить документ детали || enum[11]=4215:Обновить документ детали || enum[12]=4219:Обновить документ детали
+  SurfaceBodyCount=1
+  FaceCount=28
+  EdgeCount=66
+  CoilFeatureCount=1
+  LoftFeatureCount=2
+  SweepFeatureCount=0
+  VolumeCm3=31.071645263903395
+  IPT: C:\1\Helivanta-2.7.198\test-results\inventor-runtime-audit\run-20261104-193058-911\20261104-193059-standard-iso-external.ipt
+
+[PASS] STANDARD-EXTERNAL-BSW (6549 ms)
+Создано объектов Helivanta: 1; ThreadId=7d695512b338482eb792d466f0a1de09;  Feature suppression probe: candidateFeatures=3; candidatesSuppressed=3; groupCascadeSuppressions=0; groupHealthChanges=0; externalSuppressionChanges=0; externalHealthChanges=0; geometryChanged=True; restoration=verified.
+  standard-BSW.MetadataPartFeatures=3
+  standard-BSW.AllPartFeatures=4
+  standard-BSW.CoilLoftCandidates=3
+  standard-BSW.CandidatesSuppressed=3
+  standard-BSW.ExternalSuppressionChanges=0
+  standard-BSW.ExternalHealthChanges=0
+  standard-BSW.GroupCascadeSuppressions=0
+  standard-BSW.GroupHealthChanges=0
+  standard-BSW.SuppressionChangedBRep=True
+  standard-BSW.GroupCascadeNames=none
+  standard-BSW.ExternalChangeNames=none
+  standard-BSW.SuppressionProbeRestoration=VERIFIED
+  standard-BSW.SuppressionProbeStatus=PASS
+  BrowserNodesVisited=175
+  BrowserNativeObjectReadFailures=0
+  BrowserFolderNativeTypes=1
+  BrowserRootFoldersVisited=1
+  ExpectedFolderLabelFound=True
+  ExpectedFolderExactRootMatches=1
+  ExpectedFolderNumberedDuplicates=0
+  SeparateRunoutFolderCount=0
+  RunoutFeatureCountInThreadFolder=2
+  RunoutHelperObjectCount=106
+  VisibleRunoutHelperObjectCount=0
+  ThreadFolderNodesVisited=111
+  SurfaceBodyCount=1
+  FaceCount=41
+  EdgeCount=83
+  CoilFeatureCount=1
+  LoftFeatureCount=2
+  SweepFeatureCount=0
+  VolumeCm3=31.074052911700434
+  IPT: C:\1\Helivanta-2.7.198\test-results\inventor-runtime-audit\run-20261104-193058-911\20261104-193059-standard-bsw-external.ipt
+
+[PASS] STANDARD-EXTERNAL-ANSI (5206 ms)
+Создано объектов Helivanta: 1; ThreadId=16f334ac94184032a1f761a82d9253d5;  Feature suppression probe: candidateFeatures=3; candidatesSuppressed=3; groupCascadeSuppressions=0; groupHealthChanges=0; externalSuppressionChanges=0; externalHealthChanges=0; geometryChanged=True; restoration=verified.
+  standard-ANSI.MetadataPartFeatures=3
+  standard-ANSI.AllPartFeatures=4
+  standard-ANSI.CoilLoftCandidates=3
+  standard-ANSI.CandidatesSuppressed=3
+  standard-ANSI.ExternalSuppressionChanges=0
+  standard-ANSI.ExternalHealthChanges=0
+  standard-ANSI.GroupCascadeSuppressions=0
+  standard-ANSI.GroupHealthChanges=0
+  standard-ANSI.SuppressionChangedBRep=True
+  standard-ANSI.GroupCascadeNames=none
+  standard-ANSI.ExternalChangeNames=none
+  standard-ANSI.SuppressionProbeRestoration=VERIFIED
+  standard-ANSI.SuppressionProbeStatus=PASS
+  BrowserNodesVisited=175
+  BrowserNativeObjectReadFailures=0
+  BrowserFolderNativeTypes=1
+  BrowserRootFoldersVisited=1
+  ExpectedFolderLabelFound=True
+  ExpectedFolderExactRootMatches=1
+  ExpectedFolderNumberedDuplicates=0
+  SeparateRunoutFolderCount=0
+  RunoutFeatureCountInThreadFolder=2
+  RunoutHelperObjectCount=106
+  VisibleRunoutHelperObjectCount=0
+  ThreadFolderNodesVisited=111
+  SurfaceBodyCount=1
+  FaceCount=28
+  EdgeCount=66
+  CoilFeatureCount=1
+  LoftFeatureCount=2
+  SweepFeatureCount=0
+  VolumeCm3=31.071645263903395
+  IPT: C:\1\Helivanta-2.7.198\test-results\inventor-runtime-audit\run-20261104-193058-911\20261104-193059-standard-ansi-external.ipt
+
+[PASS] STANDARD-EXTERNAL-TR (4671 ms)
+Создано объектов Helivanta: 1; ThreadId=108cabf20a36431ca1a28c8b86e07253;  Feature suppression probe: candidateFeatures=3; candidatesSuppressed=3; groupCascadeSuppressions=0; groupHealthChanges=0; externalSuppressionChanges=0; externalHealthChanges=0; geometryChanged=True; restoration=verified.
+  standard-Tr.MetadataPartFeatures=3
+  standard-Tr.AllPartFeatures=4
+  standard-Tr.CoilLoftCandidates=3
+  standard-Tr.CandidatesSuppressed=3
+  standard-Tr.ExternalSuppressionChanges=0
+  standard-Tr.ExternalHealthChanges=0
+  standard-Tr.GroupCascadeSuppressions=0
+  standard-Tr.GroupHealthChanges=0
+  standard-Tr.SuppressionChangedBRep=True
+  standard-Tr.GroupCascadeNames=none
+  standard-Tr.ExternalChangeNames=none
+  standard-Tr.SuppressionProbeRestoration=VERIFIED
+  standard-Tr.SuppressionProbeStatus=PASS
+  BrowserNodesVisited=155
+  BrowserNativeObjectReadFailures=0
+  BrowserFolderNativeTypes=1
+  BrowserRootFoldersVisited=1
+  ExpectedFolderLabelFound=True
+  ExpectedFolderExactRootMatches=1
+  ExpectedFolderNumberedDuplicates=0
+  SeparateRunoutFolderCount=0
+  RunoutFeatureCountInThreadFolder=2
+  RunoutHelperObjectCount=91
+  VisibleRunoutHelperObjectCount=0
+  ThreadFolderNodesVisited=96
+  SurfaceBodyCount=1
+  FaceCount=24
+  EdgeCount=54
+  CoilFeatureCount=1
+  LoftFeatureCount=2
+  SweepFeatureCount=0
+  VolumeCm3=30.950023249240964
+  IPT: C:\1\Helivanta-2.7.198\test-results\inventor-runtime-audit\run-20261104-193058-911\20261104-193059-standard-tr-external.ipt
+
+[PASS] STANDARD-EXTERNAL-S (3746 ms)
+Создано объектов Helivanta: 1; ThreadId=b2d91f345c7e4e9fac2bd8df8c0e641d;  Feature suppression probe: candidateFeatures=3; candidatesSuppressed=3; groupCascadeSuppressions=0; groupHealthChanges=0; externalSuppressionChanges=0; externalHealthChanges=0; geometryChanged=True; restoration=verified.
+  standard-S.MetadataPartFeatures=3
+  standard-S.AllPartFeatures=4
+  standard-S.CoilLoftCandidates=3
+  standard-S.CandidatesSuppressed=3
+  standard-S.ExternalSuppressionChanges=0
+  standard-S.ExternalHealthChanges=0
+  standard-S.GroupCascadeSuppressions=0
+  standard-S.GroupHealthChanges=0
+  standard-S.SuppressionChangedBRep=True
+  standard-S.GroupCascadeNames=none
+  standard-S.ExternalChangeNames=none
+  standard-S.SuppressionProbeRestoration=VERIFIED
+  standard-S.SuppressionProbeStatus=PASS
+  BrowserNodesVisited=123
+  BrowserNativeObjectReadFailures=0
+  BrowserFolderNativeTypes=1
+  BrowserRootFoldersVisited=1
+  ExpectedFolderLabelFound=True
+  ExpectedFolderExactRootMatches=1
+  ExpectedFolderNumberedDuplicates=0
+  SeparateRunoutFolderCount=0
+  RunoutFeatureCountInThreadFolder=2
+  RunoutHelperObjectCount=67
+  VisibleRunoutHelperObjectCount=0
+  ThreadFolderNodesVisited=72
+  SurfaceBodyCount=1
+  FaceCount=24
+  EdgeCount=54
+  CoilFeatureCount=1
+  LoftFeatureCount=2
+  SweepFeatureCount=0
+  VolumeCm3=30.180213304070776
+  IPT: C:\1\Helivanta-2.7.198\test-results\inventor-runtime-audit\run-20261104-193058-911\20261104-193059-standard-s-external.ipt
+
+[PASS] STANDARD-EXTERNAL-RD (7082 ms)
+Создано объектов Helivanta: 1; ThreadId=d3e92ab988de4506a54ab6f8f7bbf177;  Feature suppression probe: candidateFeatures=3; candidatesSuppressed=3; groupCascadeSuppressions=0; groupHealthChanges=0; externalSuppressionChanges=0; externalHealthChanges=0; geometryChanged=True; restoration=verified.
+  standard-Rd.MetadataPartFeatures=3
+  standard-Rd.AllPartFeatures=4
+  standard-Rd.CoilLoftCandidates=3
+  standard-Rd.CandidatesSuppressed=3
+  standard-Rd.ExternalSuppressionChanges=0
+  standard-Rd.ExternalHealthChanges=0
+  standard-Rd.GroupCascadeSuppressions=0
+  standard-Rd.GroupHealthChanges=0
+  standard-Rd.SuppressionChangedBRep=True
+  standard-Rd.GroupCascadeNames=none
+  standard-Rd.ExternalChangeNames=none
+  standard-Rd.SuppressionProbeRestoration=VERIFIED
+  standard-Rd.SuppressionProbeStatus=PASS
+  BrowserNodesVisited=175
+  BrowserNativeObjectReadFailures=0
+  BrowserFolderNativeTypes=1
+  BrowserRootFoldersVisited=1
+  ExpectedFolderLabelFound=True
+  ExpectedFolderExactRootMatches=1
+  ExpectedFolderNumberedDuplicates=0
+  SeparateRunoutFolderCount=0
+  RunoutFeatureCountInThreadFolder=2
+  RunoutHelperObjectCount=106
+  VisibleRunoutHelperObjectCount=0
+  ThreadFolderNodesVisited=111
+  SurfaceBodyCount=1
+  FaceCount=47
+  EdgeCount=97
+  CoilFeatureCount=1
+  LoftFeatureCount=2
+  SweepFeatureCount=0
+  VolumeCm3=31.239652935855883
+  IPT: C:\1\Helivanta-2.7.198\test-results\inventor-runtime-audit\run-20261104-193058-911\20261104-193059-standard-rd-external.ipt
+
+[PASS] STANDARD-EXTERNAL-GOSTMETRIC (15274 ms)
+Создано объектов Helivanta: 1; ThreadId=0101cb8fc81643a9bfefdb09b280851d;  Feature suppression probe: candidateFeatures=3; candidatesSuppressed=3; groupCascadeSuppressions=0; groupHealthChanges=0; externalSuppressionChanges=0; externalHealthChanges=0; geometryChanged=True; restoration=verified.
+  CanUndoImmediatelyAfterBuild=True
+  CommittedTransactionsImmediatelyAfterBuild=count=1; order=enum[1]=14361:Helivanta: построение резьбы
+  standard-GostMetric.MetadataPartFeatures=3
+  standard-GostMetric.AllPartFeatures=4
+  standard-GostMetric.CoilLoftCandidates=3
+  standard-GostMetric.CandidatesSuppressed=3
+  standard-GostMetric.ExternalSuppressionChanges=0
+  standard-GostMetric.ExternalHealthChanges=0
+  standard-GostMetric.GroupCascadeSuppressions=0
+  standard-GostMetric.GroupHealthChanges=0
+  standard-GostMetric.SuppressionChangedBRep=True
+  standard-GostMetric.GroupCascadeNames=none
+  standard-GostMetric.ExternalChangeNames=none
+  standard-GostMetric.SuppressionProbeRestoration=VERIFIED
+  standard-GostMetric.SuppressionProbeStatus=PASS
+  BrowserNodesVisited=175
+  BrowserNativeObjectReadFailures=0
+  BrowserFolderNativeTypes=1
+  BrowserRootFoldersVisited=1
+  ExpectedFolderLabelFound=True
+  ExpectedFolderExactRootMatches=1
+  ExpectedFolderNumberedDuplicates=0
+  SeparateRunoutFolderCount=0
+  RunoutFeatureCountInThreadFolder=2
+  RunoutHelperObjectCount=106
+  VisibleRunoutHelperObjectCount=0
+  ThreadFolderNodesVisited=111
+  CanUndoBeforeRejectedEdit=False
+  CommittedTransactionsBeforeRejectedEdit=count=3; enumerated=3; current=16413:Unidentified transaction; order=enum[1]=14361:Helivanta: построение резьбы || enum[2]=16363:Обновить документ детали || enum[3]=16411:Обновить документ детали
+  RollbackSnapshotVerified=True
+  RollbackSnapshotDetail=abortSucceeded=True; updateSucceeded=True; activeDocumentMatches=True; restoredSnapshotCaptured=True; original=document={03BC3E4E-48FA-B26E-0DE1-36BA75C3277B}; bodies=1; faces=28; edges=66; workPlanes=40; sketches=38; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=64.0561345877225; volumeCm3=31.071645263903395; centerOfMassCm=0.00021520810779308147,-0.000813449769401806,2.219165634723191; restored=document={03BC3E4E-48FA-B26E-0DE1-36BA75C3277B}; bodies=1; faces=28; edges=66; workPlanes=40; sketches=38; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=64.0561345877225; volumeCm3=31.071645263903395; centerOfMassCm=0.00021520810779308147,-0.000813449769401806,2.219165634723191
+  CanUndoAfterAbort=False
+  CommittedTransactionsAfterAbort=count=5; enumerated=5; current=16585:Unidentified transaction; order=enum[1]=14361:Helivanta: построение резьбы || enum[2]=16363:Обновить документ детали || enum[3]=16411:Обновить документ детали || enum[4]=16579:Обновить документ детали || enum[5]=16583:Обновить документ детали
+  NewCommittedHelivantaTransactionsAfterAbort=<none>
+  LastCommittedTransactionAfterAbortIsHelivanta=False
+  GeometryChangedAfterSuccessfulEdit=True
+  VolumeBeforeEditCm3=31.071645263903395
+  VolumeAfterEditCm3=30.825994573592457
+  CanUndoAfterSuccessfulEdit=True
+  CanUndoExactEdit=True
+  CommittedTransactionsAfterSuccessfulEdit=count=6; enumerated=6; current=18489:Unidentified transaction; order=enum[1]=14361:Helivanta: построение резьбы || enum[2]=16363:Обновить документ детали || enum[3]=16411:Обновить документ детали || enum[4]=16579:Обновить документ детали || enum[5]=16583:Обновить документ детали || enum[6]=16587:Helivanta: редактирование резьбы 0101cb8fc81643a9bfefdb09b280851d
+  CanUndoAfterUndo=False
+  LastCommittedTransactionAfterUndoIsHelivanta=False
+  CommittedTransactionsAfterUndo=count=7; enumerated=7; current=18499:Unidentified transaction; order=enum[1]=14361:Helivanta: построение резьбы || enum[2]=16363:Обновить документ детали || enum[3]=16411:Обновить документ детали || enum[4]=16579:Обновить документ детали || enum[5]=16583:Обновить документ детали || enum[6]=18493:Обновить документ детали || enum[7]=18497:Обновить документ детали
+  SurfaceBodyCount=1
+  FaceCount=28
+  EdgeCount=66
+  CoilFeatureCount=1
+  LoftFeatureCount=2
+  SweepFeatureCount=0
+  VolumeCm3=31.071645263903395
+  IPT: C:\1\Helivanta-2.7.198\test-results\inventor-runtime-audit\run-20261104-193058-911\20261104-193059-standard-gostmetric-external.ipt
+
+[PASS] STANDARD-EXTERNAL-GOSTTRAPEZOIDAL (18090 ms)
+Создано объектов Helivanta: 2; ThreadId=d62826ead8aa47ed94aa96ccfb2153f1;  Feature suppression probe: candidateFeatures=6; candidatesSuppressed=6; groupCascadeSuppressions=0; groupHealthChanges=0; externalSuppressionChanges=0; externalHealthChanges=0; geometryChanged=True; restoration=verified.
+  CanUndoImmediatelyAfterBuild=True
+  CommittedTransactionsImmediatelyAfterBuild=count=1; order=enum[1]=18539:Helivanta: построение резьбы
+  standard-GostTrapezoidal.MetadataPartFeatures=6
+  standard-GostTrapezoidal.AllPartFeatures=7
+  standard-GostTrapezoidal.CoilLoftCandidates=6
+  standard-GostTrapezoidal.CandidatesSuppressed=6
+  standard-GostTrapezoidal.ExternalSuppressionChanges=0
+  standard-GostTrapezoidal.ExternalHealthChanges=0
+  standard-GostTrapezoidal.GroupCascadeSuppressions=0
+  standard-GostTrapezoidal.GroupHealthChanges=0
+  standard-GostTrapezoidal.SuppressionChangedBRep=True
+  standard-GostTrapezoidal.GroupCascadeNames=none
+  standard-GostTrapezoidal.ExternalChangeNames=none
+  standard-GostTrapezoidal.SuppressionProbeRestoration=VERIFIED
+  standard-GostTrapezoidal.SuppressionProbeStatus=PASS
+  BrowserNodesVisited=182
+  BrowserNativeObjectReadFailures=0
+  BrowserFolderNativeTypes=1
+  BrowserRootFoldersVisited=1
+  ExpectedFolderLabelFound=True
+  ExpectedFolderExactRootMatches=1
+  ExpectedFolderNumberedDuplicates=0
+  SeparateRunoutFolderCount=0
+  RunoutFeatureCountInThreadFolder=4
+  RunoutHelperObjectCount=104
+  VisibleRunoutHelperObjectCount=0
+  ThreadFolderNodesVisited=114
+  CanUndoBeforeRejectedEdit=False
+  CommittedTransactionsBeforeRejectedEdit=count=3; enumerated=3; current=20783:Unidentified transaction; order=enum[1]=18539:Helivanta: построение резьбы || enum[2]=20661:Обновить документ детали || enum[3]=20781:Обновить документ детали
+  RollbackSnapshotVerified=True
+  RollbackSnapshotDetail=abortSucceeded=True; updateSucceeded=True; activeDocumentMatches=True; restoredSnapshotCaptured=True; original=document={B84FE18E-4402-A0E0-0200-E0B73D3602B8}; bodies=1; faces=41; edges=97; workPlanes=41; sketches=39; revolve=0; chamfer=0; coil=2; sweep=0; loft=4; areaCm2=71.1771297376903; volumeCm3=35.201979786757164; centerOfMassCm=-0.0013841491686099432,0.0019947475657468975,2.2121669592084907; restored=document={B84FE18E-4402-A0E0-0200-E0B73D3602B8}; bodies=1; faces=41; edges=97; workPlanes=41; sketches=39; revolve=0; chamfer=0; coil=2; sweep=0; loft=4; areaCm2=71.1771297376903; volumeCm3=35.201979786757164; centerOfMassCm=-0.0013841491686099432,0.0019947475657468975,2.2121669592084907
+  CanUndoAfterAbort=False
+  CommittedTransactionsAfterAbort=count=5; enumerated=5; current=20965:Unidentified transaction; order=enum[1]=18539:Helivanta: построение резьбы || enum[2]=20661:Обновить документ детали || enum[3]=20781:Обновить документ детали || enum[4]=20959:Обновить документ детали || enum[5]=20963:Обновить документ детали
+  NewCommittedHelivantaTransactionsAfterAbort=<none>
+  LastCommittedTransactionAfterAbortIsHelivanta=False
+  GeometryChangedAfterSuccessfulEdit=True
+  VolumeBeforeEditCm3=35.201979786757164
+  VolumeAfterEditCm3=35.125747975768185
+  CanUndoAfterSuccessfulEdit=True
+  CanUndoExactEdit=True
+  CommittedTransactionsAfterSuccessfulEdit=count=6; enumerated=6; current=23691:Unidentified transaction; order=enum[1]=18539:Helivanta: построение резьбы || enum[2]=20661:Обновить документ детали || enum[3]=20781:Обновить документ детали || enum[4]=20959:Обновить документ детали || enum[5]=20963:Обновить документ детали || enum[6]=20967:Helivanta: редактирование резьбы d62826ead8aa47ed94aa96ccfb2153f1
+  CanUndoAfterUndo=False
+  LastCommittedTransactionAfterUndoIsHelivanta=False
+  CommittedTransactionsAfterUndo=count=7; enumerated=7; current=23701:Unidentified transaction; order=enum[1]=18539:Helivanta: построение резьбы || enum[2]=20661:Обновить документ детали || enum[3]=20781:Обновить документ детали || enum[4]=20959:Обновить документ детали || enum[5]=20963:Обновить документ детали || enum[6]=23695:Обновить документ детали || enum[7]=23699:Обновить документ детали
+  SurfaceBodyCount=1
+  FaceCount=41
+  EdgeCount=97
+  CoilFeatureCount=2
+  LoftFeatureCount=4
+  SweepFeatureCount=0
+  VolumeCm3=35.201979786757164
+  IPT: C:\1\Helivanta-2.7.198\test-results\inventor-runtime-audit\run-20261104-193058-911\20261104-193059-standard-gosttrapezoidal-external.ipt
+
+[PASS] STANDARD-EXTERNAL-GOSTBUTTRESS (12837 ms)
+Создано объектов Helivanta: 1; ThreadId=9adb0398f6814dc3a6a4e2c4b20a62fd;  Feature suppression probe: candidateFeatures=3; candidatesSuppressed=3; groupCascadeSuppressions=0; groupHealthChanges=0; externalSuppressionChanges=0; externalHealthChanges=0; geometryChanged=True; restoration=verified.
+  CanUndoImmediatelyAfterBuild=True
+  CommittedTransactionsImmediatelyAfterBuild=count=1; order=enum[1]=23741:Helivanta: построение резьбы
+  standard-GostButtress.MetadataPartFeatures=3
+  standard-GostButtress.AllPartFeatures=4
+  standard-GostButtress.CoilLoftCandidates=3
+  standard-GostButtress.CandidatesSuppressed=3
+  standard-GostButtress.ExternalSuppressionChanges=0
+  standard-GostButtress.ExternalHealthChanges=0
+  standard-GostButtress.GroupCascadeSuppressions=0
+  standard-GostButtress.GroupHealthChanges=0
+  standard-GostButtress.SuppressionChangedBRep=True
+  standard-GostButtress.GroupCascadeNames=none
+  standard-GostButtress.ExternalChangeNames=none
+  standard-GostButtress.SuppressionProbeRestoration=VERIFIED
+  standard-GostButtress.SuppressionProbeStatus=PASS
+  BrowserNodesVisited=155
+  BrowserNativeObjectReadFailures=0
+  BrowserFolderNativeTypes=1
+  BrowserRootFoldersVisited=1
+  ExpectedFolderLabelFound=True
+  ExpectedFolderExactRootMatches=1
+  ExpectedFolderNumberedDuplicates=0
+  SeparateRunoutFolderCount=0
+  RunoutFeatureCountInThreadFolder=2
+  RunoutHelperObjectCount=91
+  VisibleRunoutHelperObjectCount=0
+  ThreadFolderNodesVisited=96
+  CanUndoBeforeRejectedEdit=False
+  CommittedTransactionsBeforeRejectedEdit=count=3; enumerated=3; current=25533:Unidentified transaction; order=enum[1]=23741:Helivanta: построение резьбы || enum[2]=25483:Обновить документ детали || enum[3]=25531:Обновить документ детали
+  RollbackSnapshotVerified=True
+  RollbackSnapshotDetail=abortSucceeded=True; updateSucceeded=True; activeDocumentMatches=True; restoredSnapshotCaptured=True; original=document={ADC25800-4467-CB74-6480-0D9E7143551F}; bodies=1; faces=24; edges=54; workPlanes=35; sketches=33; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=68.83917059791234; volumeCm3=30.57805798247783; centerOfMassCm=-0.0006460610397405743,0.0002641964776664942,2.1990614952122205; restored=document={ADC25800-4467-CB74-6480-0D9E7143551F}; bodies=1; faces=24; edges=54; workPlanes=35; sketches=33; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=68.83917059791234; volumeCm3=30.57805798247783; centerOfMassCm=-0.0006460610397405743,0.0002641964776664942,2.1990614952122205
+  CanUndoAfterAbort=False
+  CommittedTransactionsAfterAbort=count=5; enumerated=5; current=25685:Unidentified transaction; order=enum[1]=23741:Helivanta: построение резьбы || enum[2]=25483:Обновить документ детали || enum[3]=25531:Обновить документ детали || enum[4]=25679:Обновить документ детали || enum[5]=25683:Обновить документ детали
+  NewCommittedHelivantaTransactionsAfterAbort=<none>
+  LastCommittedTransactionAfterAbortIsHelivanta=False
+  GeometryChangedAfterSuccessfulEdit=True
+  VolumeBeforeEditCm3=30.57805798247783
+  VolumeAfterEditCm3=30.180216793001875
+  CanUndoAfterSuccessfulEdit=True
+  CanUndoExactEdit=True
+  CommittedTransactionsAfterSuccessfulEdit=count=6; enumerated=6; current=27153:Unidentified transaction; order=enum[1]=23741:Helivanta: построение резьбы || enum[2]=25483:Обновить документ детали || enum[3]=25531:Обновить документ детали || enum[4]=25679:Обновить документ детали || enum[5]=25683:Обновить документ детали || enum[6]=25687:Helivanta: редактирование резьбы 9adb0398f6814dc3a6a4e2c4b20a62fd
+  CanUndoAfterUndo=False
+  LastCommittedTransactionAfterUndoIsHelivanta=False
+  CommittedTransactionsAfterUndo=count=7; enumerated=7; current=27163:Unidentified transaction; order=enum[1]=23741:Helivanta: построение резьбы || enum[2]=25483:Обновить документ детали || enum[3]=25531:Обновить документ детали || enum[4]=25679:Обновить документ детали || enum[5]=25683:Обновить документ детали || enum[6]=27157:Обновить документ детали || enum[7]=27161:Обновить документ детали
+  SurfaceBodyCount=1
+  FaceCount=24
+  EdgeCount=54
+  CoilFeatureCount=1
+  LoftFeatureCount=2
+  SweepFeatureCount=0
+  VolumeCm3=30.57805798247783
+  IPT: C:\1\Helivanta-2.7.198\test-results\inventor-runtime-audit\run-20261104-193058-911\20261104-193059-standard-gostbuttress-external.ipt
+
+[PASS] STANDARD-INTERNAL-ISO (4245 ms)
+Создано объектов Helivanta: 1; ThreadId=3e26e997cf284028a86c58c6e798a0b9.
+  BrowserNodesVisited=148
+  BrowserNativeObjectReadFailures=0
+  BrowserFolderNativeTypes=1
+  BrowserRootFoldersVisited=1
+  ExpectedFolderLabelFound=True
+  ExpectedFolderExactRootMatches=1
+  ExpectedFolderNumberedDuplicates=0
+  SeparateRunoutFolderCount=0
+  RunoutFeatureCountInThreadFolder=2
+  RunoutHelperObjectCount=82
+  VisibleRunoutHelperObjectCount=0
+  ThreadFolderNodesVisited=90
+  SurfaceBodyCount=1
+  FaceCount=17
+  EdgeCount=28
+  CoilFeatureCount=1
+  LoftFeatureCount=2
+  SweepFeatureCount=0
+  VolumeCm3=43.03351018807693
+  IPT: C:\1\Helivanta-2.7.198\test-results\inventor-runtime-audit\run-20261104-193058-911\20261104-193059-standard-iso-internal.ipt
+
+[PASS] STANDARD-INTERNAL-GOST-METRIC-BUILD-EDIT (9506 ms)
+GOST M20 internal build/edit; right-to-left; ThreadId preserved; warning=Подготовка внутренней резьбы Ø20 × 2 мм: исходное отверстие Ø20 мм будет предварительно заполнено материалом кольцом до малого диаметра внутреннего профиля Ø17,835 мм (изменение диаметра 2,165 мм). Затем винтовой профиль сформирует резьбу до номинального Ø20 мм. Номинальный диаметр в параметрах не меняется. Проверьте, что добавление материала допустимо.
+Не удалось сопоставить созданные операции с узлами дерева для папки «Резьба — ГОСТ 9150/8724 · M20 x 2 · 1 заход · Левая (L)»: объектов 64, верхнеуровневых узлов дерева 7, раскрытие истории при редактировании False.
+  GeometryChangedAfterSuccessfulEdit=True
+  VolumeBeforeEditCm3=43.19543399834119
+  VolumeAfterEditCm3=43.02647700405935
+  BrowserNodesVisited=148
+  BrowserNativeObjectReadFailures=0
+  BrowserFolderNativeTypes=1
+  BrowserRootFoldersVisited=1
+  ExpectedFolderLabelFound=True
+  ExpectedFolderExactRootMatches=1
+  ExpectedFolderNumberedDuplicates=0
+  SeparateRunoutFolderCount=0
+  RunoutFeatureCountInThreadFolder=2
+  RunoutHelperObjectCount=82
+  VisibleRunoutHelperObjectCount=0
+  ThreadFolderNodesVisited=90
+  SurfaceBodyCount=1
+  FaceCount=17
+  EdgeCount=28
+  CoilFeatureCount=1
+  LoftFeatureCount=2
+  SweepFeatureCount=0
+  VolumeCm3=43.02647700405935
+  MetadataThreadId=f2013f77e58a4ac292cf95bc6cff4c48
+  OriginalDesignation=M20 x 2.5
+  ReplacementDesignation=M20 x 2
+  IPT: C:\1\Helivanta-2.7.198\test-results\inventor-runtime-audit\run-20261104-193058-911\20261104-193059-standard-gost-metric-internal-edit.ipt
+
+[PASS] STANDARD-INTERNAL-GOST-TRAPEZOIDAL-BUILD-EDIT-UNDO (13739 ms)
+GostTrapezoidal internal build/edit/Undo; ThreadId preserved; full pre-edit B-rep and catalogue metadata restored.
+  CanUndoExactEditBeforeUndo=True
+  BrowserNodesVisited=171
+  BrowserNativeObjectReadFailures=0
+  BrowserFolderNativeTypes=1
+  BrowserRootFoldersVisited=1
+  ExpectedFolderLabelFound=True
+  ExpectedFolderExactRootMatches=1
+  ExpectedFolderNumberedDuplicates=0
+  SeparateRunoutFolderCount=0
+  RunoutFeatureCountInThreadFolder=4
+  RunoutHelperObjectCount=92
+  VisibleRunoutHelperObjectCount=0
+  ThreadFolderNodesVisited=105
+  MetadataThreadId=2347a0353e3f4eb8833598ccfe8f2741
+  OriginalDesignation=Tr 20 x 4 (P2)
+  EditedDesignation=Tr 20 x 6 (P2)
+  GeometryChangedAfterSuccessfulEdit=True
+  VolumeBeforeEditCm3=42.84658088329527
+  VolumeAfterEditCm3=42.83557802619161
+  UndoRestoredFullSnapshot=True
+  EditWarning=Подготовка внутренней резьбы Ø20 × 2 мм: исходное отверстие Ø20 мм будет предварительно заполнено материалом кольцом до малого диаметра внутреннего профиля Ø18 мм (изменение диаметра 2 мм). Затем винтовой профиль сформирует резьбу до номинального Ø20 мм. Номинальный диаметр в параметрах не меняется. Проверьте, что добавление материала допустимо.
+Не удалось сопоставить созданные операции с узлами дерева для папки «Резьба — Tr (ГОСТ 9484-81) · 20 x 6 (P2) · 3 захода · Левая (L)»: объектов 90, верхнеуровневых узлов дерева 7, раскрытие истории при редактировании False.
+  SurfaceBodyCount=1
+  FaceCount=25
+  EdgeCount=55
+  CoilFeatureCount=2
+  LoftFeatureCount=4
+  SweepFeatureCount=0
+  VolumeCm3=42.84658088329527
+  IPT: C:\1\Helivanta-2.7.198\test-results\inventor-runtime-audit\run-20261104-193058-911\20261104-193059-gosttrapezoidal-internal-edit-undo.ipt
+
+[PASS] STANDARD-INTERNAL-GOST-BUTTRESS-BUILD-EDIT-UNDO (10005 ms)
+GostButtress internal build/edit/Undo; ThreadId preserved; full pre-edit B-rep and catalogue metadata restored.
+  CanUndoExactEditBeforeUndo=True
+  BrowserNodesVisited=148
+  BrowserNativeObjectReadFailures=0
+  BrowserFolderNativeTypes=1
+  BrowserRootFoldersVisited=1
+  ExpectedFolderLabelFound=True
+  ExpectedFolderExactRootMatches=1
+  ExpectedFolderNumberedDuplicates=0
+  SeparateRunoutFolderCount=0
+  RunoutFeatureCountInThreadFolder=2
+  RunoutHelperObjectCount=82
+  VisibleRunoutHelperObjectCount=0
+  ThreadFolderNodesVisited=90
+  MetadataThreadId=f9be057a4fcf46558922cad9a2921b44
+  OriginalDesignation=S 20 x 2
+  EditedDesignation=S 20 x 4
+  GeometryChangedAfterSuccessfulEdit=True
+  VolumeBeforeEditCm3=43.17640648954847
+  VolumeAfterEditCm3=44.02081484420861
+  UndoRestoredFullSnapshot=True
+  EditWarning=Подготовка внутренней резьбы Ø20 × 4 мм: исходное отверстие Ø20 мм будет предварительно заполнено материалом кольцом до малого диаметра внутреннего профиля Ø14 мм (изменение диаметра 6 мм). Затем винтовой профиль сформирует резьбу до номинального Ø20 мм. Номинальный диаметр в параметрах не меняется. Проверьте, что добавление материала допустимо.
+Не удалось сопоставить созданные операции с узлами дерева для папки «Резьба — S (ГОСТ 10177-82) · 20 x 4 · 1 заход · Левая (L) · Зеркальный профиль»: объектов 56, верхнеуровневых узлов дерева 7, раскрытие истории при редактировании False.
+  SurfaceBodyCount=1
+  FaceCount=17
+  EdgeCount=30
+  CoilFeatureCount=1
+  LoftFeatureCount=2
+  SweepFeatureCount=0
+  VolumeCm3=43.17640648954847
+  IPT: C:\1\Helivanta-2.7.198\test-results\inventor-runtime-audit\run-20261104-193058-911\20261104-193059-gostbuttress-internal-edit-undo.ipt
+
+[PASS] STANDARD-SEQUENTIAL-GOST-MULTI-GROUP-EDIT (37459 ms)
+Two independent GOST M30 cylinder groups; first then second ThreadId edited in one audit session; each B-rep changed and the other group's parameters remained intact.
+  FirstThreadId=65ad8263c87e44af86892271d263cf13
+  SecondThreadId=f9cc6275cbb244ebbdf18fd6addb7ac3
+  DistinctThreadIds=true
+  FirstGeometryChangedAfterEdit=True
+  SecondGeometryChangedAfterEdit=True
+  FinalGroupCount=2
+  FirstEditWarning=Не удалось сопоставить созданные операции с узлами дерева для папки «Резьба — ГОСТ 9150/8724 · M30 x 1.5 · 2 захода · Левая (L)»: объектов 98, верхнеуровневых узлов дерева 9, раскрытие истории при редактировании False.
+  SecondEditWarning=Не удалось сопоставить созданные операции с узлами дерева для папки «Резьба — ГОСТ 9150/8724 · M30 x 2 · 2 захода · Левая (L)»: объектов 90, верхнеуровневых узлов дерева 9, раскрытие истории при редактировании False.
+  SurfaceBodyCount=2
+  FaceCount=82
+  EdgeCount=188
+  CoilFeatureCount=4
+  LoftFeatureCount=8
+  SweepFeatureCount=0
+  VolumeCm3=62.55140432902468
+  IPT: C:\1\Helivanta-2.7.198\test-results\inventor-runtime-audit\run-20261104-193058-911\20261104-193059-standard-gost-metric-sequential-multi-group-edit.ipt
+
+[PASS] CAPNECK-EXTERNAL-BUILD-EDIT (10578 ms)
+ThreadId=41b0365b2eda468fad812bd8a9a572fe; edits=P4.0→P4.2→P4.4; persistedFolderLanguage=en; secondEdit=Создана экспериментальная наружная (положительный валик наружу) 1-заходная резьба: D=40 мм; шаг P=4,4 мм; ход L=4,4 мм; основная длина=27,658 мм; сбег в начале=0,171 мм; сбег в конце=0,171 мм; высота=2 мм; направление=правая; фазы заходов: 0°. Вентиляционные каналы: 2 шт. по 14°; центры 65,455/245,455; расположение проверено по фазам концов; очистка хвостов не применяется. Зазор сопряжения C=0,15 мм применён к цилиндрической основе; цилиндрических компенсаций: 1. Фаски отключены. Все построения собраны в папку «Cap/neck thread — External · D40 mm · P4.4 mm · 1 start · Right-hand (R)»; secondEditWarning=<none>; exactUndoRestoredP4.2=true; firstEdit=Создана экспериментальная наружная (положительный валик наружу) 1-заходная резьба: D=40 мм; шаг P=4,2 мм; ход L=4,2 мм; основная длина=25,673 мм; сбег в начале=0,163 мм; сбег в конце=0,163 мм; высота=2 мм; направление=правая; фазы заходов: 0°. Вентиляционные каналы: 2 шт. по 14°; центры 124,286/304,286; расположение проверено по фазам концов; очистка хвостов не применяется. Зазор сопряжения C=0,15 мм применён к цилиндрической основе; цилиндрических компенсаций: 1. Фаски отключены. Все построения собраны в папку «Cap/neck thread — External · D40 mm · P4.2 mm · 1 start · Right-hand (R)»; firstEditWarning=<none>
+ Feature suppression probe: candidateFeatures=3; candidatesSuppressed=3; groupCascadeSuppressions=0; groupHealthChanges=0; externalSuppressionChanges=0; externalHealthChanges=0; geometryChanged=True; restoration=verified.
+  cap-neck.MetadataPartFeatures=7
+  cap-neck.AllPartFeatures=8
+  cap-neck.CoilLoftCandidates=3
+  cap-neck.CandidatesSuppressed=3
+  cap-neck.ExternalSuppressionChanges=0
+  cap-neck.ExternalHealthChanges=0
+  cap-neck.GroupCascadeSuppressions=0
+  cap-neck.GroupHealthChanges=0
+  cap-neck.SuppressionChangedBRep=True
+  cap-neck.GroupCascadeNames=none
+  cap-neck.ExternalChangeNames=none
+  cap-neck.SuppressionProbeRestoration=VERIFIED
+  cap-neck.SuppressionProbeStatus=PASS
+  MetadataThreadId=41b0365b2eda468fad812bd8a9a572fe
+  BuilderSummary=Создана экспериментальная наружная (положительный валик наружу) 1-заходная резьба: D=40 мм; шаг P=4 мм; ход L=4 мм; основная длина=23,689 мм; сбег в начале=0,156 мм; сбег в конце=0,156 мм; высота=2 мм; направление=правая; фазы заходов: 0°. Вентиляционные каналы: 2 шт. по 14°; центры 90/270; расположение проверено по фазам концов; очистка хвостов не применяется. Зазор сопряжения C=0,15 мм применён к цилиндрической основе; цилиндрических компенсаций: 1. Фаски: режим 1, размер 1 мм. Все построения собраны в папку «Резьба крышек/горловин — наружная · D40 мм · P4 мм · 1 заход · Правая (R)»
+  UiLanguage=ru
+  InitialFolderName=Резьба крышек/горловин — наружная · D40 мм · P4 мм · 1 заход · Правая (R)
+  CapNeckFolderExactName_initial_P4.0_build=Резьба крышек/горловин — наружная · D40 мм · P4 мм · 1 заход · Правая (R)
+  CapNeckFolderMetadataMembers_initial_P4.0_build=29
+  CapNeckFolderVerifiedFeatures_initial_P4.0_build=7
+  PersistedFolderLanguage=en
+  FolderAfterFirstEdit=Cap/neck thread — External · D40 mm · P4.2 mm · 1 start · Right-hand (R)
+  CapNeckFolderExactName_first_P4.2_edit=Cap/neck thread — External · D40 mm · P4.2 mm · 1 start · Right-hand (R)
+  CapNeckFolderMetadataMembers_first_P4.2_edit=26
+  CapNeckFolderVerifiedFeatures_first_P4.2_edit=6
+  FolderAfterSecondEdit=Cap/neck thread — External · D40 mm · P4.4 mm · 1 start · Right-hand (R)
+  CapNeckFolderExactName_second_P4.4_edit=Cap/neck thread — External · D40 mm · P4.4 mm · 1 start · Right-hand (R)
+  CapNeckFolderMetadataMembers_second_P4.4_edit=26
+  CapNeckFolderVerifiedFeatures_second_P4.4_edit=6
+  UndoRestoredFolder=Cap/neck thread — External · D40 mm · P4.2 mm · 1 start · Right-hand (R)
+  CapNeckFolderExactName_second-edit_Undo_to_P4.2=Cap/neck thread — External · D40 mm · P4.2 mm · 1 start · Right-hand (R)
+  CapNeckFolderMetadataMembers_second-edit_Undo_to_P4.2=26
+  CapNeckFolderVerifiedFeatures_second-edit_Undo_to_P4.2=6
+  SecondEditBRepVolumeCm3=55.34874802698284
+  BrowserNodesVisited=70
+  BrowserNativeObjectReadFailures=0
+  BrowserFolderNativeTypes=1
+  BrowserRootFoldersVisited=1
+  ExpectedFolderLabelFound=True
+  ExpectedFolderExactRootMatches=1
+  ExpectedFolderNumberedDuplicates=0
+  SurfaceBodyCount=1
+  FaceCount=134
+  EdgeCount=380
+  CoilFeatureCount=1
+  LoftFeatureCount=2
+  SweepFeatureCount=0
+  VolumeCm3=55.57462659849395
+  IPT: C:\1\Helivanta-2.7.198\test-results\inventor-runtime-audit\run-20261104-193058-911\20261104-193059-capneck-external-repeat-edit-undo.ipt
+
+[PASS] CAPNECK-FOLDER-LOCALIZATION-RU-EN-MATRIX (7166 ms)
+Two independent live Inventor Cap/Neck builds used explicit en and ru folder-name languages; each exact root BrowserFolder label and all feature/metadata COM memberships were verified.
+  CapNeckFolderExactName_en_initial_localization_build=Cap/neck thread — External · D40 mm · P4 mm · 1 start · Right-hand (R)
+  CapNeckFolderMetadataMembers_en_initial_localization_build=29
+  CapNeckFolderVerifiedFeatures_en_initial_localization_build=7
+  BrowserNodesVisited=75
+  BrowserNativeObjectReadFailures=0
+  BrowserFolderNativeTypes=1
+  BrowserRootFoldersVisited=1
+  ExpectedFolderLabelFound=True
+  ExpectedFolderExactRootMatches=1
+  ExpectedFolderNumberedDuplicates=0
+  FolderName_en=Cap/neck thread — External · D40 mm · P4 mm · 1 start · Right-hand (R)
+  BuildSummary_en=Создана экспериментальная наружная (положительный валик наружу) 1-заходная резьба: D=40 мм; шаг P=4 мм; ход L=4 мм; основная длина=23,689 мм; сбег в начале=0,156 мм; сбег в конце=0,156 мм; высота=2 мм; направление=правая; фазы заходов: 0°. Вентиляционные каналы: 2 шт. по 14°; центры 90/270; расположение проверено по фазам концов; очистка хвостов не применяется. Зазор сопряжения C=0,15 мм применён к цилиндрической основе; цилиндрических компенсаций: 1. Фаски: режим 1, размер 1 мм. Все построения собраны в папку «Cap/neck thread — External · D40 mm · P4 mm · 1 start · Right-hand (R)»
+  ThreadId_en=3b5e44c72ac9456b9a5a3b3719d444ea
+  VerifiedFeatures_en=29
+  VolumeCm3_en=55.72978461245916
+  Artifact_en=C:\1\Helivanta-2.7.198\test-results\inventor-runtime-audit\run-20261104-193058-911\20261104-193059-capneck-folder-localization-en.ipt
+  CapNeckFolderExactName_ru_initial_localization_build=Резьба крышек/горловин — наружная · D40 мм · P4 мм · 1 заход · Правая (R)
+  CapNeckFolderMetadataMembers_ru_initial_localization_build=29
+  CapNeckFolderVerifiedFeatures_ru_initial_localization_build=7
+  FolderName_ru=Резьба крышек/горловин — наружная · D40 мм · P4 мм · 1 заход · Правая (R)
+  BuildSummary_ru=Создана экспериментальная наружная (положительный валик наружу) 1-заходная резьба: D=40 мм; шаг P=4 мм; ход L=4 мм; основная длина=23,689 мм; сбег в начале=0,156 мм; сбег в конце=0,156 мм; высота=2 мм; направление=правая; фазы заходов: 0°. Вентиляционные каналы: 2 шт. по 14°; центры 90/270; расположение проверено по фазам концов; очистка хвостов не применяется. Зазор сопряжения C=0,15 мм применён к цилиндрической основе; цилиндрических компенсаций: 1. Фаски: режим 1, размер 1 мм. Все построения собраны в папку «Резьба крышек/горловин — наружная · D40 мм · P4 мм · 1 заход · Правая (R)»
+  ThreadId_ru=b76a3145735a437dabbeb8cbc19778a7
+  VerifiedFeatures_ru=29
+  VolumeCm3_ru=55.72978461245916
+  Artifact_ru=C:\1\Helivanta-2.7.198\test-results\inventor-runtime-audit\run-20261104-193058-911\20261104-193059-capneck-folder-localization-ru.ipt
+
+[PASS] TAPERED-NPT-TABLE-RUNTIME (6003 ms)
+Таблица NPT designation=1 1/2; ThreadId=17b474fe38dd4f76ac6823f3cf892ea3; 
+  BrowserNodesVisited=129
+  BrowserNativeObjectReadFailures=0
+  BrowserFolderNativeTypes=1
+  BrowserRootFoldersVisited=1
+  ExpectedFolderLabelFound=True
+  ExpectedFolderExactRootMatches=1
+  ExpectedFolderNumberedDuplicates=0
+  SurfaceBodyCount=1
+  FaceCount=26
+  EdgeCount=57
+  CoilFeatureCount=1
+  LoftFeatureCount=1
+  SweepFeatureCount=0
+  VolumeCm3=58.90634356203938
+  IPT: C:\1\Helivanta-2.7.198\test-results\inventor-runtime-audit\run-20261104-193058-911\20261104-193059-tapered-npt.ipt
+
+[PASS] TAPERED-GOST-6211-EXTERNAL-R-BUILD-EDIT-UNDO (21238 ms)
+R 1/2 GOST 6211-81 build/edit/Undo on Inventor B-rep; native JIS Taper is only the hidden exact-pitch carrier; R/Rc callout and ID 9 retained; no warnings
+  CoilTaperAngleRadians=0.03123983
+  ProfileMapping=JIS-compatible axis-oriented section; conicity applied only by Coil.TaperAngle; GOST rounds chorded at 0.005 mm
+  GOSTFilletMaxChordErrorMm=0.005
+  CanUndoImmediatelyAfterEdit=True
+  CommittedTransactionsImmediatelyAfterEdit=count=3; order=enum[1]=54967:Helivanta: построение резьбы || enum[2]=56307:Обновить документ детали || enum[3]=56311:Helivanta: редактирование резьбы 8ec28a8e415d4db5b4acf03ff68bf79b
+  CanUndoExactEditAfterReadOnlyVerification=True
+  CommittedTransactionsAfterReadOnlyVerification=count=3; order=enum[1]=54967:Helivanta: построение резьбы || enum[2]=56307:Обновить документ детали || enum[3]=56311:Helivanta: редактирование резьбы 8ec28a8e415d4db5b4acf03ff68bf79b
+  BrowserNodesVisited=129
+  BrowserNativeObjectReadFailures=0
+  BrowserFolderNativeTypes=1
+  BrowserRootFoldersVisited=1
+  ExpectedFolderLabelFound=True
+  ExpectedFolderExactRootMatches=1
+  ExpectedFolderNumberedDuplicates=0
+  GostPipeDesignation=R 1/2
+  GostPipePitchMm=1.814
+  GostPipeTaperRatio=1:16
+  GostPipeProfileAngle=55°
+  MetadataThreadId=8ec28a8e415d4db5b4acf03ff68bf79b
+  GeometryChangedAfterEdit=True
+  UndoRestoredFullSnapshot=True
+  EditWarning=
+  SurfaceBodyCount=1
+  FaceCount=40
+  EdgeCount=105
+  CoilFeatureCount=1
+  LoftFeatureCount=1
+  SweepFeatureCount=0
+  VolumeCm3=11.667563291065369
+  IPT: C:\1\Helivanta-2.7.198\test-results\inventor-runtime-audit\run-20261104-193058-911\20261104-193059-gost-6211-external-r-edit-undo.ipt
+
+[PASS] TAPERED-GOST-6211-INTERNAL-RC-BUILD-EDIT-UNDO (25275 ms)
+Rc 1/2 GOST 6211-81 build/edit/Undo on Inventor B-rep; native JIS Taper is only the hidden exact-pitch carrier; R/Rc callout and ID 9 retained; no warnings
+  CoilTaperAngleRadians=-0.03123983
+  ProfileMapping=JIS-compatible axis-oriented section; conicity applied only by Coil.TaperAngle; GOST rounds chorded at 0.005 mm
+  GOSTFilletMaxChordErrorMm=0.005
+  CanUndoImmediatelyAfterEdit=True
+  CommittedTransactionsImmediatelyAfterEdit=count=3; order=enum[1]=57817:Helivanta: построение резьбы || enum[2]=59157:Обновить документ детали || enum[3]=59161:Helivanta: редактирование резьбы 6640b67db702412d8a75a35a8e4190bc
+  CanUndoExactEditAfterReadOnlyVerification=True
+  CommittedTransactionsAfterReadOnlyVerification=count=3; order=enum[1]=57817:Helivanta: построение резьбы || enum[2]=59157:Обновить документ детали || enum[3]=59161:Helivanta: редактирование резьбы 6640b67db702412d8a75a35a8e4190bc
+  BrowserNodesVisited=129
+  BrowserNativeObjectReadFailures=0
+  BrowserFolderNativeTypes=1
+  BrowserRootFoldersVisited=1
+  ExpectedFolderLabelFound=True
+  ExpectedFolderExactRootMatches=1
+  ExpectedFolderNumberedDuplicates=0
+  GostPipeDesignation=Rc 1/2
+  GostPipePitchMm=1.814
+  GostPipeTaperRatio=1:16
+  GostPipeProfileAngle=55°
+  MetadataThreadId=6640b67db702412d8a75a35a8e4190bc
+  GeometryChangedAfterEdit=True
+  UndoRestoredFullSnapshot=True
+  EditWarning=
+  SurfaceBodyCount=1
+  FaceCount=45
+  EdgeCount=114
+  CoilFeatureCount=1
+  LoftFeatureCount=1
+  SweepFeatureCount=0
+  VolumeCm3=12.72711860996452
+  IPT: C:\1\Helivanta-2.7.198\test-results\inventor-runtime-audit\run-20261104-193058-911\20261104-193059-gost-6211-internal-rc-edit-undo.ipt
+
+Coverage / limitations:
+- Проверяются реальные Inventor B-rep операции для девяти цилиндрических семейств стандартных профилей (ID 0-8); отдельный runtime контроль ID, количеств и уникальных/общих пар независимых ГОСТ Tr/S каталогов относительно DIN; наружная ГОСТ Tr 32x3 с разрешённой многозаходностью (P3, n=2), сменой числа заходов, аварийным откатом и Undo; наружная ГОСТ S 30x3 с редактированием на другой табличный шаг, аварийным откатом и Undo; внутренние ГОСТ Tr 20x2 и ГОСТ S 20x2 с редактированием, левым направлением, зеркальным профилем ГОСТ S и восстановлением исходного B-rep через Undo; отдельный нормативный контроль 16 строк ГОСТ 6211-81 R/Rc, профиля 55°, конусности 1:16 и отказа для Rp/G; наружная R и внутренняя Rc с реальным Inventor build/edit/Undo и сохранением ID 9/ThreadId/метаданных; два независимых ГОСТ метрических ThreadId на разных телах с последовательным редактированием каждого; Cap/Neck с вентиляционными каналами; коническая NPT-резьба по фактической таблице Inventor; COM identity; вложенность папки сбега в папку резьбы; свёрнутое состояние и скрытая видимость WorkPlane/PlanarSketch.
+- Локализация: проверяются реальные RU/EN resource lookups для StatusBarText, Cap/Neck summary и accessibility-описаний подтверждений; отдельный runtime case перечитывает сохранённые Settings и через ту же production policy, что используется при первом Load главного окна, проверяет все 9 элементов списка Template в RU и EN, порядок, отсутствие кириллической утечки в EN и совпадение с языком настроек. Отдельный live Inventor сценарий строит две независимые Cap/Neck детали с явными языками папки en и ru и проверяет точные имена корневых BrowserFolder плюс COM membership всех feature/metadata nodes. Основной Cap/Neck сценарий дополнительно проверяет язык активного интерфейса, противоположный сохранённый язык модели при редактировании, P4.0→P4.2→P4.4 и точный Undo. DisplayCulture (RU comma / EN dot) проверяется без изменения пользовательских настроек. Runtime policy cases также проверяют положительную BrowserFolder COM identity (включая прямую идентичность NativeObject с BrowserFolder API object), отказ при name-only/unavailable identity и запрет ремонта по partial/null-child BrowserTree snapshot. Визуальное обновление открытых WinForms layout/paint состояний не эмулируется этим policy case; если требуется пиксельная проверка, она остаётся отдельным UI Automation уровнем.
+- BrowserFolder rename: отдельный fault-injection сценарий заставляет тестовый setter изменить имя и затем выбросить исключение; проверяются восстановление старого имени по readback и сохранение mutation flag, который запрещает best-effort commit после возможной COM-мутации. Пользовательский документ для этого сценария не изменяется.
+- BrowserFolder inventory: проверяются уникальное имя при наличии базовой папки и суффиксов, ровно одно точное совпадение, отказ при дубликатах и injected enumeration failure. Production code не подменяет недоступный COM-инвентарь базовым именем и не создаёт новую папку после неуверенного fallback lookup.
+- Непредсказуемые COM-сбои NativeObject/BrowserPane и отказ GetIUnknownForObject нельзя безопасно инициировать в живом Inventor без специального fault-injection shim. Проверяются штатные COM identity и полнота фактического обхода TopNode.BrowserFolders и BrowserTree.
+- Восстановление выбора в диалогах проверяет уникальность BindKeyToObject и фактический состав SelectSet по COM identity; отдельный policy case покрывает неоднозначный ключ, устаревший Edge fallback, неполный снимок и недоступность identity. Реальный искусственный отказ Inventor SelectSet в этом runner не инжектируется.
+- Автоматизация не кликает по WinForms диалогам и не оценивает визуальную компоновку окон. Для этого нужен отдельный UI Automation этап; текущий запуск не подтверждает расположение кнопок и поведение модальных окон.
+- Скрипт не вызывает Marshal.FinalReleaseComObject для объектов, принадлежащих Inventor, чтобы не повредить RCW и состояние самого Inventor.
+- Все созданные детали принадлежат запуску Runtime Audit. Успешные сценарии сохраняются в каталоге отчёта; каждый тестовый документ закрывается даже после ошибки. При ошибке закрытия это отражается как FAIL.
+
+JSON: C:\1\Helivanta-2.7.198\test-results\inventor-runtime-audit\run-20261104-193058-911\runtime-audit.json
+Output: C:\1\Helivanta-2.7.198\test-results\inventor-runtime-audit\run-20261104-193058-911
+======================================================
