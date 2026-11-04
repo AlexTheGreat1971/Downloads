@@ -1,0 +1,21 @@
+2026-11-04 21:20:48.665 cleared; openDocuments=1; observedNonSingleCount=false; currentTransaction=Unidentified transaction; trigger=new: Деталь1
+2026-11-04 21:21:04.740 cleared; openDocuments=1; observedNonSingleCount=false; currentTransaction=Unidentified transaction; trigger=new: Деталь2
+2026-11-04 21:21:10.501 cleared; openDocuments=1; observedNonSingleCount=false; currentTransaction=Unidentified transaction; trigger=new: Деталь3
+2026-11-04 21:21:15.519 cleared; openDocuments=1; observedNonSingleCount=false; currentTransaction=Unidentified transaction; trigger=new: Деталь4
+2026-11-04 21:21:20.039 cleared; openDocuments=1; observedNonSingleCount=false; currentTransaction=Unidentified transaction; trigger=new: Деталь5
+2026-11-04 21:21:23.523 cleared; openDocuments=1; observedNonSingleCount=false; currentTransaction=Unidentified transaction; trigger=new: Деталь6
+2026-11-04 21:21:30.041 cleared; openDocuments=1; observedNonSingleCount=false; currentTransaction=Unidentified transaction; trigger=new: Деталь7
+2026-11-04 21:21:44.307 cleared; openDocuments=1; observedNonSingleCount=false; currentTransaction=Unidentified transaction; trigger=new: Деталь8
+2026-11-04 21:22:01.431 cleared; openDocuments=1; observedNonSingleCount=false; currentTransaction=Unidentified transaction; trigger=new: Деталь9
+2026-11-04 21:22:13.951 cleared; openDocuments=1; observedNonSingleCount=false; currentTransaction=Unidentified transaction; trigger=new: Деталь10
+2026-11-04 21:22:18.207 cleared; openDocuments=1; observedNonSingleCount=false; currentTransaction=Unidentified transaction; trigger=new: Деталь11
+2026-11-04 21:22:27.462 cleared; openDocuments=1; observedNonSingleCount=false; currentTransaction=Unidentified transaction; trigger=new: Деталь12
+2026-11-04 21:22:40.646 cleared; openDocuments=1; observedNonSingleCount=false; currentTransaction=Unidentified transaction; trigger=new: Деталь13
+2026-11-04 21:22:50.557 cleared; openDocuments=1; observedNonSingleCount=false; currentTransaction=Unidentified transaction; trigger=new: Деталь14
+2026-11-04 21:23:27.338 failed-after-retries=6; reason=identified-transaction-still-active: Helivanta: резьба крышек/горловин (эксперимент) 9ADFEB2B77; trigger=new: Деталь15
+2026-11-04 21:23:36.997 failed-after-retries=6; reason=identified-transaction-still-active: Helivanta: резьба крышек/горловин (эксперимент) 12F3E62AC6; trigger=new: Деталь16
+2026-11-04 21:23:40.539 failed-after-retries=6; reason=identified-transaction-still-active: Helivanta: резьба крышек/горловин (эксперимент) 915A676FA4; trigger=new: Деталь17
+2026-11-04 21:23:42.790 cleared; openDocuments=1; observedNonSingleCount=false; currentTransaction=Unidentified transaction; trigger=new: Деталь18
+2026-11-04 21:23:48.983 cleared; openDocuments=1; observedNonSingleCount=false; currentTransaction=Unidentified transaction; trigger=new: Деталь19
+2026-11-04 21:24:09.694 cleared; openDocuments=1; observedNonSingleCount=false; currentTransaction=Unidentified transaction; trigger=new: Деталь20
+2026-11-04 21:24:56.865 cleared; openDocuments=1; observedNonSingleCount=false; currentTransaction=Unidentified transaction; trigger=open: C:\1\Тест.ipt
