@@ -1,0 +1,14 @@
+{
+  "Theme": "Dark",
+  "Accent": "Amber",
+  "Language": "ru",
+  "PreviewOpacity": 80,
+  "PreviewLineScale": 100,
+  "AutoPreview": true,
+  "RememberPreview": true,
+  "DefaultStandard": "ISO",
+  "DefaultTechnology": "Metal",
+  "DefaultExternal": true,
+  "DefaultRightHand": true,
+  "Tooltips": true
+}

@@ -1,0 +1,18 @@
+2026-11-04T19:25:10.3855599Z | stage=Settings.LanguageButton.Click | selected=en | current=ru
+2026-11-04T19:25:10.4000052Z | stage=Settings.LanguageSelected | selected=en | current=ru
+2026-11-04T19:25:10.4008284Z | stage=Settings.LanguagePreviewSnapshot | selected=en | current=ru | visibleTextControls=30 | visibleTextWithCyrillic=1 | root="Helivanta Settings" | sample0="Appearance and behavior" | sample1="Apply" | sample2="Cancel" | sample3="Defaults" | sample4="RU  Русский" | sample5="EN  English"
+2026-11-04T19:25:10.4012711Z | stage=Settings.LanguagePreviewUpdated | selected=en | current=ru
+2026-11-04T19:25:11.7497424Z | stage=Settings.Apply.BeforeSave | selected=en | current=ru
+2026-11-04T19:25:12.1440242Z | stage=Settings.Apply.AfterSave | selected=en | current=en
+2026-11-04T19:25:12.1530258Z | stage=ThreadDialog.SettingsDialog.ReturnedOK | selected=en | current=en
+2026-11-04T19:25:12.2146273Z | stage=ThreadDialog.LanguageRefreshCompleted | selected=en | current=en
+2026-11-04T19:25:12.2149572Z | stage=ThreadDialog.LanguageRefreshSnapshot | selected=en | current=en | visibleTextControls=70 | visibleTextWithCyrillic=2 | root="Helivanta — Physical Thread" | sample0="Build" | sample1="" | sample2="" | sample3="" | sample4="Exit"
+2026-11-04T19:25:18.2950632Z | stage=Settings.LanguageButton.Click | selected=ru | current=en
+2026-11-04T19:25:18.3087911Z | stage=Settings.LanguageSelected | selected=ru | current=en
+2026-11-04T19:25:18.3090305Z | stage=Settings.LanguagePreviewSnapshot | selected=ru | current=en | visibleTextControls=30 | visibleTextWithCyrillic=24 | root="Настройки Helivanta" | sample0="Внешний вид и поведение" | sample1="Применить" | sample2="Отмена" | sample3="По умолчанию" | sample4="RU  Русский" | sample5="EN  English"
+2026-11-04T19:25:18.3093538Z | stage=Settings.LanguagePreviewUpdated | selected=ru | current=en
+2026-11-04T19:25:19.2891370Z | stage=Settings.Apply.BeforeSave | selected=ru | current=en
+2026-11-04T19:25:19.6435371Z | stage=Settings.Apply.AfterSave | selected=ru | current=ru
+2026-11-04T19:25:19.6529516Z | stage=ThreadDialog.SettingsDialog.ReturnedOK | selected=ru | current=ru
+2026-11-04T19:25:19.7242128Z | stage=ThreadDialog.LanguageRefreshCompleted | selected=ru | current=ru
+2026-11-04T19:25:19.7245414Z | stage=ThreadDialog.LanguageRefreshSnapshot | selected=ru | current=ru | visibleTextControls=70 | visibleTextWithCyrillic=54 | root="Helivanta — физическая резьба" | sample0="Построить" | sample1="" | sample2="" | sample3="" | sample4="Выход"
