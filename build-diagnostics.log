@@ -1,0 +1,724 @@
+[Helivanta.UIException] 2026-11-06T06:34:00.4731827Z
+Context: ThreadEditService.TryReplace; stage=построение новой геометрии с шагом 2 мм; transactionOpened=True; rollbackVerified=True; modelSnapshotVerified=True; modelSnapshotFailure=abortSucceeded=True; updateSucceeded=True; activeDocumentMatches=True; restoredSnapshotCaptured=True; original=document={1C583697-4098-A05F-BBB2-70803352C879}; bodies=1; faces=28; edges=66; workPlanes=40; sketches=38; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=64.05613458810518; volumeCm3=31.071645263888755; centerOfMassCm=0.0002152081079763546,-0.0008134497694076776,2.219165634723345; restored=document={1C583697-4098-A05F-BBB2-70803352C879}; bodies=1; faces=28; edges=66; workPlanes=40; sketches=38; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=64.05613458810518; volumeCm3=31.071645263888755; centerOfMassCm=0.0002152081079763546,-0.0008134497694076776,2.219165634723345; recovery=Транзакция отменена; исходная группа проверена по метаданным и восстановлена.
+ThreadPro.HelivantaOperationException: WallChamfer.DepthInvalid: Построение запрещено: размер включённой фаски должен быть больше нуля. Модель не изменена.
+   at ThreadPro.ThreadWallThicknessGuard.ValidateOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.ValidateTargetWallThicknessOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.Build(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadEditService.TryReplace(Application app, String threadId, ThreadParams replacement, ThreadTarget& rebuiltTarget, String& warning, String& error)
+---
+[Helivanta.UIException] 2026-11-06T06:34:50.3240269Z
+Context: ThreadEditService.TryReplace; stage=построение новой геометрии с шагом 2 мм; transactionOpened=True; rollbackVerified=True; modelSnapshotVerified=True; modelSnapshotFailure=abortSucceeded=True; updateSucceeded=True; activeDocumentMatches=True; restoredSnapshotCaptured=True; original=document={332F82C0-4026-710A-AB86-20A19B4B4920}; bodies=1; faces=41; edges=83; workPlanes=40; sketches=38; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=64.04261803583745; volumeCm3=31.0740529116985; centerOfMassCm=1.2265117542074696E-05,-0.0007627999491532316,2.21927358367819; restored=document={332F82C0-4026-710A-AB86-20A19B4B4920}; bodies=1; faces=41; edges=83; workPlanes=40; sketches=38; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=64.04261803583745; volumeCm3=31.0740529116985; centerOfMassCm=1.2265117542074696E-05,-0.0007627999491532316,2.21927358367819; recovery=Транзакция отменена; исходная группа проверена по метаданным и восстановлена.
+ThreadPro.HelivantaOperationException: WallChamfer.DepthInvalid: Построение запрещено: размер включённой фаски должен быть больше нуля. Модель не изменена.
+   at ThreadPro.ThreadWallThicknessGuard.ValidateOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.ValidateTargetWallThicknessOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.Build(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadEditService.TryReplace(Application app, String threadId, ThreadParams replacement, ThreadTarget& rebuiltTarget, String& warning, String& error)
+---
+[Helivanta.UIException] 2026-11-06T06:35:35.6784447Z
+Context: ThreadBuilder.GetUserFacingError.UnclassifiedException
+System.InvalidOperationException: Слишком короткая длина резьбы для выбранного шага.
+   at ThreadPro.ThreadBuilder.BuildAfterWallThicknessValidation(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadBuilder.BuildAll(Application app, IList`1 targets, ThreadParams p)
+---
+[Helivanta.UIException] 2026-11-06T06:35:57.1423419Z
+Context: ThreadEditService.TryReplace; stage=построение новой геометрии с шагом 2 мм; transactionOpened=True; rollbackVerified=True; modelSnapshotVerified=True; modelSnapshotFailure=abortSucceeded=True; updateSucceeded=True; activeDocumentMatches=True; restoredSnapshotCaptured=True; original=document={232B0034-4A00-CE3C-EE4F-769E9DE1A2F9}; bodies=1; faces=28; edges=66; workPlanes=40; sketches=38; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=64.05613458810518; volumeCm3=31.071645263888755; centerOfMassCm=0.0002152081079763546,-0.0008134497694076776,2.219165634723345; restored=document={232B0034-4A00-CE3C-EE4F-769E9DE1A2F9}; bodies=1; faces=28; edges=66; workPlanes=40; sketches=38; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=64.05613458810518; volumeCm3=31.071645263888755; centerOfMassCm=0.0002152081079763546,-0.0008134497694076776,2.219165634723345; recovery=Транзакция отменена; исходная группа проверена по метаданным и восстановлена.
+ThreadPro.HelivantaOperationException: WallChamfer.DepthInvalid: Построение запрещено: размер включённой фаски должен быть больше нуля. Модель не изменена.
+   at ThreadPro.ThreadWallThicknessGuard.ValidateOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.ValidateTargetWallThicknessOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.Build(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadEditService.TryReplace(Application app, String threadId, ThreadParams replacement, ThreadTarget& rebuiltTarget, String& warning, String& error)
+---
+[Helivanta.UIException] 2026-11-06T06:37:26.6750739Z
+Context: ThreadEditService.TryReplace; stage=построение новой геометрии с шагом 3 мм; transactionOpened=True; rollbackVerified=True; modelSnapshotVerified=True; modelSnapshotFailure=abortSucceeded=True; updateSucceeded=True; activeDocumentMatches=True; restoredSnapshotCaptured=True; original=document={1A8A17F2-4D82-E212-188A-589BF310C00B}; bodies=1; faces=24; edges=54; workPlanes=35; sketches=33; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=64.99773121749297; volumeCm3=30.950023255346185; centerOfMassCm=-0.000754840456709255,-2.0777739481916992E-05,2.213875916153076; restored=document={1A8A17F2-4D82-E212-188A-589BF310C00B}; bodies=1; faces=24; edges=54; workPlanes=35; sketches=33; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=64.99773121749297; volumeCm3=30.950023255346185; centerOfMassCm=-0.000754840456709255,-2.0777739481916992E-05,2.213875916153076; recovery=Транзакция отменена; исходная группа проверена по метаданным и восстановлена.
+ThreadPro.HelivantaOperationException: WallChamfer.DepthInvalid: Построение запрещено: размер включённой фаски должен быть больше нуля. Модель не изменена.
+   at ThreadPro.ThreadWallThicknessGuard.ValidateOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.ValidateTargetWallThicknessOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.Build(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadEditService.TryReplace(Application app, String threadId, ThreadParams replacement, ThreadTarget& rebuiltTarget, String& warning, String& error)
+---
+[Helivanta.UIException] 2026-11-06T06:38:15.0661573Z
+Context: ThreadEditService.TryReplace; stage=построение новой геометрии с шагом 6 мм; transactionOpened=True; rollbackVerified=True; modelSnapshotVerified=True; modelSnapshotFailure=abortSucceeded=True; updateSucceeded=True; activeDocumentMatches=True; restoredSnapshotCaptured=True; original=document={51C0ED25-4AFF-BD97-6881-419AC9C14277}; bodies=1; faces=24; edges=54; workPlanes=27; sketches=25; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=63.8380774713789; volumeCm3=30.180213304071863; centerOfMassCm=-0.00011430969461375484,-0.00823176017434062,2.1828638628594828; restored=document={51C0ED25-4AFF-BD97-6881-419AC9C14277}; bodies=1; faces=24; edges=54; workPlanes=27; sketches=25; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=63.8380774713789; volumeCm3=30.180213304071863; centerOfMassCm=-0.00011430969461375484,-0.00823176017434062,2.1828638628594828; recovery=Транзакция отменена; исходная группа проверена по метаданным и восстановлена.
+ThreadPro.HelivantaOperationException: WallChamfer.DepthInvalid: Построение запрещено: размер включённой фаски должен быть больше нуля. Модель не изменена.
+   at ThreadPro.ThreadWallThicknessGuard.ValidateOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.ValidateTargetWallThicknessOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.Build(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadEditService.TryReplace(Application app, String threadId, ThreadParams replacement, ThreadTarget& rebuiltTarget, String& warning, String& error)
+---
+[Helivanta.UIException] 2026-11-06T06:38:21.6840293Z
+Context: ThreadEditService.TryReplace; stage=построение новой геометрии с шагом 6 мм; transactionOpened=True; rollbackVerified=True; modelSnapshotVerified=True; modelSnapshotFailure=abortSucceeded=True; updateSucceeded=True; activeDocumentMatches=True; restoredSnapshotCaptured=True; original=document={51C0ED25-4AFF-BD97-6881-419AC9C14277}; bodies=1; faces=24; edges=54; workPlanes=27; sketches=25; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=63.8380774713789; volumeCm3=30.180213304071863; centerOfMassCm=-0.00011430969461375484,-0.00823176017434062,2.1828638628594828; restored=document={51C0ED25-4AFF-BD97-6881-419AC9C14277}; bodies=1; faces=24; edges=54; workPlanes=27; sketches=25; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=63.8380774713789; volumeCm3=30.180213304071863; centerOfMassCm=-0.00011430969461375484,-0.00823176017434062,2.1828638628594828; recovery=Транзакция отменена; исходная группа проверена по метаданным и восстановлена.
+System.InvalidOperationException: Слишком короткая длина резьбы для выбранного шага.
+   at ThreadPro.ThreadBuilder.BuildAfterWallThicknessValidation(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadBuilder.Build(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadEditService.TryReplace(Application app, String threadId, ThreadParams replacement, ThreadTarget& rebuiltTarget, String& warning, String& error)
+---
+[Helivanta.UIException] 2026-11-06T06:39:00.0719136Z
+Context: ThreadEditService.TryReplace; stage=построение новой геометрии с шагом 2 мм; transactionOpened=True; rollbackVerified=True; modelSnapshotVerified=True; modelSnapshotFailure=abortSucceeded=True; updateSucceeded=True; activeDocumentMatches=True; restoredSnapshotCaptured=True; original=document={DBE72CB3-4884-8D16-9A0E-A7BD609EF5C7}; bodies=1; faces=47; edges=97; workPlanes=40; sketches=38; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=62.34100487883768; volumeCm3=31.239653490271944; centerOfMassCm=6.71218286852147E-05,-0.0004965197461620218,2.226386154905703; restored=document={DBE72CB3-4884-8D16-9A0E-A7BD609EF5C7}; bodies=1; faces=47; edges=97; workPlanes=40; sketches=38; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=62.34100487883768; volumeCm3=31.239653490271944; centerOfMassCm=6.71218286852147E-05,-0.0004965197461620218,2.226386154905703; recovery=Транзакция отменена; исходная группа проверена по метаданным и восстановлена.
+ThreadPro.HelivantaOperationException: WallChamfer.DepthInvalid: Построение запрещено: размер включённой фаски должен быть больше нуля. Модель не изменена.
+   at ThreadPro.ThreadWallThicknessGuard.ValidateOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.ValidateTargetWallThicknessOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.Build(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadEditService.TryReplace(Application app, String threadId, ThreadParams replacement, ThreadTarget& rebuiltTarget, String& warning, String& error)
+---
+[Helivanta.UIException] 2026-11-06T06:40:06.2646487Z
+Context: ThreadEditService.TryReplace; stage=построение новой геометрии с шагом 2 мм; transactionOpened=True; rollbackVerified=True; modelSnapshotVerified=True; modelSnapshotFailure=abortSucceeded=True; updateSucceeded=True; activeDocumentMatches=True; restoredSnapshotCaptured=True; original=document={67B280BA-4CCF-A99D-0FAF-6E808A133E91}; bodies=1; faces=28; edges=66; workPlanes=40; sketches=38; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=64.05613458810518; volumeCm3=31.071645263888755; centerOfMassCm=0.0002152081079763546,-0.0008134497694076776,2.219165634723345; restored=document={67B280BA-4CCF-A99D-0FAF-6E808A133E91}; bodies=1; faces=28; edges=66; workPlanes=40; sketches=38; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=64.05613458810518; volumeCm3=31.071645263888755; centerOfMassCm=0.0002152081079763546,-0.0008134497694076776,2.219165634723345; recovery=Транзакция отменена; исходная группа проверена по метаданным и восстановлена.
+ThreadPro.HelivantaOperationException: WallChamfer.DepthInvalid: Построение запрещено: размер включённой фаски должен быть больше нуля. Модель не изменена.
+   at ThreadPro.ThreadWallThicknessGuard.ValidateOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.ValidateTargetWallThicknessOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.Build(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadEditService.TryReplace(Application app, String threadId, ThreadParams replacement, ThreadTarget& rebuiltTarget, String& warning, String& error)
+---
+[Helivanta.UIException] 2026-11-06T06:40:52.3330798Z
+Context: ThreadEditService.TryReplace; stage=построение новой геометрии с шагом 3 мм; transactionOpened=True; rollbackVerified=True; modelSnapshotVerified=True; modelSnapshotFailure=abortSucceeded=True; updateSucceeded=True; activeDocumentMatches=True; restoredSnapshotCaptured=True; original=document={333A3902-45C4-B251-447A-5499CF86FCAD}; bodies=1; faces=41; edges=97; workPlanes=41; sketches=39; revolve=0; chamfer=0; coil=2; sweep=0; loft=4; areaCm2=71.17712973301276; volumeCm3=35.20197980514216; centerOfMassCm=-0.0013841499671465483,0.001994747564401519,2.2121669591176505; restored=document={333A3902-45C4-B251-447A-5499CF86FCAD}; bodies=1; faces=41; edges=97; workPlanes=41; sketches=39; revolve=0; chamfer=0; coil=2; sweep=0; loft=4; areaCm2=71.17712973301276; volumeCm3=35.20197980514216; centerOfMassCm=-0.0013841499671465483,0.001994747564401519,2.2121669591176505; recovery=Транзакция отменена; исходная группа проверена по метаданным и восстановлена.
+ThreadPro.HelivantaOperationException: WallChamfer.DepthInvalid: Построение запрещено: размер включённой фаски должен быть больше нуля. Модель не изменена.
+   at ThreadPro.ThreadWallThicknessGuard.ValidateOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.ValidateTargetWallThicknessOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.Build(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadEditService.TryReplace(Application app, String threadId, ThreadParams replacement, ThreadTarget& rebuiltTarget, String& warning, String& error)
+---
+[Helivanta.UIException] 2026-11-06T06:41:51.2449796Z
+Context: ThreadEditService.TryReplace; stage=построение новой геометрии с шагом 3 мм; transactionOpened=True; rollbackVerified=True; modelSnapshotVerified=True; modelSnapshotFailure=abortSucceeded=True; updateSucceeded=True; activeDocumentMatches=True; restoredSnapshotCaptured=True; original=document={2B3AE77E-4C4A-3064-021E-1A83B5D31FA4}; bodies=1; faces=24; edges=54; workPlanes=35; sketches=33; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=68.83917059766348; volumeCm3=30.578057982463946; centerOfMassCm=-0.0006460610399534862,0.0002641964778501866,2.1990614952122964; restored=document={2B3AE77E-4C4A-3064-021E-1A83B5D31FA4}; bodies=1; faces=24; edges=54; workPlanes=35; sketches=33; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=68.83917059766348; volumeCm3=30.578057982463946; centerOfMassCm=-0.0006460610399534862,0.0002641964778501866,2.1990614952122964; recovery=Транзакция отменена; исходная группа проверена по метаданным и восстановлена.
+ThreadPro.HelivantaOperationException: WallChamfer.DepthInvalid: Построение запрещено: размер включённой фаски должен быть больше нуля. Модель не изменена.
+   at ThreadPro.ThreadWallThicknessGuard.ValidateOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.ValidateTargetWallThicknessOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.Build(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadEditService.TryReplace(Application app, String threadId, ThreadParams replacement, ThreadTarget& rebuiltTarget, String& warning, String& error)
+---
+[Helivanta.UIException] 2026-11-06T06:46:35.5008183Z
+Context: ThreadDialog.TryBeginEdit
+ThreadPro.RuntimeAuditInjectedThreadDialogEditParameterLoadException: Runtime Audit injected a one-shot failure after the selected thread's parameters had partially populated the edit form.
+   at ThreadPro.ThreadDialog.LoadEditParameters(ThreadParametersSnapshot p, String auditTargetThreadId)
+   at ThreadPro.ThreadDialog.TryBeginEditFromLoadedGroup(PartDocument doc, ThreadMetadataGroup group, String& error)
+---
+[Helivanta.UIException] 2026-11-06T06:46:58.7520891Z
+Context: PackagingThreadDialog.BeginEditFromMetadata
+ThreadPro.RuntimeAuditInjectedThreadDialogEditParameterLoadException: Runtime Audit injected a one-shot failure after the selected thread's parameters had partially populated the edit form.
+   at ThreadPro.PackagingThreadDialog.BeginEditFromMetadata(ThreadMetadataGroup group, String& error)
+---
+[Helivanta.UIException] 2026-11-06T06:47:25.3715887Z
+Context: Suppressed/ThreadBuilder.CreateNamedBrowserFolder.BrowserPaneRefresh
+System.Runtime.InteropServices.COMException (0x80004005): Неопознанная ошибка (0x80004005 (E_FAIL))
+   at System.RuntimeType.InvokeMember(String name, BindingFlags bindingFlags, Binder binder, Object target, Object[] providedArgs, ParameterModifier[] modifiers, CultureInfo culture, String[] namedParams)
+   at System.RuntimeType.ForwardCallToInvokeMember(String memberName, BindingFlags flags, Object target, Object[] aArgs, Boolean[] aArgsIsByRef, Int32[] aArgsWrapperTypes, Type[] aArgsTypes, Type retType)
+   at Inventor.BrowserPaneObject.Refresh()
+   at ThreadPro.ThreadBuilder.CreateNamedBrowserFolder(Application app, PartDocument doc, BrowserPane pane, BrowserNode anchorBeforeFolder, IList`1 created, String baseName, Boolean exposeHistoryForMapping, Boolean allowExistingThreadFolderRepair, Boolean packagingThreadFolder, Boolean bestEffortExistingFolderRepairFailure)
+---
+[Helivanta.UIException] 2026-11-06T06:50:05.7723728Z
+Context: NativeThreadConversionService.StartEdgeAnalyze
+System.InvalidOperationException: Не удалось определить радиус выбранного торца конуса.
+   at ThreadPro.ThreadBuilder.Analyze(Application app, Edge edge)
+   at ThreadPro.NativeThreadConversionService.TryResolveStartEdge(Application app, ThreadFeature feature, Boolean expectedExternal, Edge& chosenEdge, ThreadTarget& chosenTarget, String& error, Boolean preferFreeEnd)
+---
+[Helivanta.DiagnosticMessage] 2026-11-06T06:50:05.7739331Z
+Context: NativeThreadConversionService.StartEdgeInspectionIncomplete
+Неполная проверка ThreadFeature.StartEdge: прочитано элементов 1 из 1, круговых рёбер проверено 1. Причина: Не удалось проверить одну из круговых границ..
+---
+[Helivanta.DiagnosticMessage] 2026-11-06T06:50:05.7801878Z
+Context: NativeThreadConversionService.StartEdgeResolutionFailed
+StartEdge failure=Неполная проверка ThreadFeature.StartEdge: прочитано элементов 1 из 1, круговых рёбер проверено 1. Причина: Не удалось проверить одну из круговых границ..; ThreadedFace fallback failure=ThreadedFace не содержит распознаваемой цилиндрической грани (граней: 2).
+---
+[Helivanta.DiagnosticMessage] 2026-11-06T06:50:05.7811760Z
+Context: NativeThreadOverlapGuard.Enumerate.Interval
+Не удалось безопасно определить начальное ребро штатной резьбы по данным StartEdge и ThreadedFace Inventor. Преобразование не начато. Подробности записаны в журнал диагностики.
+---
+[Helivanta.UIException] 2026-11-06T06:50:58.7964895Z
+Context: ThreadEditService.TryReplace; stage=построение новой геометрии с шагом 1.814 мм; transactionOpened=True; rollbackVerified=True; modelSnapshotVerified=True; modelSnapshotFailure=abortSucceeded=True; updateSucceeded=True; activeDocumentMatches=True; restoredSnapshotCaptured=True; original=document={E6A21E07-428A-272A-27DA-969B8AB6EB2D}; bodies=1; faces=35; edges=92; workPlanes=28; sketches=26; revolve=1; chamfer=0; coil=1; sweep=0; loft=1; areaCm2=32.78917550894827; volumeCm3=10.759972380760571; centerOfMassCm=0.0007366655899160738,0.0007718065033615833,1.4443843823543803; restored=document={E6A21E07-428A-272A-27DA-969B8AB6EB2D}; bodies=1; faces=35; edges=92; workPlanes=28; sketches=26; revolve=1; chamfer=0; coil=1; sweep=0; loft=1; areaCm2=32.78917550894827; volumeCm3=10.759972380760571; centerOfMassCm=0.0007366655899160738,0.0007718065033615833,1.4443843823543803; recovery=Транзакция отменена; исходная группа проверена по метаданным и восстановлена.
+System.InvalidOperationException: Коническая резьба изменяет твёрдую геометрию: подготовит конус и вырежет физические витки. Сначала покажите предупреждение и получите явное подтверждение пользователя. Деталь не изменена.
+   at ThreadPro.NativeTaperedThreadBuilder.Build(Application app, ThreadTarget source, ThreadParams p)
+   at ThreadPro.ThreadBuilder.BuildAfterWallThicknessValidation(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadBuilder.Build(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadEditService.TryReplace(Application app, String threadId, ThreadParams replacement, ThreadTarget& rebuiltTarget, String& warning, String& error)
+---
+[Helivanta.UIException] 2026-11-06T07:44:57.9793663Z
+Context: ThreadEditService.TryReplace; stage=построение новой геометрии с шагом 2 мм; transactionOpened=True; rollbackVerified=True; modelSnapshotVerified=True; modelSnapshotFailure=abortSucceeded=True; updateSucceeded=True; activeDocumentMatches=True; restoredSnapshotCaptured=True; original=document={2930EC72-4A25-576C-8DD9-14B0CD54B1CF}; bodies=1; faces=28; edges=66; workPlanes=40; sketches=38; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=64.05613458810518; volumeCm3=31.071645263888755; centerOfMassCm=0.0002152081079763546,-0.0008134497694076776,2.219165634723345; restored=document={2930EC72-4A25-576C-8DD9-14B0CD54B1CF}; bodies=1; faces=28; edges=66; workPlanes=40; sketches=38; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=64.05613458810518; volumeCm3=31.071645263888755; centerOfMassCm=0.0002152081079763546,-0.0008134497694076776,2.219165634723345; recovery=Транзакция отменена; исходная группа проверена по метаданным и восстановлена.
+ThreadPro.HelivantaOperationException: WallChamfer.DepthInvalid: Построение запрещено: размер включённой фаски должен быть больше нуля. Модель не изменена.
+   at ThreadPro.ThreadWallThicknessGuard.ValidateOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.ValidateTargetWallThicknessOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.Build(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadEditService.TryReplace(Application app, String threadId, ThreadParams replacement, ThreadTarget& rebuiltTarget, String& warning, String& error)
+---
+[Helivanta.UIException] 2026-11-06T07:46:58.0858795Z
+Context: ThreadEditService.TryReplace; stage=построение новой геометрии с шагом 2 мм; transactionOpened=True; rollbackVerified=True; modelSnapshotVerified=True; modelSnapshotFailure=abortSucceeded=True; updateSucceeded=True; activeDocumentMatches=True; restoredSnapshotCaptured=True; original=document={9795A617-4040-D79A-39ED-C98AF95B85D8}; bodies=1; faces=41; edges=83; workPlanes=40; sketches=38; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=64.04261803583745; volumeCm3=31.0740529116985; centerOfMassCm=1.2265117542074696E-05,-0.0007627999491532316,2.21927358367819; restored=document={9795A617-4040-D79A-39ED-C98AF95B85D8}; bodies=1; faces=41; edges=83; workPlanes=40; sketches=38; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=64.04261803583745; volumeCm3=31.0740529116985; centerOfMassCm=1.2265117542074696E-05,-0.0007627999491532316,2.21927358367819; recovery=Транзакция отменена; исходная группа проверена по метаданным и восстановлена.
+ThreadPro.HelivantaOperationException: WallChamfer.DepthInvalid: Построение запрещено: размер включённой фаски должен быть больше нуля. Модель не изменена.
+   at ThreadPro.ThreadWallThicknessGuard.ValidateOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.ValidateTargetWallThicknessOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.Build(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadEditService.TryReplace(Application app, String threadId, ThreadParams replacement, ThreadTarget& rebuiltTarget, String& warning, String& error)
+---
+[Helivanta.UIException] 2026-11-06T07:49:21.0653458Z
+Context: ThreadEditService.TryReplace; stage=построение новой геометрии с шагом 2 мм; transactionOpened=True; rollbackVerified=True; modelSnapshotVerified=True; modelSnapshotFailure=abortSucceeded=True; updateSucceeded=True; activeDocumentMatches=True; restoredSnapshotCaptured=True; original=document={7E23A917-4C50-B236-70D0-BE92BF174759}; bodies=1; faces=28; edges=66; workPlanes=40; sketches=38; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=64.05613458810518; volumeCm3=31.071645263888755; centerOfMassCm=0.0002152081079763546,-0.0008134497694076776,2.219165634723345; restored=document={7E23A917-4C50-B236-70D0-BE92BF174759}; bodies=1; faces=28; edges=66; workPlanes=40; sketches=38; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=64.05613458810518; volumeCm3=31.071645263888755; centerOfMassCm=0.0002152081079763546,-0.0008134497694076776,2.219165634723345; recovery=Транзакция отменена; исходная группа проверена по метаданным и восстановлена.
+ThreadPro.HelivantaOperationException: WallChamfer.DepthInvalid: Построение запрещено: размер включённой фаски должен быть больше нуля. Модель не изменена.
+   at ThreadPro.ThreadWallThicknessGuard.ValidateOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.ValidateTargetWallThicknessOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.Build(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadEditService.TryReplace(Application app, String threadId, ThreadParams replacement, ThreadTarget& rebuiltTarget, String& warning, String& error)
+---
+[Helivanta.UIException] 2026-11-06T07:51:45.3703728Z
+Context: ThreadEditService.TryReplace; stage=построение новой геометрии с шагом 3 мм; transactionOpened=True; rollbackVerified=True; modelSnapshotVerified=True; modelSnapshotFailure=abortSucceeded=True; updateSucceeded=True; activeDocumentMatches=True; restoredSnapshotCaptured=True; original=document={40943C49-47E9-D6FF-9081-698A77001D5F}; bodies=1; faces=24; edges=54; workPlanes=35; sketches=33; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=64.99773121749297; volumeCm3=30.950023255346185; centerOfMassCm=-0.000754840456709255,-2.0777739481916992E-05,2.213875916153076; restored=document={40943C49-47E9-D6FF-9081-698A77001D5F}; bodies=1; faces=24; edges=54; workPlanes=35; sketches=33; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=64.99773121749297; volumeCm3=30.950023255346185; centerOfMassCm=-0.000754840456709255,-2.0777739481916992E-05,2.213875916153076; recovery=Транзакция отменена; исходная группа проверена по метаданным и восстановлена.
+ThreadPro.HelivantaOperationException: WallChamfer.DepthInvalid: Построение запрещено: размер включённой фаски должен быть больше нуля. Модель не изменена.
+   at ThreadPro.ThreadWallThicknessGuard.ValidateOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.ValidateTargetWallThicknessOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.Build(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadEditService.TryReplace(Application app, String threadId, ThreadParams replacement, ThreadTarget& rebuiltTarget, String& warning, String& error)
+---
+[Helivanta.UIException] 2026-11-06T07:54:32.9883482Z
+Context: ThreadEditService.TryReplace; stage=построение новой геометрии с шагом 6 мм; transactionOpened=True; rollbackVerified=True; modelSnapshotVerified=True; modelSnapshotFailure=abortSucceeded=True; updateSucceeded=True; activeDocumentMatches=True; restoredSnapshotCaptured=True; original=document={46DF2D2D-457C-4C73-68E1-9AA51C65A537}; bodies=1; faces=24; edges=54; workPlanes=27; sketches=25; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=63.8380774713789; volumeCm3=30.180213304071863; centerOfMassCm=-0.00011430969461375484,-0.00823176017434062,2.1828638628594828; restored=document={46DF2D2D-457C-4C73-68E1-9AA51C65A537}; bodies=1; faces=24; edges=54; workPlanes=27; sketches=25; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=63.8380774713789; volumeCm3=30.180213304071863; centerOfMassCm=-0.00011430969461375484,-0.00823176017434062,2.1828638628594828; recovery=Транзакция отменена; исходная группа проверена по метаданным и восстановлена.
+ThreadPro.HelivantaOperationException: WallChamfer.DepthInvalid: Построение запрещено: размер включённой фаски должен быть больше нуля. Модель не изменена.
+   at ThreadPro.ThreadWallThicknessGuard.ValidateOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.ValidateTargetWallThicknessOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.Build(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadEditService.TryReplace(Application app, String threadId, ThreadParams replacement, ThreadTarget& rebuiltTarget, String& warning, String& error)
+---
+[Helivanta.UIException] 2026-11-06T07:56:14.0000251Z
+Context: ThreadEditService.TryReplace; stage=построение новой геометрии с шагом 2 мм; transactionOpened=True; rollbackVerified=True; modelSnapshotVerified=True; modelSnapshotFailure=abortSucceeded=True; updateSucceeded=True; activeDocumentMatches=True; restoredSnapshotCaptured=True; original=document={FD32B71A-49E3-66AE-5D89-2DAAEA70AF22}; bodies=1; faces=47; edges=97; workPlanes=40; sketches=38; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=62.34100487883768; volumeCm3=31.239653490271944; centerOfMassCm=6.71218286852147E-05,-0.0004965197461620218,2.226386154905703; restored=document={FD32B71A-49E3-66AE-5D89-2DAAEA70AF22}; bodies=1; faces=47; edges=97; workPlanes=40; sketches=38; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=62.34100487883768; volumeCm3=31.239653490271944; centerOfMassCm=6.71218286852147E-05,-0.0004965197461620218,2.226386154905703; recovery=Транзакция отменена; исходная группа проверена по метаданным и восстановлена.
+ThreadPro.HelivantaOperationException: WallChamfer.DepthInvalid: Построение запрещено: размер включённой фаски должен быть больше нуля. Модель не изменена.
+   at ThreadPro.ThreadWallThicknessGuard.ValidateOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.ValidateTargetWallThicknessOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.Build(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadEditService.TryReplace(Application app, String threadId, ThreadParams replacement, ThreadTarget& rebuiltTarget, String& warning, String& error)
+---
+[Helivanta.UIException] 2026-11-06T07:58:49.7855603Z
+Context: ThreadEditService.TryReplace; stage=построение новой геометрии с шагом 2 мм; transactionOpened=True; rollbackVerified=True; modelSnapshotVerified=True; modelSnapshotFailure=abortSucceeded=True; updateSucceeded=True; activeDocumentMatches=True; restoredSnapshotCaptured=True; original=document={A92E87E1-43BC-E899-B887-94A61C464A76}; bodies=1; faces=28; edges=66; workPlanes=40; sketches=38; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=64.05613458810518; volumeCm3=31.071645263888755; centerOfMassCm=0.0002152081079763546,-0.0008134497694076776,2.219165634723345; restored=document={A92E87E1-43BC-E899-B887-94A61C464A76}; bodies=1; faces=28; edges=66; workPlanes=40; sketches=38; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=64.05613458810518; volumeCm3=31.071645263888755; centerOfMassCm=0.0002152081079763546,-0.0008134497694076776,2.219165634723345; recovery=Транзакция отменена; исходная группа проверена по метаданным и восстановлена.
+ThreadPro.HelivantaOperationException: WallChamfer.DepthInvalid: Построение запрещено: размер включённой фаски должен быть больше нуля. Модель не изменена.
+   at ThreadPro.ThreadWallThicknessGuard.ValidateOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.ValidateTargetWallThicknessOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.Build(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadEditService.TryReplace(Application app, String threadId, ThreadParams replacement, ThreadTarget& rebuiltTarget, String& warning, String& error)
+---
+[Helivanta.UIException] 2026-11-06T08:00:31.7280457Z
+Context: ThreadEditService.TryReplace; stage=построение новой геометрии с шагом 3 мм; transactionOpened=True; rollbackVerified=True; modelSnapshotVerified=True; modelSnapshotFailure=abortSucceeded=True; updateSucceeded=True; activeDocumentMatches=True; restoredSnapshotCaptured=True; original=document={F2944182-4FAA-CD05-36E9-C1B7D65B60A4}; bodies=1; faces=41; edges=97; workPlanes=41; sketches=39; revolve=0; chamfer=0; coil=2; sweep=0; loft=4; areaCm2=71.17712973301276; volumeCm3=35.20197980514216; centerOfMassCm=-0.0013841499671465483,0.001994747564401519,2.2121669591176505; restored=document={F2944182-4FAA-CD05-36E9-C1B7D65B60A4}; bodies=1; faces=41; edges=97; workPlanes=41; sketches=39; revolve=0; chamfer=0; coil=2; sweep=0; loft=4; areaCm2=71.17712973301276; volumeCm3=35.20197980514216; centerOfMassCm=-0.0013841499671465483,0.001994747564401519,2.2121669591176505; recovery=Транзакция отменена; исходная группа проверена по метаданным и восстановлена.
+ThreadPro.HelivantaOperationException: WallChamfer.DepthInvalid: Построение запрещено: размер включённой фаски должен быть больше нуля. Модель не изменена.
+   at ThreadPro.ThreadWallThicknessGuard.ValidateOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.ValidateTargetWallThicknessOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.Build(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadEditService.TryReplace(Application app, String threadId, ThreadParams replacement, ThreadTarget& rebuiltTarget, String& warning, String& error)
+---
+[Helivanta.UIException] 2026-11-06T08:01:38.2398416Z
+Context: ThreadBuilder.GetUserFacingError.UnclassifiedException
+System.InvalidOperationException: Сочетание диаметра, шага и числа заходов отсутствует в ГОСТ 24739-81. Для многозаходной Tr допускаются только сочетания таблицы 1 (2, 3, 4, 6 или 8 заходов).
+   at ThreadPro.ThreadBuilder.BuildAfterWallThicknessValidation(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadBuilder.BuildAll(Application app, IList`1 targets, ThreadParams p)
+---
+[Helivanta.UIException] 2026-11-06T08:01:59.6214364Z
+Context: ThreadEditService.TryReplace; stage=построение новой геометрии с шагом 3 мм; transactionOpened=True; rollbackVerified=True; modelSnapshotVerified=True; modelSnapshotFailure=abortSucceeded=True; updateSucceeded=True; activeDocumentMatches=True; restoredSnapshotCaptured=True; original=document={9358578C-4362-F0E3-788A-14B415100003}; bodies=1; faces=24; edges=54; workPlanes=35; sketches=33; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=68.83917059766348; volumeCm3=30.578057982463946; centerOfMassCm=-0.0006460610399534862,0.0002641964778501866,2.1990614952122964; restored=document={9358578C-4362-F0E3-788A-14B415100003}; bodies=1; faces=24; edges=54; workPlanes=35; sketches=33; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=68.83917059766348; volumeCm3=30.578057982463946; centerOfMassCm=-0.0006460610399534862,0.0002641964778501866,2.1990614952122964; recovery=Транзакция отменена; исходная группа проверена по метаданным и восстановлена.
+ThreadPro.HelivantaOperationException: WallChamfer.DepthInvalid: Построение запрещено: размер включённой фаски должен быть больше нуля. Модель не изменена.
+   at ThreadPro.ThreadBuilder.ValidateTargetWallThicknessOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.Build(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadEditService.TryReplace(Application app, String threadId, ThreadParams replacement, ThreadTarget& rebuiltTarget, String& warning, String& error)
+---
+[Helivanta.UIException] 2026-11-06T08:08:08.2478116Z
+Context: ThreadDialog.TryBeginEdit
+ThreadPro.RuntimeAuditInjectedThreadDialogEditParameterLoadException: Runtime Audit injected a one-shot failure after the selected thread's parameters had partially populated the edit form.
+   at ThreadPro.ThreadDialog.LoadEditParameters(ThreadParametersSnapshot p, String auditTargetThreadId)
+   at ThreadPro.ThreadDialog.TryBeginEditFromLoadedGroup(PartDocument doc, ThreadMetadataGroup group, String& error)
+---
+[Helivanta.UIException] 2026-11-06T08:08:32.3641129Z
+Context: PackagingThreadDialog.BeginEditFromMetadata
+ThreadPro.RuntimeAuditInjectedThreadDialogEditParameterLoadException: Runtime Audit injected a one-shot failure after the selected thread's parameters had partially populated the edit form.
+   at ThreadPro.PackagingThreadDialog.BeginEditFromMetadata(ThreadMetadataGroup group, String& error)
+---
+[Helivanta.UIException] 2026-11-06T08:09:01.2767948Z
+Context: Suppressed/ThreadBuilder.CreateNamedBrowserFolder.BrowserPaneRefresh
+System.Runtime.InteropServices.COMException (0x80004005): Неопознанная ошибка (0x80004005 (E_FAIL))
+   at System.RuntimeType.InvokeMember(String name, BindingFlags bindingFlags, Binder binder, Object target, Object[] providedArgs, ParameterModifier[] modifiers, CultureInfo culture, String[] namedParams)
+   at System.RuntimeType.ForwardCallToInvokeMember(String memberName, BindingFlags flags, Object target, Object[] aArgs, Boolean[] aArgsIsByRef, Int32[] aArgsWrapperTypes, Type[] aArgsTypes, Type retType)
+   at Inventor.BrowserPaneObject.Refresh()
+   at ThreadPro.ThreadBuilder.CreateNamedBrowserFolder(Application app, PartDocument doc, BrowserPane pane, BrowserNode anchorBeforeFolder, IList`1 created, String baseName, Boolean exposeHistoryForMapping, Boolean allowExistingThreadFolderRepair, Boolean packagingThreadFolder, Boolean bestEffortExistingFolderRepairFailure)
+---
+[Helivanta.UIException] 2026-11-06T08:11:48.6535210Z
+Context: NativeThreadConversionService.StartEdgeAnalyze
+System.InvalidOperationException: Не удалось определить радиус выбранного торца конуса.
+   at ThreadPro.ThreadBuilder.Analyze(Application app, Edge edge)
+   at ThreadPro.NativeThreadConversionService.TryResolveStartEdge(Application app, ThreadFeature feature, Boolean expectedExternal, Edge& chosenEdge, ThreadTarget& chosenTarget, String& error, Boolean preferFreeEnd)
+---
+[Helivanta.DiagnosticMessage] 2026-11-06T08:11:48.6550834Z
+Context: NativeThreadConversionService.StartEdgeInspectionIncomplete
+Неполная проверка ThreadFeature.StartEdge: прочитано элементов 1 из 1, круговых рёбер проверено 1. Причина: Не удалось проверить одну из круговых границ..
+---
+[Helivanta.DiagnosticMessage] 2026-11-06T08:11:48.6618706Z
+Context: NativeThreadConversionService.StartEdgeResolutionFailed
+StartEdge failure=Неполная проверка ThreadFeature.StartEdge: прочитано элементов 1 из 1, круговых рёбер проверено 1. Причина: Не удалось проверить одну из круговых границ..; ThreadedFace fallback failure=ThreadedFace не содержит распознаваемой цилиндрической грани (граней: 2).
+---
+[Helivanta.DiagnosticMessage] 2026-11-06T08:11:48.6629796Z
+Context: NativeThreadOverlapGuard.Enumerate.Interval
+Не удалось безопасно определить начальное ребро штатной резьбы по данным StartEdge и ThreadedFace Inventor. Преобразование не начато. Подробности записаны в журнал диагностики.
+---
+[Helivanta.UIException] 2026-11-06T08:12:28.8411085Z
+Context: ThreadEditService.TryReplace; stage=построение новой геометрии с шагом 1.814 мм; transactionOpened=True; rollbackVerified=True; modelSnapshotVerified=True; modelSnapshotFailure=abortSucceeded=True; updateSucceeded=True; activeDocumentMatches=True; restoredSnapshotCaptured=True; original=document={09CB6532-4E10-156E-E7D5-23A95F2BBE2D}; bodies=1; faces=35; edges=92; workPlanes=28; sketches=26; revolve=1; chamfer=0; coil=1; sweep=0; loft=1; areaCm2=32.78917550894827; volumeCm3=10.759972380760571; centerOfMassCm=0.0007366655899160738,0.0007718065033615833,1.4443843823543803; restored=document={09CB6532-4E10-156E-E7D5-23A95F2BBE2D}; bodies=1; faces=35; edges=92; workPlanes=28; sketches=26; revolve=1; chamfer=0; coil=1; sweep=0; loft=1; areaCm2=32.78917550894827; volumeCm3=10.759972380760571; centerOfMassCm=0.0007366655899160738,0.0007718065033615833,1.4443843823543803; recovery=Транзакция отменена; исходная группа проверена по метаданным и восстановлена.
+System.InvalidOperationException: Коническая резьба изменяет твёрдую геометрию: подготовит конус и вырежет физические витки. Сначала покажите предупреждение и получите явное подтверждение пользователя. Деталь не изменена.
+   at ThreadPro.NativeTaperedThreadBuilder.Build(Application app, ThreadTarget source, ThreadParams p)
+   at ThreadPro.ThreadBuilder.BuildAfterWallThicknessValidation(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadBuilder.Build(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadEditService.TryReplace(Application app, String threadId, ThreadParams replacement, ThreadTarget& rebuiltTarget, String& warning, String& error)
+---
+[Helivanta.UIException] 2026-11-06T08:27:18.0260143Z
+Context: ThreadEditService.TryReplace; stage=построение новой геометрии с шагом 2 мм; transactionOpened=True; rollbackVerified=True; modelSnapshotVerified=True; modelSnapshotFailure=abortSucceeded=True; updateSucceeded=True; activeDocumentMatches=True; restoredSnapshotCaptured=True; original=document={1C567AE4-4A74-DA27-57F1-8296383A8C8D}; bodies=1; faces=28; edges=66; workPlanes=40; sketches=38; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=64.05613458810518; volumeCm3=31.071645263888755; centerOfMassCm=0.0002152081079763546,-0.0008134497694076776,2.219165634723345; restored=document={1C567AE4-4A74-DA27-57F1-8296383A8C8D}; bodies=1; faces=28; edges=66; workPlanes=40; sketches=38; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=64.05613458810518; volumeCm3=31.071645263888755; centerOfMassCm=0.0002152081079763546,-0.0008134497694076776,2.219165634723345; recovery=Транзакция отменена; исходная группа проверена по метаданным и восстановлена.
+ThreadPro.HelivantaOperationException: WallChamfer.DepthInvalid: Построение запрещено: размер включённой фаски должен быть больше нуля. Модель не изменена.
+   at ThreadPro.ThreadWallThicknessGuard.ValidateOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.ValidateTargetWallThicknessOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.Build(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadEditService.TryReplace(Application app, String threadId, ThreadParams replacement, ThreadTarget& rebuiltTarget, String& warning, String& error)
+---
+[Helivanta.UIException] 2026-11-06T08:29:05.7225176Z
+Context: ThreadEditService.TryReplace; stage=построение новой геометрии с шагом 2 мм; transactionOpened=True; rollbackVerified=True; modelSnapshotVerified=True; modelSnapshotFailure=abortSucceeded=True; updateSucceeded=True; activeDocumentMatches=True; restoredSnapshotCaptured=True; original=document={2A56DBFE-4CCB-5353-29D7-14B3C887FE0E}; bodies=1; faces=41; edges=83; workPlanes=40; sketches=38; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=64.04261803583745; volumeCm3=31.0740529116985; centerOfMassCm=1.2265117542074696E-05,-0.0007627999491532316,2.21927358367819; restored=document={2A56DBFE-4CCB-5353-29D7-14B3C887FE0E}; bodies=1; faces=41; edges=83; workPlanes=40; sketches=38; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=64.04261803583745; volumeCm3=31.0740529116985; centerOfMassCm=1.2265117542074696E-05,-0.0007627999491532316,2.21927358367819; recovery=Транзакция отменена; исходная группа проверена по метаданным и восстановлена.
+ThreadPro.HelivantaOperationException: WallChamfer.DepthInvalid: Построение запрещено: размер включённой фаски должен быть больше нуля. Модель не изменена.
+   at ThreadPro.ThreadWallThicknessGuard.ValidateOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.ValidateTargetWallThicknessOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.Build(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadEditService.TryReplace(Application app, String threadId, ThreadParams replacement, ThreadTarget& rebuiltTarget, String& warning, String& error)
+---
+[Helivanta.UIException] 2026-11-06T08:30:29.5707254Z
+Context: ThreadEditService.TryReplace; stage=построение новой геометрии с шагом 2 мм; transactionOpened=True; rollbackVerified=True; modelSnapshotVerified=True; modelSnapshotFailure=abortSucceeded=True; updateSucceeded=True; activeDocumentMatches=True; restoredSnapshotCaptured=True; original=document={C8F245A7-4C9B-2D15-9CBA-38A918AE34BE}; bodies=1; faces=28; edges=66; workPlanes=40; sketches=38; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=64.05613458810518; volumeCm3=31.071645263888755; centerOfMassCm=0.0002152081079763546,-0.0008134497694076776,2.219165634723345; restored=document={C8F245A7-4C9B-2D15-9CBA-38A918AE34BE}; bodies=1; faces=28; edges=66; workPlanes=40; sketches=38; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=64.05613458810518; volumeCm3=31.071645263888755; centerOfMassCm=0.0002152081079763546,-0.0008134497694076776,2.219165634723345; recovery=Транзакция отменена; исходная группа проверена по метаданным и восстановлена.
+ThreadPro.HelivantaOperationException: WallChamfer.DepthInvalid: Построение запрещено: размер включённой фаски должен быть больше нуля. Модель не изменена.
+   at ThreadPro.ThreadWallThicknessGuard.ValidateOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.ValidateTargetWallThicknessOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.Build(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadEditService.TryReplace(Application app, String threadId, ThreadParams replacement, ThreadTarget& rebuiltTarget, String& warning, String& error)
+---
+[Helivanta.UIException] 2026-11-06T08:31:45.4126736Z
+Context: ThreadEditService.TryReplace; stage=построение новой геометрии с шагом 3 мм; transactionOpened=True; rollbackVerified=True; modelSnapshotVerified=True; modelSnapshotFailure=abortSucceeded=True; updateSucceeded=True; activeDocumentMatches=True; restoredSnapshotCaptured=True; original=document={517A748C-45B0-0E94-B3A5-E695AB28D65F}; bodies=1; faces=24; edges=54; workPlanes=35; sketches=33; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=64.99773121749297; volumeCm3=30.950023255346185; centerOfMassCm=-0.000754840456709255,-2.0777739481916992E-05,2.213875916153076; restored=document={517A748C-45B0-0E94-B3A5-E695AB28D65F}; bodies=1; faces=24; edges=54; workPlanes=35; sketches=33; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=64.99773121749297; volumeCm3=30.950023255346185; centerOfMassCm=-0.000754840456709255,-2.0777739481916992E-05,2.213875916153076; recovery=Транзакция отменена; исходная группа проверена по метаданным и восстановлена.
+ThreadPro.HelivantaOperationException: WallChamfer.DepthInvalid: Построение запрещено: размер включённой фаски должен быть больше нуля. Модель не изменена.
+   at ThreadPro.ThreadWallThicknessGuard.ValidateOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.ValidateTargetWallThicknessOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.Build(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadEditService.TryReplace(Application app, String threadId, ThreadParams replacement, ThreadTarget& rebuiltTarget, String& warning, String& error)
+---
+[Helivanta.UIException] 2026-11-06T08:33:04.8111460Z
+Context: ThreadEditService.TryReplace; stage=построение новой геометрии с шагом 6 мм; transactionOpened=True; rollbackVerified=True; modelSnapshotVerified=True; modelSnapshotFailure=abortSucceeded=True; updateSucceeded=True; activeDocumentMatches=True; restoredSnapshotCaptured=True; original=document={B2256A6B-40B8-40E0-CAAF-C59E61450A5C}; bodies=1; faces=24; edges=54; workPlanes=27; sketches=25; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=63.8380774713789; volumeCm3=30.180213304071863; centerOfMassCm=-0.00011430969461375484,-0.00823176017434062,2.1828638628594828; restored=document={B2256A6B-40B8-40E0-CAAF-C59E61450A5C}; bodies=1; faces=24; edges=54; workPlanes=27; sketches=25; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=63.8380774713789; volumeCm3=30.180213304071863; centerOfMassCm=-0.00011430969461375484,-0.00823176017434062,2.1828638628594828; recovery=Транзакция отменена; исходная группа проверена по метаданным и восстановлена.
+ThreadPro.HelivantaOperationException: WallChamfer.DepthInvalid: Построение запрещено: размер включённой фаски должен быть больше нуля. Модель не изменена.
+   at ThreadPro.ThreadWallThicknessGuard.ValidateOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.ValidateTargetWallThicknessOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.Build(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadEditService.TryReplace(Application app, String threadId, ThreadParams replacement, ThreadTarget& rebuiltTarget, String& warning, String& error)
+---
+[Helivanta.UIException] 2026-11-06T08:34:10.7854048Z
+Context: ThreadEditService.TryReplace; stage=построение новой геометрии с шагом 2 мм; transactionOpened=True; rollbackVerified=True; modelSnapshotVerified=True; modelSnapshotFailure=abortSucceeded=True; updateSucceeded=True; activeDocumentMatches=True; restoredSnapshotCaptured=True; original=document={741A9D8F-443A-70B6-1F14-6A8745548EDB}; bodies=1; faces=47; edges=97; workPlanes=40; sketches=38; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=62.34100487883768; volumeCm3=31.239653490271944; centerOfMassCm=6.71218286852147E-05,-0.0004965197461620218,2.226386154905703; restored=document={741A9D8F-443A-70B6-1F14-6A8745548EDB}; bodies=1; faces=47; edges=97; workPlanes=40; sketches=38; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=62.34100487883768; volumeCm3=31.239653490271944; centerOfMassCm=6.71218286852147E-05,-0.0004965197461620218,2.226386154905703; recovery=Транзакция отменена; исходная группа проверена по метаданным и восстановлена.
+ThreadPro.HelivantaOperationException: WallChamfer.DepthInvalid: Построение запрещено: размер включённой фаски должен быть больше нуля. Модель не изменена.
+   at ThreadPro.ThreadWallThicknessGuard.ValidateOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.ValidateTargetWallThicknessOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.Build(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadEditService.TryReplace(Application app, String threadId, ThreadParams replacement, ThreadTarget& rebuiltTarget, String& warning, String& error)
+---
+[Helivanta.UIException] 2026-11-06T08:35:50.7303845Z
+Context: ThreadEditService.TryReplace; stage=построение новой геометрии с шагом 2 мм; transactionOpened=True; rollbackVerified=True; modelSnapshotVerified=True; modelSnapshotFailure=abortSucceeded=True; updateSucceeded=True; activeDocumentMatches=True; restoredSnapshotCaptured=True; original=document={C330BF74-4536-A2B3-CBFF-0983B641ADD7}; bodies=1; faces=28; edges=66; workPlanes=40; sketches=38; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=64.05613458810518; volumeCm3=31.071645263888755; centerOfMassCm=0.0002152081079763546,-0.0008134497694076776,2.219165634723345; restored=document={C330BF74-4536-A2B3-CBFF-0983B641ADD7}; bodies=1; faces=28; edges=66; workPlanes=40; sketches=38; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=64.05613458810518; volumeCm3=31.071645263888755; centerOfMassCm=0.0002152081079763546,-0.0008134497694076776,2.219165634723345; recovery=Транзакция отменена; исходная группа проверена по метаданным и восстановлена.
+ThreadPro.HelivantaOperationException: WallChamfer.DepthInvalid: Построение запрещено: размер включённой фаски должен быть больше нуля. Модель не изменена.
+   at ThreadPro.ThreadWallThicknessGuard.ValidateOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.ValidateTargetWallThicknessOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.Build(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadEditService.TryReplace(Application app, String threadId, ThreadParams replacement, ThreadTarget& rebuiltTarget, String& warning, String& error)
+---
+[Helivanta.UIException] 2026-11-06T08:37:19.1929857Z
+Context: ThreadEditService.TryReplace; stage=построение новой геометрии с шагом 3 мм; transactionOpened=True; rollbackVerified=True; modelSnapshotVerified=True; modelSnapshotFailure=abortSucceeded=True; updateSucceeded=True; activeDocumentMatches=True; restoredSnapshotCaptured=True; original=document={56896CFA-4BE8-8601-17E3-AB9C8397B310}; bodies=1; faces=41; edges=97; workPlanes=41; sketches=39; revolve=0; chamfer=0; coil=2; sweep=0; loft=4; areaCm2=71.17712973301276; volumeCm3=35.20197980514216; centerOfMassCm=-0.0013841499671465483,0.001994747564401519,2.2121669591176505; restored=document={56896CFA-4BE8-8601-17E3-AB9C8397B310}; bodies=1; faces=41; edges=97; workPlanes=41; sketches=39; revolve=0; chamfer=0; coil=2; sweep=0; loft=4; areaCm2=71.17712973301276; volumeCm3=35.20197980514216; centerOfMassCm=-0.0013841499671465483,0.001994747564401519,2.2121669591176505; recovery=Транзакция отменена; исходная группа проверена по метаданным и восстановлена.
+ThreadPro.HelivantaOperationException: WallChamfer.DepthInvalid: Построение запрещено: размер включённой фаски должен быть больше нуля. Модель не изменена.
+   at ThreadPro.ThreadWallThicknessGuard.ValidateOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.ValidateTargetWallThicknessOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.Build(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadEditService.TryReplace(Application app, String threadId, ThreadParams replacement, ThreadTarget& rebuiltTarget, String& warning, String& error)
+---
+[Helivanta.UIException] 2026-11-06T08:38:07.9640117Z
+Context: ThreadBuilder.GetUserFacingError.UnclassifiedException
+System.InvalidOperationException: Сочетание диаметра, шага и числа заходов отсутствует в ГОСТ 24739-81. Для многозаходной Tr допускаются только сочетания таблицы 1 (2, 3, 4, 6 или 8 заходов).
+   at ThreadPro.ThreadBuilder.BuildAfterWallThicknessValidation(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadBuilder.BuildAll(Application app, IList`1 targets, ThreadParams p)
+---
+[Helivanta.UIException] 2026-11-06T08:38:22.4347388Z
+Context: ThreadEditService.TryReplace; stage=построение новой геометрии с шагом 3 мм; transactionOpened=True; rollbackVerified=True; modelSnapshotVerified=True; modelSnapshotFailure=abortSucceeded=True; updateSucceeded=True; activeDocumentMatches=True; restoredSnapshotCaptured=True; original=document={1BBECF11-45B3-56DB-2D05-1EA82953CBFD}; bodies=1; faces=24; edges=54; workPlanes=35; sketches=33; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=68.83917059766348; volumeCm3=30.578057982463946; centerOfMassCm=-0.0006460610399534862,0.0002641964778501866,2.1990614952122964; restored=document={1BBECF11-45B3-56DB-2D05-1EA82953CBFD}; bodies=1; faces=24; edges=54; workPlanes=35; sketches=33; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=68.83917059766348; volumeCm3=30.578057982463946; centerOfMassCm=-0.0006460610399534862,0.0002641964778501866,2.1990614952122964; recovery=Транзакция отменена; исходная группа проверена по метаданным и восстановлена.
+ThreadPro.HelivantaOperationException: WallChamfer.DepthInvalid: Построение запрещено: размер включённой фаски должен быть больше нуля. Модель не изменена.
+   at ThreadPro.ThreadBuilder.ValidateTargetWallThicknessOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.Build(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadEditService.TryReplace(Application app, String threadId, ThreadParams replacement, ThreadTarget& rebuiltTarget, String& warning, String& error)
+---
+[Helivanta.UIException] 2026-11-06T08:42:07.1981626Z
+Context: ThreadDialog.TryBeginEdit
+ThreadPro.RuntimeAuditInjectedThreadDialogEditParameterLoadException: Runtime Audit injected a one-shot failure after the selected thread's parameters had partially populated the edit form.
+   at ThreadPro.ThreadDialog.LoadEditParameters(ThreadParametersSnapshot p, String auditTargetThreadId)
+   at ThreadPro.ThreadDialog.TryBeginEditFromLoadedGroup(PartDocument doc, ThreadMetadataGroup group, String& error)
+---
+[Helivanta.UIException] 2026-11-06T08:42:23.9747880Z
+Context: PackagingThreadDialog.BeginEditFromMetadata
+ThreadPro.RuntimeAuditInjectedThreadDialogEditParameterLoadException: Runtime Audit injected a one-shot failure after the selected thread's parameters had partially populated the edit form.
+   at ThreadPro.PackagingThreadDialog.BeginEditFromMetadata(ThreadMetadataGroup group, String& error)
+---
+[Helivanta.UIException] 2026-11-06T08:42:42.9670199Z
+Context: Suppressed/ThreadBuilder.CreateNamedBrowserFolder.BrowserPaneRefresh
+System.Runtime.InteropServices.COMException (0x80004005): Неопознанная ошибка (0x80004005 (E_FAIL))
+   at System.RuntimeType.InvokeMember(String name, BindingFlags bindingFlags, Binder binder, Object target, Object[] providedArgs, ParameterModifier[] modifiers, CultureInfo culture, String[] namedParams)
+   at System.RuntimeType.ForwardCallToInvokeMember(String memberName, BindingFlags flags, Object target, Object[] aArgs, Boolean[] aArgsIsByRef, Int32[] aArgsWrapperTypes, Type[] aArgsTypes, Type retType)
+   at Inventor.BrowserPaneObject.Refresh()
+   at ThreadPro.ThreadBuilder.CreateNamedBrowserFolder(Application app, PartDocument doc, BrowserPane pane, BrowserNode anchorBeforeFolder, IList`1 created, String baseName, Boolean exposeHistoryForMapping, Boolean allowExistingThreadFolderRepair, Boolean packagingThreadFolder, Boolean bestEffortExistingFolderRepairFailure)
+---
+[Helivanta.UIException] 2026-11-06T08:44:37.1783991Z
+Context: NativeThreadConversionService.StartEdgeAnalyze
+System.InvalidOperationException: Не удалось определить радиус выбранного торца конуса.
+   at ThreadPro.ThreadBuilder.Analyze(Application app, Edge edge)
+   at ThreadPro.NativeThreadConversionService.TryResolveStartEdge(Application app, ThreadFeature feature, Boolean expectedExternal, Edge& chosenEdge, ThreadTarget& chosenTarget, String& error, Boolean preferFreeEnd)
+---
+[Helivanta.DiagnosticMessage] 2026-11-06T08:44:37.2031264Z
+Context: NativeThreadConversionService.StartEdgeInspectionIncomplete
+Неполная проверка ThreadFeature.StartEdge: прочитано элементов 1 из 1, круговых рёбер проверено 1. Причина: Не удалось проверить одну из круговых границ..
+---
+[Helivanta.DiagnosticMessage] 2026-11-06T08:44:37.2096585Z
+Context: NativeThreadConversionService.StartEdgeResolutionFailed
+StartEdge failure=Неполная проверка ThreadFeature.StartEdge: прочитано элементов 1 из 1, круговых рёбер проверено 1. Причина: Не удалось проверить одну из круговых границ..; ThreadedFace fallback failure=ThreadedFace не содержит распознаваемой цилиндрической грани (граней: 2).
+---
+[Helivanta.DiagnosticMessage] 2026-11-06T08:44:37.2106898Z
+Context: NativeThreadOverlapGuard.Enumerate.Interval
+Не удалось безопасно определить начальное ребро штатной резьбы по данным StartEdge и ThreadedFace Inventor. Преобразование не начато. Подробности записаны в журнал диагностики.
+---
+[Helivanta.UIException] 2026-11-06T08:45:17.3765179Z
+Context: ThreadEditService.TryReplace; stage=построение новой геометрии с шагом 1.814 мм; transactionOpened=True; rollbackVerified=True; modelSnapshotVerified=True; modelSnapshotFailure=abortSucceeded=True; updateSucceeded=True; activeDocumentMatches=True; restoredSnapshotCaptured=True; original=document={E2EA7626-419F-6B4C-01F7-0FAEC80318E2}; bodies=1; faces=35; edges=92; workPlanes=28; sketches=26; revolve=1; chamfer=0; coil=1; sweep=0; loft=1; areaCm2=32.78917550894827; volumeCm3=10.759972380760571; centerOfMassCm=0.0007366655899160738,0.0007718065033615833,1.4443843823543803; restored=document={E2EA7626-419F-6B4C-01F7-0FAEC80318E2}; bodies=1; faces=35; edges=92; workPlanes=28; sketches=26; revolve=1; chamfer=0; coil=1; sweep=0; loft=1; areaCm2=32.78917550894827; volumeCm3=10.759972380760571; centerOfMassCm=0.0007366655899160738,0.0007718065033615833,1.4443843823543803; recovery=Транзакция отменена; исходная группа проверена по метаданным и восстановлена.
+System.InvalidOperationException: Коническая резьба изменяет твёрдую геометрию: подготовит конус и вырежет физические витки. Сначала покажите предупреждение и получите явное подтверждение пользователя. Деталь не изменена.
+   at ThreadPro.NativeTaperedThreadBuilder.Build(Application app, ThreadTarget source, ThreadParams p)
+   at ThreadPro.ThreadBuilder.BuildAfterWallThicknessValidation(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadBuilder.Build(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadEditService.TryReplace(Application app, String threadId, ThreadParams replacement, ThreadTarget& rebuiltTarget, String& warning, String& error)
+---
+[Helivanta.UIException] 2026-11-06T10:43:25.8710893Z
+Context: ThreadEditService.TryReplace; stage=построение новой геометрии с шагом 2 мм; transactionOpened=True; rollbackVerified=True; modelSnapshotVerified=True; modelSnapshotFailure=abortSucceeded=True; updateSucceeded=True; activeDocumentMatches=True; restoredSnapshotCaptured=True; original=document={F0449624-4C6C-4CBE-F10A-33831F3C8CA2}; bodies=1; faces=28; edges=66; workPlanes=40; sketches=38; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=64.05613458810518; volumeCm3=31.071645263888755; centerOfMassCm=0.0002152081079763546,-0.0008134497694076776,2.219165634723345; restored=document={F0449624-4C6C-4CBE-F10A-33831F3C8CA2}; bodies=1; faces=28; edges=66; workPlanes=40; sketches=38; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=64.05613458810518; volumeCm3=31.071645263888755; centerOfMassCm=0.0002152081079763546,-0.0008134497694076776,2.219165634723345; recovery=Транзакция отменена; исходная группа проверена по метаданным и восстановлена.
+ThreadPro.HelivantaOperationException: WallChamfer.DepthInvalid: Построение запрещено: размер включённой фаски должен быть больше нуля. Модель не изменена.
+   at ThreadPro.ThreadWallThicknessGuard.ValidateOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.ValidateTargetWallThicknessOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.Build(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadEditService.TryReplace(Application app, String threadId, ThreadParams replacement, ThreadTarget& rebuiltTarget, String& warning, String& error)
+---
+[Helivanta.UIException] 2026-11-06T10:46:18.0631430Z
+Context: ThreadEditService.TryReplace; stage=построение новой геометрии с шагом 2 мм; transactionOpened=True; rollbackVerified=True; modelSnapshotVerified=True; modelSnapshotFailure=abortSucceeded=True; updateSucceeded=True; activeDocumentMatches=True; restoredSnapshotCaptured=True; original=document={100ECD3E-43AE-02DE-CA9E-54B8868E3BFA}; bodies=1; faces=41; edges=83; workPlanes=40; sketches=38; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=64.04261803583745; volumeCm3=31.0740529116985; centerOfMassCm=1.2265117542074696E-05,-0.0007627999491532316,2.21927358367819; restored=document={100ECD3E-43AE-02DE-CA9E-54B8868E3BFA}; bodies=1; faces=41; edges=83; workPlanes=40; sketches=38; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=64.04261803583745; volumeCm3=31.0740529116985; centerOfMassCm=1.2265117542074696E-05,-0.0007627999491532316,2.21927358367819; recovery=Транзакция отменена; исходная группа проверена по метаданным и восстановлена.
+ThreadPro.HelivantaOperationException: WallChamfer.DepthInvalid: Построение запрещено: размер включённой фаски должен быть больше нуля. Модель не изменена.
+   at ThreadPro.ThreadWallThicknessGuard.ValidateOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.ValidateTargetWallThicknessOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.Build(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadEditService.TryReplace(Application app, String threadId, ThreadParams replacement, ThreadTarget& rebuiltTarget, String& warning, String& error)
+---
+[Helivanta.UIException] 2026-11-06T10:48:40.7132176Z
+Context: ThreadEditService.TryReplace; stage=построение новой геометрии с шагом 2 мм; transactionOpened=True; rollbackVerified=True; modelSnapshotVerified=True; modelSnapshotFailure=abortSucceeded=True; updateSucceeded=True; activeDocumentMatches=True; restoredSnapshotCaptured=True; original=document={FFCE86D4-4C13-F7E0-A203-DFB382DE53E2}; bodies=1; faces=28; edges=66; workPlanes=40; sketches=38; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=64.05613458810518; volumeCm3=31.071645263888755; centerOfMassCm=0.0002152081079763546,-0.0008134497694076776,2.219165634723345; restored=document={FFCE86D4-4C13-F7E0-A203-DFB382DE53E2}; bodies=1; faces=28; edges=66; workPlanes=40; sketches=38; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=64.05613458810518; volumeCm3=31.071645263888755; centerOfMassCm=0.0002152081079763546,-0.0008134497694076776,2.219165634723345; recovery=Транзакция отменена; исходная группа проверена по метаданным и восстановлена.
+ThreadPro.HelivantaOperationException: WallChamfer.DepthInvalid: Построение запрещено: размер включённой фаски должен быть больше нуля. Модель не изменена.
+   at ThreadPro.ThreadWallThicknessGuard.ValidateOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.ValidateTargetWallThicknessOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.Build(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadEditService.TryReplace(Application app, String threadId, ThreadParams replacement, ThreadTarget& rebuiltTarget, String& warning, String& error)
+---
+[Helivanta.UIException] 2026-11-06T10:50:39.8301756Z
+Context: ThreadEditService.TryReplace; stage=построение новой геометрии с шагом 3 мм; transactionOpened=True; rollbackVerified=True; modelSnapshotVerified=True; modelSnapshotFailure=abortSucceeded=True; updateSucceeded=True; activeDocumentMatches=True; restoredSnapshotCaptured=True; original=document={24DD2210-44AE-5AAD-2B0D-94B32ED40EAC}; bodies=1; faces=24; edges=54; workPlanes=35; sketches=33; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=64.99773121749297; volumeCm3=30.950023255346185; centerOfMassCm=-0.000754840456709255,-2.0777739481916992E-05,2.213875916153076; restored=document={24DD2210-44AE-5AAD-2B0D-94B32ED40EAC}; bodies=1; faces=24; edges=54; workPlanes=35; sketches=33; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=64.99773121749297; volumeCm3=30.950023255346185; centerOfMassCm=-0.000754840456709255,-2.0777739481916992E-05,2.213875916153076; recovery=Транзакция отменена; исходная группа проверена по метаданным и восстановлена.
+ThreadPro.HelivantaOperationException: WallChamfer.DepthInvalid: Построение запрещено: размер включённой фаски должен быть больше нуля. Модель не изменена.
+   at ThreadPro.ThreadWallThicknessGuard.ValidateOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.ValidateTargetWallThicknessOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.Build(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadEditService.TryReplace(Application app, String threadId, ThreadParams replacement, ThreadTarget& rebuiltTarget, String& warning, String& error)
+---
+[Helivanta.UIException] 2026-11-06T10:52:44.5034844Z
+Context: ThreadEditService.TryReplace; stage=построение новой геометрии с шагом 6 мм; transactionOpened=True; rollbackVerified=True; modelSnapshotVerified=True; modelSnapshotFailure=abortSucceeded=True; updateSucceeded=True; activeDocumentMatches=True; restoredSnapshotCaptured=True; original=document={0BB1788B-4902-9331-FCC1-728FA64FB957}; bodies=1; faces=24; edges=54; workPlanes=27; sketches=25; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=63.8380774713789; volumeCm3=30.180213304071863; centerOfMassCm=-0.00011430969461375484,-0.00823176017434062,2.1828638628594828; restored=document={0BB1788B-4902-9331-FCC1-728FA64FB957}; bodies=1; faces=24; edges=54; workPlanes=27; sketches=25; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=63.8380774713789; volumeCm3=30.180213304071863; centerOfMassCm=-0.00011430969461375484,-0.00823176017434062,2.1828638628594828; recovery=Транзакция отменена; исходная группа проверена по метаданным и восстановлена.
+ThreadPro.HelivantaOperationException: WallChamfer.DepthInvalid: Построение запрещено: размер включённой фаски должен быть больше нуля. Модель не изменена.
+   at ThreadPro.ThreadWallThicknessGuard.ValidateOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.ValidateTargetWallThicknessOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.Build(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadEditService.TryReplace(Application app, String threadId, ThreadParams replacement, ThreadTarget& rebuiltTarget, String& warning, String& error)
+---
+[Helivanta.UIException] 2026-11-06T10:54:27.2179391Z
+Context: ThreadEditService.TryReplace; stage=построение новой геометрии с шагом 2 мм; transactionOpened=True; rollbackVerified=True; modelSnapshotVerified=True; modelSnapshotFailure=abortSucceeded=True; updateSucceeded=True; activeDocumentMatches=True; restoredSnapshotCaptured=True; original=document={8AF101BB-4D4A-5226-335C-1C94C61A1478}; bodies=1; faces=47; edges=97; workPlanes=40; sketches=38; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=62.34100487883768; volumeCm3=31.239653490271944; centerOfMassCm=6.71218286852147E-05,-0.0004965197461620218,2.226386154905703; restored=document={8AF101BB-4D4A-5226-335C-1C94C61A1478}; bodies=1; faces=47; edges=97; workPlanes=40; sketches=38; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=62.34100487883768; volumeCm3=31.239653490271944; centerOfMassCm=6.71218286852147E-05,-0.0004965197461620218,2.226386154905703; recovery=Транзакция отменена; исходная группа проверена по метаданным и восстановлена.
+ThreadPro.HelivantaOperationException: WallChamfer.DepthInvalid: Построение запрещено: размер включённой фаски должен быть больше нуля. Модель не изменена.
+   at ThreadPro.ThreadWallThicknessGuard.ValidateOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.ValidateTargetWallThicknessOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.Build(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadEditService.TryReplace(Application app, String threadId, ThreadParams replacement, ThreadTarget& rebuiltTarget, String& warning, String& error)
+---
+[Helivanta.UIException] 2026-11-06T10:56:53.5551426Z
+Context: ThreadEditService.TryReplace; stage=построение новой геометрии с шагом 2 мм; transactionOpened=True; rollbackVerified=True; modelSnapshotVerified=True; modelSnapshotFailure=abortSucceeded=True; updateSucceeded=True; activeDocumentMatches=True; restoredSnapshotCaptured=True; original=document={195E37B2-4E3A-01FE-E13C-F39C607D3340}; bodies=1; faces=28; edges=66; workPlanes=40; sketches=38; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=64.05613458810518; volumeCm3=31.071645263888755; centerOfMassCm=0.0002152081079763546,-0.0008134497694076776,2.219165634723345; restored=document={195E37B2-4E3A-01FE-E13C-F39C607D3340}; bodies=1; faces=28; edges=66; workPlanes=40; sketches=38; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=64.05613458810518; volumeCm3=31.071645263888755; centerOfMassCm=0.0002152081079763546,-0.0008134497694076776,2.219165634723345; recovery=Транзакция отменена; исходная группа проверена по метаданным и восстановлена.
+ThreadPro.HelivantaOperationException: WallChamfer.DepthInvalid: Построение запрещено: размер включённой фаски должен быть больше нуля. Модель не изменена.
+   at ThreadPro.ThreadWallThicknessGuard.ValidateOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.ValidateTargetWallThicknessOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.Build(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadEditService.TryReplace(Application app, String threadId, ThreadParams replacement, ThreadTarget& rebuiltTarget, String& warning, String& error)
+---
+[Helivanta.UIException] 2026-11-06T10:58:31.5584935Z
+Context: ThreadEditService.TryReplace; stage=построение новой геометрии с шагом 3 мм; transactionOpened=True; rollbackVerified=True; modelSnapshotVerified=True; modelSnapshotFailure=abortSucceeded=True; updateSucceeded=True; activeDocumentMatches=True; restoredSnapshotCaptured=True; original=document={741BD764-4678-6A4D-4378-F988E2F2F59A}; bodies=1; faces=41; edges=97; workPlanes=41; sketches=39; revolve=0; chamfer=0; coil=2; sweep=0; loft=4; areaCm2=71.17712973301276; volumeCm3=35.20197980514216; centerOfMassCm=-0.0013841499671465483,0.001994747564401519,2.2121669591176505; restored=document={741BD764-4678-6A4D-4378-F988E2F2F59A}; bodies=1; faces=41; edges=97; workPlanes=41; sketches=39; revolve=0; chamfer=0; coil=2; sweep=0; loft=4; areaCm2=71.17712973301276; volumeCm3=35.20197980514216; centerOfMassCm=-0.0013841499671465483,0.001994747564401519,2.2121669591176505; recovery=Транзакция отменена; исходная группа проверена по метаданным и восстановлена.
+ThreadPro.HelivantaOperationException: WallChamfer.DepthInvalid: Построение запрещено: размер включённой фаски должен быть больше нуля. Модель не изменена.
+   at ThreadPro.ThreadWallThicknessGuard.ValidateOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.ValidateTargetWallThicknessOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.Build(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadEditService.TryReplace(Application app, String threadId, ThreadParams replacement, ThreadTarget& rebuiltTarget, String& warning, String& error)
+---
+[Helivanta.UIException] 2026-11-06T10:59:24.0405842Z
+Context: ThreadBuilder.GetUserFacingError.UnclassifiedException
+System.InvalidOperationException: Сочетание диаметра, шага и числа заходов отсутствует в ГОСТ 24739-81. Для многозаходной Tr допускаются только сочетания таблицы 1 (2, 3, 4, 6 или 8 заходов).
+   at ThreadPro.ThreadBuilder.BuildAfterWallThicknessValidation(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadBuilder.BuildAll(Application app, IList`1 targets, ThreadParams p)
+---
+[Helivanta.UIException] 2026-11-06T10:59:39.0684716Z
+Context: ThreadEditService.TryReplace; stage=построение новой геометрии с шагом 3 мм; transactionOpened=True; rollbackVerified=True; modelSnapshotVerified=True; modelSnapshotFailure=abortSucceeded=True; updateSucceeded=True; activeDocumentMatches=True; restoredSnapshotCaptured=True; original=document={65F227C1-4A7C-619C-0A23-6C8AEF2C98BE}; bodies=1; faces=24; edges=54; workPlanes=35; sketches=33; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=68.83917059766348; volumeCm3=30.578057982463946; centerOfMassCm=-0.0006460610399534862,0.0002641964778501866,2.1990614952122964; restored=document={65F227C1-4A7C-619C-0A23-6C8AEF2C98BE}; bodies=1; faces=24; edges=54; workPlanes=35; sketches=33; revolve=0; chamfer=0; coil=1; sweep=0; loft=2; areaCm2=68.83917059766348; volumeCm3=30.578057982463946; centerOfMassCm=-0.0006460610399534862,0.0002641964778501866,2.1990614952122964; recovery=Транзакция отменена; исходная группа проверена по метаданным и восстановлена.
+ThreadPro.HelivantaOperationException: WallChamfer.DepthInvalid: Построение запрещено: размер включённой фаски должен быть больше нуля. Модель не изменена.
+   at ThreadPro.ThreadBuilder.ValidateTargetWallThicknessOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.Build(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadEditService.TryReplace(Application app, String threadId, ThreadParams replacement, ThreadTarget& rebuiltTarget, String& warning, String& error)
+---
+[Helivanta.UIException] 2026-11-06T11:03:38.8608903Z
+Context: ThreadDialog.TryBeginEdit
+ThreadPro.RuntimeAuditInjectedThreadDialogEditParameterLoadException: Runtime Audit injected a one-shot failure after the selected thread's parameters had partially populated the edit form.
+   at ThreadPro.ThreadDialog.LoadEditParameters(ThreadParametersSnapshot p, String auditTargetThreadId)
+   at ThreadPro.ThreadDialog.TryBeginEditFromLoadedGroup(PartDocument doc, ThreadMetadataGroup group, String& error)
+---
+[Helivanta.UIException] 2026-11-06T11:29:54.2083661Z
+Context: PackagingThreadDialog.BeginEditFromMetadata
+ThreadPro.RuntimeAuditInjectedThreadDialogEditParameterLoadException: Runtime Audit injected a one-shot failure after the selected thread's parameters had partially populated the edit form.
+   at ThreadPro.PackagingThreadDialog.BeginEditFromMetadata(ThreadMetadataGroup group, String& error)
+---
+[Helivanta.UIException] 2026-11-06T11:31:36.3431986Z
+Context: Suppressed/ThreadBuilder.CreateNamedBrowserFolder.BrowserPaneRefresh
+System.Runtime.InteropServices.COMException (0x80004005): Неопознанная ошибка (0x80004005 (E_FAIL))
+   at System.RuntimeType.InvokeMember(String name, BindingFlags bindingFlags, Binder binder, Object target, Object[] providedArgs, ParameterModifier[] modifiers, CultureInfo culture, String[] namedParams)
+   at System.RuntimeType.ForwardCallToInvokeMember(String memberName, BindingFlags flags, Object target, Object[] aArgs, Boolean[] aArgsIsByRef, Int32[] aArgsWrapperTypes, Type[] aArgsTypes, Type retType)
+   at Inventor.BrowserPaneObject.Refresh()
+   at ThreadPro.ThreadBuilder.CreateNamedBrowserFolder(Application app, PartDocument doc, BrowserPane pane, BrowserNode anchorBeforeFolder, IList`1 created, String baseName, Boolean exposeHistoryForMapping, Boolean allowExistingThreadFolderRepair, Boolean packagingThreadFolder, Boolean bestEffortExistingFolderRepairFailure)
+---
+[Helivanta.UIException] 2026-11-06T11:34:30.5239993Z
+Context: NativeThreadConversionService.StartEdgeAnalyze
+System.InvalidOperationException: Не удалось определить радиус выбранного торца конуса.
+   at ThreadPro.ThreadBuilder.Analyze(Application app, Edge edge)
+   at ThreadPro.NativeThreadConversionService.TryResolveStartEdge(Application app, ThreadFeature feature, Boolean expectedExternal, Edge& chosenEdge, ThreadTarget& chosenTarget, String& error, Boolean preferFreeEnd)
+---
+[Helivanta.DiagnosticMessage] 2026-11-06T11:34:30.5256058Z
+Context: NativeThreadConversionService.StartEdgeInspectionIncomplete
+Неполная проверка ThreadFeature.StartEdge: прочитано элементов 1 из 1, круговых рёбер проверено 1. Причина: Не удалось проверить одну из круговых границ..
+---
+[Helivanta.DiagnosticMessage] 2026-11-06T11:34:30.5318749Z
+Context: NativeThreadConversionService.StartEdgeResolutionFailed
+StartEdge failure=Неполная проверка ThreadFeature.StartEdge: прочитано элементов 1 из 1, круговых рёбер проверено 1. Причина: Не удалось проверить одну из круговых границ..; ThreadedFace fallback failure=ThreadedFace не содержит распознаваемой цилиндрической грани (граней: 2).
+---
+[Helivanta.DiagnosticMessage] 2026-11-06T11:34:30.5327544Z
+Context: NativeThreadOverlapGuard.Enumerate.Interval
+Не удалось безопасно определить начальное ребро штатной резьбы по данным StartEdge и ThreadedFace Inventor. Преобразование не начато. Подробности записаны в журнал диагностики.
+---
+[Helivanta.UIException] 2026-11-06T11:35:17.2529174Z
+Context: ThreadEditService.TryReplace; stage=построение новой геометрии с шагом 1.814 мм; transactionOpened=True; rollbackVerified=True; modelSnapshotVerified=True; modelSnapshotFailure=abortSucceeded=True; updateSucceeded=True; activeDocumentMatches=True; restoredSnapshotCaptured=True; original=document={B4C4606B-456A-D021-19AA-20A0262EDDE6}; bodies=1; faces=35; edges=92; workPlanes=28; sketches=26; revolve=1; chamfer=0; coil=1; sweep=0; loft=1; areaCm2=32.78917550894827; volumeCm3=10.759972380760571; centerOfMassCm=0.0007366655899160738,0.0007718065033615833,1.4443843823543803; restored=document={B4C4606B-456A-D021-19AA-20A0262EDDE6}; bodies=1; faces=35; edges=92; workPlanes=28; sketches=26; revolve=1; chamfer=0; coil=1; sweep=0; loft=1; areaCm2=32.78917550894827; volumeCm3=10.759972380760571; centerOfMassCm=0.0007366655899160738,0.0007718065033615833,1.4443843823543803; recovery=Транзакция отменена; исходная группа проверена по метаданным и восстановлена.
+System.InvalidOperationException: Коническая резьба изменяет твёрдую геометрию: подготовит конус и вырежет физические витки. Сначала покажите предупреждение и получите явное подтверждение пользователя. Деталь не изменена.
+   at ThreadPro.NativeTaperedThreadBuilder.Build(Application app, ThreadTarget source, ThreadParams p)
+   at ThreadPro.ThreadBuilder.BuildAfterWallThicknessValidation(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadBuilder.Build(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadEditService.TryReplace(Application app, String threadId, ThreadParams replacement, ThreadTarget& rebuiltTarget, String& warning, String& error)
+---
+[2026-11-06 13:39:28] Построение успешно
+Резьб: 1; заходов всего: 1
+Параметры: наружная; стандарт: ISO; размер: M22 x 1.5; направление: правая; число заходов: 1; сбег: Плавный (авто-резервный Coil при отказе Loft); длина: вся поверхность; зазор: 0 мм; фаски: 1 / 1 мм
+Общее время: 3.4 с.
+Сбег Loft (плавный, защита плеча): длина 1,5 мм; 1 шага, 1 об.; 13 сеч., 11 вершин; подготовка профиля 0 мс, создание WorkPlane/Sketch/Profile 1356 мс, Loft.Add 221 мс, всего этапа 1801 мс.
+Основная резьба: фаски/проточки/подготовка 114 мс; WorkPlane/Sketch/Profile 90 мс; Coil.Add 348 мс; прочее этапа 308 мс; всего этапа 746 мс. Подготовка группировки 48 мс; папки дерева 50 мс.
+Папка «Резьба — ISO · M22 x 1.5 · 1 заход · Правая (R)»: объектов 31, узлов сгруппировано 29; TopNode 0 мс, поиск имени 0 мс, снимок дерева 4 мс, резервный поиск узлов 0 мс, создание + группировка 18 мс (batch BrowserNodes), резервные folder.Add 0 мс, BrowserNode папки 0 мс, SetEndOfPart 11 мс, Reorder 0 мс, всего 48 мс.
+Фиксация транзакции/обновление документа: 91 мс.
+Метаданные редактирования: ID 315005c8425e498cbef4eac914d85a39; объектов 31
+Предупреждения: нет.
+------------------------------------------------------------------------
+[2026-11-06 13:39:50] Построение успешно
+Резьб: 1; заходов всего: 1
+Параметры: наружная; стандарт: GOST; размер: M22 x 1.5; направление: правая; число заходов: 1; сбег: Плавный (авто-резервный Coil при отказе Loft); длина: вся поверхность; зазор: 0 мм; фаски: 1 / 1 мм
+Общее время: 3.9 с.
+Сбег Loft (плавный, защита плеча): длина 1,5 мм; 1 шага, 1 об.; 13 сеч., 11 вершин; подготовка профиля 0 мс, создание WorkPlane/Sketch/Profile 1592 мс, Loft.Add 247 мс, всего этапа 2089 мс.
+Основная резьба: фаски/проточки/подготовка 72 мс; WorkPlane/Sketch/Profile 121 мс; Coil.Add 322 мс; прочее этапа 329 мс; всего этапа 772 мс. Подготовка группировки 45 мс; папки дерева 47 мс.
+Папка «Резьба — ГОСТ 9150/8724 · M22 x 1.5 · 1 заход · Правая (R)»: объектов 31, узлов сгруппировано 29; TopNode 0 мс, поиск имени 0 мс, снимок дерева 5 мс, резервный поиск узлов 0 мс, создание + группировка 6 мс (batch BrowserNodes), резервные folder.Add 0 мс, BrowserNode папки 0 мс, SetEndOfPart 18 мс, Reorder 0 мс, всего 45 мс.
+Фиксация транзакции/обновление документа: 171 мс.
+Метаданные редактирования: ID 818357fb5a064fa38e6d17900e169366; объектов 31
+Предупреждения: нет.
+------------------------------------------------------------------------
+[2026-11-06 13:43:01] Построение успешно
+Резьб: 1; заходов всего: 1
+Параметры: наружная; стандарт: NPT (таблица Inventor); размер: 1/2; направление: правая; число заходов: 1; сбег: Плавный (авто-резервный Coil при отказе Loft); длина: 19.85 мм; зазор: 0 мм; фаски: 1 / 1 мм
+Общее время: 5.6 с.
+Подробные тайминги этапов отсутствуют.
+Метаданные редактирования: Метаданные конической группы сохранены (ID 0bda4c735e6046e7a782064ccb5e5f00; объектов 57).
+Предупреждения: нет.
+------------------------------------------------------------------------
+[Helivanta.DiagnosticMessage] 2026-11-06T11:43:20.8629965Z
+Context: NativeThreadConversionService.StartEdgeResolutionFailed
+StartEdge failure=Коллекция ThreadFeature.StartEdge пуста; ThreadedFace fallback failure=ThreadedFace не содержит распознаваемой цилиндрической грани (граней: 1).
+---
+[2026-11-06 13:43:32] Построение успешно
+Резьб: 1; заходов всего: 1
+Параметры: наружная; стандарт: GOST 6211-81 (таблица Inventor); размер: R 1/2; направление: правая; число заходов: 1; сбег: Плавный (авто-резервный Coil при отказе Loft); длина: 13.2 мм; зазор: 0 мм; фаски: 1 / 1 мм
+Общее время: 9.3 с.
+Подробные тайминги этапов отсутствуют.
+Метаданные редактирования: Метаданные конической группы сохранены (ID 1a20295dbaf34c90b17aa25b38c047db; объектов 57).
+Предупреждения: нет.
+------------------------------------------------------------------------
+[2026-11-06 13:44:24] Построение успешно
+Резьб: 1; заходов всего: 1
+Параметры: наружная; стандарт: GOST 6211-81 (таблица Inventor); размер: R 1/2; направление: правая; число заходов: 1; сбег: Плавный (авто-резервный Coil при отказе Loft); длина: 13.2 мм; зазор: 0 мм; фаски: 1 / 3 мм
+Общее время: 8.9 с.
+Подробные тайминги этапов отсутствуют.
+Метаданные редактирования: Метаданные конической группы сохранены (ID a4289e7371b2414a9479f41efa1c717b; объектов 57).
+Предупреждения: нет.
+------------------------------------------------------------------------
+[Helivanta.UIException] 2026-11-06T11:58:23.7086564Z
+Context: ThreadBuilder.GetUserFacingError:WallThicknessPreflightRejected; TaperedWallTooThin; standard=GOST 6211-81; designation=R 1 1/2; sourceDiameterMm=52; standardStartDiameterMm=47.009; standardEndDiameterMm=48.203; measuredWallMm=3.5; remainingWallMm=-0.074; requiredWallMm=0.577; profileDepthMm=1.479; chamferMm=1; effectiveCutDepthMm=1.479; worstRadiusAdjustmentMm=-2.495; unsafeSamples=128; measuredSamples=288; mode=StrictStandard; radiusReductionMm=2.495; explanation=table-driven cone reduction dominates groove depth
+ThreadPro.HelivantaOperationException: TaperedWallTooThin; standard=GOST 6211-81; designation=R 1 1/2; sourceDiameterMm=52; standardStartDiameterMm=47.009; standardEndDiameterMm=48.203; measuredWallMm=3.5; remainingWallMm=-0.074; requiredWallMm=0.577; profileDepthMm=1.479; chamferMm=1; effectiveCutDepthMm=1.479; worstRadiusAdjustmentMm=-2.495; unsafeSamples=128; measuredSamples=288; mode=StrictStandard; radiusReductionMm=2.495; explanation=table-driven cone reduction dominates groove depth
+   at ThreadPro.ThreadWallThicknessGuard.ValidateTaperedOrThrow(Application app, ThreadTarget target, ThreadParams parameters, Double hostLengthCm, Double startRadiusCm, Double endRadiusCm, Double pitchMm, Double depthMm)
+   at ThreadPro.NativeTaperedThreadBuilder.ValidateWallThicknessOrThrow(Application app, ThreadTarget source, ThreadParams p)
+   at ThreadPro.ThreadBuilder.BuildAll(Application app, IList`1 targets, ThreadParams p)
+   at ThreadPro.ThreadDialog.DoBuild()
+---
+[2026-11-06 13:58:23] Построение НЕ ВЫПОЛНЕНО
+Выбранных рёбер: 1
+Параметры: наружная; стандарт: GOST 6211-81 (таблица Inventor); размер: R 1 1/2; направление: правая; число заходов: 1; номинальный Ø: 47.009 мм; шаг: 2.309 мм; ход: 2.309 мм; зазор: 0 мм; сбег: Плавный (авто-резервный Coil при отказе Loft); длина: 19.1 мм; выход инструмента: выключен; скруглять: нет; фаски: 1 / 1 мм
+Время до отказа: 0.5 с.
+Подсказка пользователю: Построение остановлено: выбранный строгий табличный размер GOST 6211-81 R 1 1/2 значительно меньше исходной цилиндрической поверхности Ø52 мм. Расчётный конус имеет диаметр ≈ 47,009 мм у малого конца и ≈ 48,203 мм у дальнего конца. Подготовка этого табличного конуса уменьшает наружный радиус примерно на 2,495 мм; при минимальной измеренной стенке ≈ 3,5 мм и глубине канавки ≈ 1,479 мм расчётный остаток составит ≈ -0,074 мм, требуется не менее 0,577 мм. Причина — приведение заготовки к табличному диаметру, а не ошибка измерения стенки. Чтобы сохранить большой исходный диаметр, выключите «Строго по стандарту конических резьб» и используйте свободную геометрию 1:16; это будет нестандартный по диаметрам конус, а не табличный размер GOST 6211-81 R 1 1/2. Модель не изменена.
+Частичные тайминги отсутствуют.
+Полная техническая ошибка и стек:
+ThreadPro.HelivantaOperationException: TaperedWallTooThin; standard=GOST 6211-81; designation=R 1 1/2; sourceDiameterMm=52; standardStartDiameterMm=47.009; standardEndDiameterMm=48.203; measuredWallMm=3.5; remainingWallMm=-0.074; requiredWallMm=0.577; profileDepthMm=1.479; chamferMm=1; effectiveCutDepthMm=1.479; worstRadiusAdjustmentMm=-2.495; unsafeSamples=128; measuredSamples=288; mode=StrictStandard; radiusReductionMm=2.495; explanation=table-driven cone reduction dominates groove depth
+   at ThreadPro.ThreadWallThicknessGuard.ValidateTaperedOrThrow(Application app, ThreadTarget target, ThreadParams parameters, Double hostLengthCm, Double startRadiusCm, Double endRadiusCm, Double pitchMm, Double depthMm)
+   at ThreadPro.NativeTaperedThreadBuilder.ValidateWallThicknessOrThrow(Application app, ThreadTarget source, ThreadParams p)
+   at ThreadPro.ThreadBuilder.BuildAll(Application app, IList`1 targets, ThreadParams p)
+   at ThreadPro.ThreadDialog.DoBuild()
+------------------------------------------------------------------------
+[2026-11-06 13:59:30] Построение успешно
+Резьб: 1; заходов всего: 1
+Параметры: наружная; стандарт: GOST 6211-81 (таблица Inventor); размер: R 2; направление: правая; число заходов: 1; сбег: Плавный (авто-резервный Coil при отказе Loft); длина: 23.4 мм; зазор: 0 мм; фаски: 1 / 1 мм
+Общее время: 12.8 с.
+Подробные тайминги этапов отсутствуют.
+Метаданные редактирования: Метаданные конической группы сохранены (ID 78a101480a2f43968d49fe40c5ee05f8; объектов 57).
+Предупреждения: нет.
+------------------------------------------------------------------------
+[Helivanta.DiagnosticMessage] 2026-11-06T11:59:54.2694928Z
+Context: NativeThreadConversionService.StartEdgeResolutionFailed
+StartEdge failure=Коллекция ThreadFeature.StartEdge пуста; ThreadedFace fallback failure=ThreadedFace не содержит распознаваемой цилиндрической грани (граней: 2).
+---
+[2026-11-06 14:00:05] Построение успешно
+Резьб: 1; заходов всего: 1
+Параметры: наружная; стандарт: NPT (таблица Inventor); размер: 1 1/4; направление: правая; число заходов: 1; сбег: Плавный (авто-резервный Coil при отказе Loft); длина: 25.616 мм; зазор: 0 мм; фаски: 1 / 1 мм
+Общее время: 9.0 с.
+Подробные тайминги этапов отсутствуют.
+Метаданные редактирования: Метаданные конической группы сохранены (ID de02b1436c904b7c9bc1bd50d0525faf; объектов 57).
+Предупреждения: нет.
+------------------------------------------------------------------------
+[2026-11-06 14:04:03] Построение успешно
+Резьб: 1; заходов всего: 1
+Параметры: наружная; стандарт: NPT (таблица Inventor); размер: 1/2; направление: правая; число заходов: 1; сбег: Плавный (авто-резервный Coil при отказе Loft); длина: 19.85 мм; зазор: 0 мм; фаски: 1 / 1 мм
+Общее время: 4.9 с.
+Подробные тайминги этапов отсутствуют.
+Метаданные редактирования: Метаданные конической группы сохранены (ID e87b958995c24b8690015e7769068d03; объектов 57).
+Предупреждения: нет.
+------------------------------------------------------------------------
+[2026-11-06 14:04:34] Построение успешно
+Резьб: 1; заходов всего: 1
+Параметры: наружная; стандарт: GOST 6211-81 (таблица Inventor); размер: R 1/2; направление: правая; число заходов: 1; сбег: Плавный (авто-резервный Coil при отказе Loft); длина: 13.2 мм; зазор: 0 мм; фаски: 1 / 1 мм
+Общее время: 8.9 с.
+Подробные тайминги этапов отсутствуют.
+Метаданные редактирования: Метаданные конической группы сохранены (ID c15190ac47a549d59002ba68747ab191; объектов 57).
+Предупреждения: нет.
+------------------------------------------------------------------------
+[2026-11-09 16:15:54] Построение успешно
+Резьб: 1; заходов всего: 3
+Параметры: наружная; стандарт: GOST; размер: M22 x 1.5; направление: правая; число заходов: 3; сбег: Плавный (авто-резервный Coil при отказе Loft); длина: вся поверхность; зазор: 0.3 мм; фаски: 1 / 1 мм
+Общее время: 5.4 с.
+Сбег Loft (плавный, защита плеча): длина 1,5 мм; 1 шага, 0,33 об.; 5 сеч., 11 вершин; подготовка профиля 0 мс, создание WorkPlane/Sketch/Profile 516 мс, Loft.Add 219 мс, всего этапа 851 мс.
+Сбег Loft (плавный, защита плеча): длина 1,5 мм; 1 шага, 0,33 об.; 5 сеч., 11 вершин; подготовка профиля 0 мс, создание WorkPlane/Sketch/Profile 561 мс, Loft.Add 129 мс, всего этапа 818 мс.
+Сбег Loft (плавный, защита плеча): длина 1,5 мм; 1 шага, 0,33 об.; 5 сеч., 11 вершин; подготовка профиля 0 мс, создание WorkPlane/Sketch/Profile 584 мс, Loft.Add 132 мс, всего этапа 852 мс.
+Основная резьба: фаски/проточки/подготовка 253 мс; WorkPlane/Sketch/Profile 284 мс; Coil.Add 553 мс; прочее этапа 508 мс; всего этапа 1345 мс. Подготовка группировки 88 мс; папки дерева 90 мс.
+Папка «Резьба — ГОСТ 9150/8724 · M22 x 1.5 · 3 захода · Правая (R)»: объектов 46, узлов сгруппировано 39; TopNode 0 мс, поиск имени 1 мс, снимок дерева 8 мс, резервный поиск узлов 0 мс, создание + группировка 14 мс (batch BrowserNodes), резервные folder.Add 0 мс, BrowserNode папки 0 мс, SetEndOfPart 26 мс, Reorder 0 мс, всего 77 мс.
+Фиксация транзакции/обновление документа: 191 мс.
+Метаданные редактирования: ID 6ac4e80987954f7e9e81c0e8379835cf; объектов 46
+Предупреждения: нет.
+------------------------------------------------------------------------
+[2026-11-09 16:16:31] Построение успешно
+Резьб: 1; заходов всего: 3
+Параметры: наружная; стандарт: GOST; размер: M22 x 1.5; направление: правая; число заходов: 3; сбег: Плавный (авто-резервный Coil при отказе Loft); длина: вся поверхность; зазор: 0.3 мм; фаски: 1 / 1 мм
+Общее время: 4.9 с.
+Сбег Loft (плавный, защита плеча): длина 1,5 мм; 1 шага, 0,33 об.; 5 сеч., 11 вершин; подготовка профиля 0 мс, создание WorkPlane/Sketch/Profile 529 мс, Loft.Add 114 мс, всего этапа 758 мс.
+Сбег Loft (плавный, защита плеча): длина 1,5 мм; 1 шага, 0,33 об.; 5 сеч., 11 вершин; подготовка профиля 0 мс, создание WorkPlane/Sketch/Profile 538 мс, Loft.Add 128 мс, всего этапа 799 мс.
+Сбег Loft (плавный, защита плеча): длина 1,5 мм; 1 шага, 0,33 об.; 5 сеч., 11 вершин; подготовка профиля 0 мс, создание WorkPlane/Sketch/Profile 599 мс, Loft.Add 132 мс, всего этапа 867 мс.
+Основная резьба: фаски/проточки/подготовка 129 мс; WorkPlane/Sketch/Profile 284 мс; Coil.Add 525 мс; прочее этапа 501 мс; всего этапа 1310 мс. Подготовка группировки 46 мс; папки дерева 48 мс.
+Папка «Резьба — ГОСТ 9150/8724 · M22 x 1.5 · 3 захода · Правая (R)»: объектов 46, узлов сгруппировано 39; TopNode 0 мс, поиск имени 0 мс, снимок дерева 6 мс, резервный поиск узлов 0 мс, создание + группировка 6 мс (batch BrowserNodes), резервные folder.Add 0 мс, BrowserNode папки 0 мс, SetEndOfPart 14 мс, Reorder 0 мс, всего 46 мс.
+Фиксация транзакции/обновление документа: 136 мс.
+Метаданные редактирования: ID 11d01f50ca7d45f198bcb5b18464bd37; объектов 46
+Предупреждения: нет.
+------------------------------------------------------------------------
+[2026-11-10 09:15:11] Построение успешно
+Резьб: 1; заходов всего: 1
+Параметры: внутренняя; стандарт: GOST; размер: M12 x 1.5; направление: правая; число заходов: 1; сбег: Плавный (авто-резервный Coil при отказе Loft); длина: вся поверхность; зазор: 0.3 мм; фаски: 1 / 1 мм
+Общее время: 3.5 с.
+Основная резьба: фаски/проточки/подготовка 300 мс; WorkPlane/Sketch/Profile 187 мс; Coil.Add 914 мс; прочее этапа 865 мс; всего этапа 1966 мс. Подготовка группировки 446 мс; папки дерева 448 мс.
+Папка «Thread — GOST 9150/8724 · M12 x 1.5 · 1 start · Right-hand (R)»: объектов 10, узлов сгруппировано 7; TopNode 0 мс, поиск имени 1 мс, снимок дерева 4 мс, резервный поиск узлов 0 мс, создание + группировка 8 мс (batch BrowserNodes), резервные folder.Add 0 мс, BrowserNode папки 0 мс, SetEndOfPart 410 мс, Reorder 0 мс, всего 436 мс.
+Фиксация транзакции/обновление документа: 36 мс.
+Метаданные редактирования: ID 35491b7e2af74a3cb38b1f744cea5314; объектов 10
+Предупреждение: Подготовка внутренней резьбы Ø12 × 1,5 мм: исходное отверстие Ø12 мм будет предварительно заполнено материалом кольцом до малого диаметра внутреннего профиля Ø10,376 мм (изменение диаметра 1,624 мм). Затем винтовой профиль сформирует резьбу до номинального Ø12 мм. Номинальный диаметр в параметрах не меняется. Проверьте, что добавление материала допустимо.
+------------------------------------------------------------------------
+[Helivanta.UIException] 2026-11-10T07:15:37.5697240Z
+Context: ThreadBuilder.GetUserFacingError:WallThicknessPreflightRejected; WallTooThin; thread=M7 x 1; minimumThreadZoneWallMm=0.456; limitingSampleWallMm=0.456; globalMinimumMeasuredWallMm=0.456; remainingWallMm=0.456; requiredWallMm=0.5; rootDepthMm=0.541; chamferMm=1; localEffectiveCutDepthMm=0.541; samples=108; safetySamples=108; selectedFaceSamples=108; skippedOutsideFace=4; globalMinimumRay=[station=6/7;axialFraction=0.98;angleIndex=2;angleDeg=53.325;surfaceMm=(-257.877,66.237,-2.807);rayStartMm=(-257.874,66.237,-2.811);hitMm=(-257.605,66.237,-3.173);entity=Face;surfaceType=kConeSurface;absNormalRayDot=0.2974]; shoulderStart=False; shoulderEnd=False; smoothStart=False; smoothEnd=False; limitingSampleAxialIndex=6; limitingSampleAngularIndex=2; limitingRay=[station=6/7;axialFraction=0.98;angleIndex=2;angleDeg=53.325;surfaceMm=(-257.877,66.237,-2.807);rayStartMm=(-257.874,66.237,-2.811);hitMm=(-257.605,66.237,-3.173);entity=Face;surfaceType=kConeSurface;absNormalRayDot=0.2974]
+ThreadPro.HelivantaOperationException: WallTooThin; thread=M7 x 1; minimumThreadZoneWallMm=0.456; limitingSampleWallMm=0.456; globalMinimumMeasuredWallMm=0.456; remainingWallMm=0.456; requiredWallMm=0.5; rootDepthMm=0.541; chamferMm=1; localEffectiveCutDepthMm=0.541; samples=108; safetySamples=108; selectedFaceSamples=108; skippedOutsideFace=4; globalMinimumRay=[station=6/7;axialFraction=0.98;angleIndex=2;angleDeg=53.325;surfaceMm=(-257.877,66.237,-2.807);rayStartMm=(-257.874,66.237,-2.811);hitMm=(-257.605,66.237,-3.173);entity=Face;surfaceType=kConeSurface;absNormalRayDot=0.2974]; shoulderStart=False; shoulderEnd=False; smoothStart=False; smoothEnd=False; limitingSampleAxialIndex=6; limitingSampleAngularIndex=2; limitingRay=[station=6/7;axialFraction=0.98;angleIndex=2;angleDeg=53.325;surfaceMm=(-257.877,66.237,-2.807);rayStartMm=(-257.874,66.237,-2.811);hitMm=(-257.605,66.237,-3.173);entity=Face;surfaceType=kConeSurface;absNormalRayDot=0.2974]
+   at ThreadPro.ThreadWallThicknessGuard.ValidateOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.ValidateTargetWallThicknessOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.BuildAll(Application app, IList`1 targets, ThreadParams p)
+   at ThreadPro.ThreadDialog.DoBuild()
+---
+[2026-11-10 09:15:37] Построение НЕ ВЫПОЛНЕНО
+Выбранных рёбер: 1
+Параметры: внутренняя; стандарт: GOST; размер: M7 x 1; направление: правая; число заходов: 1; номинальный Ø: 7 мм; шаг: 1 мм; ход: 1 мм; зазор: 0.3 мм; сбег: Плавный (авто-резервный Coil при отказе Loft); длина: вся поверхность; выход инструмента: включён; скруглять: да; фаски: 1 / 1 мм
+Время до отказа: 0.4 с.
+Подсказка пользователю: Build stopped: the wall is too thin for thread M7 x 1. The minimum measured wall is about 0.456 mm; after forming the profile, about 0.456 mm would remain, while at least 0.5 mm is required. The profile-root depth is about 0.541 mm; the chamfer is 1 mm (0 means disabled); the calculation uses the maximum local removal depth, about 0.541 mm, rather than adding the depths. Reduce pitch or chamfer size, or choose a thicker wall. The model was not changed.
+Частичные тайминги отсутствуют.
+Полная техническая ошибка и стек:
+ThreadPro.HelivantaOperationException: WallTooThin; thread=M7 x 1; minimumThreadZoneWallMm=0.456; limitingSampleWallMm=0.456; globalMinimumMeasuredWallMm=0.456; remainingWallMm=0.456; requiredWallMm=0.5; rootDepthMm=0.541; chamferMm=1; localEffectiveCutDepthMm=0.541; samples=108; safetySamples=108; selectedFaceSamples=108; skippedOutsideFace=4; globalMinimumRay=[station=6/7;axialFraction=0.98;angleIndex=2;angleDeg=53.325;surfaceMm=(-257.877,66.237,-2.807);rayStartMm=(-257.874,66.237,-2.811);hitMm=(-257.605,66.237,-3.173);entity=Face;surfaceType=kConeSurface;absNormalRayDot=0.2974]; shoulderStart=False; shoulderEnd=False; smoothStart=False; smoothEnd=False; limitingSampleAxialIndex=6; limitingSampleAngularIndex=2; limitingRay=[station=6/7;axialFraction=0.98;angleIndex=2;angleDeg=53.325;surfaceMm=(-257.877,66.237,-2.807);rayStartMm=(-257.874,66.237,-2.811);hitMm=(-257.605,66.237,-3.173);entity=Face;surfaceType=kConeSurface;absNormalRayDot=0.2974]
+   at ThreadPro.ThreadWallThicknessGuard.ValidateOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.ValidateTargetWallThicknessOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.BuildAll(Application app, IList`1 targets, ThreadParams p)
+   at ThreadPro.ThreadDialog.DoBuild()
+------------------------------------------------------------------------
+[2026-11-10 09:16:08] Построение успешно
+Резьб: 1; заходов всего: 1
+Параметры: внутренняя; стандарт: GOST; размер: M7 x 1; направление: правая; число заходов: 1; сбег: Плавный (авто-резервный Coil при отказе Loft); длина: вся поверхность; зазор: 0.3 мм; фаски: 1 / 1 мм
+Общее время: 3.5 с.
+Основная резьба: фаски/проточки/подготовка 237 мс; WorkPlane/Sketch/Profile 133 мс; Coil.Add 1280 мс; прочее этапа 1217 мс; всего этапа 2630 мс. Подготовка группировки 22 мс; папки дерева 24 мс.
+Папка «Резьба — ГОСТ 9150/8724 · M7 x 1 · 1 заход · Правая (R)»: объектов 10, узлов сгруппировано 7; TopNode 0 мс, поиск имени 0 мс, снимок дерева 2 мс, резервный поиск узлов 0 мс, создание + группировка 4 мс (batch BrowserNodes), резервные folder.Add 0 мс, BrowserNode папки 0 мс, SetEndOfPart 7 мс, Reorder 0 мс, всего 22 мс.
+Фиксация транзакции/обновление документа: 49 мс.
+Метаданные редактирования: ID 955305c6660746f2b627429a562f4e8d; объектов 10
+Предупреждение: Подготовка внутренней резьбы Ø7 × 1 мм: исходное отверстие Ø12 мм будет предварительно заполнено материалом кольцом до малого диаметра внутреннего профиля Ø5,917 мм (изменение диаметра 6,083 мм). Затем винтовой профиль сформирует резьбу до номинального Ø7 мм. Номинальный диаметр в параметрах не меняется. Проверьте, что добавление материала допустимо.
+------------------------------------------------------------------------
+[2026-11-10 09:16:30] Построение успешно
+Резьб: 1; заходов всего: 1
+Параметры: внутренняя; стандарт: ISO; размер: M12 x 1.5; направление: правая; число заходов: 1; сбег: Плавный (авто-резервный Coil при отказе Loft); длина: вся поверхность; зазор: 0 мм; фаски: 1 / 1 мм
+Общее время: 2.4 с.
+Основная резьба: фаски/проточки/подготовка 142 мс; WorkPlane/Sketch/Profile 109 мс; Coil.Add 751 мс; прочее этапа 733 мс; всего этапа 1593 мс. Подготовка группировки 20 мс; папки дерева 22 мс.
+Папка «Резьба — ISO · M12 x 1.5 · 1 заход · Правая (R)»: объектов 7, узлов сгруппировано 5; TopNode 0 мс, поиск имени 0 мс, снимок дерева 2 мс, резервный поиск узлов 0 мс, создание + группировка 4 мс (batch BrowserNodes), резервные folder.Add 0 мс, BrowserNode папки 0 мс, SetEndOfPart 7 мс, Reorder 0 мс, всего 20 мс.
+Фиксация транзакции/обновление документа: 21 мс.
+Метаданные редактирования: ID 9e367a3900ab45538fd8b063dff6a70e; объектов 7
+Предупреждение: Подготовка внутренней резьбы Ø12 × 1,5 мм: исходное отверстие Ø12 мм будет предварительно заполнено материалом кольцом до малого диаметра внутреннего профиля Ø10,376 мм (изменение диаметра 1,624 мм). Затем винтовой профиль сформирует резьбу до номинального Ø12 мм. Номинальный диаметр в параметрах не меняется. Проверьте, что добавление материала допустимо.
+------------------------------------------------------------------------
+[Helivanta.UIException] 2026-11-10T07:17:04.5932008Z
+Context: ThreadBuilder.GetUserFacingError:WallThicknessPreflightRejected; WallTooThin; thread=M7 x 1; minimumThreadZoneWallMm=0.456; limitingSampleWallMm=0.456; globalMinimumMeasuredWallMm=0.456; remainingWallMm=0.456; requiredWallMm=0.5; rootDepthMm=0.541; chamferMm=0; localEffectiveCutDepthMm=0.541; samples=108; safetySamples=108; selectedFaceSamples=108; skippedOutsideFace=4; globalMinimumRay=[station=6/7;axialFraction=0.98;angleIndex=2;angleDeg=53.325;surfaceMm=(-257.877,66.237,-2.807);rayStartMm=(-257.874,66.237,-2.811);hitMm=(-257.605,66.237,-3.173);entity=Face;surfaceType=kConeSurface;absNormalRayDot=0.2974]; shoulderStart=False; shoulderEnd=False; smoothStart=False; smoothEnd=False; limitingSampleAxialIndex=6; limitingSampleAngularIndex=2; limitingRay=[station=6/7;axialFraction=0.98;angleIndex=2;angleDeg=53.325;surfaceMm=(-257.877,66.237,-2.807);rayStartMm=(-257.874,66.237,-2.811);hitMm=(-257.605,66.237,-3.173);entity=Face;surfaceType=kConeSurface;absNormalRayDot=0.2974]
+ThreadPro.HelivantaOperationException: WallTooThin; thread=M7 x 1; minimumThreadZoneWallMm=0.456; limitingSampleWallMm=0.456; globalMinimumMeasuredWallMm=0.456; remainingWallMm=0.456; requiredWallMm=0.5; rootDepthMm=0.541; chamferMm=0; localEffectiveCutDepthMm=0.541; samples=108; safetySamples=108; selectedFaceSamples=108; skippedOutsideFace=4; globalMinimumRay=[station=6/7;axialFraction=0.98;angleIndex=2;angleDeg=53.325;surfaceMm=(-257.877,66.237,-2.807);rayStartMm=(-257.874,66.237,-2.811);hitMm=(-257.605,66.237,-3.173);entity=Face;surfaceType=kConeSurface;absNormalRayDot=0.2974]; shoulderStart=False; shoulderEnd=False; smoothStart=False; smoothEnd=False; limitingSampleAxialIndex=6; limitingSampleAngularIndex=2; limitingRay=[station=6/7;axialFraction=0.98;angleIndex=2;angleDeg=53.325;surfaceMm=(-257.877,66.237,-2.807);rayStartMm=(-257.874,66.237,-2.811);hitMm=(-257.605,66.237,-3.173);entity=Face;surfaceType=kConeSurface;absNormalRayDot=0.2974]
+   at ThreadPro.ThreadWallThicknessGuard.ValidateOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.ValidateTargetWallThicknessOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.BuildAll(Application app, IList`1 targets, ThreadParams p)
+   at ThreadPro.ThreadDialog.DoBuild()
+---
+[2026-11-10 09:17:04] Построение НЕ ВЫПОЛНЕНО
+Выбранных рёбер: 1
+Параметры: внутренняя; стандарт: ISO; размер: M7 x 1; направление: правая; число заходов: 1; номинальный Ø: 7 мм; шаг: 1 мм; ход: 1 мм; зазор: 0 мм; сбег: Плавный (авто-резервный Coil при отказе Loft); длина: вся поверхность; выход инструмента: включён; скруглять: да; фаски: 0 / 1 мм
+Время до отказа: 0.4 с.
+Подсказка пользователю: Построение остановлено: стенка для резьбы M7 x 1 слишком тонкая. Минимальная измеренная стенка ≈ 0,456 мм; после формирования профиля останется ≈ 0,456 мм, при этом требуется не менее 0,5 мм. Глубина корня профиля ≈ 0,541 мм; фаска задана 0 мм (0 мм означает, что фаска выключена); для оценки учитывается максимальная локальная глубина удаления ≈ 0,541 мм, а не сумма глубин. Уменьшите шаг или фаску либо выберите более толстую стенку. Модель не изменена.
+Частичные тайминги отсутствуют.
+Полная техническая ошибка и стек:
+ThreadPro.HelivantaOperationException: WallTooThin; thread=M7 x 1; minimumThreadZoneWallMm=0.456; limitingSampleWallMm=0.456; globalMinimumMeasuredWallMm=0.456; remainingWallMm=0.456; requiredWallMm=0.5; rootDepthMm=0.541; chamferMm=0; localEffectiveCutDepthMm=0.541; samples=108; safetySamples=108; selectedFaceSamples=108; skippedOutsideFace=4; globalMinimumRay=[station=6/7;axialFraction=0.98;angleIndex=2;angleDeg=53.325;surfaceMm=(-257.877,66.237,-2.807);rayStartMm=(-257.874,66.237,-2.811);hitMm=(-257.605,66.237,-3.173);entity=Face;surfaceType=kConeSurface;absNormalRayDot=0.2974]; shoulderStart=False; shoulderEnd=False; smoothStart=False; smoothEnd=False; limitingSampleAxialIndex=6; limitingSampleAngularIndex=2; limitingRay=[station=6/7;axialFraction=0.98;angleIndex=2;angleDeg=53.325;surfaceMm=(-257.877,66.237,-2.807);rayStartMm=(-257.874,66.237,-2.811);hitMm=(-257.605,66.237,-3.173);entity=Face;surfaceType=kConeSurface;absNormalRayDot=0.2974]
+   at ThreadPro.ThreadWallThicknessGuard.ValidateOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.ValidateTargetWallThicknessOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.BuildAll(Application app, IList`1 targets, ThreadParams p)
+   at ThreadPro.ThreadDialog.DoBuild()
+------------------------------------------------------------------------
+[2026-11-10 09:17:35] Построение успешно
+Резьб: 1; заходов всего: 1
+Параметры: внутренняя; стандарт: ISO; размер: M2 x 0.4; направление: правая; число заходов: 1; сбег: Плавный (авто-резервный Coil при отказе Loft); длина: вся поверхность; зазор: 0 мм; фаски: 0 / 1 мм
+Общее время: 5.0 с.
+Основная резьба: фаски/проточки/подготовка 241 мс; WorkPlane/Sketch/Profile 98 мс; Coil.Add 1638 мс; прочее этапа 1568 мс; всего этапа 3304 мс. Подготовка группировки 578 мс; папки дерева 580 мс.
+Папка «Резьба — ISO · M2 x 0.4 · 1 заход · Правая (R)»: объектов 6, узлов сгруппировано 4; TopNode 0 мс, поиск имени 0 мс, снимок дерева 2 мс, резервный поиск узлов 0 мс, создание + группировка 13 мс (batch BrowserNodes), резервные folder.Add 0 мс, BrowserNode папки 0 мс, SetEndOfPart 23 мс, Reorder 0 мс, всего 578 мс.
+Фиксация транзакции/обновление документа: 88 мс.
+Метаданные редактирования: ID 152b516bec7c4cc98abcd0662d4a56d9; объектов 6
+Предупреждение: Подготовка внутренней резьбы Ø2 × 0,4 мм: исходное отверстие Ø2 мм будет предварительно заполнено материалом кольцом до малого диаметра внутреннего профиля Ø1,567 мм (изменение диаметра 0,433 мм). Затем винтовой профиль сформирует резьбу до номинального Ø2 мм. Номинальный диаметр в параметрах не меняется. Проверьте, что добавление материала допустимо.
+------------------------------------------------------------------------
+[2026-11-10 09:17:58] Построение НЕ ВЫПОЛНЕНО
+Выбранных рёбер: 1
+Параметры: внутренняя; стандарт: ISO; размер: M7 x 1; направление: правая; число заходов: 1; номинальный Ø: 7 мм; шаг: 1 мм; ход: 1 мм; зазор: 0 мм; сбег: Плавный (авто-резервный Coil при отказе Loft); длина: вся поверхность; выход инструмента: включён; скруглять: да; фаски: 0 / 1 мм
+Время до отказа: 0.4 с.
+Подсказка пользователю: Построение остановлено: стенка для резьбы M7 x 1 слишком тонкая. Минимальная измеренная стенка ≈ 0,456 мм; после формирования профиля останется ≈ 0,456 мм, при этом требуется не менее 0,5 мм. Глубина корня профиля ≈ 0,541 мм; фаска задана 0 мм (0 мм означает, что фаска выключена); для оценки учитывается максимальная локальная глубина удаления ≈ 0,541 мм, а не сумма глубин. Уменьшите шаг или фаску либо выберите более толстую стенку. Модель не изменена.
+Частичные тайминги отсутствуют.
+Полная техническая ошибка и стек:
+ThreadPro.HelivantaOperationException: WallTooThin; thread=M7 x 1; minimumThreadZoneWallMm=0.456; limitingSampleWallMm=0.456; globalMinimumMeasuredWallMm=0.456; remainingWallMm=0.456; requiredWallMm=0.5; rootDepthMm=0.541; chamferMm=0; localEffectiveCutDepthMm=0.541; samples=108; safetySamples=108; selectedFaceSamples=108; skippedOutsideFace=4; globalMinimumRay=[station=6/7;axialFraction=0.98;angleIndex=2;angleDeg=53.325;surfaceMm=(-257.877,66.237,-2.807);rayStartMm=(-257.874,66.237,-2.811);hitMm=(-257.605,66.237,-3.173);entity=Face;surfaceType=kConeSurface;absNormalRayDot=0.2974]; shoulderStart=False; shoulderEnd=False; smoothStart=False; smoothEnd=False; limitingSampleAxialIndex=6; limitingSampleAngularIndex=2; limitingRay=[station=6/7;axialFraction=0.98;angleIndex=2;angleDeg=53.325;surfaceMm=(-257.877,66.237,-2.807);rayStartMm=(-257.874,66.237,-2.811);hitMm=(-257.605,66.237,-3.173);entity=Face;surfaceType=kConeSurface;absNormalRayDot=0.2974]
+   at ThreadPro.ThreadWallThicknessGuard.ValidateOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.ValidateTargetWallThicknessOrThrow(Application app, ThreadTarget target, ThreadParams parameters)
+   at ThreadPro.ThreadBuilder.BuildAll(Application app, IList`1 targets, ThreadParams p)
+   at ThreadPro.ThreadDialog.DoBuild()
+------------------------------------------------------------------------
