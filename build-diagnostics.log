@@ -1,0 +1,77 @@
+[Helivanta.DiagnosticMessage] 2026-11-12T10:53:38.9004116Z
+Context: ThreadBuilder.surface-boundary-domain-trim-completed
+stage=Резьба: приведение диаметра; originalVolumeCm3=2.977585689062936; appliedTrimSurfaces=2; provenNoOpSurfaces=0; provenDisjointSurfaces=0; domain=boundaryLoops=2; startLoop=1; oppositeLoop=2; startFromMaximumAxial=False; radiusCm=0.6000000000000003; axial=[-0.07822,8.768718264519022]cm
+---
+[Helivanta.DiagnosticMessage] 2026-11-12T10:53:39.0152989Z
+Context: ThreadBuilder.chamfer-terminal-boundaries-resolved
+surfaceType=kCylinderSurface; targetRadiusCm=0.5188101183952089; targetLengthCm=8.690498264519022; scannedCylinderFaces=1; validLoops=2; selectedStartLoop=2; selectedEndLoop=1; startEdges=2; endEdges=1; startAxial=[-5.828670879282072E-16,0.03222767703799981]cm; startMean=0.01563735968026919cm; endAxial=[8.11986971170289,8.657566743219155]cm; endMean=8.383216893050083cm; startMeanFraction=0.00179936284483392; endMeanFraction=0.9646416854228616; radialToleranceCm=0.005; surfaceBoundary=True; startEdges=2; endEdges=1; chamferMode=1
+---
+[Helivanta.DiagnosticMessage] 2026-11-12T10:53:39.0410547Z
+Context: ThreadBuilder.chamfer-skipped
+location=Начало резьбы; reason=ось резьбы не пересекает криволинейную поверхность в точке торца; surface=kConeSurface; axisSurfaceDistanceMm=5.188; axisNormalAlignment=1; axisNormalAngleDeg=0; toleranceDeg=2
+---
+[Helivanta.DiagnosticMessage] 2026-11-12T10:53:39.1075079Z
+Context: ThreadBuilder.surface-boundary-ring-created
+feature=Резьба: проточка вершин (зазор); operation=kCutOperation; clipJoin=False; trimNotRequiredByExactDisjointness=False; trimSurfaceCount=2; startMm=-0.782; endMm=86.905; rLowMm=5.038; rHighMm=5.338
+---
+[Helivanta.DiagnosticMessage] 2026-11-12T10:53:39.3797275Z
+Context: ThreadBuilder.coil-orientation
+selectionMode=CylindricalSurface; startFromMaxAxial=False; nativeDirectionReversed=False; reverseSurfaceStartHand=False; rightHand=True; clockwiseRotation=False; heightCm=8.846938264519022; leadCm=0.15; revolutions=58.97958843012681; profileSegments=12
+---
+[2026-11-12 12:53:43] Построение успешно
+Резьб: 1; заходов всего: 1
+Параметры: внутренняя; стандарт: ISO; размер: M12 x 1.5; направление: правая; число заходов: 1; сбег: Плавный (авто-резервный Coil при отказе Loft); длина: вся поверхность; зазор: 0.3 мм; фаски: 1 / 1 мм
+Общее время: 6.3 с.
+Основная резьба: фаски/проточки/подготовка 1872 мс; WorkPlane/Sketch/Profile 146 мс; Coil.Add 1482 мс; прочее этапа 1524 мс; всего этапа 3152 мс. Подготовка группировки 42 мс; папки дерева 44 мс.
+Папка «Резьба — ISO · M12 x 1.5 · 1 заход · Правая (R)»: объектов 14, узлов сгруппировано 11; TopNode 0 мс, поиск имени 0 мс, снимок дерева 2 мс, резервный поиск узлов 0 мс, создание + группировка 5 мс (batch BrowserNodes), резервные folder.Add 0 мс, BrowserNode папки 0 мс, SetEndOfPart 15 мс, Reorder 0 мс, всего 42 мс.
+Фиксация транзакции/обновление документа: 78 мс.
+Метаданные редактирования: ID ec3320f5484f4b129917ee4b8efad1eb; объектов 14
+Предупреждение: Подготовка внутренней резьбы Ø12 × 1,5 мм: исходное отверстие Ø12 мм будет предварительно заполнено материалом кольцом до малого диаметра внутреннего профиля Ø10,376 мм (изменение диаметра 1,624 мм). Затем винтовой профиль сформирует резьбу до номинального Ø12 мм. Номинальный диаметр в параметрах не меняется. Проверьте, что добавление материала допустимо.
+Начало резьбы: автоматическая фаска пропущена. Резьба построена без этой фаски.
+------------------------------------------------------------------------
+[Helivanta.DiagnosticMessage] 2026-11-12T10:53:56.4942669Z
+Context: EdgeSelector.surface-start-side-resolved
+source=click-nearest-boundary; selected=maximum-axial; minimumBoundaryDistanceMm=46.407; maximumBoundaryDistanceMm=14.495; minimumBoundaryEdges=1; maximumBoundaryEdges=1; modelPositionAvailable=True; detail=candidateEdges=2; minimumGroup=1; maximumGroup=1; largestAxialGapMm=69.079; ambiguityToleranceMm=0.25; graphicsPick=True
+---
+[2026-11-12 12:54:02] Построение НЕ ВЫПОЛНЕНО
+Выбранных рёбер: 1
+Параметры: внутренняя; стандарт: ISO; размер: M16 x 1.5; направление: правая; число заходов: 1; номинальный Ø: 16 мм; шаг: 1.5 мм; ход: 1.5 мм; зазор: 0.3 мм; сбег: Плавный (авто-резервный Coil при отказе Loft); длина: вся поверхность; выход инструмента: включён; скруглять: да; фаски: 1 / 1 мм
+Время до отказа: 1.7 с.
+Подсказка пользователю: Inventor не завершил один из этапов построения резьбы. Проверьте, что выбрано круговое ребро нужной цилиндрической поверхности, длины хватает для профиля и сбегов, а диаметр, шаг, ход, зазор и фаски согласованы с деталью. Если отказ возникает при создании геометрии, повторите попытку сначала без «Фаски», затем без «Скруглять» и «Выход инструмента за деталь», меняя по одному параметру. Если отказ связан с группировкой, не меняйте геометрию наугад: это отдельная проблема дерева построений. Модель не следует сохранять, пока не подтверждено её состояние.
+
+Меняйте по одному параметру и повторяйте построение после каждого шага: 1) отключите «Фаски»; 2) отключите «Скруглять»; 3) отключите «Выход инструмента за деталь» или выберите сбег «Упрощённый». Для конической резьбы дополнительно проверьте, что выбрана коническая поверхность и размер стандарта соответствует её диаметру. Если эти шаги не помогают, не перезаписывайте исходный файл: сначала убедитесь, что модель восстановлена, затем сохраните отдельную копию для дальнейшего разбора.
+Частичные тайминги отсутствуют.
+Полная техническая ошибка и стек:
+System.InvalidOperationException: Продолжённая аналитическая поверхность пересекает область кольца, но локальный участок исходной грани не сопоставлен однозначно (surface=kConeSurface; matchingFaces=2; failedProbes=0; nearestDistanceMm=0; secondDistanceMm=0; axial=[-0.17822,8.092862473885441]cm; radialEnvelope=0.92cm; margin=0.1cm; clippedFaceCount=3).
+   at ThreadPro.ThreadBuilder.CreateExtendedAnalyticTrimSurfaceBody(Application app, Face sourceFace, ThreadTarget target, Double radialEnvelopeCm, Double ringAxialMinCm, Double ringAxialMaxCm, Double[] orientationProbePoint, String& extensionMode)
+   at ThreadPro.ThreadBuilder.CollectSurfaceTrimFaces(Application app, ThreadTarget target, Double radialEnvelopeCm, Double ringAxialMinCm, Double ringAxialMaxCm, String& assessment, ThreadDomain& domain, Boolean& allBoundarySurfacesProvenNotIntersecting)
+   at ThreadPro.ThreadBuilder.BuildAfterWallThicknessValidation(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadBuilder.BuildAll(Application app, IList`1 targets, ThreadParams p)
+------------------------------------------------------------------------
+[Helivanta.DiagnosticMessage] 2026-11-12T10:54:42.7724669Z
+Context: EdgeSelector.surface-start-side-resolved
+source=click-nearest-boundary; selected=minimum-axial; minimumBoundaryDistanceMm=17.791; maximumBoundaryDistanceMm=42.947; minimumBoundaryEdges=1; maximumBoundaryEdges=1; modelPositionAvailable=True; detail=candidateEdges=2; minimumGroup=1; maximumGroup=1; largestAxialGapMm=69.079; ambiguityToleranceMm=0.25; graphicsPick=True
+---
+[Helivanta.UIException] 2026-11-12T10:54:54.5353920Z
+Context: ThreadBuilder.GetUserFacingError.UnclassifiedException
+System.InvalidOperationException: Продолжённая аналитическая поверхность пересекает область кольца, но локальный участок исходной грани не сопоставлен однозначно (surface=kConeSurface; matchingFaces=2; failedProbes=0; nearestDistanceMm=0; secondDistanceMm=0; axial=[-0.22035272000000003,8.134995193885441]cm; radialEnvelope=0.92cm; margin=0.1cm; clippedFaceCount=3).
+   at ThreadPro.ThreadBuilder.CreateExtendedAnalyticTrimSurfaceBody(Application app, Face sourceFace, ThreadTarget target, Double radialEnvelopeCm, Double ringAxialMinCm, Double ringAxialMaxCm, Double[] orientationProbePoint, String& extensionMode)
+   at ThreadPro.ThreadBuilder.CollectSurfaceTrimFaces(Application app, ThreadTarget target, Double radialEnvelopeCm, Double ringAxialMinCm, Double ringAxialMaxCm, String& assessment, ThreadDomain& domain, Boolean& allBoundarySurfacesProvenNotIntersecting)
+   at ThreadPro.ThreadBuilder.BuildAfterWallThicknessValidation(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadBuilder.BuildAll(Application app, IList`1 targets, ThreadParams p)
+---
+[2026-11-12 12:54:55] Построение НЕ ВЫПОЛНЕНО
+Выбранных рёбер: 1
+Параметры: внутренняя; стандарт: BSW; размер: 5/8" BSW - 11 TPI; направление: правая; число заходов: 1; номинальный Ø: 15.875 мм; шаг: 2.309 мм; ход: 2.309 мм; зазор: 0.3 мм; сбег: Плавный (авто-резервный Coil при отказе Loft); длина: вся поверхность; выход инструмента: включён; скруглять: да; фаски: 1 / 1 мм
+Время до отказа: 1.5 с.
+Подсказка пользователю: Inventor не завершил один из этапов построения резьбы. Проверьте, что выбрано круговое ребро нужной цилиндрической поверхности, длины хватает для профиля и сбегов, а диаметр, шаг, ход, зазор и фаски согласованы с деталью. Если отказ возникает при создании геометрии, повторите попытку сначала без «Фаски», затем без «Скруглять» и «Выход инструмента за деталь», меняя по одному параметру. Если отказ связан с группировкой, не меняйте геометрию наугад: это отдельная проблема дерева построений. Модель не следует сохранять, пока не подтверждено её состояние.
+
+Меняйте по одному параметру и повторяйте построение после каждого шага: 1) отключите «Фаски»; 2) отключите «Скруглять»; 3) отключите «Выход инструмента за деталь» или выберите сбег «Упрощённый». Для конической резьбы дополнительно проверьте, что выбрана коническая поверхность и размер стандарта соответствует её диаметру. Если эти шаги не помогают, не перезаписывайте исходный файл: сначала убедитесь, что модель восстановлена, затем сохраните отдельную копию для дальнейшего разбора.
+Частичные тайминги отсутствуют.
+Полная техническая ошибка и стек:
+System.InvalidOperationException: Продолжённая аналитическая поверхность пересекает область кольца, но локальный участок исходной грани не сопоставлен однозначно (surface=kConeSurface; matchingFaces=2; failedProbes=0; nearestDistanceMm=0; secondDistanceMm=0; axial=[-0.22035272000000003,8.134995193885441]cm; radialEnvelope=0.92cm; margin=0.1cm; clippedFaceCount=3).
+   at ThreadPro.ThreadBuilder.CreateExtendedAnalyticTrimSurfaceBody(Application app, Face sourceFace, ThreadTarget target, Double radialEnvelopeCm, Double ringAxialMinCm, Double ringAxialMaxCm, Double[] orientationProbePoint, String& extensionMode)
+   at ThreadPro.ThreadBuilder.CollectSurfaceTrimFaces(Application app, ThreadTarget target, Double radialEnvelopeCm, Double ringAxialMinCm, Double ringAxialMaxCm, String& assessment, ThreadDomain& domain, Boolean& allBoundarySurfacesProvenNotIntersecting)
+   at ThreadPro.ThreadBuilder.BuildAfterWallThicknessValidation(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadBuilder.BuildAll(Application app, IList`1 targets, ThreadParams p)
+------------------------------------------------------------------------
