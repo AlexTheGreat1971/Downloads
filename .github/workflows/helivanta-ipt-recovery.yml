@@ -1,0 +1,56 @@
+name: Recover Helivanta diagnostic IPT files
+
+on:
+  push:
+    branches:
+      - temp/helivanta-ipt-recovery-20261113
+    paths:
+      - .github/workflows/helivanta-ipt-recovery.yml
+
+permissions:
+  contents: read
+
+jobs:
+  recover:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout recovery branch
+        uses: actions/checkout@v4
+        with:
+          ref: temp/helivanta-ipt-recovery-20261113
+
+      - name: Decode and verify Inventor files
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          $names = @(
+            '20261112-163914-INNER-SB05-FULL-MAX-CH0-FAIL-DIAGNOSTIC',
+            '20261112-163914-INNER-SB05-PARTIAL14-MIN-CH0-FAIL-DIAGNOSTIC'
+          )
+          $out = Join-Path $env:RUNNER_TEMP 'helivanta-ipt-recovery'
+          New-Item -ItemType Directory -Force -Path $out | Out-Null
+          $manifest = @()
+          foreach ($name in $names) {
+            $source = Join-Path $env:GITHUB_WORKSPACE ($name + '.ipt.b64')
+            if (-not (Test-Path -LiteralPath $source)) { throw "Missing source: $source" }
+            $encoded = (Get-Content -LiteralPath $source -Raw).Trim()
+            $bytes = [Convert]::FromBase64String($encoded)
+            if ($bytes.Length -lt 8) { throw "Decoded file too small: $name" }
+            $signature = [Convert]::ToHexString($bytes[0..7])
+            if ($signature -ne 'D0CF11E0A1B11AE1') { throw "Unexpected OLE signature for $name`: $signature" }
+            $target = Join-Path $out ($name + '.ipt')
+            [IO.File]::WriteAllBytes($target, $bytes)
+            $hash = (Get-FileHash -LiteralPath $target -Algorithm SHA256).Hash
+            $manifest += [pscustomobject]@{ File = ($name + '.ipt'); Bytes = $bytes.Length; SHA256 = $hash; OLE = $signature }
+          }
+          $manifest | ConvertTo-Json -Depth 4 | Set-Content -LiteralPath (Join-Path $out 'recovery-manifest.json') -Encoding UTF8
+          Compress-Archive -Path (Join-Path $out '*') -DestinationPath (Join-Path $env:RUNNER_TEMP 'helivanta-ipt-recovery.zip') -Force
+          $manifest | Format-Table -AutoSize
+
+      - name: Upload recovered IPT archive
+        uses: actions/upload-artifact@v4
+        with:
+          name: helivanta-diagnostic-ipt-files
+          path: D:\\a\\_temp\\helivanta-ipt-recovery.zip
+          if-no-files-found: error
+          retention-days: 3
