@@ -1,0 +1,60 @@
+name: Temporary IPT diagnostic recovery
+
+on:
+  push:
+    branches:
+      - "temp/ipt-diagnostic-recovery-20261113"
+    paths:
+      - ".github/workflows/recover-ipt-diagnostics-temporary.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  recover-ipts:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout diagnostic files only
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Decode and validate Inventor files
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import base64
+          import hashlib
+          from pathlib import Path
+
+          files = [
+              "20261112-163914-INNER-SB05-FULL-MAX-CH0-FAIL-DIAGNOSTIC.ipt",
+              "20261112-163914-INNER-SB05-PARTIAL14-MIN-CH0-FAIL-DIAGNOSTIC.ipt",
+          ]
+          expected_magic = bytes.fromhex("D0CF11E0A1B11AE1")
+          output = Path("recovered")
+          output.mkdir(exist_ok=True)
+          checksums = []
+
+          for name in files:
+              source = Path(name + ".b64")
+              encoded = source.read_text(encoding="ascii").strip()
+              data = base64.b64decode(encoded, validate=True)
+              if not data.startswith(expected_magic):
+                  raise SystemExit(f"Invalid OLE/Inventor container signature: {source}")
+              target = output / name
+              target.write_bytes(data)
+              digest = hashlib.sha256(data).hexdigest()
+              checksums.append(f"{digest}  {name}")
+              print(f"Recovered {name}: {len(data)} bytes, SHA256={digest}")
+
+          (output / "SHA256SUMS.txt").write_text("\n".join(checksums) + "\n", encoding="ascii")
+          PY
+
+      - name: Upload recovered Inventor diagnostics
+        uses: actions/upload-artifact@v4
+        with:
+          name: recovered-inventor-ipt-diagnostics
+          path: recovered/
+          if-no-files-found: error
+          retention-days: 1
