@@ -1,0 +1,1096 @@
+[Helivanta.DiagnosticMessage] 2026-11-14T14:26:19.7160901Z
+Context: ThreadBuilder.surface-boundary-surface-trim-executing
+stage=Резьба: приведение диаметра; surface={56824B50-DF9B-A769-779B-6B14208E8AF5}; surfaceType=kSphereSurface; removePositiveSide=True; sourceIsParamReversed=True; probeDirection=oriented-splitter-normal; curvedProbeMethod=exact-radial-cylinder-intersection; volumeBeforeCm3=2.4823859029444275; keepProbeCount=15; keepSeedCoverage=15/15; keepRadialBands=1/10; oppositeProbeCount=15; oppositeSampleCoverage=15/15; oppositeRadialBands=1/10; keepSampleCoverage=15/15; keepSampleRadialBands=1/10; boundaryLoops=2; retryInputPreserved=True; currentBodyFilter=currentBodyWitnessFilter=True;keep=15->15;remove=15->15;previousBoundaryRemovalExcluded=True; keepProbe=method=exact-radial-cylinder-intersection;witnessPolicy=maximum-valid-interior-offset;searchOrder=largest-to-smallest;minimumOffsetCm=0.000001;maximumOffsetCm=0.4;pointContainmentQueries=15;exactSurfaceIntersections=15;noRealIntersections=0;axialRangeRejections=135;boundedPatchRejections=135;sampledSeeds=15/15;sampledRadialBands=1/10;lastIntersection=rootFound=True;rootCount=2;boundedRootCount=1;selectedAxialCm=0.0009151093901753077;referenceAxialCm=2.5932385797844404E-05;expectedAxialCm=0.0009127987463500022;rootDeviationCm=2.310643825305511E-06;radialDeltaCm=0.007714901418590214;branchPolicy=unique-bounded-face-root;allRootsChecked=True;rootsOutsideAxialRange=0;rootsOutsideBoundedPatch=1;projectionFailures=0;rootChecks=[root=0.0009151093901753077;bounded-face-hit;localDeviationCm=2.310643825305511E-06|root=26.100234190547404;outside-bounded-face;onFace=false;method=Face.GetClosestPointTo;deviationCm=26.073307539361565;toleranceCm=0.0001]; removeProbe=method=exact-radial-cylinder-intersection;witnessPolicy=maximum-valid-interior-offset;searchOrder=largest-to-smallest;minimumOffsetCm=0.000001;maximumOffsetCm=0.4;pointContainmentQueries=150;exactSurfaceIntersections=15;noRealIntersections=0;axialRangeRejections=135;boundedPatchRejections=135;sampledSeeds=15/15;sampledRadialBands=1/10;lastIntersection=rootFound=True;rootCount=2;boundedRootCount=1;selectedAxialCm=0.0009151093901753077;referenceAxialCm=2.5932385797844404E-05;expectedAxialCm=0.0009127987463500022;rootDeviationCm=2.310643825305511E-06;radialDeltaCm=0.007714901418590214;branchPolicy=unique-bounded-face-root;allRootsChecked=True;rootsOutsideAxialRange=0;rootsOutsideBoundedPatch=1;projectionFailures=0;rootChecks=[root=0.0009151093901753077;bounded-face-hit;localDeviationCm=2.310643825305511E-06|root=26.100234190547404;outside-bounded-face;onFace=false;method=Face.GetClosestPointTo;deviationCm=26.073307539361565;toleranceCm=0.0001]
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:26:19.7627886Z
+Context: ThreadBuilder.surface-boundary-surface-trim-verified
+stage=Резьба: приведение диаметра; surface={56824B50-DF9B-A769-779B-6B14208E8AF5}; surfaceType=kSphereSurface; volumeBeforeCm3=2.4823859029444275; volumeAfterCm3=2.4822628090211065; removedVolumeCm3=0.00012309392332099378; volumeToleranceCm3=2.4823859029444276E-09; resultingFaces=5; matchingSurfaceTypeFaces=1; removePositiveSide=True; sideProbeCorrected=False; keepProbes=15; keepProbesRetained=True; keptFinal=15; oppositeProbes=15; oppositeProbesRemoved=True; oppositeRetainedFinal=0; oppositeSampleCoverage=15/15; oppositeRadialBands=1/10; boundaryLoops=2; exactPlanarDifferenceVerified=False; exactPlanarDifferenceDetail=not-attempted
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:26:19.7671048Z
+Context: ThreadBuilder.surface-boundary-bounded-face-axially-disjoint-from-ring
+stage=Резьба: приведение диаметра;surface={DDE1ECD7-27E9-A636-2C78-F217AA85D843};surfaceType=kConeSurface;loopIds=1;proof=bounded-face-aabb-projected-to-thread-axis;faceAxial=[6.4823271916583165,23.588993355236425]cm;ringAxial=[0,2.8]cm;toleranceCm=1E-05;disjoint=True
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:26:19.7689194Z
+Context: ThreadBuilder.surface-boundary-domain-trim-completed
+stage=Резьба: приведение диаметра; originalVolumeCm3=2.4823859029444275; appliedTrimSurfaces=1; provenNoOpSurfaces=0; provenDisjointSurfaces=1; domain=boundaryLoops=2; startLoop=2; oppositeLoop=1; startFromMaximumAxial=False; radiusCm=1.5000000000000002; axial=[-0.07822,2.65]cm
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:26:19.8310330Z
+Context: ThreadBuilder.chamfer-skipped
+location=Выбранные границы резьбы; reason=не удалось безопасно разрешить граничные кромки для фаски; chamfer preparation failed; exception=System.InvalidOperationException: Найденные граничные контуры не подтверждают два разнесённых терминальных контура цилиндрической поверхности: startAxial=[0,0]cm; startMean=0cm (0.0 %); endAxial=[2.8000000000000007,2.8000000000000007]cm; endMean=2.7999999999999985cm (11.9 %); targetLengthCm=23.588993355236425; minStartFraction=0.4; minEndFraction=0.6; minSeparationFraction=0.2
+   at ThreadPro.ThreadBuilder.FindSurfaceTerminalChamferEdges(PartComponentDefinition def, ThreadTarget target, Double radiusCm, List`1 startEdges, List`1 endEdges, String& detail)
+   at ThreadPro.ThreadBuilder.BuildAfterWallThicknessValidation(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:26:19.8983966Z
+Context: ThreadBuilder.coil-orientation
+selectionMode=CylindricalSurface; startFromMaxAxial=False; nativeDirectionReversed=False; reverseSurfaceStartHand=False; rightHand=True; clockwiseRotation=False; heightCm=2.72822; leadCm=0.15; revolutions=18.188133333333333; profileSegments=10
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:26:19.8996980Z
+Context: ThreadBuilder.coil-add-input
+stage=main-thread-start=minimum;operation=kCutOperation;leadCm=0.15;revolutions=18.188133333333333;heightCm=2.72822;clockwiseRotation=False;taperAngleRad=0;profileClrType=System.__ComObject;axisStart2d=(0,0);axisEnd2d=(0,2.7282200000000003);axisLengthCm=2.7282200000000003
+---
+[2026-11-14 16:26:22] Построение успешно
+Резьб: 1; заходов всего: 1
+Параметры: внутренняя; стандарт: ISO; размер: M30 x 1.5; направление: правая; число заходов: 1; сбег: Плавный (авто-резервный Coil при отказе Loft); длина: 28 мм; зазор: 0 мм; фаски: 1 / 3 мм
+Общее время: 5.2 с.
+Сбег Loft (плавный): длина 1,5 мм; 1 шага, 1 об.; 20 сеч., 13 вершин; подготовка профиля 0 мс, создание WorkPlane/Sketch/Profile 1576 мс, Loft.Add 183 мс, всего этапа 1941 мс.
+Основная резьба: фаски/проточки/подготовка 1691 мс; WorkPlane/Sketch/Profile 66 мс; Coil.Add 136 мс; прочее этапа 129 мс; всего этапа 331 мс. Подготовка группировки 28 мс; папки дерева 29 мс.
+Папка «Резьба — ISO · M30 x 1.5 · 1 заход · Правая (R)»: объектов 51, узлов сгруппировано 48; TopNode 0 мс, поиск имени 0 мс, снимок дерева 2 мс, резервный поиск узлов 0 мс, создание + группировка 3 мс (batch BrowserNodes), резервные folder.Add 0 мс, BrowserNode папки 0 мс, SetEndOfPart 8 мс, Reorder 0 мс, всего 28 мс.
+Фиксация транзакции/обновление документа: 138 мс.
+Метаданные редактирования: ID 280529fdd80e442d9b956bf2967089b3; объектов 51
+Предупреждение: Подготовка внутренней резьбы Ø30 × 1,5 мм: исходное отверстие Ø30 мм будет предварительно заполнено материалом кольцом до малого диаметра внутреннего профиля Ø28,376 мм (изменение диаметра 1,624 мм). Затем винтовой профиль сформирует резьбу до номинального Ø30 мм. Номинальный диаметр в параметрах не меняется. Проверьте, что добавление материала допустимо.
+Выбранные границы резьбы: автоматическая фаска пропущена. Резьба построена без этой фаски.
+------------------------------------------------------------------------
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:00.9499840Z
+Context: ThreadBuilder.surface-boundary-trim-surfaces-assessed
+; surfaceType=kCylinderSurface; axialLengthMm=25.789; fullLength=True; materialAddRingExpected=False; selectionMode=CylindricalSurface; startFromMaxAxial=True
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:01.0923743Z
+Context: ThreadBuilder.coil-orientation
+selectionMode=CylindricalSurface; startFromMaxAxial=True; nativeDirectionReversed=True; reverseSurfaceStartHand=True; rightHand=True; clockwiseRotation=True; heightCm=2.3820078062376973; leadCm=0.2; revolutions=11.910039031188486; profileSegments=8
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:01.0988124Z
+Context: ThreadBuilder.coil-add-input
+stage=main-thread-start=maximum;operation=kCutOperation;leadCm=0.2;revolutions=11.910039031188486;heightCm=2.3820078062376973;clockwiseRotation=True;taperAngleRad=0;profileClrType=System.__ComObject;axisStart2d=(0,0);axisEnd2d=(0,2.3820078062376973);axisLengthCm=2.3820078062376973
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:01.2034010Z
+Context: ThreadBuilder.coil-equivalent-extent-retry
+stage=main-thread-start=maximum; hresult=0x80004005; coilCountBefore=0; coilCountAfterFailure=0; primaryExtent=PitchAndRevolution; retryExtent=PitchAndHeight; axisDirectionReversed=False; clockwiseRotation=True; leadCm=0.2; revolutions=11.910039031188486; heightCm=2.3820078062376973; equivalentHeightResidualCm=0; taperAngleRad=0; physicalHandPreserved=True
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:01.2950769Z
+Context: ThreadBuilder.coil-equivalent-extent-retry-failed
+stage=main-thread-start=maximum; coilCountBefore=0; coilCountAfterRetryFailure=0; firstHresult=0x80004005; retryHresult=0x80004005; retryExtent=PitchAndHeight; axisDirectionReversed=False; clockwiseRotation=True
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:02.6908475Z
+Context: ThreadBuilder.chamfer-terminal-boundaries-resolved
+surfaceType=kCylinderSurface; targetRadiusCm=1; targetLengthCm=2.5789318062376974; scannedCylinderFaces=1; validLoops=2; selectedStartLoop=2; selectedEndLoop=1; startEdges=1; endEdges=1; startAxial=[0,0.11154050188987097]cm; startMean=0.05729225809049475cm; endAxial=[2.5789318062376974,2.5789318062376974]cm; endMean=2.578931806237696cm; startMeanFraction=0.022215499437372166; endMeanFraction=0.9999999999999994; radialToleranceCm=0.005; surfaceBoundary=True; startEdges=1; endEdges=1; chamferMode=1
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:02.6967334Z
+Context: ThreadBuilder.chamfer-skipped
+location=Начало резьбы; reason=ось резьбы не пересекает криволинейную поверхность в точке торца; surface=kSphereSurface; axisSurfaceDistanceMm=0.547; axisNormalAlignment=0.987063; axisNormalAngleDeg=9.226; toleranceDeg=2
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:04.8130275Z
+Context: ThreadBuilder.surface-boundary-side-orientation-resolved
+face={A90C5A53-6AB5-0B8D-8AE5-4B6946B71A35}; surfaceType=kSphereSurface; boundarySamples=15; tangentProjectionSamples=15; acceptedOrientationSamples=15; positiveVotes=15; negativeVotes=0; selectedSide=positive; maxSelectedProjectionErrorMm=0; signedDistanceRangeMm=[0.01682,0.01965]
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:04.9955941Z
+Context: ThreadBuilder.surface-boundary-side-orientation-resolved
+face={C09BC89B-FBF9-17D9-2061-7C7D1E95C6FD}; surfaceType=kPlaneSurface; boundarySamples=15; tangentProjectionSamples=15; acceptedOrientationSamples=14; positiveVotes=14; negativeVotes=0; selectedSide=positive; maxSelectedProjectionErrorMm=0.00353; signedDistanceRangeMm=[0.00567,0.01999]
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:04.9967056Z
+Context: ThreadBuilder.surface-boundary-trim-surfaces-assessed
+edges=2; sampledEdges=2; boundaryLoops=2; adjacentFaceReferences=2; uniqueTrimSurfaces=2; provenNonIntersectingSurfaces=0; sameCylinderNeighbours=0; surfaceTypes=[kSphereSurface,kPlaneSurface]; sourceFaceLoops=[{A90C5A53-6AB5-0B8D-8AE5-4B6946B71A35}:loops=1;{C09BC89B-FBF9-17D9-2061-7C7D1E95C6FD}:loops=2]; boundaryLoops=2; startLoop=1; oppositeLoop=2; startFromMaximumAxial=False; radiusCm=1; axial=[0.09573999999999999,1.4]cm; surfaceType=kCylinderSurface; axialLengthMm=34.004; fullLength=False; materialAddRingExpected=True; selectionMode=CylindricalSurface; startFromMaxAxial=False; boundaryLoops=2; startLoop=1; oppositeLoop=2; startFromMaximumAxial=False; radiusCm=1; axial=[0.09573999999999999,1.4]cm
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:05.0871151Z
+Context: ThreadBuilder.surface-boundary-ring-created
+feature=Резьба: приведение диаметра; operation=kJoinOperation; clipJoin=True; trimNotRequiredByExactDisjointness=False; trimSurfaceCount=2; startMm=2; endMm=16; rLowMm=8.917; rHighMm=10.2
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:05.1248077Z
+Context: ThreadBuilder.surface-boundary-bounded-face-axially-disjoint-from-ring
+stage=Резьба: приведение диаметра;surface={A90C5A53-6AB5-0B8D-8AE5-4B6946B71A35};surfaceType=kSphereSurface;loopIds=1;proof=bounded-face-aabb-projected-to-thread-axis;faceAxial=[-0.0003787148610445712,0.1596010905893921]cm;ringAxial=[0.2,1.5999999999999999]cm;toleranceCm=1E-05;disjoint=True
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:05.2266525Z
+Context: ThreadBuilder.surface-boundary-trim-surface-created
+face={A90C5A53-6AB5-0B8D-8AE5-4B6946B71A35}; surfaceType=kSphereSurface; extensionMode=exact-sphere-patch;current-loop-envelope=expanded-to-exact-edge-samples;projectedSeeds=15/15;ringAxial=[0.09573999999999999,1.4]cm;loopAxial=[0.0029657864688008573,1.4]cm;axial=[-0.11203421353119913,1.515]cm; radialEnvelope=1.15cm; margin=0.11499999999999999cm; clippedFaceCount=3;loopBoundarySeedCoverage=15/15;patchMatchMode=exact-loop-boundary; transientNormalSign=1; workSurfaceFaceCount=1; normalAlignment=1; sourceIsParamReversed=True; importedIsParamReversed=True; selectedSidePositiveOriented=True; selectedSidePositiveParameter=False; removePositiveSide=True; boundaryEdges=1; boundaryLoops=1; boundarySeeds=15; keepProbeSeeds=15
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:05.3133801Z
+Context: ThreadBuilder.surface-boundary-trim-surface-created
+face={C09BC89B-FBF9-17D9-2061-7C7D1E95C6FD}; surfaceType=kPlaneSurface; extensionMode=exact-infinite-plane-workplane; sourceIsParamReversed=True; planeNormalAlignment=1; selectedSidePositiveOriented=True; removePositiveSide=False; boundaryLoops=2; boundarySeeds=15
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:05.6245839Z
+Context: ThreadBuilder.surface-boundary-current-body-probe-filter
+currentBodyWitnessFilter=True;keep=8->8;remove=0->0;previousBoundaryRemovalExcluded=True
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:05.6312194Z
+Context: ThreadBuilder.surface-boundary-surface-trim-executing
+stage=Резьба: приведение диаметра; surface={C09BC89B-FBF9-17D9-2061-7C7D1E95C6FD}; surfaceType=kPlaneSurface; removePositiveSide=False; sourceIsParamReversed=True; probeDirection=oriented-splitter-normal; curvedProbeMethod=exact-radial-cylinder-intersection; volumeBeforeCm3=1.078391392237092; keepProbeCount=8; keepSeedCoverage=1/14; keepRadialBands=8/10; oppositeProbeCount=0; oppositeSampleCoverage=14/14; oppositeRadialBands=10/10; keepSampleCoverage=14/14; keepSampleRadialBands=10/10; boundaryLoops=2; retryInputPreserved=True; currentBodyFilter=currentBodyWitnessFilter=True;keep=8->8;remove=0->0;previousBoundaryRemovalExcluded=True; keepProbe=method=local-tangent-fallback;witnessPolicy=maximum-valid-interior-offset;searchOrder=largest-to-smallest;minimumOffsetCm=0.000001;maximumOffsetCm=0.4;pointContainmentQueries=2394;exactSurfaceIntersections=0;noRealIntersections=0;axialRangeRejections=0;boundedPatchRejections=0;sampledSeeds=14/14;sampledRadialBands=10/10;lastIntersection=not-tested; removeProbe=method=local-tangent-fallback;witnessPolicy=maximum-valid-interior-offset;searchOrder=largest-to-smallest;minimumOffsetCm=0.000001;maximumOffsetCm=0.4;pointContainmentQueries=2520;exactSurfaceIntersections=0;noRealIntersections=0;axialRangeRejections=0;boundedPatchRejections=0;sampledSeeds=14/14;sampledRadialBands=10/10;lastIntersection=not-tested
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:05.6711209Z
+Context: ThreadBuilder.surface-boundary-trim-retry-input-preserved
+surface={C09BC89B-FBF9-17D9-2061-7C7D1E95C6FD}; retryUsesOriginalInput=True; initialOutputWasDeleted=True
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:05.7193118Z
+Context: ThreadBuilder.surface-boundary-plane-transient-difference-proof
+stage=Резьба: приведение диаметра;surface={C09BC89B-FBF9-17D9-2061-7C7D1E95C6FD};verified=False;transient-removed-difference-is-not-a-closed-solid
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:05.7302755Z
+Context: ThreadBuilder.surface-boundary-surface-trim-verified
+stage=Резьба: приведение диаметра; surface={C09BC89B-FBF9-17D9-2061-7C7D1E95C6FD}; surfaceType=kPlaneSurface; volumeBeforeCm3=1.078391392237092; volumeAfterCm3=1.0783504678398206; removedVolumeCm3=4.092439727143571E-05; volumeToleranceCm3=1.078391392237092E-09; resultingFaces=5; matchingSurfaceTypeFaces=3; removePositiveSide=True; sideProbeCorrected=True; keepProbes=8; keepProbesRetained=True; keptFinal=8; oppositeProbes=0; oppositeProbesRemoved=True; oppositeRetainedFinal=0; oppositeSampleCoverage=14/14; oppositeRadialBands=10/10; boundaryLoops=2; exactPlanarDifferenceVerified=False; exactPlanarDifferenceDetail=transient-removed-difference-is-not-a-closed-solid
+---
+[Helivanta.UIException] 2026-11-14T14:27:05.7469285Z
+Context: ThreadBuilder.GetUserFacingError.UnclassifiedException
+System.InvalidOperationException: Inventor не подтвердил, что обрезка по фактической B-Rep-поверхности сохранила правильную часть тела. Нулевое изменение объёма допускается только при доказанном отсутствии материала на удаляемой стороне; необрезанное кольцо не будет присоединено. stage=Резьба: приведение диаметра; surface={C09BC89B-FBF9-17D9-2061-7C7D1E95C6FD}; surfaceType=kPlaneSurface; volumeBeforeCm3=1.078391392237092; volumeAfterCm3=1.0783504678398206; removedVolumeCm3=4.092439727143571E-05; volumeToleranceCm3=1.078391392237092E-09; resultingFaces=5; matchingSurfaceTypeFaces=3; removePositiveSide=True; sideProbeCorrected=True; keepProbes=8; keepProbesRetained=True; keptFinal=8; oppositeProbes=0; oppositeProbesRemoved=True; oppositeRetainedFinal=0; oppositeSampleCoverage=14/14; oppositeRadialBands=10/10; boundaryLoops=2; exactPlanarDifferenceVerified=False; exactPlanarDifferenceDetail=transient-removed-difference-is-not-a-closed-solid; trimOutcome=unproven; keepSeedCoverage=1/14; keepRadialBands=8/10; oppositeProbeCount=0; oppositeSampleCoverage=14/14; oppositeRadialBands=10/10; verifiedCut=False
+   at ThreadPro.ThreadBuilder.<>c__DisplayClass109_0.<BuildAfterWallThicknessValidation>g__TrimJoinedRingBody|5(SurfaceBody ringBody, String stage, Double ringLowRadiusCm, Double ringHighRadiusCm, Double ringAxialStartCm, Double ringAxialEndCm)
+   at ThreadPro.ThreadBuilder.<>c__DisplayClass109_0.<BuildAfterWallThicknessValidation>g__JoinClippedRingToSelectedBody|6(SurfaceBody ringBody, String stage, Double ringLowRadiusCm, Double ringHighRadiusCm, Double ringAxialStartCm, Double ringAxialEndCm)
+   at ThreadPro.ThreadBuilder.<>c__DisplayClass109_0.<BuildAfterWallThicknessValidation>g__Ring|7(String featName, Double aStart, Double aEnd, Double rLow, Double rHigh, PartFeatureOperationEnum op)
+   at ThreadPro.ThreadBuilder.BuildAfterWallThicknessValidation(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadBuilder.BuildAll(Application app, IList`1 targets, ThreadParams p)
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:07.2978648Z
+Context: ThreadBuilder.surface-boundary-side-orientation-resolved
+face={99E3B593-5DDD-730B-092B-79EED8FFFEE8}; surfaceType=kPlaneSurface; boundarySamples=15; tangentProjectionSamples=15; acceptedOrientationSamples=15; positiveVotes=0; negativeVotes=15; selectedSide=negative; maxSelectedProjectionErrorMm=0; signedDistanceRangeMm=[-0.01995,-0.01831]
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:07.3680630Z
+Context: ThreadBuilder.surface-boundary-side-orientation-resolved
+face={B2E85B9C-7EAC-AF9E-1A63-CE5916EBA370}; surfaceType=kPlaneSurface; boundarySamples=15; tangentProjectionSamples=15; acceptedOrientationSamples=15; positiveVotes=15; negativeVotes=0; selectedSide=positive; maxSelectedProjectionErrorMm=0; signedDistanceRangeMm=[0.01831,0.01995]
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:07.3690746Z
+Context: ThreadBuilder.surface-boundary-trim-surfaces-assessed
+edges=2; sampledEdges=2; boundaryLoops=2; adjacentFaceReferences=2; uniqueTrimSurfaces=2; provenNonIntersectingSurfaces=0; sameCylinderNeighbours=0; surfaceTypes=[kPlaneSurface]; sourceFaceLoops=[{99E3B593-5DDD-730B-092B-79EED8FFFEE8}:loops=1;{B2E85B9C-7EAC-AF9E-1A63-CE5916EBA370}:loops=2]; boundaryLoops=2; startLoop=1; oppositeLoop=2; startFromMaximumAxial=False; radiusCm=1; axial=[0.06970000000000001,1.45]cm; surfaceType=kCylinderSurface; axialLengthMm=45; fullLength=False; materialAddRingExpected=True; selectionMode=CircularEdge; startFromMaxAxial=False; boundaryLoops=2; startLoop=1; oppositeLoop=2; startFromMaximumAxial=False; radiusCm=1; axial=[0.06970000000000001,1.45]cm
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:07.4699736Z
+Context: ThreadBuilder.surface-boundary-ring-created
+feature=Резьба: приведение диаметра; operation=kJoinOperation; clipJoin=True; trimNotRequiredByExactDisjointness=False; trimSurfaceCount=2; startMm=2; endMm=17; rLowMm=8.647; rHighMm=10.25
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:07.5205863Z
+Context: ThreadBuilder.surface-boundary-plane-disjoint-from-ring
+stage=Резьба: приведение диаметра; surface={99E3B593-5DDD-730B-092B-79EED8FFFEE8}; surfaceType=kPlaneSurface; proof=analytic-infinite-plane-vs-finite-annular-ring; ringAxial=[0.2,1.7]cm; ringMaximumRadiusCm=1.025; signedDistanceEnvelope=[-1.7,-0.2]cm; radialReachCm=0; toleranceCm=1E-05; provenDisjoint=True
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:07.5460416Z
+Context: ThreadBuilder.surface-boundary-plane-disjoint-from-ring
+stage=Резьба: приведение диаметра; surface={B2E85B9C-7EAC-AF9E-1A63-CE5916EBA370}; surfaceType=kPlaneSurface; proof=analytic-infinite-plane-vs-finite-annular-ring; ringAxial=[0.2,1.7]cm; ringMaximumRadiusCm=1.025; signedDistanceEnvelope=[2.8,4.3]cm; radialReachCm=0; toleranceCm=1E-05; provenDisjoint=True
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:07.5506001Z
+Context: ThreadBuilder.surface-boundary-no-trim-required
+stage=Резьба: приведение диаметра; trimNotRequired=True; appliedTrimSurfaces=0; provenNoOpSurfaces=0; provenDisjointSurfaces=2; surfaceCount=2; domain=boundaryLoops=2; startLoop=1; oppositeLoop=2; startFromMaximumAxial=False; radiusCm=1; axial=[0.06970000000000001,1.45]cm
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:07.7388050Z
+Context: ThreadBuilder.coil-orientation
+selectionMode=CircularEdge; startFromMaxAxial=False; nativeDirectionReversed=True; reverseSurfaceStartHand=False; rightHand=True; clockwiseRotation=False; heightCm=1; leadCm=0.25; revolutions=4; profileSegments=8
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:07.7456476Z
+Context: ThreadBuilder.coil-add-input
+stage=main-thread-start=minimum;operation=kCutOperation;leadCm=0.25;revolutions=4;heightCm=1;clockwiseRotation=False;taperAngleRad=0;profileClrType=System.__ComObject;axisStart2d=(0,0);axisEnd2d=(0,1);axisLengthCm=1
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:11.1526884Z
+Context: ThreadBuilder.Metadata.SourceTargetPreserved
+selectionMode=CircularEdge; sourceRadiusCm=1; workingRadiusCm=0.8646835306586815; sourceLengthCm=4.5; sourceFramePreserved=true
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:12.3776970Z
+Context: ThreadMetadataStore.CollectSelectedBrowserNodes.SelectedNodeInventory
+depth=1; nativeType=System.__ComObject; isBrowserFolder=True; expanded=False; label=Резьба — ГОСТ 9150/8724 · M20 x 2.5 · 1 заход · Правая (R)
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:12.4647040Z
+Context: ThreadMetadataStore.TryResolveSelectedThreadMetadata.SelectedFolderExpansionPreserved
+Primary thread BrowserFolder expansion state is preserved during COM-identity ownership resolution; folderName=Резьба — ГОСТ 9150/8724 · M20 x 2.5 · 1 заход · Правая (R); expandedBeforeResolution=False; expandedPropertyMutation=false
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:12.8349026Z
+Context: ThreadMetadataStore.TryResolveSelectedManagedThreadFolder.Resolved
+threadId=fc5a512b43da4b78937ace5b7064a866; rootFolderIdentityMatches=1; ownership=NativeBrowserNodeDefinition.AllReferencedNodes+parent-com-identity; nameOnly=false
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:12.8357938Z
+Context: ThreadMetadataStore.TryResolveSelectedThreadMetadata.SelectedFolderResolved
+threadId=fc5a512b43da4b78937ace5b7064a866; folderName=Резьба — ГОСТ 9150/8724 · M20 x 2.5 · 1 заход · Правая (R); ownership=NativeBrowserNodeDefinition.AllReferencedNodes+parent-com-identity; descendantNativeObjectTraversal=false
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:12.8471895Z
+Context: ThreadMetadataStore.TryResolveSelectedThreadMetadata.Resolved
+threadId=fc5a512b43da4b78937ace5b7064a866; selectSetCount=1; selectedBrowserNodeCount=1; candidateCount=2; distinctThreadIds=1; representativeType=System.__ComObject
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:14.1214289Z
+Context: ThreadEditService.TryGetFirstThreadHistoryAnchor.Resolved
+Insertion anchor resolved from validated metadata order; memberIndex=0; memberType=System.__ComObject; memberCount=61; browserNativeObjectTraversal=False.
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:15.5436870Z
+Context: ThreadEditService.ResolveOriginalTarget.EdgeInventory
+bodies=1;faces=4;cylinderFaces=2;radiusFaces=1;edges=2;circularEdges=2;selectedEdgeCenterMatches=1;analyzed=1;externalMatches=1;radiusMatches=1;lengthMatches=1;analyzedCenterMatches=1;axisMatches=1;acceptedUniqueIdentities=1;snapshotRadiusCm=1;snapshotLengthCm=4.5;snapshotCenter=0,0,4,5;snapshotAxis=-0,-0,-1;snapshotExternal=False;snapshotStartShoulder=False;snapshotEndShoulder=False
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:17.6297549Z
+Context: ThreadBuilder.surface-boundary-trim-surfaces-assessed
+edges=2; sampledEdges=2; boundaryLoops=2; adjacentFaceReferences=2; uniqueTrimSurfaces=2; provenNonIntersectingSurfaces=0; sameCylinderNeighbours=0; surfaceTypes=[kPlaneSurface]; sourceFaceLoops=[{99E3B593-5DDD-730B-092B-79EED8FFFEE8}:loops=1;{B2E85B9C-7EAC-AF9E-1A63-CE5916EBA370}:loops=2]; boundaryLoops=2; startLoop=1; oppositeLoop=2; startFromMaximumAxial=False; radiusCm=1; axial=[0.09573999999999999,1.5]cm; surfaceType=kCylinderSurface; axialLengthMm=45; fullLength=False; materialAddRingExpected=True; selectionMode=CircularEdge; startFromMaxAxial=False; boundaryLoops=2; startLoop=1; oppositeLoop=2; startFromMaximumAxial=False; radiusCm=1; axial=[0.09573999999999999,1.5]cm
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:17.7290489Z
+Context: ThreadBuilder.surface-boundary-ring-created
+feature=Резьба: приведение диаметра; operation=kJoinOperation; clipJoin=True; trimNotRequiredByExactDisjointness=False; trimSurfaceCount=2; startMm=2; endMm=17; rLowMm=8.917; rHighMm=10.2
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:17.7852732Z
+Context: ThreadBuilder.surface-boundary-plane-disjoint-from-ring
+stage=Резьба: приведение диаметра; surface={99E3B593-5DDD-730B-092B-79EED8FFFEE8}; surfaceType=kPlaneSurface; proof=analytic-infinite-plane-vs-finite-annular-ring; ringAxial=[0.2,1.7]cm; ringMaximumRadiusCm=1.02; signedDistanceEnvelope=[-1.7,-0.2]cm; radialReachCm=0; toleranceCm=1E-05; provenDisjoint=True
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:17.8134004Z
+Context: ThreadBuilder.surface-boundary-plane-disjoint-from-ring
+stage=Резьба: приведение диаметра; surface={B2E85B9C-7EAC-AF9E-1A63-CE5916EBA370}; surfaceType=kPlaneSurface; proof=analytic-infinite-plane-vs-finite-annular-ring; ringAxial=[0.2,1.7]cm; ringMaximumRadiusCm=1.02; signedDistanceEnvelope=[2.8,4.3]cm; radialReachCm=0; toleranceCm=1E-05; provenDisjoint=True
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:17.8183402Z
+Context: ThreadBuilder.surface-boundary-no-trim-required
+stage=Резьба: приведение диаметра; trimNotRequired=True; appliedTrimSurfaces=0; provenNoOpSurfaces=0; provenDisjointSurfaces=2; surfaceCount=2; domain=boundaryLoops=2; startLoop=1; oppositeLoop=2; startFromMaximumAxial=False; radiusCm=1; axial=[0.09573999999999999,1.5]cm
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:18.0248020Z
+Context: ThreadBuilder.coil-orientation
+selectionMode=CircularEdge; startFromMaxAxial=False; nativeDirectionReversed=True; reverseSurfaceStartHand=False; rightHand=False; clockwiseRotation=True; heightCm=1.1; leadCm=0.2; revolutions=5.5; profileSegments=8
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:18.0318104Z
+Context: ThreadBuilder.coil-add-input
+stage=main-thread-start=minimum;operation=kCutOperation;leadCm=0.2;revolutions=5.5;heightCm=1.1;clockwiseRotation=True;taperAngleRad=0;profileClrType=System.__ComObject;axisStart2d=(0,0);axisEnd2d=(0,1.1);axisLengthCm=1.1
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:24.3964366Z
+Context: ThreadBuilder.Metadata.SourceTargetPreserved
+selectionMode=CircularEdge; sourceRadiusCm=1; workingRadiusCm=0.8917468245269452; sourceLengthCm=4.5; sourceFramePreserved=true
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:27.6361175Z
+Context: ThreadBuilder.surface-boundary-ring-created
+feature=Резьба: приведение диаметра; operation=kJoinOperation; clipJoin=True; trimNotRequiredByExactDisjointness=False; trimSurfaceCount=2; startMm=2; endMm=17; rLowMm=9; rHighMm=10.2
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:27.8921512Z
+Context: ThreadBuilder.coil-orientation
+selectionMode=CircularEdge; startFromMaxAxial=False; nativeDirectionReversed=True; reverseSurfaceStartHand=False; rightHand=True; clockwiseRotation=False; heightCm=1.3; leadCm=0.4; revolutions=3.25; profileSegments=8
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:27.8986568Z
+Context: ThreadBuilder.coil-add-input
+stage=main-thread-start=minimum;operation=kCutOperation;leadCm=0.4;revolutions=3.25;heightCm=1.3;clockwiseRotation=False;taperAngleRad=0;profileClrType=System.__ComObject;axisStart2d=(0,0);axisEnd2d=(0,1.2999999999999998);axisLengthCm=1.2999999999999998
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:28.1285191Z
+Context: ThreadBuilder.coil-orientation
+selectionMode=CircularEdge; startFromMaxAxial=False; nativeDirectionReversed=True; reverseSurfaceStartHand=False; rightHand=True; clockwiseRotation=False; heightCm=1.1; leadCm=0.4; revolutions=2.75; profileSegments=8
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:28.1351476Z
+Context: ThreadBuilder.coil-add-input
+stage=main-thread-start=minimum;operation=kCutOperation;leadCm=0.4;revolutions=2.75;heightCm=1.1;clockwiseRotation=False;taperAngleRad=0;profileClrType=System.__ComObject;axisStart2d=(0,0);axisEnd2d=(0,1.1);axisLengthCm=1.1
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:32.3610854Z
+Context: ThreadBuilder.Metadata.SourceTargetPreserved
+selectionMode=CircularEdge; sourceRadiusCm=1; workingRadiusCm=0.9; sourceLengthCm=4.5; sourceFramePreserved=true
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:34.1921195Z
+Context: ThreadMetadataStore.CollectSelectedBrowserNodes.SelectedNodeInventory
+depth=1; nativeType=System.__ComObject; isBrowserFolder=True; expanded=False; label=Резьба — Tr (ГОСТ 9484-81) · 20 x 4 (P2) · 2 захода · Правая (R)
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:34.3002744Z
+Context: ThreadMetadataStore.TryResolveSelectedThreadMetadata.SelectedFolderExpansionPreserved
+Primary thread BrowserFolder expansion state is preserved during COM-identity ownership resolution; folderName=Резьба — Tr (ГОСТ 9484-81) · 20 x 4 (P2) · 2 захода · Правая (R); expandedBeforeResolution=False; expandedPropertyMutation=false
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:34.7159490Z
+Context: ThreadMetadataStore.TryResolveSelectedManagedThreadFolder.Resolved
+threadId=5b40c0a6e86c4e52ac1ca4fdeaae199c; rootFolderIdentityMatches=1; ownership=NativeBrowserNodeDefinition.AllReferencedNodes+parent-com-identity; nameOnly=false
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:34.7168380Z
+Context: ThreadMetadataStore.TryResolveSelectedThreadMetadata.SelectedFolderResolved
+threadId=5b40c0a6e86c4e52ac1ca4fdeaae199c; folderName=Резьба — Tr (ГОСТ 9484-81) · 20 x 4 (P2) · 2 захода · Правая (R); ownership=NativeBrowserNodeDefinition.AllReferencedNodes+parent-com-identity; descendantNativeObjectTraversal=false
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:34.7203453Z
+Context: ThreadMetadataStore.TryResolveSelectedThreadMetadata.Resolved
+threadId=5b40c0a6e86c4e52ac1ca4fdeaae199c; selectSetCount=1; selectedBrowserNodeCount=1; candidateCount=2; distinctThreadIds=1; representativeType=System.__ComObject
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:35.8416726Z
+Context: ThreadEditService.TryGetFirstThreadHistoryAnchor.Resolved
+Insertion anchor resolved from validated metadata order; memberIndex=0; memberType=System.__ComObject; memberCount=78; browserNativeObjectTraversal=False.
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:39.9629947Z
+Context: ThreadBuilder.coil-orientation
+selectionMode=CircularEdge; startFromMaxAxial=False; nativeDirectionReversed=True; reverseSurfaceStartHand=False; rightHand=False; clockwiseRotation=True; heightCm=1.5; leadCm=0.6000000000000001; revolutions=2.4999999999999996; profileSegments=8
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:39.9736248Z
+Context: ThreadBuilder.coil-add-input
+stage=main-thread-start=minimum;operation=kCutOperation;leadCm=0.6000000000000001;revolutions=2.4999999999999996;heightCm=1.5;clockwiseRotation=True;taperAngleRad=0;profileClrType=System.__ComObject;axisStart2d=(0,0);axisEnd2d=(0,1.5);axisLengthCm=1.5
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:40.2084015Z
+Context: ThreadBuilder.coil-orientation
+selectionMode=CircularEdge; startFromMaxAxial=False; nativeDirectionReversed=True; reverseSurfaceStartHand=False; rightHand=False; clockwiseRotation=True; heightCm=1.3; leadCm=0.6000000000000001; revolutions=2.1666666666666665; profileSegments=8
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:40.2150734Z
+Context: ThreadBuilder.coil-add-input
+stage=main-thread-start=minimum;operation=kCutOperation;leadCm=0.6000000000000001;revolutions=2.1666666666666665;heightCm=1.3;clockwiseRotation=True;taperAngleRad=0;profileClrType=System.__ComObject;axisStart2d=(0,0);axisEnd2d=(0,1.2999999999999998);axisLengthCm=1.2999999999999998
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:40.4618361Z
+Context: ThreadBuilder.coil-orientation
+selectionMode=CircularEdge; startFromMaxAxial=False; nativeDirectionReversed=True; reverseSurfaceStartHand=False; rightHand=False; clockwiseRotation=True; heightCm=1.1; leadCm=0.6000000000000001; revolutions=1.8333333333333333; profileSegments=8
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:40.4698991Z
+Context: ThreadBuilder.coil-add-input
+stage=main-thread-start=minimum;operation=kCutOperation;leadCm=0.6000000000000001;revolutions=1.8333333333333333;heightCm=1.1;clockwiseRotation=True;taperAngleRad=0;profileClrType=System.__ComObject;axisStart2d=(0,0);axisEnd2d=(0,1.1);axisLengthCm=1.1
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:51.5157347Z
+Context: ThreadBuilder.surface-boundary-ring-created
+feature=Резьба: приведение диаметра; operation=kJoinOperation; clipJoin=True; trimNotRequiredByExactDisjointness=False; trimSurfaceCount=2; startMm=2; endMm=17; rLowMm=8.5; rHighMm=10.2
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:51.7770290Z
+Context: ThreadBuilder.coil-orientation
+selectionMode=CircularEdge; startFromMaxAxial=False; nativeDirectionReversed=True; reverseSurfaceStartHand=False; rightHand=True; clockwiseRotation=False; heightCm=1.1; leadCm=0.2; revolutions=5.5; profileSegments=8
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:51.7826796Z
+Context: ThreadBuilder.coil-add-input
+stage=main-thread-start=minimum;operation=kCutOperation;leadCm=0.2;revolutions=5.5;heightCm=1.1;clockwiseRotation=False;taperAngleRad=0;profileClrType=System.__ComObject;axisStart2d=(0,0);axisEnd2d=(0,1.1);axisLengthCm=1.1
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:55.7141835Z
+Context: ThreadBuilder.Metadata.SourceTargetPreserved
+selectionMode=CircularEdge; sourceRadiusCm=1; workingRadiusCm=0.85; sourceLengthCm=4.5; sourceFramePreserved=true
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:57.0408202Z
+Context: ThreadMetadataStore.CollectSelectedBrowserNodes.SelectedNodeInventory
+depth=1; nativeType=System.__ComObject; isBrowserFolder=True; expanded=False; label=Резьба — S (ГОСТ 10177-82) · 20 x 2 · 1 заход · Правая (R) · Прямой профиль
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:57.1367031Z
+Context: ThreadMetadataStore.TryResolveSelectedThreadMetadata.SelectedFolderExpansionPreserved
+Primary thread BrowserFolder expansion state is preserved during COM-identity ownership resolution; folderName=Резьба — S (ГОСТ 10177-82) · 20 x 2 · 1 заход · Правая (R) · Прямой профиль; expandedBeforeResolution=False; expandedPropertyMutation=false
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:57.4964931Z
+Context: ThreadMetadataStore.TryResolveSelectedManagedThreadFolder.Resolved
+threadId=e94990e07c96403e8d1b01e414eea8e4; rootFolderIdentityMatches=1; ownership=NativeBrowserNodeDefinition.AllReferencedNodes+parent-com-identity; nameOnly=false
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:57.4974001Z
+Context: ThreadMetadataStore.TryResolveSelectedThreadMetadata.SelectedFolderResolved
+threadId=e94990e07c96403e8d1b01e414eea8e4; folderName=Резьба — S (ГОСТ 10177-82) · 20 x 2 · 1 заход · Правая (R) · Прямой профиль; ownership=NativeBrowserNodeDefinition.AllReferencedNodes+parent-com-identity; descendantNativeObjectTraversal=false
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:57.5014567Z
+Context: ThreadMetadataStore.TryResolveSelectedThreadMetadata.Resolved
+threadId=e94990e07c96403e8d1b01e414eea8e4; selectSetCount=1; selectedBrowserNodeCount=1; candidateCount=2; distinctThreadIds=1; representativeType=System.__ComObject
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:27:58.4336456Z
+Context: ThreadEditService.TryGetFirstThreadHistoryAnchor.Resolved
+Insertion anchor resolved from validated metadata order; memberIndex=0; memberType=System.__ComObject; memberCount=65; browserNativeObjectTraversal=False.
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:28:01.8387878Z
+Context: ThreadBuilder.surface-boundary-trim-surfaces-assessed
+edges=2; sampledEdges=2; boundaryLoops=2; adjacentFaceReferences=2; uniqueTrimSurfaces=2; provenNonIntersectingSurfaces=0; sameCylinderNeighbours=0; surfaceTypes=[kPlaneSurface]; sourceFaceLoops=[{99E3B593-5DDD-730B-092B-79EED8FFFEE8}:loops=1;{B2E85B9C-7EAC-AF9E-1A63-CE5916EBA370}:loops=2]; boundaryLoops=2; startLoop=1; oppositeLoop=2; startFromMaximumAxial=False; radiusCm=1; axial=[-0.00842000000000001,1.2999999999999998]cm; surfaceType=kCylinderSurface; axialLengthMm=45; fullLength=False; materialAddRingExpected=True; selectionMode=CircularEdge; startFromMaxAxial=False; boundaryLoops=2; startLoop=1; oppositeLoop=2; startFromMaximumAxial=False; radiusCm=1; axial=[-0.00842000000000001,1.2999999999999998]cm
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:28:01.9344922Z
+Context: ThreadBuilder.surface-boundary-ring-created
+feature=Резьба: приведение диаметра; operation=kJoinOperation; clipJoin=True; trimNotRequiredByExactDisjointness=False; trimSurfaceCount=2; startMm=2; endMm=17; rLowMm=7; rHighMm=10.4
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:28:01.9841433Z
+Context: ThreadBuilder.surface-boundary-plane-disjoint-from-ring
+stage=Резьба: приведение диаметра; surface={99E3B593-5DDD-730B-092B-79EED8FFFEE8}; surfaceType=kPlaneSurface; proof=analytic-infinite-plane-vs-finite-annular-ring; ringAxial=[0.2,1.7]cm; ringMaximumRadiusCm=1.04; signedDistanceEnvelope=[-1.7,-0.2]cm; radialReachCm=0; toleranceCm=1E-05; provenDisjoint=True
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:28:02.0116502Z
+Context: ThreadBuilder.surface-boundary-plane-disjoint-from-ring
+stage=Резьба: приведение диаметра; surface={B2E85B9C-7EAC-AF9E-1A63-CE5916EBA370}; surfaceType=kPlaneSurface; proof=analytic-infinite-plane-vs-finite-annular-ring; ringAxial=[0.2,1.7]cm; ringMaximumRadiusCm=1.04; signedDistanceEnvelope=[2.8,4.3]cm; radialReachCm=0; toleranceCm=1E-05; provenDisjoint=True
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:28:02.0158402Z
+Context: ThreadBuilder.surface-boundary-no-trim-required
+stage=Резьба: приведение диаметра; trimNotRequired=True; appliedTrimSurfaces=0; provenNoOpSurfaces=0; provenDisjointSurfaces=2; surfaceCount=2; domain=boundaryLoops=2; startLoop=1; oppositeLoop=2; startFromMaximumAxial=False; radiusCm=1; axial=[-0.00842000000000001,1.2999999999999998]cm
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:28:02.1970056Z
+Context: ThreadBuilder.coil-orientation
+selectionMode=CircularEdge; startFromMaxAxial=False; nativeDirectionReversed=True; reverseSurfaceStartHand=False; rightHand=False; clockwiseRotation=True; heightCm=0.6999999999999997; leadCm=0.4; revolutions=1.7499999999999993; profileSegments=8
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:28:02.2037364Z
+Context: ThreadBuilder.coil-add-input
+stage=main-thread-start=minimum;operation=kCutOperation;leadCm=0.4;revolutions=1.7499999999999993;heightCm=0.6999999999999997;clockwiseRotation=True;taperAngleRad=0;profileClrType=System.__ComObject;axisStart2d=(0,0);axisEnd2d=(0,0.6999999999999997);axisLengthCm=0.6999999999999997
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:28:06.0775572Z
+Context: ThreadBuilder.Metadata.SourceTargetPreserved
+selectionMode=CircularEdge; sourceRadiusCm=1; workingRadiusCm=0.7; sourceLengthCm=4.5; sourceFramePreserved=true
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:51:20.1066337Z
+Context: EdgeSelector.surface-start-side-resolved
+source=click-nearest-boundary; selected=maximum-axial; minimumBoundaryDistanceMm=84.032; maximumBoundaryDistanceMm=24.17; minimumBoundaryEdges=1; maximumBoundaryEdges=1; modelPositionAvailable=True; detail=candidateEdges=2; minimumGroup=1; maximumGroup=1; largestAxialGapMm=114.825; ambiguityToleranceMm=0.25; graphicsPick=True
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:51:22.0545682Z
+Context: ThreadBuilder.surface-boundary-side-orientation-resolved
+face={DDE1ECD7-27E9-A636-2C78-F217AA85D843}; surfaceType=kConeSurface; boundarySamples=15; tangentProjectionSamples=15; acceptedOrientationSamples=15; positiveVotes=15; negativeVotes=0; selectedSide=positive; maxSelectedProjectionErrorMm=0; signedDistanceRangeMm=[0.00694,0.01984]
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:51:22.2348481Z
+Context: ThreadBuilder.surface-boundary-side-orientation-resolved
+face={DDE1ECD7-27E9-A636-2C78-F217AA85D843}; surfaceType=kConeSurface; boundarySamples=15; tangentProjectionSamples=15; acceptedOrientationSamples=15; positiveVotes=15; negativeVotes=0; selectedSide=positive; maxSelectedProjectionErrorMm=0; signedDistanceRangeMm=[0.01181,0.01667]
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:51:22.3091389Z
+Context: ThreadBuilder.surface-boundary-trim-surfaces-assessed
+edges=2; sampledEdges=2; boundaryLoops=2; adjacentFaceReferences=2; uniqueTrimSurfaces=2; provenNonIntersectingSurfaces=0; sameCylinderNeighbours=0; surfaceTypes=[kConeSurface]; sourceFaceLoops=[{DDE1ECD7-27E9-A636-2C78-F217AA85D843}:loops=1;{DDE1ECD7-27E9-A636-2C78-F217AA85D843}:loops=2]; boundaryLoops=2; startLoop=1; oppositeLoop=2; startFromMaximumAxial=True; radiusCm=1.1; axial=[-0.41674000000000005,14.029853393828226]cm; surfaceType=kCylinderSurface; axialLengthMm=136.131; fullLength=True; materialAddRingExpected=True; selectionMode=CylindricalSurface; startFromMaxAxial=True; boundaryLoops=2; startLoop=1; oppositeLoop=2; startFromMaximumAxial=True; radiusCm=1.1; axial=[-0.41674000000000005,14.029853393828226]cm
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:51:22.3845357Z
+Context: ThreadBuilder.surface-boundary-ring-created
+feature=Резьба: приведение диаметра; operation=kJoinOperation; clipJoin=True; trimNotRequiredByExactDisjointness=False; trimSurfaceCount=2; startMm=0; endMm=136.131; rLowMm=7; rHighMm=11.8
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:51:22.4355124Z
+Context: ThreadBuilder.surface-boundary-curved-face-disjoint-proof-not-established
+stage=Резьба: приведение диаметра;surface={DDE1ECD7-27E9-A636-2C78-F217AA85D843};detail=bounded-root-intersects-finite-ring;rootAxialCm=0.3240600160840228
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:51:22.4575494Z
+Context: ThreadBuilder.surface-boundary-trim-surface-created
+face={DDE1ECD7-27E9-A636-2C78-F217AA85D843}; surfaceType=kConeSurface; extensionMode=exact-cone-patch;boundary-seed-extension=applied;accepted=15;rejected=0;seedT=[1.3250645932126657,3.519478331796734]cm;maxSupportResidualMm=0;marginMm=1.265;current-loop-envelope=expanded-to-exact-edge-samples;projectedSeeds=15/15;ringAxial=[-0.41674000000000005,14.029853393828226]cm;loopAxial=[-0.41674000000000005,14.029853393828226]cm;axial=[-0.5432400000000001,14.156353393828226]cm; radialEnvelope=1.2650000000000001cm; margin=0.12650000000000003cm; clippedFaceCount=3;loopBoundarySeedCoverage=15/15;patchMatchMode=exact-loop-boundary; transientNormalSign=1; workSurfaceFaceCount=1; normalAlignment=1; sourceIsParamReversed=True; importedIsParamReversed=True; selectedSidePositiveOriented=True; selectedSidePositiveParameter=False; removePositiveSide=True; boundaryEdges=1; boundaryLoops=1; boundarySeeds=15; keepProbeSeeds=15
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:51:22.4767382Z
+Context: ThreadBuilder.surface-boundary-trim-surface-created
+face={DDE1ECD7-27E9-A636-2C78-F217AA85D843}; surfaceType=kConeSurface; extensionMode=exact-cone-patch;boundary-seed-extension=applied;accepted=15;rejected=0;seedT=[1.325064593212666,3.519478331796734]cm;maxSupportResidualMm=0;marginMm=1.265;current-loop-envelope=expanded-to-exact-edge-samples;projectedSeeds=15/15;ringAxial=[-0.41674000000000005,14.029853393828226]cm;loopAxial=[-0.41674000000000005,14.029853393828226]cm;axial=[-0.5432400000000001,14.156353393828226]cm; radialEnvelope=1.2650000000000001cm; margin=0.12650000000000003cm; clippedFaceCount=3;loopBoundarySeedCoverage=15/15;patchMatchMode=exact-loop-boundary; transientNormalSign=1; workSurfaceFaceCount=1; normalAlignment=1; sourceIsParamReversed=True; importedIsParamReversed=True; selectedSidePositiveOriented=True; selectedSidePositiveParameter=False; removePositiveSide=True; boundaryEdges=1; boundaryLoops=2; boundarySeeds=15; keepProbeSeeds=15
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:51:26.5906971Z
+Context: ThreadBuilder.surface-boundary-current-body-probe-filter
+currentBodyWitnessFilter=True;keep=148->148;remove=148->148;previousBoundaryRemovalExcluded=True
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:51:26.5938209Z
+Context: ThreadBuilder.surface-boundary-surface-trim-executing
+stage=Резьба: приведение диаметра; surface={DDE1ECD7-27E9-A636-2C78-F217AA85D843}; surfaceType=kConeSurface; removePositiveSide=True; sourceIsParamReversed=True; probeDirection=oriented-splitter-normal; curvedProbeMethod=exact-radial-cylinder-intersection; volumeBeforeCm3=38.59281178435693; keepProbeCount=148; keepSeedCoverage=15/15; keepRadialBands=10/10; oppositeProbeCount=148; oppositeSampleCoverage=15/15; oppositeRadialBands=10/10; keepSampleCoverage=15/15; keepSampleRadialBands=10/10; boundaryLoops=1; retryInputPreserved=True; currentBodyFilter=currentBodyWitnessFilter=True;keep=148->148;remove=148->148;previousBoundaryRemovalExcluded=True; keepProbe=method=exact-radial-cylinder-intersection;witnessPolicy=maximum-valid-interior-offset;searchOrder=largest-to-smallest;minimumOffsetCm=0.000001;maximumOffsetCm=0.4;pointContainmentQueries=232;exactSurfaceIntersections=148;noRealIntersections=0;axialRangeRejections=2;boundedPatchRejections=2;sampledSeeds=15/15;sampledRadialBands=10/10;lastIntersection=rootFound=True;rootCount=2;boundedRootCount=1;selectedAxialCm=0.4692387559644409;referenceAxialCm=0.48765301991211185;expectedAxialCm=0.4689889487386274;rootDeviationCm=0.0002498072258135253;radialDeltaCm=0.05426426249352545;branchPolicy=unique-bounded-face-root;allRootsChecked=True;rootsOutsideAxialRange=0;rootsOutsideBoundedPatch=1;projectionFailures=0;rootChecks=[root=0.4692387559644409;bounded-face-hit;localDeviationCm=0.0002498072258135253|root=13.143874637863785;outside-bounded-face;onFace=false;method=Face.GetClosestPointTo;deviationCm=10.897485137485726;toleranceCm=0.0001]; removeProbe=method=exact-radial-cylinder-intersection;witnessPolicy=maximum-valid-interior-offset;searchOrder=largest-to-smallest;minimumOffsetCm=0.000001;maximumOffsetCm=0.4;pointContainmentQueries=274;exactSurfaceIntersections=148;noRealIntersections=0;axialRangeRejections=2;boundedPatchRejections=2;sampledSeeds=15/15;sampledRadialBands=10/10;lastIntersection=rootFound=True;rootCount=2;boundedRootCount=1;selectedAxialCm=0.4692387559644409;referenceAxialCm=0.48765301991211185;expectedAxialCm=0.4689889487386274;rootDeviationCm=0.0002498072258135253;radialDeltaCm=0.05426426249352545;branchPolicy=unique-bounded-face-root;allRootsChecked=True;rootsOutsideAxialRange=0;rootsOutsideBoundedPatch=1;projectionFailures=0;rootChecks=[root=0.4692387559644409;bounded-face-hit;localDeviationCm=0.0002498072258135253|root=13.143874637863785;outside-bounded-face;onFace=false;method=Face.GetClosestPointTo;deviationCm=10.897485137485726;toleranceCm=0.0001]
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:51:26.6313625Z
+Context: ThreadBuilder.surface-boundary-surface-trim-verified
+stage=Резьба: приведение диаметра; surface={DDE1ECD7-27E9-A636-2C78-F217AA85D843}; surfaceType=kConeSurface; volumeBeforeCm3=38.59281178435693; volumeAfterCm3=35.63099328112487; removedVolumeCm3=2.9618185032320596; volumeToleranceCm3=3.859281178435693E-08; resultingFaces=5; matchingSurfaceTypeFaces=1; removePositiveSide=True; sideProbeCorrected=False; keepProbes=148; keepProbesRetained=True; keptFinal=148; oppositeProbes=148; oppositeProbesRemoved=True; oppositeRetainedFinal=0; oppositeSampleCoverage=15/15; oppositeRadialBands=10/10; boundaryLoops=1; exactPlanarDifferenceVerified=False; exactPlanarDifferenceDetail=not-attempted
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:51:26.6487725Z
+Context: ThreadBuilder.surface-boundary-curved-face-disjoint-proof-not-established
+stage=Резьба: приведение диаметра;surface={DDE1ECD7-27E9-A636-2C78-F217AA85D843};detail=bounded-root-intersects-finite-ring;rootAxialCm=12.984691093082795
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:51:30.7521440Z
+Context: ThreadBuilder.surface-boundary-surface-trim-executing
+stage=Резьба: приведение диаметра; surface={DDE1ECD7-27E9-A636-2C78-F217AA85D843}; surfaceType=kConeSurface; removePositiveSide=True; sourceIsParamReversed=True; probeDirection=oriented-splitter-normal; curvedProbeMethod=exact-radial-cylinder-intersection; volumeBeforeCm3=35.63099328112487; keepProbeCount=148; keepSeedCoverage=15/15; keepRadialBands=10/10; oppositeProbeCount=148; oppositeSampleCoverage=15/15; oppositeRadialBands=10/10; keepSampleCoverage=15/15; keepSampleRadialBands=10/10; boundaryLoops=2; retryInputPreserved=True; currentBodyFilter=currentBodyWitnessFilter=True;keep=148->148;remove=148->148;previousBoundaryRemovalExcluded=True; keepProbe=method=exact-radial-cylinder-intersection;witnessPolicy=maximum-valid-interior-offset;searchOrder=largest-to-smallest;minimumOffsetCm=0.000001;maximumOffsetCm=0.4;pointContainmentQueries=239;exactSurfaceIntersections=148;noRealIntersections=0;axialRangeRejections=2;boundedPatchRejections=2;sampledSeeds=15/15;sampledRadialBands=10/10;lastIntersection=no-bounded-face-intersection-within-ring;rootCount=2;referenceAxialCm=13.58517059676498;expectedAxialCm=13.626953532078433;radialDeltaCm=0.05469520638668457;rootsOutsideAxialRange=1;rootsOutsideBoundedPatch=1;projectionFailures=0;rootChecks=[root=13.62672122798772;bounded-face-hit-outside-ring-axial-range|root=-0.013607834159495081;outside-bounded-face;onFace=false;method=Face.GetClosestPointTo;deviationCm=11.415440295627391;toleranceCm=0.0001]; removeProbe=method=exact-radial-cylinder-intersection;witnessPolicy=maximum-valid-interior-offset;searchOrder=largest-to-smallest;minimumOffsetCm=0.000001;maximumOffsetCm=0.4;pointContainmentQueries=283;exactSurfaceIntersections=148;noRealIntersections=0;axialRangeRejections=2;boundedPatchRejections=2;sampledSeeds=15/15;sampledRadialBands=10/10;lastIntersection=no-bounded-face-intersection-within-ring;rootCount=2;referenceAxialCm=13.58517059676498;expectedAxialCm=13.626953532078433;radialDeltaCm=0.05469520638668457;rootsOutsideAxialRange=1;rootsOutsideBoundedPatch=1;projectionFailures=0;rootChecks=[root=13.62672122798772;bounded-face-hit-outside-ring-axial-range|root=-0.013607834159495081;outside-bounded-face;onFace=false;method=Face.GetClosestPointTo;deviationCm=11.415440295627391;toleranceCm=0.0001]
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:51:30.7866406Z
+Context: ThreadBuilder.surface-boundary-surface-trim-verified
+stage=Резьба: приведение диаметра; surface={DDE1ECD7-27E9-A636-2C78-F217AA85D843}; surfaceType=kConeSurface; volumeBeforeCm3=35.63099328112487; volumeAfterCm3=32.66980696371929; removedVolumeCm3=2.961186317405584; volumeToleranceCm3=3.563099328112487E-08; resultingFaces=6; matchingSurfaceTypeFaces=2; removePositiveSide=True; sideProbeCorrected=False; keepProbes=148; keepProbesRetained=True; keptFinal=148; oppositeProbes=148; oppositeProbesRemoved=True; oppositeRetainedFinal=0; oppositeSampleCoverage=15/15; oppositeRadialBands=10/10; boundaryLoops=2; exactPlanarDifferenceVerified=False; exactPlanarDifferenceDetail=not-attempted
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:51:30.7885297Z
+Context: ThreadBuilder.surface-boundary-domain-trim-completed
+stage=Резьба: приведение диаметра; originalVolumeCm3=38.59281178435693; appliedTrimSurfaces=2; provenNoOpSurfaces=0; provenDisjointSurfaces=0; domain=boundaryLoops=2; startLoop=1; oppositeLoop=2; startFromMaximumAxial=True; radiusCm=1.1; axial=[-0.41674000000000005,14.029853393828226]cm
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:51:30.8090558Z
+Context: ThreadBuilder.surface-boundary-ring-joined
+stage=Резьба: приведение диаметра; boundarySurfaceCount=2; hostBody=Твердое тело1; ringWasTrimmedByActualBRepSurfacesAndVerified=True
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:51:30.8177409Z
+Context: ThreadBuilder.chamfer-terminal-boundaries-resolved
+surfaceType=kCylinderSurface; targetRadiusCm=0.7000000000000001; targetLengthCm=13.613113393828225; scannedCylinderFaces=1; validLoops=2; selectedStartLoop=2; selectedEndLoop=1; startEdges=1; endEdges=1; startAxial=[0.3354885671835426,1.7289472550650684]cm; startMean=0.9989887112013704cm; endAxial=[11.884166138763156,13.277624826644683]cm; endMean=12.614124682626851cm; startMeanFraction=0.07338429368070068; endMeanFraction=0.926615706319299; radialToleranceCm=0.005; surfaceBoundary=True; startEdges=1; endEdges=1; chamferMode=1
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:51:30.8218191Z
+Context: ThreadBuilder.chamfer-skipped
+location=Начало резьбы; reason=ось резьбы не пересекает криволинейную поверхность в точке торца; surface=kConeSurface; axisSurfaceDistanceMm=7.755; axisNormalAlignment=0.758015; axisNormalAngleDeg=40.71; toleranceDeg=2
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:51:30.8970295Z
+Context: ThreadBuilder.coil-orientation
+selectionMode=CylindricalSurface; startFromMaxAxial=True; nativeDirectionReversed=True; reverseSurfaceStartHand=True; rightHand=True; clockwiseRotation=True; heightCm=14.446593393828227; leadCm=0.8; revolutions=18.058241742285283; profileSegments=12
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:51:30.8994541Z
+Context: ThreadBuilder.coil-add-input
+stage=main-thread-start=maximum;operation=kCutOperation;leadCm=0.8;revolutions=18.058241742285283;heightCm=14.446593393828227;clockwiseRotation=True;taperAngleRad=0;profileClrType=System.__ComObject;axisStart2d=(0,0);axisEnd2d=(0,14.446593393828227);axisLengthCm=14.446593393828227
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:51:31.2412335Z
+Context: ThreadBuilder.Metadata.SourceTargetPreserved
+selectionMode=CylindricalSurface; sourceRadiusCm=1.1; workingRadiusCm=0.7000000000000001; sourceLengthCm=13.613113393828225; sourceFramePreserved=true
+---
+[2026-11-14 16:51:31] Построение успешно
+Резьб: 1; заходов всего: 1
+Параметры: внутренняя; стандарт: Tr; размер: Tr 22 x 8; направление: правая; число заходов: 1; сбег: Плавный (авто-резервный Coil при отказе Loft); длина: вся поверхность; зазор: 0 мм; фаски: 1 / 1 мм
+Общее время: 9.7 с.
+Основная резьба: фаски/проточки/подготовка 8510 мс; WorkPlane/Sketch/Profile 73 мс; Coil.Add 158 мс; прочее этапа 158 мс; всего этапа 389 мс. Подготовка группировки 27 мс; папки дерева 28 мс.
+Папка «Резьба — Tr · 22 x 8 · 1 заход · Правая (R)»: объектов 11, узлов сгруппировано 9; TopNode 0 мс, поиск имени 1 мс, снимок дерева 1 мс, резервный поиск узлов 0 мс, создание + группировка 2 мс (batch BrowserNodes), резервные folder.Add 0 мс, BrowserNode папки 0 мс, SetEndOfPart 9 мс, Reorder 0 мс, всего 21 мс.
+Фиксация транзакции/обновление документа: 29 мс.
+Метаданные редактирования: ID 96cd192e57594973a1595973ec4e2cfa; объектов 11
+Предупреждение: Подготовка внутренней резьбы Ø22 × 8 мм: исходное отверстие Ø22 мм будет предварительно заполнено материалом кольцом до малого диаметра внутреннего профиля Ø14 мм (изменение диаметра 8 мм). Затем винтовой профиль сформирует резьбу до номинального Ø22 мм. Номинальный диаметр в параметрах не меняется. Проверьте, что добавление материала допустимо.
+Начало резьбы: автоматическая фаска пропущена. Резьба построена без этой фаски.
+------------------------------------------------------------------------
+[Helivanta.DiagnosticMessage] 2026-11-14T14:51:40.7559290Z
+Context: NativeThreadConversionService.TryResolveSelectedFeature.NoUniqueTarget
+selectSetCount=0; browserTraversalSucceeded=True; selectedBrowserNodeCount=0; candidateCount=0; resolvedThreadFeatureCount=0; candidateTypes=; browserError=<none>
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:51:40.7568463Z
+Context: ThreadProAddIn.TryGetSelectedThreadObject.NoUniqueTarget
+metadataResolution=В дереве модели не выбрана операция резьбы.; nativeResolution=В текущем выделении не найдена штатная операция «Резьба Inventor».; selectionMustResolveToOneLogicalThreadOrOneNativeFeature=true
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:51:41.7361427Z
+Context: ThreadMetadataStore.CollectSelectedBrowserNodes.SelectedNodeInventory
+depth=1; nativeType=System.__ComObject; isBrowserFolder=True; expanded=False; label=Резьба — Tr · 22 x 8 · 1 заход · Правая (R)
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:51:41.7428303Z
+Context: ThreadMetadataStore.TryResolveSelectedThreadMetadata.SelectedFolderExpansionPreserved
+Primary thread BrowserFolder expansion state is preserved during COM-identity ownership resolution; folderName=Резьба — Tr · 22 x 8 · 1 заход · Правая (R); expandedBeforeResolution=False; expandedPropertyMutation=false
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:51:41.7799600Z
+Context: ThreadMetadataStore.TryResolveSelectedManagedThreadFolder.Resolved
+threadId=96cd192e57594973a1595973ec4e2cfa; rootFolderIdentityMatches=1; ownership=NativeBrowserNodeDefinition.AllReferencedNodes+parent-com-identity; nameOnly=false
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:51:41.7807856Z
+Context: ThreadMetadataStore.TryResolveSelectedThreadMetadata.SelectedFolderResolved
+threadId=96cd192e57594973a1595973ec4e2cfa; folderName=Резьба — Tr · 22 x 8 · 1 заход · Правая (R); ownership=NativeBrowserNodeDefinition.AllReferencedNodes+parent-com-identity; descendantNativeObjectTraversal=false
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:51:41.7844397Z
+Context: ThreadMetadataStore.TryResolveSelectedThreadMetadata.Resolved
+threadId=96cd192e57594973a1595973ec4e2cfa; selectSetCount=1; selectedBrowserNodeCount=1; candidateCount=2; distinctThreadIds=1; representativeType=System.__ComObject
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:51:41.7851951Z
+Context: ThreadProAddIn.TryGetSelectedThreadObject.MetadataTargetHandoff
+threadId=96cd192e57594973a1595973ec4e2cfa; representativeType=System.__ComObject; handoffUsesValidatedThreadId=true
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:51:41.9516185Z
+Context: ThreadProAddIn.OpenEditForSelection.MetadataIdHandoff
+threadId=96cd192e57594973a1595973ec4e2cfa; selectionObjectType=System.__ComObject; no second BrowserNode metadata lookup required
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:51:49.5949750Z
+Context: ThreadEditService.TryGetFirstThreadHistoryAnchor.Resolved
+Insertion anchor resolved from validated metadata order; memberIndex=0; memberType=System.__ComObject; memberCount=11; browserNativeObjectTraversal=False.
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:51:49.7093731Z
+Context: ThreadEditService.ResolveOriginalTarget.FaceInventory
+bodies=1;faces=5;cylinderFaces=3;radiusFaces=1;analyzed=1;externalMatches=1;lengthMatches=1;centerMatches=1;axisMatches=1;acceptedUniqueIdentities=1;snapshotRadiusCm=1.1;snapshotLengthCm=13.613113393828225;snapshotCenter=-6,806556696914118,0,8646063522184366,4,025823254983984;snapshotAxis=1,0,0;snapshotExternal=False
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:51:50.3007019Z
+Context: ThreadBuilder.surface-boundary-trim-surfaces-assessed
+edges=2; sampledEdges=2; boundaryLoops=2; adjacentFaceReferences=2; uniqueTrimSurfaces=2; provenNonIntersectingSurfaces=0; sameCylinderNeighbours=0; surfaceTypes=[kConeSurface]; sourceFaceLoops=[{DDE1ECD7-27E9-A636-2C78-F217AA85D843}:loops=1;{DDE1ECD7-27E9-A636-2C78-F217AA85D843}:loops=2]; boundaryLoops=2; startLoop=1; oppositeLoop=2; startFromMaximumAxial=True; radiusCm=1.1; axial=[-0.15633999999999998,13.769453393828226]cm; surfaceType=kCylinderSurface; axialLengthMm=136.131; fullLength=True; materialAddRingExpected=True; selectionMode=CylindricalSurface; startFromMaxAxial=True; boundaryLoops=2; startLoop=1; oppositeLoop=2; startFromMaximumAxial=True; radiusCm=1.1; axial=[-0.15633999999999998,13.769453393828226]cm
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:51:50.3343081Z
+Context: ThreadBuilder.surface-boundary-ring-created
+feature=Резьба: приведение диаметра; operation=kJoinOperation; clipJoin=True; trimNotRequiredByExactDisjointness=False; trimSurfaceCount=2; startMm=0; endMm=136.131; rLowMm=9.5; rHighMm=11.3
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:51:50.3621905Z
+Context: ThreadBuilder.surface-boundary-curved-face-disjoint-proof-not-established
+stage=Резьба: приведение диаметра;surface={DDE1ECD7-27E9-A636-2C78-F217AA85D843};detail=bounded-root-intersects-finite-ring;rootAxialCm=0.1346903076940797
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:51:50.3799296Z
+Context: ThreadBuilder.surface-boundary-trim-surface-created
+face={DDE1ECD7-27E9-A636-2C78-F217AA85D843}; surfaceType=kConeSurface; extensionMode=exact-cone-patch;boundary-seed-extension=applied;accepted=15;rejected=0;seedT=[1.3250645932126657,3.519478331796734]cm;maxSupportResidualMm=0;marginMm=1.265;current-loop-envelope=expanded-to-exact-edge-samples;projectedSeeds=15/15;ringAxial=[-0.15633999999999998,13.769453393828226]cm;loopAxial=[-0.15633999999999998,13.769453393828226]cm;axial=[-0.28284,13.895953393828226]cm; radialEnvelope=1.2650000000000001cm; margin=0.12650000000000003cm; clippedFaceCount=3;loopBoundarySeedCoverage=15/15;patchMatchMode=exact-loop-boundary; transientNormalSign=1; workSurfaceFaceCount=1; normalAlignment=1; sourceIsParamReversed=True; importedIsParamReversed=True; selectedSidePositiveOriented=True; selectedSidePositiveParameter=False; removePositiveSide=True; boundaryEdges=1; boundaryLoops=1; boundarySeeds=15; keepProbeSeeds=15
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:51:50.3989881Z
+Context: ThreadBuilder.surface-boundary-trim-surface-created
+face={DDE1ECD7-27E9-A636-2C78-F217AA85D843}; surfaceType=kConeSurface; extensionMode=exact-cone-patch;boundary-seed-extension=applied;accepted=15;rejected=0;seedT=[1.325064593212666,3.519478331796734]cm;maxSupportResidualMm=0;marginMm=1.265;current-loop-envelope=expanded-to-exact-edge-samples;projectedSeeds=15/15;ringAxial=[-0.15633999999999998,13.769453393828226]cm;loopAxial=[-0.15633999999999998,13.769453393828226]cm;axial=[-0.28284,13.895953393828226]cm; radialEnvelope=1.2650000000000001cm; margin=0.12650000000000003cm; clippedFaceCount=3;loopBoundarySeedCoverage=15/15;patchMatchMode=exact-loop-boundary; transientNormalSign=1; workSurfaceFaceCount=1; normalAlignment=1; sourceIsParamReversed=True; importedIsParamReversed=True; selectedSidePositiveOriented=True; selectedSidePositiveParameter=False; removePositiveSide=True; boundaryEdges=1; boundaryLoops=2; boundarySeeds=15; keepProbeSeeds=15
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:51:54.4983778Z
+Context: ThreadBuilder.surface-boundary-current-body-probe-filter
+currentBodyWitnessFilter=True;keep=150->150;remove=150->150;previousBoundaryRemovalExcluded=True
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:51:54.5009758Z
+Context: ThreadBuilder.surface-boundary-surface-trim-executing
+stage=Резьба: приведение диаметра; surface={DDE1ECD7-27E9-A636-2C78-F217AA85D843}; surfaceType=kConeSurface; removePositiveSide=True; sourceIsParamReversed=True; probeDirection=oriented-splitter-normal; curvedProbeMethod=exact-radial-cylinder-intersection; volumeBeforeCm3=16.011911272233213; keepProbeCount=150; keepSeedCoverage=15/15; keepRadialBands=10/10; oppositeProbeCount=150; oppositeSampleCoverage=15/15; oppositeRadialBands=10/10; keepSampleCoverage=15/15; keepSampleRadialBands=10/10; boundaryLoops=1; retryInputPreserved=True; currentBodyFilter=currentBodyWitnessFilter=True;keep=150->150;remove=150->150;previousBoundaryRemovalExcluded=True; keepProbe=method=exact-radial-cylinder-intersection;witnessPolicy=maximum-valid-interior-offset;searchOrder=largest-to-smallest;minimumOffsetCm=0.000001;maximumOffsetCm=0.4;pointContainmentQueries=386;exactSurfaceIntersections=150;noRealIntersections=0;axialRangeRejections=0;boundedPatchRejections=0;sampledSeeds=15/15;sampledRadialBands=10/10;lastIntersection=rootFound=True;rootCount=2;boundedRootCount=1;selectedAxialCm=0.4810586629045139;referenceAxialCm=0.48765301991211185;expectedAxialCm=0.48102712010693627;rootDeviationCm=3.154279757761058E-05;radialDeltaCm=0.01926426249352553;branchPolicy=unique-bounded-face-root;allRootsChecked=True;rootsOutsideAxialRange=0;rootsOutsideBoundedPatch=1;projectionFailures=0;rootChecks=[root=0.4810586629045139;bounded-face-hit;localDeviationCm=3.154279757761058E-05|root=13.132054730923713;outside-bounded-face;onFace=false;method=Face.GetClosestPointTo;deviationCm=10.879694005280001;toleranceCm=0.0001]; removeProbe=method=exact-radial-cylinder-intersection;witnessPolicy=maximum-valid-interior-offset;searchOrder=largest-to-smallest;minimumOffsetCm=0.000001;maximumOffsetCm=0.4;pointContainmentQueries=411;exactSurfaceIntersections=150;noRealIntersections=0;axialRangeRejections=0;boundedPatchRejections=0;sampledSeeds=15/15;sampledRadialBands=10/10;lastIntersection=rootFound=True;rootCount=2;boundedRootCount=1;selectedAxialCm=0.4810586629045139;referenceAxialCm=0.48765301991211185;expectedAxialCm=0.48102712010693627;rootDeviationCm=3.154279757761058E-05;radialDeltaCm=0.01926426249352553;branchPolicy=unique-bounded-face-root;allRootsChecked=True;rootsOutsideAxialRange=0;rootsOutsideBoundedPatch=1;projectionFailures=0;rootChecks=[root=0.4810586629045139;bounded-face-hit;localDeviationCm=3.154279757761058E-05|root=13.132054730923713;outside-bounded-face;onFace=false;method=Face.GetClosestPointTo;deviationCm=10.879694005280001;toleranceCm=0.0001]
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:51:54.5438843Z
+Context: ThreadBuilder.surface-boundary-surface-trim-verified
+stage=Резьба: приведение диаметра; surface={DDE1ECD7-27E9-A636-2C78-F217AA85D843}; surfaceType=kConeSurface; volumeBeforeCm3=16.011911272233213; volumeAfterCm3=14.770794470464303; removedVolumeCm3=1.2411168017689107; volumeToleranceCm3=1.6011911272233216E-08; resultingFaces=5; matchingSurfaceTypeFaces=1; removePositiveSide=True; sideProbeCorrected=False; keepProbes=150; keepProbesRetained=True; keptFinal=150; oppositeProbes=150; oppositeProbesRemoved=True; oppositeRetainedFinal=0; oppositeSampleCoverage=15/15; oppositeRadialBands=10/10; boundaryLoops=1; exactPlanarDifferenceVerified=False; exactPlanarDifferenceDetail=not-attempted
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:51:54.5612213Z
+Context: ThreadBuilder.surface-boundary-curved-face-disjoint-proof-not-established
+stage=Резьба: приведение диаметра;surface={DDE1ECD7-27E9-A636-2C78-F217AA85D843};detail=bounded-root-intersects-finite-ring;rootAxialCm=13.075908348415673
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:51:58.6828967Z
+Context: ThreadBuilder.surface-boundary-surface-trim-executing
+stage=Резьба: приведение диаметра; surface={DDE1ECD7-27E9-A636-2C78-F217AA85D843}; surfaceType=kConeSurface; removePositiveSide=True; sourceIsParamReversed=True; probeDirection=oriented-splitter-normal; curvedProbeMethod=exact-radial-cylinder-intersection; volumeBeforeCm3=14.770794470464303; keepProbeCount=150; keepSeedCoverage=15/15; keepRadialBands=10/10; oppositeProbeCount=150; oppositeSampleCoverage=15/15; oppositeRadialBands=10/10; keepSampleCoverage=15/15; keepSampleRadialBands=10/10; boundaryLoops=2; retryInputPreserved=True; currentBodyFilter=currentBodyWitnessFilter=True;keep=150->150;remove=150->150;previousBoundaryRemovalExcluded=True; keepProbe=method=exact-radial-cylinder-intersection;witnessPolicy=maximum-valid-interior-offset;searchOrder=largest-to-smallest;minimumOffsetCm=0.000001;maximumOffsetCm=0.4;pointContainmentQueries=403;exactSurfaceIntersections=150;noRealIntersections=0;axialRangeRejections=0;boundedPatchRejections=0;sampledSeeds=15/15;sampledRadialBands=10/10;lastIntersection=rootFound=True;rootCount=2;boundedRootCount=1;selectedAxialCm=13.600185981419187;referenceAxialCm=13.58517059676498;expectedAxialCm=13.600216221213712;rootDeviationCm=3.0239794524433705E-05;radialDeltaCm=0.01969520638668465;branchPolicy=unique-bounded-face-root;allRootsChecked=True;rootsOutsideAxialRange=0;rootsOutsideBoundedPatch=1;projectionFailures=0;rootChecks=[root=13.600185981419187;bounded-face-hit;localDeviationCm=3.0239794524433705E-05|root=0.012927412409038502;outside-bounded-face;onFace=false;method=Face.GetClosestPointTo;deviationCm=11.38212895690445;toleranceCm=0.0001]; removeProbe=method=exact-radial-cylinder-intersection;witnessPolicy=maximum-valid-interior-offset;searchOrder=largest-to-smallest;minimumOffsetCm=0.000001;maximumOffsetCm=0.4;pointContainmentQueries=421;exactSurfaceIntersections=150;noRealIntersections=0;axialRangeRejections=0;boundedPatchRejections=0;sampledSeeds=15/15;sampledRadialBands=10/10;lastIntersection=rootFound=True;rootCount=2;boundedRootCount=1;selectedAxialCm=13.600185981419187;referenceAxialCm=13.58517059676498;expectedAxialCm=13.600216221213712;rootDeviationCm=3.0239794524433705E-05;radialDeltaCm=0.01969520638668465;branchPolicy=unique-bounded-face-root;allRootsChecked=True;rootsOutsideAxialRange=0;rootsOutsideBoundedPatch=1;projectionFailures=0;rootChecks=[root=13.600185981419187;bounded-face-hit;localDeviationCm=3.0239794524433705E-05|root=0.012927412409038502;outside-bounded-face;onFace=false;method=Face.GetClosestPointTo;deviationCm=11.38212895690445;toleranceCm=0.0001]
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:51:58.7251612Z
+Context: ThreadBuilder.surface-boundary-surface-trim-verified
+stage=Резьба: приведение диаметра; surface={DDE1ECD7-27E9-A636-2C78-F217AA85D843}; surfaceType=kConeSurface; volumeBeforeCm3=14.770794470464303; volumeAfterCm3=13.528365900056176; removedVolumeCm3=1.2424285704081264; volumeToleranceCm3=1.4770794470464303E-08; resultingFaces=6; matchingSurfaceTypeFaces=2; removePositiveSide=True; sideProbeCorrected=False; keepProbes=150; keepProbesRetained=True; keptFinal=150; oppositeProbes=150; oppositeProbesRemoved=True; oppositeRetainedFinal=0; oppositeSampleCoverage=15/15; oppositeRadialBands=10/10; boundaryLoops=2; exactPlanarDifferenceVerified=False; exactPlanarDifferenceDetail=not-attempted
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:51:58.7271871Z
+Context: ThreadBuilder.surface-boundary-domain-trim-completed
+stage=Резьба: приведение диаметра; originalVolumeCm3=16.011911272233213; appliedTrimSurfaces=2; provenNoOpSurfaces=0; provenDisjointSurfaces=0; domain=boundaryLoops=2; startLoop=1; oppositeLoop=2; startFromMaximumAxial=True; radiusCm=1.1; axial=[-0.15633999999999998,13.769453393828226]cm
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:51:58.7514756Z
+Context: ThreadBuilder.chamfer-terminal-boundaries-resolved
+surfaceType=kCylinderSurface; targetRadiusCm=0.9500000000000001; targetLengthCm=13.613113393828225; scannedCylinderFaces=1; validLoops=2; selectedStartLoop=2; selectedEndLoop=1; startEdges=1; endEdges=1; startAxial=[0.12313967352729804,2.036870768475726]cm; startMean=1.0284258907129868cm; endAxial=[11.5762426253525,13.489973720300927]cm; endMean=12.58468750311524cm; startMeanFraction=0.07554670713161356; endMeanFraction=0.9244532928683866; radialToleranceCm=0.005; surfaceBoundary=True; startEdges=1; endEdges=1; chamferMode=1
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:51:58.7545240Z
+Context: ThreadBuilder.chamfer-skipped
+location=Начало резьбы; reason=ось резьбы не пересекает криволинейную поверхность в точке торца; surface=kConeSurface; axisSurfaceDistanceMm=9.579; axisNormalAlignment=0.770205; axisNormalAngleDeg=39.628; toleranceDeg=2
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:51:58.8287854Z
+Context: ThreadBuilder.coil-orientation
+selectionMode=CylindricalSurface; startFromMaxAxial=True; nativeDirectionReversed=True; reverseSurfaceStartHand=True; rightHand=True; clockwiseRotation=True; heightCm=13.925793393828226; leadCm=0.3; revolutions=46.419311312760755; profileSegments=12
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:51:58.8301022Z
+Context: ThreadBuilder.coil-add-input
+stage=main-thread-start=maximum;operation=kCutOperation;leadCm=0.3;revolutions=46.419311312760755;heightCm=13.925793393828226;clockwiseRotation=True;taperAngleRad=0;profileClrType=System.__ComObject;axisStart2d=(0,0);axisEnd2d=(0,13.925793393828226);axisLengthCm=13.925793393828226
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:51:59.7745813Z
+Context: ThreadBuilder.Metadata.SourceTargetPreserved
+selectionMode=CylindricalSurface; sourceRadiusCm=1.1; workingRadiusCm=0.9500000000000001; sourceLengthCm=13.613113393828225; sourceFramePreserved=true
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:52:16.5695167Z
+Context: EdgeSelector.surface-start-side-resolved
+source=click-nearest-boundary; selected=minimum-axial; minimumBoundaryDistanceMm=4.481; maximumBoundaryDistanceMm=64.241; minimumBoundaryEdges=1; maximumBoundaryEdges=1; modelPositionAvailable=True; detail=candidateEdges=2; minimumGroup=1; maximumGroup=1; largestAxialGapMm=86.623; ambiguityToleranceMm=0.25; graphicsPick=True
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:52:19.7038835Z
+Context: ThreadBuilder.surface-boundary-side-orientation-resolved
+face={56824B50-DF9B-A769-779B-6B14208E8AF5}; surfaceType=kSphereSurface; boundarySamples=15; tangentProjectionSamples=15; acceptedOrientationSamples=15; positiveVotes=15; negativeVotes=0; selectedSide=positive; maxSelectedProjectionErrorMm=0; signedDistanceRangeMm=[0.01435,0.0168]
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:52:19.8331185Z
+Context: ThreadBuilder.surface-boundary-side-orientation-resolved
+face={DDE1ECD7-27E9-A636-2C78-F217AA85D843}; surfaceType=kConeSurface; boundarySamples=15; tangentProjectionSamples=14; acceptedOrientationSamples=14; positiveVotes=14; negativeVotes=0; selectedSide=positive; maxSelectedProjectionErrorMm=0.01952; signedDistanceRangeMm=[0.00765,0.01826]
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:52:19.9157132Z
+Context: ThreadBuilder.surface-boundary-trim-surfaces-assessed
+edges=2; sampledEdges=2; boundaryLoops=2; adjacentFaceReferences=2; uniqueTrimSurfaces=2; provenNonIntersectingSurfaces=0; sameCylinderNeighbours=0; surfaceTypes=[kConeSurface,kSphereSurface]; sourceFaceLoops=[{DDE1ECD7-27E9-A636-2C78-F217AA85D843}:loops=1;{56824B50-DF9B-A769-779B-6B14208E8AF5}:loops=2]; boundaryLoops=2; startLoop=1; oppositeLoop=2; startFromMaximumAxial=False; radiusCm=0.7999999999999997; axial=[-0.20842000000000002,10.918342476624959]cm; surfaceType=kCylinderSurface; axialLengthMm=107.099; fullLength=True; materialAddRingExpected=True; selectionMode=CylindricalSurface; startFromMaxAxial=False; boundaryLoops=2; startLoop=1; oppositeLoop=2; startFromMaximumAxial=False; radiusCm=0.7999999999999997; axial=[-0.20842000000000002,10.918342476624959]cm
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:52:19.9532762Z
+Context: ThreadBuilder.surface-boundary-ring-created
+feature=Резьба: приведение диаметра; operation=kJoinOperation; clipJoin=True; trimNotRequiredByExactDisjointness=False; trimSurfaceCount=2; startMm=0; endMm=107.099; rLowMm=5; rHighMm=8.4
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:52:20.0448081Z
+Context: ThreadBuilder.surface-boundary-trim-surface-created
+face={DDE1ECD7-27E9-A636-2C78-F217AA85D843}; surfaceType=kConeSurface; extensionMode=exact-cone-patch;boundary-seed-extension=applied;accepted=15;rejected=0;seedT=[3.3046737678264124,6.058407978332683]cm;maxSupportResidualMm=0;marginMm=1;current-loop-envelope=expanded-to-exact-edge-samples;projectedSeeds=15/15;ringAxial=[-0.20842000000000002,10.918342476624959]cm;loopAxial=[-0.20842000000000002,10.918342476624959]cm;axial=[-0.30842,11.018342476624959]cm; radialEnvelope=0.9199999999999997cm; margin=0.1cm; clippedFaceCount=3;loopBoundarySeedCoverage=15/15;patchMatchMode=exact-loop-boundary; transientNormalSign=1; workSurfaceFaceCount=1; normalAlignment=1; sourceIsParamReversed=True; importedIsParamReversed=True; selectedSidePositiveOriented=True; selectedSidePositiveParameter=False; removePositiveSide=True; boundaryEdges=1; boundaryLoops=1; boundarySeeds=15; keepProbeSeeds=14
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:52:20.0919273Z
+Context: ThreadBuilder.surface-boundary-trim-surface-created
+face={56824B50-DF9B-A769-779B-6B14208E8AF5}; surfaceType=kSphereSurface; extensionMode=exact-sphere-patch;current-loop-envelope=expanded-to-exact-edge-samples;projectedSeeds=15/15;ringAxial=[-0.20842000000000002,10.918342476624959]cm;loopAxial=[-0.20842000000000002,10.918342476624959]cm;axial=[-0.30842,11.018342476624959]cm; radialEnvelope=0.9199999999999997cm; margin=0.1cm; clippedFaceCount=3;loopBoundarySeedCoverage=15/15;patchMatchMode=exact-loop-boundary; transientNormalSign=1; workSurfaceFaceCount=1; normalAlignment=1; sourceIsParamReversed=True; importedIsParamReversed=True; selectedSidePositiveOriented=True; selectedSidePositiveParameter=False; removePositiveSide=True; boundaryEdges=1; boundaryLoops=2; boundarySeeds=15; keepProbeSeeds=15
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:52:23.6951228Z
+Context: ThreadBuilder.surface-boundary-current-body-probe-filter
+currentBodyWitnessFilter=True;keep=139->139;remove=139->139;previousBoundaryRemovalExcluded=True
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:52:23.6976777Z
+Context: ThreadBuilder.surface-boundary-surface-trim-executing
+stage=Резьба: приведение диаметра; surface={DDE1ECD7-27E9-A636-2C78-F217AA85D843}; surfaceType=kConeSurface; removePositiveSide=True; sourceIsParamReversed=True; probeDirection=oriented-splitter-normal; curvedProbeMethod=exact-radial-cylinder-intersection; volumeBeforeCm3=15.329214995016413; keepProbeCount=139; keepSeedCoverage=14/14; keepRadialBands=10/10; oppositeProbeCount=139; oppositeSampleCoverage=14/14; oppositeRadialBands=10/10; keepSampleCoverage=14/14; keepSampleRadialBands=10/10; boundaryLoops=1; retryInputPreserved=True; currentBodyFilter=currentBodyWitnessFilter=True;keep=139->139;remove=139->139;previousBoundaryRemovalExcluded=True; keepProbe=method=exact-radial-cylinder-intersection;witnessPolicy=maximum-valid-interior-offset;searchOrder=largest-to-smallest;minimumOffsetCm=0.000001;maximumOffsetCm=0.4;pointContainmentQueries=276;exactSurfaceIntersections=139;noRealIntersections=0;axialRangeRejections=1;boundedPatchRejections=1;sampledSeeds=14/14;sampledRadialBands=10/10;lastIntersection=rootFound=True;rootCount=1;boundedRootCount=1;selectedAxialCm=0.8911336425908967;referenceAxialCm=0.9022991453661263;expectedAxialCm=0.8910902404703982;rootDeviationCm=4.3402120498470254E-05;radialDeltaCm=0.02116820399331798;branchPolicy=unique-bounded-face-root;allRootsChecked=True;rootsOutsideAxialRange=0;rootsOutsideBoundedPatch=0;projectionFailures=0;rootChecks=[root=0.8911336425908967;bounded-face-hit;localDeviationCm=4.3402120498470254E-05]; removeProbe=method=exact-radial-cylinder-intersection;witnessPolicy=maximum-valid-interior-offset;searchOrder=largest-to-smallest;minimumOffsetCm=0.000001;maximumOffsetCm=0.4;pointContainmentQueries=288;exactSurfaceIntersections=139;noRealIntersections=0;axialRangeRejections=1;boundedPatchRejections=1;sampledSeeds=14/14;sampledRadialBands=10/10;lastIntersection=rootFound=True;rootCount=1;boundedRootCount=1;selectedAxialCm=0.8911336425908967;referenceAxialCm=0.9022991453661263;expectedAxialCm=0.8910902404703982;rootDeviationCm=4.3402120498470254E-05;radialDeltaCm=0.02116820399331798;branchPolicy=unique-bounded-face-root;allRootsChecked=True;rootsOutsideAxialRange=0;rootsOutsideBoundedPatch=0;projectionFailures=0;rootChecks=[root=0.8911336425908967;bounded-face-hit;localDeviationCm=4.3402120498470254E-05]
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:52:23.7555486Z
+Context: ThreadBuilder.surface-boundary-surface-trim-verified
+stage=Резьба: приведение диаметра; surface={DDE1ECD7-27E9-A636-2C78-F217AA85D843}; surfaceType=kConeSurface; volumeBeforeCm3=15.329214995016413; volumeAfterCm3=13.320636585218068; removedVolumeCm3=2.0085784097983446; volumeToleranceCm3=1.5329214995016412E-08; resultingFaces=5; matchingSurfaceTypeFaces=1; removePositiveSide=True; sideProbeCorrected=False; keepProbes=139; keepProbesRetained=True; keptFinal=139; oppositeProbes=139; oppositeProbesRemoved=True; oppositeRetainedFinal=0; oppositeSampleCoverage=14/14; oppositeRadialBands=10/10; boundaryLoops=1; exactPlanarDifferenceVerified=False; exactPlanarDifferenceDetail=not-attempted
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:52:23.7639559Z
+Context: ThreadBuilder.surface-boundary-curved-face-disjoint-proof-not-established
+stage=Резьба: приведение диаметра;surface={56824B50-DF9B-A769-779B-6B14208E8AF5};detail=bounded-root-intersects-finite-ring;rootAxialCm=10.441859653409582
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:52:25.2594316Z
+Context: ThreadBuilder.surface-boundary-current-body-probe-filter
+currentBodyWitnessFilter=True;keep=149->149;remove=149->149;previousBoundaryRemovalExcluded=True
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:52:25.2620216Z
+Context: ThreadBuilder.surface-boundary-surface-trim-executing
+stage=Резьба: приведение диаметра; surface={56824B50-DF9B-A769-779B-6B14208E8AF5}; surfaceType=kSphereSurface; removePositiveSide=True; sourceIsParamReversed=True; probeDirection=oriented-splitter-normal; curvedProbeMethod=exact-radial-cylinder-intersection; volumeBeforeCm3=13.320636585218068; keepProbeCount=149; keepSeedCoverage=15/15; keepRadialBands=10/10; oppositeProbeCount=149; oppositeSampleCoverage=15/15; oppositeRadialBands=10/10; keepSampleCoverage=15/15; keepSampleRadialBands=10/10; boundaryLoops=2; retryInputPreserved=True; currentBodyFilter=currentBodyWitnessFilter=True;keep=149->149;remove=149->149;previousBoundaryRemovalExcluded=True; keepProbe=method=exact-radial-cylinder-intersection;witnessPolicy=maximum-valid-interior-offset;searchOrder=largest-to-smallest;minimumOffsetCm=0.000001;maximumOffsetCm=0.4;pointContainmentQueries=268;exactSurfaceIntersections=149;noRealIntersections=0;axialRangeRejections=1;boundedPatchRejections=1;sampledSeeds=15/15;sampledRadialBands=10/10;lastIntersection=rootFound=True;rootCount=2;boundedRootCount=1;selectedAxialCm=10.226446109748283;referenceAxialCm=10.223963663127437;expectedAxialCm=10.226467764367204;rootDeviationCm=2.165461892111864E-05;radialDeltaCm=0.02090741766410953;branchPolicy=unique-bounded-face-root;allRootsChecked=True;rootsOutsideAxialRange=0;rootsOutsideBoundedPatch=1;projectionFailures=0;rootChecks=[root=10.226446109748283;bounded-face-hit;localDeviationCm=2.165461892111864E-05|root=-10.24910089318411;outside-bounded-face;onFace=false;method=Face.GetClosestPointTo;deviationCm=19.552034725277306;toleranceCm=0.0001]; removeProbe=method=exact-radial-cylinder-intersection;witnessPolicy=maximum-valid-interior-offset;searchOrder=largest-to-smallest;minimumOffsetCm=0.000001;maximumOffsetCm=0.4;pointContainmentQueries=329;exactSurfaceIntersections=149;noRealIntersections=0;axialRangeRejections=1;boundedPatchRejections=1;sampledSeeds=15/15;sampledRadialBands=10/10;lastIntersection=rootFound=True;rootCount=2;boundedRootCount=1;selectedAxialCm=10.226446109748283;referenceAxialCm=10.223963663127437;expectedAxialCm=10.226467764367204;rootDeviationCm=2.165461892111864E-05;radialDeltaCm=0.02090741766410953;branchPolicy=unique-bounded-face-root;allRootsChecked=True;rootsOutsideAxialRange=0;rootsOutsideBoundedPatch=1;projectionFailures=0;rootChecks=[root=10.226446109748283;bounded-face-hit;localDeviationCm=2.165461892111864E-05|root=-10.24910089318411;outside-bounded-face;onFace=false;method=Face.GetClosestPointTo;deviationCm=19.552034725277306;toleranceCm=0.0001]
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:52:25.3246616Z
+Context: ThreadBuilder.surface-boundary-surface-trim-verified
+stage=Резьба: приведение диаметра; surface={56824B50-DF9B-A769-779B-6B14208E8AF5}; surfaceType=kSphereSurface; volumeBeforeCm3=13.320636585218068; volumeAfterCm3=12.399178034999903; removedVolumeCm3=0.9214585502181656; volumeToleranceCm3=1.332063658521807E-08; resultingFaces=6; matchingSurfaceTypeFaces=1; removePositiveSide=True; sideProbeCorrected=False; keepProbes=149; keepProbesRetained=True; keptFinal=149; oppositeProbes=149; oppositeProbesRemoved=True; oppositeRetainedFinal=0; oppositeSampleCoverage=15/15; oppositeRadialBands=10/10; boundaryLoops=2; exactPlanarDifferenceVerified=False; exactPlanarDifferenceDetail=not-attempted
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:52:25.3266321Z
+Context: ThreadBuilder.surface-boundary-domain-trim-completed
+stage=Резьба: приведение диаметра; originalVolumeCm3=15.329214995016413; appliedTrimSurfaces=2; provenNoOpSurfaces=0; provenDisjointSurfaces=0; domain=boundaryLoops=2; startLoop=1; oppositeLoop=2; startFromMaximumAxial=False; radiusCm=0.7999999999999997; axial=[-0.20842000000000002,10.918342476624959]cm
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:52:25.4014816Z
+Context: ThreadBuilder.chamfer-terminal-boundaries-resolved
+surfaceType=kCylinderSurface; targetRadiusCm=0.5; targetLengthCm=10.709922476624959; scannedCylinderFaces=1; validLoops=2; selectedStartLoop=2; selectedEndLoop=1; startEdges=1; endEdges=1; startAxial=[0.521426351194738,2.249951838040539]cm; startMean=1.386820143639218cm; endAxial=[9.660624169954746,10.489810189104523]cm; endMean=10.071349526172156cm; startMeanFraction=0.1294892793730333; endMeanFraction=0.9403755767750396; radialToleranceCm=0.005; surfaceBoundary=True; startEdges=1; endEdges=1; chamferMode=1
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:52:25.4064406Z
+Context: ThreadBuilder.chamfer-skipped
+location=Начало резьбы; reason=ось резьбы не пересекает криволинейную поверхность в точке торца; surface=kConeSurface; axisSurfaceDistanceMm=6.928; axisNormalAlignment=0.5; axisNormalAngleDeg=60; toleranceDeg=2
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:52:25.4870824Z
+Context: ThreadBuilder.coil-orientation
+selectionMode=CylindricalSurface; startFromMaxAxial=False; nativeDirectionReversed=False; reverseSurfaceStartHand=False; rightHand=True; clockwiseRotation=False; heightCm=11.12676247662496; leadCm=0.4; revolutions=27.816906191562396; profileSegments=12
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:52:25.4883918Z
+Context: ThreadBuilder.coil-add-input
+stage=main-thread-start=minimum;operation=kCutOperation;leadCm=0.4;revolutions=27.816906191562396;heightCm=11.12676247662496;clockwiseRotation=False;taperAngleRad=0;profileClrType=System.__ComObject;axisStart2d=(0,0);axisEnd2d=(0,11.12676247662496);axisLengthCm=11.12676247662496
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:52:26.0630641Z
+Context: ThreadBuilder.Metadata.SourceTargetPreserved
+selectionMode=CylindricalSurface; sourceRadiusCm=0.7999999999999997; workingRadiusCm=0.5; sourceLengthCm=10.709922476624959; sourceFramePreserved=true
+---
+[2026-11-14 16:52:26] Построение успешно
+Резьб: 1; заходов всего: 1
+Параметры: внутренняя; стандарт: S; размер: S 16 x 4; направление: правая; число заходов: 1; сбег: Плавный (авто-резервный Coil при отказе Loft); длина: вся поверхность; зазор: 0 мм; фаски: 1 / 1 мм
+Общее время: 6.9 с.
+Основная резьба: фаски/проточки/подготовка 5488 мс; WorkPlane/Sketch/Profile 79 мс; Coil.Add 284 мс; прочее этапа 275 мс; всего этапа 638 мс. Подготовка группировки 15 мс; папки дерева 17 мс.
+Папка «Резьба — S (DIN 513) · 16 x 4 · 1 заход · Правая (R) · Прямой профиль»: объектов 11, узлов сгруппировано 9; TopNode 0 мс, поиск имени 0 мс, снимок дерева 1 мс, резервный поиск узлов 0 мс, создание + группировка 2 мс (batch BrowserNodes), резервные folder.Add 0 мс, BrowserNode папки 0 мс, SetEndOfPart 6 мс, Reorder 0 мс, всего 15 мс.
+Фиксация транзакции/обновление документа: 34 мс.
+Метаданные редактирования: ID 736f10951a9f418298f3d3b04a220947; объектов 11
+Предупреждение: Подготовка внутренней резьбы Ø16 × 4 мм: исходное отверстие Ø16 мм будет предварительно заполнено материалом кольцом до малого диаметра внутреннего профиля Ø10 мм (изменение диаметра 6 мм). Затем винтовой профиль сформирует резьбу до номинального Ø16 мм. Номинальный диаметр в параметрах не меняется. Проверьте, что добавление материала допустимо.
+Начало резьбы: автоматическая фаска пропущена. Резьба построена без этой фаски.
+------------------------------------------------------------------------
+[Helivanta.DiagnosticMessage] 2026-11-14T14:52:36.5735711Z
+Context: ThreadMetadataStore.CollectSelectedBrowserNodes.SelectedNodeInventory
+depth=1; nativeType=System.__ComObject; isBrowserFolder=True; expanded=False; label=Резьба — S (DIN 513) · 16 x 4 · 1 заход · Правая (R) · Прямой профиль
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:52:36.5796909Z
+Context: ThreadMetadataStore.TryResolveSelectedThreadMetadata.SelectedFolderExpansionPreserved
+Primary thread BrowserFolder expansion state is preserved during COM-identity ownership resolution; folderName=Резьба — S (DIN 513) · 16 x 4 · 1 заход · Правая (R) · Прямой профиль; expandedBeforeResolution=False; expandedPropertyMutation=false
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:52:36.6242151Z
+Context: ThreadMetadataStore.TryResolveSelectedManagedThreadFolder.Resolved
+threadId=736f10951a9f418298f3d3b04a220947; rootFolderIdentityMatches=1; ownership=NativeBrowserNodeDefinition.AllReferencedNodes+parent-com-identity; nameOnly=false
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:52:36.6250541Z
+Context: ThreadMetadataStore.TryResolveSelectedThreadMetadata.SelectedFolderResolved
+threadId=736f10951a9f418298f3d3b04a220947; folderName=Резьба — S (DIN 513) · 16 x 4 · 1 заход · Правая (R) · Прямой профиль; ownership=NativeBrowserNodeDefinition.AllReferencedNodes+parent-com-identity; descendantNativeObjectTraversal=false
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:52:36.6271556Z
+Context: ThreadMetadataStore.TryResolveSelectedThreadMetadata.Resolved
+threadId=736f10951a9f418298f3d3b04a220947; selectSetCount=1; selectedBrowserNodeCount=1; candidateCount=2; distinctThreadIds=1; representativeType=System.__ComObject
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:52:36.6279303Z
+Context: ThreadProAddIn.TryGetSelectedThreadObject.MetadataTargetHandoff
+threadId=736f10951a9f418298f3d3b04a220947; representativeType=System.__ComObject; handoffUsesValidatedThreadId=true
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:52:36.6963232Z
+Context: ThreadProAddIn.OpenEditForSelection.MetadataIdHandoff
+threadId=736f10951a9f418298f3d3b04a220947; selectionObjectType=System.__ComObject; no second BrowserNode metadata lookup required
+---
+[Helivanta.UIException] 2026-11-14T14:52:58.9935117Z
+Context: Suppressed/ThreadEditService.FindThreadMemberInNode.NativeObject.Depth=2
+System.Runtime.InteropServices.COMException (0x80004005): Неопознанная ошибка (0x80004005 (E_FAIL))
+   at System.RuntimeType.InvokeMember(String name, BindingFlags bindingFlags, Binder binder, Object target, Object[] providedArgs, ParameterModifier[] modifiers, CultureInfo culture, String[] namedParams)
+   at System.RuntimeType.ForwardCallToInvokeMember(String memberName, BindingFlags flags, Object target, Object[] aArgs, Boolean[] aArgsIsByRef, Int32[] aArgsWrapperTypes, Type[] aArgsTypes, Type retType)
+   at Inventor.BrowserNode.get_NativeObject()
+   at ThreadPro.ThreadEditService.FindThreadMemberInNode(BrowserNode node, String threadId, Int32 depth, Boolean& traversalComplete, List`1 diagnostics)
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:52:58.9959909Z
+Context: ThreadEditService.FindThreadFolderNameForGroup
+Thread-member traversal was incomplete; the original folder name was not accepted.
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:52:59.4909879Z
+Context: ThreadEditService.ResolveOriginalTarget.FaceInventory
+bodies=1;faces=118;cylinderFaces=31;radiusFaces=1;analyzed=1;externalMatches=1;lengthMatches=1;centerMatches=1;axisMatches=1;acceptedUniqueIdentities=1;snapshotRadiusCm=0.7999999999999997;snapshotLengthCm=10.709922476624959;snapshotCenter=4,821662842284927,-0,011327391717909386,-6,867217062256762;snapshotAxis=0,-1,0;snapshotExternal=False
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:52:59.9955160Z
+Context: ThreadBuilder.surface-boundary-trim-surfaces-assessed
+edges=2; sampledEdges=2; boundaryLoops=2; adjacentFaceReferences=2; uniqueTrimSurfaces=2; provenNonIntersectingSurfaces=0; sameCylinderNeighbours=0; surfaceTypes=[kConeSurface,kSphereSurface]; sourceFaceLoops=[{DDE1ECD7-27E9-A636-2C78-F217AA85D843}:loops=1;{56824B50-DF9B-A769-779B-6B14208E8AF5}:loops=2]; boundaryLoops=2; startLoop=1; oppositeLoop=2; startFromMaximumAxial=False; radiusCm=0.7999999999999997; axial=[-0.10426000000000002,3.52]cm; surfaceType=kCylinderSurface; axialLengthMm=107.099; fullLength=False; materialAddRingExpected=True; selectionMode=CylindricalSurface; startFromMaxAxial=False; boundaryLoops=2; startLoop=1; oppositeLoop=2; startFromMaximumAxial=False; radiusCm=0.7999999999999997; axial=[-0.10426000000000002,3.52]cm
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:53:00.0330202Z
+Context: ThreadBuilder.surface-boundary-ring-created
+feature=Резьба: приведение диаметра; operation=kJoinOperation; clipJoin=True; trimNotRequiredByExactDisjointness=False; trimSurfaceCount=2; startMm=0; endMm=37.2; rLowMm=6.917; rHighMm=8.2
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:53:00.1270456Z
+Context: ThreadBuilder.surface-boundary-trim-surface-created
+face={DDE1ECD7-27E9-A636-2C78-F217AA85D843}; surfaceType=kConeSurface; extensionMode=exact-cone-patch;boundary-seed-extension=applied;accepted=15;rejected=0;seedT=[3.3046737678264124,6.058407978332683]cm;maxSupportResidualMm=0;marginMm=1;current-loop-envelope=expanded-to-exact-edge-samples;projectedSeeds=15/15;ringAxial=[-0.10426000000000002,3.52]cm;loopAxial=[-0.10426000000000002,3.52]cm;axial=[-0.20426000000000002,3.62]cm; radialEnvelope=0.9199999999999997cm; margin=0.1cm; clippedFaceCount=4;loopBoundarySeedCoverage=15/15;patchMatchMode=exact-loop-boundary; transientNormalSign=1; workSurfaceFaceCount=1; normalAlignment=1; sourceIsParamReversed=True; importedIsParamReversed=True; selectedSidePositiveOriented=True; selectedSidePositiveParameter=False; removePositiveSide=True; boundaryEdges=1; boundaryLoops=1; boundarySeeds=15; keepProbeSeeds=14
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:53:00.1744946Z
+Context: ThreadBuilder.surface-boundary-trim-surface-created
+face={56824B50-DF9B-A769-779B-6B14208E8AF5}; surfaceType=kSphereSurface; extensionMode=exact-sphere-patch;current-loop-envelope=expanded-to-exact-edge-samples;projectedSeeds=15/15;ringAxial=[-0.10426000000000002,3.52]cm;loopAxial=[-0.10426000000000002,10.704751736652087]cm;axial=[-0.20426000000000002,10.804751736652086]cm; radialEnvelope=0.9199999999999997cm; margin=0.1cm; clippedFaceCount=3;loopBoundarySeedCoverage=15/15;patchMatchMode=exact-loop-boundary; transientNormalSign=1; workSurfaceFaceCount=1; normalAlignment=1; sourceIsParamReversed=True; importedIsParamReversed=True; selectedSidePositiveOriented=True; selectedSidePositiveParameter=False; removePositiveSide=True; boundaryEdges=1; boundaryLoops=2; boundarySeeds=15; keepProbeSeeds=15
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:53:03.8095188Z
+Context: ThreadBuilder.surface-boundary-surface-trim-executing
+stage=Резьба: приведение диаметра; surface={DDE1ECD7-27E9-A636-2C78-F217AA85D843}; surfaceType=kConeSurface; removePositiveSide=True; sourceIsParamReversed=True; probeDirection=oriented-splitter-normal; curvedProbeMethod=exact-radial-cylinder-intersection; volumeBeforeCm3=2.265896165094907; keepProbeCount=139; keepSeedCoverage=14/14; keepRadialBands=10/10; oppositeProbeCount=139; oppositeSampleCoverage=14/14; oppositeRadialBands=10/10; keepSampleCoverage=14/14; keepSampleRadialBands=10/10; boundaryLoops=1; retryInputPreserved=True; currentBodyFilter=currentBodyWitnessFilter=True;keep=139->139;remove=139->139;previousBoundaryRemovalExcluded=True; keepProbe=method=exact-radial-cylinder-intersection;witnessPolicy=maximum-valid-interior-offset;searchOrder=largest-to-smallest;minimumOffsetCm=0.000001;maximumOffsetCm=0.4;pointContainmentQueries=439;exactSurfaceIntersections=139;noRealIntersections=0;axialRangeRejections=1;boundedPatchRejections=1;sampledSeeds=14/14;sampledRadialBands=10/10;lastIntersection=rootFound=True;rootCount=1;boundedRootCount=1;selectedAxialCm=0.896087775442613;referenceAxialCm=0.9022991453661263;expectedAxialCm=0.8960743948673948;rootDeviationCm=1.3380575218158164E-05;radialDeltaCm=0.011755545219665153;branchPolicy=unique-bounded-face-root;allRootsChecked=True;rootsOutsideAxialRange=0;rootsOutsideBoundedPatch=0;projectionFailures=0;rootChecks=[root=0.896087775442613;bounded-face-hit;localDeviationCm=1.3380575218158164E-05]; removeProbe=method=exact-radial-cylinder-intersection;witnessPolicy=maximum-valid-interior-offset;searchOrder=largest-to-smallest;minimumOffsetCm=0.000001;maximumOffsetCm=0.4;pointContainmentQueries=446;exactSurfaceIntersections=139;noRealIntersections=0;axialRangeRejections=1;boundedPatchRejections=1;sampledSeeds=14/14;sampledRadialBands=10/10;lastIntersection=rootFound=True;rootCount=1;boundedRootCount=1;selectedAxialCm=0.896087775442613;referenceAxialCm=0.9022991453661263;expectedAxialCm=0.8960743948673948;rootDeviationCm=1.3380575218158164E-05;radialDeltaCm=0.011755545219665153;branchPolicy=unique-bounded-face-root;allRootsChecked=True;rootsOutsideAxialRange=0;rootsOutsideBoundedPatch=0;projectionFailures=0;rootChecks=[root=0.896087775442613;bounded-face-hit;localDeviationCm=1.3380575218158164E-05]
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:53:03.8710294Z
+Context: ThreadBuilder.surface-boundary-surface-trim-verified
+stage=Резьба: приведение диаметра; surface={DDE1ECD7-27E9-A636-2C78-F217AA85D843}; surfaceType=kConeSurface; volumeBeforeCm3=2.265896165094907; volumeAfterCm3=1.4030875469282256; removedVolumeCm3=0.8628086181666816; volumeToleranceCm3=2.2658961650949074E-09; resultingFaces=5; matchingSurfaceTypeFaces=1; removePositiveSide=True; sideProbeCorrected=False; keepProbes=139; keepProbesRetained=True; keptFinal=139; oppositeProbes=139; oppositeProbesRemoved=True; oppositeRetainedFinal=0; oppositeSampleCoverage=14/14; oppositeRadialBands=10/10; boundaryLoops=1; exactPlanarDifferenceVerified=False; exactPlanarDifferenceDetail=not-attempted
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:53:03.8738460Z
+Context: ThreadBuilder.surface-boundary-bounded-face-axially-disjoint-from-ring
+stage=Резьба: приведение диаметра;surface={56824B50-DF9B-A769-779B-6B14208E8AF5};surfaceType=kSphereSurface;loopIds=2;proof=bounded-face-aabb-projected-to-thread-axis;faceAxial=[6.5569200665925615,13.039247258250878]cm;ringAxial=[0,3.72]cm;toleranceCm=1E-05;disjoint=True
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:53:03.8756394Z
+Context: ThreadBuilder.surface-boundary-domain-trim-completed
+stage=Резьба: приведение диаметра; originalVolumeCm3=2.265896165094907; appliedTrimSurfaces=1; provenNoOpSurfaces=0; provenDisjointSurfaces=1; domain=boundaryLoops=2; startLoop=1; oppositeLoop=2; startFromMaximumAxial=False; radiusCm=0.7999999999999997; axial=[-0.10426000000000002,3.52]cm
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:53:03.9418495Z
+Context: ThreadBuilder.chamfer-skipped
+location=Выбранные границы резьбы; reason=не удалось безопасно разрешить граничные кромки для фаски; chamfer preparation failed; exception=System.InvalidOperationException: Найденные граничные контуры не подтверждают два разнесённых терминальных контура цилиндрической поверхности: startAxial=[0.19313122817467135,2.578614042524208]cm; startMean=1.3905760531193907cm (13.0 %); endAxial=[3.72,3.72]cm; endMean=3.7199999999999993cm (34.7 %); targetLengthCm=10.709922476624959; minStartFraction=0.4; minEndFraction=0.6; minSeparationFraction=0.2
+   at ThreadPro.ThreadBuilder.FindSurfaceTerminalChamferEdges(PartComponentDefinition def, ThreadTarget target, Double radiusCm, List`1 startEdges, List`1 endEdges, String& detail)
+   at ThreadPro.ThreadBuilder.BuildAfterWallThicknessValidation(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:53:04.0122916Z
+Context: ThreadBuilder.coil-orientation
+selectionMode=CylindricalSurface; startFromMaxAxial=False; nativeDirectionReversed=False; reverseSurfaceStartHand=False; rightHand=True; clockwiseRotation=False; heightCm=3.62426; leadCm=0.2; revolutions=18.121299999999998; profileSegments=10
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:53:04.0135970Z
+Context: ThreadBuilder.coil-add-input
+stage=main-thread-start=minimum;operation=kCutOperation;leadCm=0.2;revolutions=18.121299999999998;heightCm=3.62426;clockwiseRotation=False;taperAngleRad=0;profileClrType=System.__ComObject;axisStart2d=(0,0);axisEnd2d=(0,3.62426);axisLengthCm=3.62426
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:53:06.0746740Z
+Context: ThreadBuilder.Metadata.SourceTargetPreserved
+selectionMode=CylindricalSurface; sourceRadiusCm=0.7999999999999997; workingRadiusCm=0.6917468245269452; sourceLengthCm=10.709922476624959; sourceFramePreserved=true
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:53:06.4260497Z
+Context: ThreadEditService.TryRefreshThreadFolderName
+Thread-member search was incomplete; browser-folder rename was not attempted.
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:56:43.9368352Z
+Context: ThreadBuilder.surface-boundary-trim-surfaces-assessed
+; surfaceType=kCylinderSurface; axialLengthMm=25.789; fullLength=True; materialAddRingExpected=False; selectionMode=CylindricalSurface; startFromMaxAxial=True
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:56:44.1224333Z
+Context: ThreadBuilder.coil-orientation
+selectionMode=CylindricalSurface; startFromMaxAxial=True; nativeDirectionReversed=True; reverseSurfaceStartHand=True; rightHand=True; clockwiseRotation=True; heightCm=2.3820078062376973; leadCm=0.2; revolutions=11.910039031188486; profileSegments=8
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:56:44.1297302Z
+Context: ThreadBuilder.coil-add-input
+stage=main-thread-start=maximum;operation=kCutOperation;leadCm=0.2;revolutions=11.910039031188486;heightCm=2.3820078062376973;clockwiseRotation=True;taperAngleRad=0;profileClrType=System.__ComObject;axisStart2d=(0,0);axisEnd2d=(0,2.3820078062376973);axisLengthCm=2.3820078062376973
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:56:44.2157337Z
+Context: ThreadBuilder.coil-equivalent-extent-retry
+stage=main-thread-start=maximum; hresult=0x80004005; coilCountBefore=0; coilCountAfterFailure=0; primaryExtent=PitchAndRevolution; retryExtent=PitchAndHeight; axisDirectionReversed=False; clockwiseRotation=True; leadCm=0.2; revolutions=11.910039031188486; heightCm=2.3820078062376973; equivalentHeightResidualCm=0; taperAngleRad=0; physicalHandPreserved=True
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:56:44.2973247Z
+Context: ThreadBuilder.coil-equivalent-extent-retry-failed
+stage=main-thread-start=maximum; coilCountBefore=0; coilCountAfterRetryFailure=0; firstHresult=0x80004005; retryHresult=0x80004005; retryExtent=PitchAndHeight; axisDirectionReversed=False; clockwiseRotation=True
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:56:45.6550524Z
+Context: ThreadBuilder.chamfer-terminal-boundaries-resolved
+surfaceType=kCylinderSurface; targetRadiusCm=1; targetLengthCm=2.5789318062376974; scannedCylinderFaces=1; validLoops=2; selectedStartLoop=2; selectedEndLoop=1; startEdges=1; endEdges=1; startAxial=[0,0.11154050188987097]cm; startMean=0.05729225809049475cm; endAxial=[2.5789318062376974,2.5789318062376974]cm; endMean=2.578931806237696cm; startMeanFraction=0.022215499437372166; endMeanFraction=0.9999999999999994; radialToleranceCm=0.005; surfaceBoundary=True; startEdges=1; endEdges=1; chamferMode=1
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:56:45.6606990Z
+Context: ThreadBuilder.chamfer-skipped
+location=Начало резьбы; reason=ось резьбы не пересекает криволинейную поверхность в точке торца; surface=kSphereSurface; axisSurfaceDistanceMm=0.547; axisNormalAlignment=0.987063; axisNormalAngleDeg=9.226; toleranceDeg=2
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:56:47.3767735Z
+Context: ThreadBuilder.surface-boundary-side-orientation-resolved
+face={A90C5A53-6AB5-0B8D-8AE5-4B6946B71A35}; surfaceType=kSphereSurface; boundarySamples=15; tangentProjectionSamples=15; acceptedOrientationSamples=15; positiveVotes=15; negativeVotes=0; selectedSide=positive; maxSelectedProjectionErrorMm=0; signedDistanceRangeMm=[0.01682,0.01965]
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:56:47.5617277Z
+Context: ThreadBuilder.surface-boundary-side-orientation-resolved
+face={C09BC89B-FBF9-17D9-2061-7C7D1E95C6FD}; surfaceType=kPlaneSurface; boundarySamples=15; tangentProjectionSamples=15; acceptedOrientationSamples=14; positiveVotes=14; negativeVotes=0; selectedSide=positive; maxSelectedProjectionErrorMm=0.00353; signedDistanceRangeMm=[0.00567,0.01999]
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:56:47.5628097Z
+Context: ThreadBuilder.surface-boundary-trim-surfaces-assessed
+edges=2; sampledEdges=2; boundaryLoops=2; adjacentFaceReferences=2; uniqueTrimSurfaces=2; provenNonIntersectingSurfaces=0; sameCylinderNeighbours=0; surfaceTypes=[kSphereSurface,kPlaneSurface]; sourceFaceLoops=[{A90C5A53-6AB5-0B8D-8AE5-4B6946B71A35}:loops=1;{C09BC89B-FBF9-17D9-2061-7C7D1E95C6FD}:loops=2]; boundaryLoops=2; startLoop=1; oppositeLoop=2; startFromMaximumAxial=False; radiusCm=1; axial=[0.09573999999999999,1.4]cm; surfaceType=kCylinderSurface; axialLengthMm=34.004; fullLength=False; materialAddRingExpected=True; selectionMode=CylindricalSurface; startFromMaxAxial=False; boundaryLoops=2; startLoop=1; oppositeLoop=2; startFromMaximumAxial=False; radiusCm=1; axial=[0.09573999999999999,1.4]cm
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:56:47.6524006Z
+Context: ThreadBuilder.surface-boundary-ring-created
+feature=Резьба: приведение диаметра; operation=kJoinOperation; clipJoin=True; trimNotRequiredByExactDisjointness=False; trimSurfaceCount=2; startMm=2; endMm=16; rLowMm=8.917; rHighMm=10.2
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:56:47.6888294Z
+Context: ThreadBuilder.surface-boundary-bounded-face-axially-disjoint-from-ring
+stage=Резьба: приведение диаметра;surface={A90C5A53-6AB5-0B8D-8AE5-4B6946B71A35};surfaceType=kSphereSurface;loopIds=1;proof=bounded-face-aabb-projected-to-thread-axis;faceAxial=[-0.0003787148610445712,0.1596010905893921]cm;ringAxial=[0.2,1.5999999999999999]cm;toleranceCm=1E-05;disjoint=True
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:56:47.7868181Z
+Context: ThreadBuilder.surface-boundary-trim-surface-created
+face={A90C5A53-6AB5-0B8D-8AE5-4B6946B71A35}; surfaceType=kSphereSurface; extensionMode=exact-sphere-patch;current-loop-envelope=expanded-to-exact-edge-samples;projectedSeeds=15/15;ringAxial=[0.09573999999999999,1.4]cm;loopAxial=[0.0029657864688008573,1.4]cm;axial=[-0.11203421353119913,1.515]cm; radialEnvelope=1.15cm; margin=0.11499999999999999cm; clippedFaceCount=3;loopBoundarySeedCoverage=15/15;patchMatchMode=exact-loop-boundary; transientNormalSign=1; workSurfaceFaceCount=1; normalAlignment=1; sourceIsParamReversed=True; importedIsParamReversed=True; selectedSidePositiveOriented=True; selectedSidePositiveParameter=False; removePositiveSide=True; boundaryEdges=1; boundaryLoops=1; boundarySeeds=15; keepProbeSeeds=15
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:56:47.8719684Z
+Context: ThreadBuilder.surface-boundary-trim-surface-created
+face={C09BC89B-FBF9-17D9-2061-7C7D1E95C6FD}; surfaceType=kPlaneSurface; extensionMode=exact-infinite-plane-workplane; sourceIsParamReversed=True; planeNormalAlignment=1; selectedSidePositiveOriented=True; removePositiveSide=False; boundaryLoops=2; boundarySeeds=15
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:56:48.3453366Z
+Context: ThreadBuilder.surface-boundary-current-body-probe-filter
+currentBodyWitnessFilter=True;keep=8->8;remove=0->0;previousBoundaryRemovalExcluded=True
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:56:48.3513522Z
+Context: ThreadBuilder.surface-boundary-surface-trim-executing
+stage=Резьба: приведение диаметра; surface={C09BC89B-FBF9-17D9-2061-7C7D1E95C6FD}; surfaceType=kPlaneSurface; removePositiveSide=False; sourceIsParamReversed=True; probeDirection=oriented-splitter-normal; curvedProbeMethod=exact-radial-cylinder-intersection; volumeBeforeCm3=1.078391392237092; keepProbeCount=8; keepSeedCoverage=1/14; keepRadialBands=8/10; oppositeProbeCount=0; oppositeSampleCoverage=14/14; oppositeRadialBands=10/10; keepSampleCoverage=14/14; keepSampleRadialBands=10/10; boundaryLoops=2; retryInputPreserved=True; currentBodyFilter=currentBodyWitnessFilter=True;keep=8->8;remove=0->0;previousBoundaryRemovalExcluded=True; keepProbe=method=local-tangent-fallback;witnessPolicy=maximum-valid-interior-offset;searchOrder=largest-to-smallest;minimumOffsetCm=0.000001;maximumOffsetCm=0.4;pointContainmentQueries=2394;exactSurfaceIntersections=0;noRealIntersections=0;axialRangeRejections=0;boundedPatchRejections=0;sampledSeeds=14/14;sampledRadialBands=10/10;lastIntersection=not-tested; removeProbe=method=local-tangent-fallback;witnessPolicy=maximum-valid-interior-offset;searchOrder=largest-to-smallest;minimumOffsetCm=0.000001;maximumOffsetCm=0.4;pointContainmentQueries=2520;exactSurfaceIntersections=0;noRealIntersections=0;axialRangeRejections=0;boundedPatchRejections=0;sampledSeeds=14/14;sampledRadialBands=10/10;lastIntersection=not-tested
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:56:48.3894915Z
+Context: ThreadBuilder.surface-boundary-trim-retry-input-preserved
+surface={C09BC89B-FBF9-17D9-2061-7C7D1E95C6FD}; retryUsesOriginalInput=True; initialOutputWasDeleted=True
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:56:48.4396872Z
+Context: ThreadBuilder.surface-boundary-plane-transient-difference-proof
+stage=Резьба: приведение диаметра;surface={C09BC89B-FBF9-17D9-2061-7C7D1E95C6FD};verified=False;transient-removed-difference-is-not-a-closed-solid
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:56:48.4496080Z
+Context: ThreadBuilder.surface-boundary-surface-trim-verified
+stage=Резьба: приведение диаметра; surface={C09BC89B-FBF9-17D9-2061-7C7D1E95C6FD}; surfaceType=kPlaneSurface; volumeBeforeCm3=1.078391392237092; volumeAfterCm3=1.0783504678398206; removedVolumeCm3=4.092439727143571E-05; volumeToleranceCm3=1.078391392237092E-09; resultingFaces=5; matchingSurfaceTypeFaces=3; removePositiveSide=True; sideProbeCorrected=True; keepProbes=8; keepProbesRetained=True; keptFinal=8; oppositeProbes=0; oppositeProbesRemoved=True; oppositeRetainedFinal=0; oppositeSampleCoverage=14/14; oppositeRadialBands=10/10; boundaryLoops=2; exactPlanarDifferenceVerified=False; exactPlanarDifferenceDetail=transient-removed-difference-is-not-a-closed-solid
+---
+[Helivanta.UIException] 2026-11-14T14:56:48.4658431Z
+Context: ThreadBuilder.GetUserFacingError.UnclassifiedException
+System.InvalidOperationException: Inventor не подтвердил, что обрезка по фактической B-Rep-поверхности сохранила правильную часть тела. Нулевое изменение объёма допускается только при доказанном отсутствии материала на удаляемой стороне; необрезанное кольцо не будет присоединено. stage=Резьба: приведение диаметра; surface={C09BC89B-FBF9-17D9-2061-7C7D1E95C6FD}; surfaceType=kPlaneSurface; volumeBeforeCm3=1.078391392237092; volumeAfterCm3=1.0783504678398206; removedVolumeCm3=4.092439727143571E-05; volumeToleranceCm3=1.078391392237092E-09; resultingFaces=5; matchingSurfaceTypeFaces=3; removePositiveSide=True; sideProbeCorrected=True; keepProbes=8; keepProbesRetained=True; keptFinal=8; oppositeProbes=0; oppositeProbesRemoved=True; oppositeRetainedFinal=0; oppositeSampleCoverage=14/14; oppositeRadialBands=10/10; boundaryLoops=2; exactPlanarDifferenceVerified=False; exactPlanarDifferenceDetail=transient-removed-difference-is-not-a-closed-solid; trimOutcome=unproven; keepSeedCoverage=1/14; keepRadialBands=8/10; oppositeProbeCount=0; oppositeSampleCoverage=14/14; oppositeRadialBands=10/10; verifiedCut=False
+   at ThreadPro.ThreadBuilder.<>c__DisplayClass109_0.<BuildAfterWallThicknessValidation>g__TrimJoinedRingBody|5(SurfaceBody ringBody, String stage, Double ringLowRadiusCm, Double ringHighRadiusCm, Double ringAxialStartCm, Double ringAxialEndCm)
+   at ThreadPro.ThreadBuilder.<>c__DisplayClass109_0.<BuildAfterWallThicknessValidation>g__JoinClippedRingToSelectedBody|6(SurfaceBody ringBody, String stage, Double ringLowRadiusCm, Double ringHighRadiusCm, Double ringAxialStartCm, Double ringAxialEndCm)
+   at ThreadPro.ThreadBuilder.<>c__DisplayClass109_0.<BuildAfterWallThicknessValidation>g__Ring|7(String featName, Double aStart, Double aEnd, Double rLow, Double rHigh, PartFeatureOperationEnum op)
+   at ThreadPro.ThreadBuilder.BuildAfterWallThicknessValidation(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadBuilder.BuildAll(Application app, IList`1 targets, ThreadParams p)
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:56:50.0539376Z
+Context: ThreadBuilder.surface-boundary-side-orientation-resolved
+face={99E3B593-5DDD-730B-092B-79EED8FFFEE8}; surfaceType=kPlaneSurface; boundarySamples=15; tangentProjectionSamples=15; acceptedOrientationSamples=15; positiveVotes=0; negativeVotes=15; selectedSide=negative; maxSelectedProjectionErrorMm=0; signedDistanceRangeMm=[-0.01995,-0.01831]
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:56:50.1275841Z
+Context: ThreadBuilder.surface-boundary-side-orientation-resolved
+face={B2E85B9C-7EAC-AF9E-1A63-CE5916EBA370}; surfaceType=kPlaneSurface; boundarySamples=15; tangentProjectionSamples=15; acceptedOrientationSamples=15; positiveVotes=15; negativeVotes=0; selectedSide=positive; maxSelectedProjectionErrorMm=0; signedDistanceRangeMm=[0.01831,0.01995]
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:56:50.1286991Z
+Context: ThreadBuilder.surface-boundary-trim-surfaces-assessed
+edges=2; sampledEdges=2; boundaryLoops=2; adjacentFaceReferences=2; uniqueTrimSurfaces=2; provenNonIntersectingSurfaces=0; sameCylinderNeighbours=0; surfaceTypes=[kPlaneSurface]; sourceFaceLoops=[{99E3B593-5DDD-730B-092B-79EED8FFFEE8}:loops=1;{B2E85B9C-7EAC-AF9E-1A63-CE5916EBA370}:loops=2]; boundaryLoops=2; startLoop=1; oppositeLoop=2; startFromMaximumAxial=False; radiusCm=1; axial=[0.06970000000000001,1.45]cm; surfaceType=kCylinderSurface; axialLengthMm=45; fullLength=False; materialAddRingExpected=True; selectionMode=CircularEdge; startFromMaxAxial=False; boundaryLoops=2; startLoop=1; oppositeLoop=2; startFromMaximumAxial=False; radiusCm=1; axial=[0.06970000000000001,1.45]cm
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:56:50.2246209Z
+Context: ThreadBuilder.surface-boundary-ring-created
+feature=Резьба: приведение диаметра; operation=kJoinOperation; clipJoin=True; trimNotRequiredByExactDisjointness=False; trimSurfaceCount=2; startMm=2; endMm=17; rLowMm=8.647; rHighMm=10.25
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:56:50.2773259Z
+Context: ThreadBuilder.surface-boundary-plane-disjoint-from-ring
+stage=Резьба: приведение диаметра; surface={99E3B593-5DDD-730B-092B-79EED8FFFEE8}; surfaceType=kPlaneSurface; proof=analytic-infinite-plane-vs-finite-annular-ring; ringAxial=[0.2,1.7]cm; ringMaximumRadiusCm=1.025; signedDistanceEnvelope=[-1.7,-0.2]cm; radialReachCm=0; toleranceCm=1E-05; provenDisjoint=True
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:56:50.3160088Z
+Context: ThreadBuilder.surface-boundary-plane-disjoint-from-ring
+stage=Резьба: приведение диаметра; surface={B2E85B9C-7EAC-AF9E-1A63-CE5916EBA370}; surfaceType=kPlaneSurface; proof=analytic-infinite-plane-vs-finite-annular-ring; ringAxial=[0.2,1.7]cm; ringMaximumRadiusCm=1.025; signedDistanceEnvelope=[2.8,4.3]cm; radialReachCm=0; toleranceCm=1E-05; provenDisjoint=True
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:56:50.3205157Z
+Context: ThreadBuilder.surface-boundary-no-trim-required
+stage=Резьба: приведение диаметра; trimNotRequired=True; appliedTrimSurfaces=0; provenNoOpSurfaces=0; provenDisjointSurfaces=2; surfaceCount=2; domain=boundaryLoops=2; startLoop=1; oppositeLoop=2; startFromMaximumAxial=False; radiusCm=1; axial=[0.06970000000000001,1.45]cm
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:56:50.5401039Z
+Context: ThreadBuilder.coil-orientation
+selectionMode=CircularEdge; startFromMaxAxial=False; nativeDirectionReversed=True; reverseSurfaceStartHand=False; rightHand=True; clockwiseRotation=False; heightCm=1; leadCm=0.25; revolutions=4; profileSegments=8
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:56:50.5488847Z
+Context: ThreadBuilder.coil-add-input
+stage=main-thread-start=minimum;operation=kCutOperation;leadCm=0.25;revolutions=4;heightCm=1;clockwiseRotation=False;taperAngleRad=0;profileClrType=System.__ComObject;axisStart2d=(0,0);axisEnd2d=(0,1);axisLengthCm=1
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:56:53.9633616Z
+Context: ThreadBuilder.Metadata.SourceTargetPreserved
+selectionMode=CircularEdge; sourceRadiusCm=1; workingRadiusCm=0.8646835306586815; sourceLengthCm=4.5; sourceFramePreserved=true
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:56:55.3041157Z
+Context: ThreadMetadataStore.CollectSelectedBrowserNodes.SelectedNodeInventory
+depth=1; nativeType=System.__ComObject; isBrowserFolder=True; expanded=False; label=Резьба — ГОСТ 9150/8724 · M20 x 2.5 · 1 заход · Правая (R)
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:56:55.4019310Z
+Context: ThreadMetadataStore.TryResolveSelectedThreadMetadata.SelectedFolderExpansionPreserved
+Primary thread BrowserFolder expansion state is preserved during COM-identity ownership resolution; folderName=Резьба — ГОСТ 9150/8724 · M20 x 2.5 · 1 заход · Правая (R); expandedBeforeResolution=False; expandedPropertyMutation=false
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:56:55.7766462Z
+Context: ThreadMetadataStore.TryResolveSelectedManagedThreadFolder.Resolved
+threadId=b0a2b356435542b9a7f5c99944e4523d; rootFolderIdentityMatches=1; ownership=NativeBrowserNodeDefinition.AllReferencedNodes+parent-com-identity; nameOnly=false
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:56:55.7775223Z
+Context: ThreadMetadataStore.TryResolveSelectedThreadMetadata.SelectedFolderResolved
+threadId=b0a2b356435542b9a7f5c99944e4523d; folderName=Резьба — ГОСТ 9150/8724 · M20 x 2.5 · 1 заход · Правая (R); ownership=NativeBrowserNodeDefinition.AllReferencedNodes+parent-com-identity; descendantNativeObjectTraversal=false
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:56:55.7810086Z
+Context: ThreadMetadataStore.TryResolveSelectedThreadMetadata.Resolved
+threadId=b0a2b356435542b9a7f5c99944e4523d; selectSetCount=1; selectedBrowserNodeCount=1; candidateCount=2; distinctThreadIds=1; representativeType=System.__ComObject
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:56:56.5104079Z
+Context: ThreadEditService.TryGetFirstThreadHistoryAnchor.Resolved
+Insertion anchor resolved from validated metadata order; memberIndex=0; memberType=System.__ComObject; memberCount=61; browserNativeObjectTraversal=False.
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:56:57.9088111Z
+Context: ThreadEditService.ResolveOriginalTarget.EdgeInventory
+bodies=1;faces=4;cylinderFaces=2;radiusFaces=1;edges=2;circularEdges=2;selectedEdgeCenterMatches=1;analyzed=1;externalMatches=1;radiusMatches=1;lengthMatches=1;analyzedCenterMatches=1;axisMatches=1;acceptedUniqueIdentities=1;snapshotRadiusCm=1;snapshotLengthCm=4.5;snapshotCenter=0,0,4,5;snapshotAxis=-0,-0,-1;snapshotExternal=False;snapshotStartShoulder=False;snapshotEndShoulder=False
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:57:00.1497015Z
+Context: ThreadBuilder.surface-boundary-trim-surfaces-assessed
+edges=2; sampledEdges=2; boundaryLoops=2; adjacentFaceReferences=2; uniqueTrimSurfaces=2; provenNonIntersectingSurfaces=0; sameCylinderNeighbours=0; surfaceTypes=[kPlaneSurface]; sourceFaceLoops=[{99E3B593-5DDD-730B-092B-79EED8FFFEE8}:loops=1;{B2E85B9C-7EAC-AF9E-1A63-CE5916EBA370}:loops=2]; boundaryLoops=2; startLoop=1; oppositeLoop=2; startFromMaximumAxial=False; radiusCm=1; axial=[0.09573999999999999,1.5]cm; surfaceType=kCylinderSurface; axialLengthMm=45; fullLength=False; materialAddRingExpected=True; selectionMode=CircularEdge; startFromMaxAxial=False; boundaryLoops=2; startLoop=1; oppositeLoop=2; startFromMaximumAxial=False; radiusCm=1; axial=[0.09573999999999999,1.5]cm
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:57:00.2463164Z
+Context: ThreadBuilder.surface-boundary-ring-created
+feature=Резьба: приведение диаметра; operation=kJoinOperation; clipJoin=True; trimNotRequiredByExactDisjointness=False; trimSurfaceCount=2; startMm=2; endMm=17; rLowMm=8.917; rHighMm=10.2
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:57:00.2980402Z
+Context: ThreadBuilder.surface-boundary-plane-disjoint-from-ring
+stage=Резьба: приведение диаметра; surface={99E3B593-5DDD-730B-092B-79EED8FFFEE8}; surfaceType=kPlaneSurface; proof=analytic-infinite-plane-vs-finite-annular-ring; ringAxial=[0.2,1.7]cm; ringMaximumRadiusCm=1.02; signedDistanceEnvelope=[-1.7,-0.2]cm; radialReachCm=0; toleranceCm=1E-05; provenDisjoint=True
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:57:00.3255086Z
+Context: ThreadBuilder.surface-boundary-plane-disjoint-from-ring
+stage=Резьба: приведение диаметра; surface={B2E85B9C-7EAC-AF9E-1A63-CE5916EBA370}; surfaceType=kPlaneSurface; proof=analytic-infinite-plane-vs-finite-annular-ring; ringAxial=[0.2,1.7]cm; ringMaximumRadiusCm=1.02; signedDistanceEnvelope=[2.8,4.3]cm; radialReachCm=0; toleranceCm=1E-05; provenDisjoint=True
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:57:00.3298262Z
+Context: ThreadBuilder.surface-boundary-no-trim-required
+stage=Резьба: приведение диаметра; trimNotRequired=True; appliedTrimSurfaces=0; provenNoOpSurfaces=0; provenDisjointSurfaces=2; surfaceCount=2; domain=boundaryLoops=2; startLoop=1; oppositeLoop=2; startFromMaximumAxial=False; radiusCm=1; axial=[0.09573999999999999,1.5]cm
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:57:00.4886879Z
+Context: ThreadBuilder.coil-orientation
+selectionMode=CircularEdge; startFromMaxAxial=False; nativeDirectionReversed=True; reverseSurfaceStartHand=False; rightHand=False; clockwiseRotation=True; heightCm=1.1; leadCm=0.2; revolutions=5.5; profileSegments=8
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:57:00.4930917Z
+Context: ThreadBuilder.coil-add-input
+stage=main-thread-start=minimum;operation=kCutOperation;leadCm=0.2;revolutions=5.5;heightCm=1.1;clockwiseRotation=True;taperAngleRad=0;profileClrType=System.__ComObject;axisStart2d=(0,0);axisEnd2d=(0,1.1);axisLengthCm=1.1
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:57:06.3729707Z
+Context: ThreadBuilder.Metadata.SourceTargetPreserved
+selectionMode=CircularEdge; sourceRadiusCm=1; workingRadiusCm=0.8917468245269452; sourceLengthCm=4.5; sourceFramePreserved=true
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:57:09.6730230Z
+Context: ThreadBuilder.surface-boundary-ring-created
+feature=Резьба: приведение диаметра; operation=kJoinOperation; clipJoin=True; trimNotRequiredByExactDisjointness=False; trimSurfaceCount=2; startMm=2; endMm=17; rLowMm=9; rHighMm=10.2
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:57:09.9320323Z
+Context: ThreadBuilder.coil-orientation
+selectionMode=CircularEdge; startFromMaxAxial=False; nativeDirectionReversed=True; reverseSurfaceStartHand=False; rightHand=True; clockwiseRotation=False; heightCm=1.3; leadCm=0.4; revolutions=3.25; profileSegments=8
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:57:09.9379813Z
+Context: ThreadBuilder.coil-add-input
+stage=main-thread-start=minimum;operation=kCutOperation;leadCm=0.4;revolutions=3.25;heightCm=1.3;clockwiseRotation=False;taperAngleRad=0;profileClrType=System.__ComObject;axisStart2d=(0,0);axisEnd2d=(0,1.2999999999999998);axisLengthCm=1.2999999999999998
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:57:10.1599936Z
+Context: ThreadBuilder.coil-orientation
+selectionMode=CircularEdge; startFromMaxAxial=False; nativeDirectionReversed=True; reverseSurfaceStartHand=False; rightHand=True; clockwiseRotation=False; heightCm=1.1; leadCm=0.4; revolutions=2.75; profileSegments=8
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:57:10.1670290Z
+Context: ThreadBuilder.coil-add-input
+stage=main-thread-start=minimum;operation=kCutOperation;leadCm=0.4;revolutions=2.75;heightCm=1.1;clockwiseRotation=False;taperAngleRad=0;profileClrType=System.__ComObject;axisStart2d=(0,0);axisEnd2d=(0,1.1);axisLengthCm=1.1
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:57:14.4182125Z
+Context: ThreadBuilder.Metadata.SourceTargetPreserved
+selectionMode=CircularEdge; sourceRadiusCm=1; workingRadiusCm=0.9; sourceLengthCm=4.5; sourceFramePreserved=true
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:57:16.0936815Z
+Context: ThreadMetadataStore.CollectSelectedBrowserNodes.SelectedNodeInventory
+depth=1; nativeType=System.__ComObject; isBrowserFolder=True; expanded=False; label=Резьба — Tr (ГОСТ 9484-81) · 20 x 4 (P2) · 2 захода · Правая (R)
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:57:16.2122223Z
+Context: ThreadMetadataStore.TryResolveSelectedThreadMetadata.SelectedFolderExpansionPreserved
+Primary thread BrowserFolder expansion state is preserved during COM-identity ownership resolution; folderName=Резьба — Tr (ГОСТ 9484-81) · 20 x 4 (P2) · 2 захода · Правая (R); expandedBeforeResolution=False; expandedPropertyMutation=false
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:57:16.6808041Z
+Context: ThreadMetadataStore.TryResolveSelectedManagedThreadFolder.Resolved
+threadId=3f6defe22f24452b9a580ea67b613f14; rootFolderIdentityMatches=1; ownership=NativeBrowserNodeDefinition.AllReferencedNodes+parent-com-identity; nameOnly=false
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:57:16.6817162Z
+Context: ThreadMetadataStore.TryResolveSelectedThreadMetadata.SelectedFolderResolved
+threadId=3f6defe22f24452b9a580ea67b613f14; folderName=Резьба — Tr (ГОСТ 9484-81) · 20 x 4 (P2) · 2 захода · Правая (R); ownership=NativeBrowserNodeDefinition.AllReferencedNodes+parent-com-identity; descendantNativeObjectTraversal=false
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:57:16.6854458Z
+Context: ThreadMetadataStore.TryResolveSelectedThreadMetadata.Resolved
+threadId=3f6defe22f24452b9a580ea67b613f14; selectSetCount=1; selectedBrowserNodeCount=1; candidateCount=2; distinctThreadIds=1; representativeType=System.__ComObject
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:57:17.9709990Z
+Context: ThreadEditService.TryGetFirstThreadHistoryAnchor.Resolved
+Insertion anchor resolved from validated metadata order; memberIndex=0; memberType=System.__ComObject; memberCount=78; browserNativeObjectTraversal=False.
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:57:22.0515979Z
+Context: ThreadBuilder.coil-orientation
+selectionMode=CircularEdge; startFromMaxAxial=False; nativeDirectionReversed=True; reverseSurfaceStartHand=False; rightHand=False; clockwiseRotation=True; heightCm=1.5; leadCm=0.6000000000000001; revolutions=2.4999999999999996; profileSegments=8
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:57:22.0579423Z
+Context: ThreadBuilder.coil-add-input
+stage=main-thread-start=minimum;operation=kCutOperation;leadCm=0.6000000000000001;revolutions=2.4999999999999996;heightCm=1.5;clockwiseRotation=True;taperAngleRad=0;profileClrType=System.__ComObject;axisStart2d=(0,0);axisEnd2d=(0,1.5);axisLengthCm=1.5
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:57:22.2186152Z
+Context: ThreadBuilder.coil-orientation
+selectionMode=CircularEdge; startFromMaxAxial=False; nativeDirectionReversed=True; reverseSurfaceStartHand=False; rightHand=False; clockwiseRotation=True; heightCm=1.3; leadCm=0.6000000000000001; revolutions=2.1666666666666665; profileSegments=8
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:57:22.2225821Z
+Context: ThreadBuilder.coil-add-input
+stage=main-thread-start=minimum;operation=kCutOperation;leadCm=0.6000000000000001;revolutions=2.1666666666666665;heightCm=1.3;clockwiseRotation=True;taperAngleRad=0;profileClrType=System.__ComObject;axisStart2d=(0,0);axisEnd2d=(0,1.2999999999999998);axisLengthCm=1.2999999999999998
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:57:22.3997795Z
+Context: ThreadBuilder.coil-orientation
+selectionMode=CircularEdge; startFromMaxAxial=False; nativeDirectionReversed=True; reverseSurfaceStartHand=False; rightHand=False; clockwiseRotation=True; heightCm=1.1; leadCm=0.6000000000000001; revolutions=1.8333333333333333; profileSegments=8
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:57:22.4040199Z
+Context: ThreadBuilder.coil-add-input
+stage=main-thread-start=minimum;operation=kCutOperation;leadCm=0.6000000000000001;revolutions=1.8333333333333333;heightCm=1.1;clockwiseRotation=True;taperAngleRad=0;profileClrType=System.__ComObject;axisStart2d=(0,0);axisEnd2d=(0,1.1);axisLengthCm=1.1
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:57:33.7566645Z
+Context: ThreadBuilder.surface-boundary-ring-created
+feature=Резьба: приведение диаметра; operation=kJoinOperation; clipJoin=True; trimNotRequiredByExactDisjointness=False; trimSurfaceCount=2; startMm=2; endMm=17; rLowMm=8.5; rHighMm=10.2
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:57:34.0156002Z
+Context: ThreadBuilder.coil-orientation
+selectionMode=CircularEdge; startFromMaxAxial=False; nativeDirectionReversed=True; reverseSurfaceStartHand=False; rightHand=True; clockwiseRotation=False; heightCm=1.1; leadCm=0.2; revolutions=5.5; profileSegments=8
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:57:34.0248445Z
+Context: ThreadBuilder.coil-add-input
+stage=main-thread-start=minimum;operation=kCutOperation;leadCm=0.2;revolutions=5.5;heightCm=1.1;clockwiseRotation=False;taperAngleRad=0;profileClrType=System.__ComObject;axisStart2d=(0,0);axisEnd2d=(0,1.1);axisLengthCm=1.1
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:57:37.7023889Z
+Context: ThreadBuilder.Metadata.SourceTargetPreserved
+selectionMode=CircularEdge; sourceRadiusCm=1; workingRadiusCm=0.85; sourceLengthCm=4.5; sourceFramePreserved=true
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:57:39.0519054Z
+Context: ThreadMetadataStore.CollectSelectedBrowserNodes.SelectedNodeInventory
+depth=1; nativeType=System.__ComObject; isBrowserFolder=True; expanded=False; label=Резьба — S (ГОСТ 10177-82) · 20 x 2 · 1 заход · Правая (R) · Прямой профиль
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:57:39.1887587Z
+Context: ThreadMetadataStore.TryResolveSelectedThreadMetadata.SelectedFolderExpansionPreserved
+Primary thread BrowserFolder expansion state is preserved during COM-identity ownership resolution; folderName=Резьба — S (ГОСТ 10177-82) · 20 x 2 · 1 заход · Правая (R) · Прямой профиль; expandedBeforeResolution=False; expandedPropertyMutation=false
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:57:39.6613372Z
+Context: ThreadMetadataStore.TryResolveSelectedManagedThreadFolder.Resolved
+threadId=e05332c245d4453780ea33c15ff368ef; rootFolderIdentityMatches=1; ownership=NativeBrowserNodeDefinition.AllReferencedNodes+parent-com-identity; nameOnly=false
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:57:39.6623500Z
+Context: ThreadMetadataStore.TryResolveSelectedThreadMetadata.SelectedFolderResolved
+threadId=e05332c245d4453780ea33c15ff368ef; folderName=Резьба — S (ГОСТ 10177-82) · 20 x 2 · 1 заход · Правая (R) · Прямой профиль; ownership=NativeBrowserNodeDefinition.AllReferencedNodes+parent-com-identity; descendantNativeObjectTraversal=false
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:57:39.6677886Z
+Context: ThreadMetadataStore.TryResolveSelectedThreadMetadata.Resolved
+threadId=e05332c245d4453780ea33c15ff368ef; selectSetCount=1; selectedBrowserNodeCount=1; candidateCount=2; distinctThreadIds=1; representativeType=System.__ComObject
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:57:40.7304504Z
+Context: ThreadEditService.TryGetFirstThreadHistoryAnchor.Resolved
+Insertion anchor resolved from validated metadata order; memberIndex=0; memberType=System.__ComObject; memberCount=65; browserNativeObjectTraversal=False.
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:57:44.2247196Z
+Context: ThreadBuilder.surface-boundary-trim-surfaces-assessed
+edges=2; sampledEdges=2; boundaryLoops=2; adjacentFaceReferences=2; uniqueTrimSurfaces=2; provenNonIntersectingSurfaces=0; sameCylinderNeighbours=0; surfaceTypes=[kPlaneSurface]; sourceFaceLoops=[{99E3B593-5DDD-730B-092B-79EED8FFFEE8}:loops=1;{B2E85B9C-7EAC-AF9E-1A63-CE5916EBA370}:loops=2]; boundaryLoops=2; startLoop=1; oppositeLoop=2; startFromMaximumAxial=False; radiusCm=1; axial=[-0.00842000000000001,1.2999999999999998]cm; surfaceType=kCylinderSurface; axialLengthMm=45; fullLength=False; materialAddRingExpected=True; selectionMode=CircularEdge; startFromMaxAxial=False; boundaryLoops=2; startLoop=1; oppositeLoop=2; startFromMaximumAxial=False; radiusCm=1; axial=[-0.00842000000000001,1.2999999999999998]cm
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:57:44.2778253Z
+Context: ThreadBuilder.surface-boundary-ring-created
+feature=Резьба: приведение диаметра; operation=kJoinOperation; clipJoin=True; trimNotRequiredByExactDisjointness=False; trimSurfaceCount=2; startMm=2; endMm=17; rLowMm=7; rHighMm=10.4
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:57:44.3058160Z
+Context: ThreadBuilder.surface-boundary-plane-disjoint-from-ring
+stage=Резьба: приведение диаметра; surface={99E3B593-5DDD-730B-092B-79EED8FFFEE8}; surfaceType=kPlaneSurface; proof=analytic-infinite-plane-vs-finite-annular-ring; ringAxial=[0.2,1.7]cm; ringMaximumRadiusCm=1.04; signedDistanceEnvelope=[-1.7,-0.2]cm; radialReachCm=0; toleranceCm=1E-05; provenDisjoint=True
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:57:44.3294262Z
+Context: ThreadBuilder.surface-boundary-plane-disjoint-from-ring
+stage=Резьба: приведение диаметра; surface={B2E85B9C-7EAC-AF9E-1A63-CE5916EBA370}; surfaceType=kPlaneSurface; proof=analytic-infinite-plane-vs-finite-annular-ring; ringAxial=[0.2,1.7]cm; ringMaximumRadiusCm=1.04; signedDistanceEnvelope=[2.8,4.3]cm; radialReachCm=0; toleranceCm=1E-05; provenDisjoint=True
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:57:44.3337621Z
+Context: ThreadBuilder.surface-boundary-no-trim-required
+stage=Резьба: приведение диаметра; trimNotRequired=True; appliedTrimSurfaces=0; provenNoOpSurfaces=0; provenDisjointSurfaces=2; surfaceCount=2; domain=boundaryLoops=2; startLoop=1; oppositeLoop=2; startFromMaximumAxial=False; radiusCm=1; axial=[-0.00842000000000001,1.2999999999999998]cm
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:57:44.5112275Z
+Context: ThreadBuilder.coil-orientation
+selectionMode=CircularEdge; startFromMaxAxial=False; nativeDirectionReversed=True; reverseSurfaceStartHand=False; rightHand=False; clockwiseRotation=True; heightCm=0.6999999999999997; leadCm=0.4; revolutions=1.7499999999999993; profileSegments=8
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:57:44.5177983Z
+Context: ThreadBuilder.coil-add-input
+stage=main-thread-start=minimum;operation=kCutOperation;leadCm=0.4;revolutions=1.7499999999999993;heightCm=0.6999999999999997;clockwiseRotation=True;taperAngleRad=0;profileClrType=System.__ComObject;axisStart2d=(0,0);axisEnd2d=(0,0.6999999999999997);axisLengthCm=0.6999999999999997
+---
+[Helivanta.DiagnosticMessage] 2026-11-14T14:57:48.1098595Z
+Context: ThreadBuilder.Metadata.SourceTargetPreserved
+selectionMode=CircularEdge; sourceRadiusCm=1; workingRadiusCm=0.7; sourceLengthCm=4.5; sourceFramePreserved=true
+---
