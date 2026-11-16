@@ -1,0 +1,289 @@
+--- a/src/ThreadBuilder.cs
++++ b/src/ThreadBuilder.cs
+@@ -6840,6 +6840,217 @@
+                     return true;
+                 }
+ 
++                // 2.8.584: helpers that make the TrimSolid side decision and the retry auditable.
++                // They use exact solid arithmetic and explicit COM-object validity checks instead of
++                // trusting normal-orientation conventions or object references across a feature delete.
++                bool IsSplitToolAlive584(object x584Tool, out string x584Detail)
++                {
++                    x584Detail = "split-tool-null";
++                    if (x584Tool == null) return false;
++                    try
++                    {
++                        dynamic x584ToolCom = x584Tool;
++                        string x584ToolName = Convert.ToString(x584ToolCom.Name, CultureInfo.InvariantCulture);
++                        x584Detail = "split-tool-alive;name=" + x584ToolName;
++                        return true;
++                    }
++                    catch (Exception x584ToolException)
++                    {
++                        x584Detail = "split-tool-invalid;" + x584ToolException.GetType().Name + ";hresult=0x" +
++                            x584ToolException.HResult.ToString("X8", CultureInfo.InvariantCulture);
++                        return false;
++                    }
++                }
++
++                SurfaceBody ReacquireTrimInputBody584(SurfaceBody x584Original, double x584ExpectedVolume, out string x584Detail)
++                {
++                    // B-Rep references are not guaranteed to survive a feature delete + recompute.
++                    // Re-acquire the pre-trim ring from the part by its exact volume; keep the old
++                    // reference only when no solid with that volume exists.
++                    x584Detail = "keep-original-reference";
++                    double x584Tolerance = Math.Max(1e-9, Math.Abs(x584ExpectedVolume) * 1e-6);
++                    SurfaceBody x584Best = null;
++                    double x584BestDelta = double.PositiveInfinity;
++                    int x584Candidates = 0;
++                    try
++                    {
++                        foreach (SurfaceBody x584Candidate in def.SurfaceBodies)
++                        {
++                            if (x584Candidate == null || !x584Candidate.IsSolid) continue;
++                            double x584CandidateVolume;
++                            try { x584CandidateVolume = x584Candidate.MassProperties.Volume; }
++                            catch { continue; }
++                            double x584Delta = Math.Abs(x584CandidateVolume - x584ExpectedVolume);
++                            if (!double.IsFinite(x584Delta) || x584Delta > x584Tolerance) continue;
++                            x584Candidates++;
++                            if (x584Delta < x584BestDelta) { x584Best = x584Candidate; x584BestDelta = x584Delta; }
++                        }
++                    }
++                    catch (Exception x584EnumerationException)
++                    {
++                        x584Detail = "reacquire-enumeration-failed;" + x584EnumerationException.GetType().Name;
++                        return x584Original;
++                    }
++                    if (x584Best == null)
++                    {
++                        x584Detail = "reacquire-no-solid-with-input-volume;candidates=0";
++                        return x584Original;
++                    }
++                    x584Detail = string.Format(CultureInfo.InvariantCulture,
++                        "reacquired-by-input-volume;candidates={0};volumeDeltaCm3={1:R}", x584Candidates, x584BestDelta);
++                    return x584Best;
++                }
++
++                string ClassifyFirstTrimResultByVolume584(double x584ResultVolume, double x584InputVolume,
++                    double x584PredictedKeep, double x584PredictedRemove)
++                {
++                    if (!double.IsFinite(x584ResultVolume) || !double.IsFinite(x584PredictedKeep) ||
++                        !double.IsFinite(x584PredictedRemove))
++                        return "prediction-unavailable";
++                    double x584Tolerance = Math.Max(1e-9, Math.Abs(x584InputVolume) * 1e-6);
++                    bool x584NearKeep = Math.Abs(x584ResultVolume - x584PredictedKeep) <= x584Tolerance;
++                    bool x584NearRemove = Math.Abs(x584ResultVolume - x584PredictedRemove) <= x584Tolerance;
++                    if (x584NearKeep && !x584NearRemove) return "keep-piece";
++                    if (x584NearRemove && !x584NearKeep) return "remove-piece";
++                    if (x584NearKeep && x584NearRemove) return "ambiguous-equal-pieces";
++                    return "unexpected-volume";
++                }
++
++                double TransientVolumeOrNaN584(SurfaceBody x584Body)
++                {
++                    if (x584Body == null) return 0.0;
++                    try
++                    {
++                        if (!x584Body.IsSolid || x584Body.Faces == null || x584Body.Faces.Count == 0) return 0.0;
++                        SurfaceBodyMassProperties x584Mass = x584Body.MassProperties;
++                        return x584Mass == null ? double.NaN : x584Mass.Volume;
++                    }
++                    catch { return double.NaN; }
++                }
++
++                SurfaceBody CreatePlaneHalfSpace584(double[] x584Origin, double[] x584Direction, double x584SizeCm)
++                {
++                    // Exact half-space on the +Z side of the local frame, built with the same
++                    // CreateSolidBlock + Transform calls as the runtime-audit fixture generator.
++                    double[] x584Z = Norm(x584Direction);
++                    if (x584Z == null || x584Z.Length != 3) return null;
++                    double[] x584Helper = Math.Abs(x584Z[2]) < 0.9 ? new[] { 0.0, 0.0, 1.0 } : new[] { 1.0, 0.0, 0.0 };
++                    double[] x584X = Norm(Cross(x584Helper, x584Z));
++                    if (x584X == null || x584X.Length != 3) return null;
++                    double[] x584Y = Cross(x584Z, x584X);
++                    Box x584Block = tg.CreateBox();
++                    x584Block.MinPoint = tg.CreatePoint(-x584SizeCm, -x584SizeCm, 0.0);
++                    x584Block.MaxPoint = tg.CreatePoint(x584SizeCm, x584SizeCm, x584SizeCm);
++                    SurfaceBody x584HalfSpace = app.TransientBRep.CreateSolidBlock(x584Block);
++                    Matrix x584Frame = tg.CreateMatrix();
++                    x584Frame.SetCoordinateSystem(
++                        tg.CreatePoint(x584Origin[0], x584Origin[1], x584Origin[2]),
++                        tg.CreateVector(x584X[0], x584X[1], x584X[2]),
++                        tg.CreateVector(x584Y[0], x584Y[1], x584Y[2]),
++                        tg.CreateVector(x584Z[0], x584Z[1], x584Z[2]));
++                    app.TransientBRep.Transform(x584HalfSpace, x584Frame);
++                    return x584HalfSpace;
++                }
++
++                bool TryPredictPlanarPartition584(SurfaceBody x584Input, SurfaceTrimFaceSpec x584Spec,
++                    IList<double[]> x584KeepWitnesses, double x584InputVolume,
++                    out double x584KeepVolume, out double x584RemoveVolume, out string x584Detail)
++                {
++                    // Exact keep/remove partition of the input ring by the plane of a planar neighbour.
++                    // The side comes from the geometric keep witnesses, never from a normal convention, so the
++                    // prediction is independent of TrimSolid's positive-side semantics.
++                    x584KeepVolume = double.NaN;
++                    x584RemoveVolume = double.NaN;
++                    x584Detail = "not-applicable";
++                    if (x584Input == null || x584Spec == null || x584Spec.SurfaceType != SurfaceTypeEnum.kPlaneSurface ||
++                        x584Spec.SourceFace == null || x584KeepWitnesses == null || x584KeepWitnesses.Count == 0)
++                        return false;
++                    try
++                    {
++                        Plane x584Plane = x584Spec.SourceFace.Geometry as Plane;
++                        if (x584Plane == null || x584Plane.RootPoint == null || x584Plane.Normal == null)
++                        {
++                            x584Detail = "source-plane-geometry-unavailable";
++                            return false;
++                        }
++                        double[] x584Root = { x584Plane.RootPoint.X, x584Plane.RootPoint.Y, x584Plane.RootPoint.Z };
++                        double[] x584Normal = Norm(new[] { x584Plane.Normal.X, x584Plane.Normal.Y, x584Plane.Normal.Z });
++                        if (x584Normal == null || x584Normal.Length != 3)
++                        {
++                            x584Detail = "source-plane-frame-invalid";
++                            return false;
++                        }
++                        double x584KeepSign = 0.0;
++                        double x584BestDistance = 0.0;
++                        foreach (double[] x584Witness in x584KeepWitnesses)
++                        {
++                            if (x584Witness == null || x584Witness.Length != 3) continue;
++                            double x584Signed = Dot(Sub(x584Witness, x584Root), x584Normal);
++                            if (!double.IsFinite(x584Signed)) continue;
++                            if (Math.Abs(x584Signed) > x584BestDistance)
++                            {
++                                x584BestDistance = Math.Abs(x584Signed);
++                                x584KeepSign = x584Signed >= 0.0 ? 1.0 : -1.0;
++                            }
++                        }
++                        if (x584KeepSign == 0.0 || x584BestDistance <= 1e-8)
++                        {
++                            x584Detail = "keep-side-unresolved";
++                            return false;
++                        }
++                        double[] x584RemoveDirection =
++                        {
++                            -x584KeepSign * x584Normal[0], -x584KeepSign * x584Normal[1], -x584KeepSign * x584Normal[2]
++                        };
++                        dynamic x584Range = x584Input.RangeBox;
++                        double[] x584Min = { (double)x584Range.MinPoint.X, (double)x584Range.MinPoint.Y, (double)x584Range.MinPoint.Z };
++                        double[] x584Max = { (double)x584Range.MaxPoint.X, (double)x584Range.MaxPoint.Y, (double)x584Range.MaxPoint.Z };
++                        double[] x584Center = { 0.5 * (x584Min[0] + x584Max[0]), 0.5 * (x584Min[1] + x584Max[1]), 0.5 * (x584Min[2] + x584Max[2]) };
++                        double x584Offset = Dot(Sub(x584Center, x584Root), x584Normal);
++                        double[] x584Origin =
++                        {
++                            x584Center[0] - x584Offset * x584Normal[0],
++                            x584Center[1] - x584Offset * x584Normal[1],
++                            x584Center[2] - x584Offset * x584Normal[2]
++                        };
++                        double x584Size = Math.Max(1.0, 3.0 * Distance3(x584Min, x584Max));
++
++                        SurfaceBody x584RemoveProbe = app.TransientBRep.Copy(x584Input);
++                        SurfaceBody x584RemoveTool = CreatePlaneHalfSpace584(x584Origin, x584RemoveDirection, x584Size);
++                        SurfaceBody x584KeepProbe = app.TransientBRep.Copy(x584Input);
++                        SurfaceBody x584KeepTool = CreatePlaneHalfSpace584(x584Origin, x584RemoveDirection, x584Size);
++                        if (x584RemoveProbe == null || x584RemoveTool == null || x584KeepProbe == null || x584KeepTool == null)
++                        {
++                            x584Detail = "transient-copy-or-half-space-unavailable";
++                            return false;
++                        }
++                        app.TransientBRep.DoBoolean(x584RemoveProbe, x584RemoveTool, BooleanTypeEnum.kBooleanTypeIntersect);
++                        app.TransientBRep.DoBoolean(x584KeepProbe, x584KeepTool, BooleanTypeEnum.kBooleanTypeDifference);
++                        double x584RemoveVol = TransientVolumeOrNaN584(x584RemoveProbe);
++                        double x584KeepVol = TransientVolumeOrNaN584(x584KeepProbe);
++                        double x584Mismatch = Math.Abs(x584KeepVol + x584RemoveVol - x584InputVolume);
++                        double x584Allowed = Math.Max(1e-9, Math.Abs(x584InputVolume) * 1e-6);
++                        x584Detail = string.Format(CultureInfo.InvariantCulture,
++                            "keepSign={0};predictedKeepCm3={1:R};predictedRemoveCm3={2:R};partitionMismatchCm3={3:R};allowedMismatchCm3={4:R}",
++                            x584KeepSign, x584KeepVol, x584RemoveVol, x584Mismatch, x584Allowed);
++                        if (!double.IsFinite(x584KeepVol) || !double.IsFinite(x584RemoveVol) || !(x584Mismatch <= x584Allowed))
++                        {
++                            x584Detail += ";partition-identity-failed";
++                            return false;
++                        }
++                        x584KeepVolume = x584KeepVol;
++                        x584RemoveVolume = x584RemoveVol;
++                        return true;
++                    }
++                    catch (Exception x584Exception)
++                    {
++                        x584Detail = "exact-partition-exception=" + x584Exception.GetType().Name +
++                            ";hresult=0x" + x584Exception.HResult.ToString("X8", CultureInfo.InvariantCulture) +
++                            ";message=" + x584Exception.Message;
++                        return false;
++                    }
++                }
++
+                 bool MatchesTrimProbeClassification(SurfaceBody body, IList<double[]> keepPoints,
+                     IList<double[]> removePoints, out int kept, out int removedRetained)
+                 {
+@@ -7199,6 +7410,17 @@
+                             " keepProbe=" + keepProbeDiagnostic + "; removeProbe=" + removeProbeDiagnostic);
+ 
+                     double volumeBefore = GetSolidBodyVolume(currentBody, stage + "/before-surface-" + (surfaceIndex + 1));
++                    double exactPredictedKeepVolume = double.NaN;
++                    double exactPredictedRemoveVolume = double.NaN;
++                    string exactPartitionDetail = "not-applicable";
++                    if (spec.SurfaceType == SurfaceTypeEnum.kPlaneSurface)
++                    {
++                        bool exactPartitionKnown = TryPredictPlanarPartition584(currentBody, spec, keepProbePoints,
++                            volumeBefore, out exactPredictedKeepVolume, out exactPredictedRemoveVolume, out exactPartitionDetail);
++                        HelivantaLocalization.LogMessageForDiagnostics("ThreadBuilder.surface-boundary-planar-exact-partition",
++                            "stage=" + stage + ";surface=" + spec.SourceFaceInternalName + ";known=" + exactPartitionKnown +
++                            ";inputVolumeCm3=" + volumeBefore.ToString("R", CultureInfo.InvariantCulture) + ";" + exactPartitionDetail);
++                    }
+                     string trimDetail = string.Format(CultureInfo.InvariantCulture,
+                         "stage={0}; surface={1}; surfaceType={2}; removePositiveSide={3}; sourceIsParamReversed={4}; probeDirection=oriented-splitter-normal; curvedProbeMethod=exact-radial-cylinder-intersection; volumeBeforeCm3={5:R}; keepProbeCount={6}; keepSeedCoverage={7}/{8}; keepRadialBands={9}/10; oppositeProbeCount={10}; oppositeSampleCoverage={11}/{8}; oppositeRadialBands={12}/10; keepSampleCoverage={13}/{8}; keepSampleRadialBands={14}/10; boundaryLoops={15}; retryInputPreserved=True",
+                         stage, spec.SourceFaceInternalName, spec.SurfaceType, spec.RemovePositiveSide,
+@@ -7259,14 +7481,38 @@
+                         bool initialRemovePositiveSide = spec.RemovePositiveSide;
+                         int firstKept = keptInitially;
+                         int firstOppositeRetained = removedInitially;
++                        double firstResultVolume = double.NaN;
++                        try { firstResultVolume = GetSolidBodyVolume(currentBody, stage + "/first-trim-result-" + (surfaceIndex + 1)); }
++                        catch { }
++                        string firstResultKind = ClassifyFirstTrimResultByVolume584(firstResultVolume, volumeBefore,
++                            exactPredictedKeepVolume, exactPredictedRemoveVolume);
++                        string firstTrimArbitration = string.Format(CultureInfo.InvariantCulture,
++                            "firstResultKind={0}; firstResultVolumeCm3={1:R}; inputVolumeCm3={2:R}; predictedKeepCm3={3:R}; predictedRemoveCm3={4:R}; partition={5}",
++                            firstResultKind, firstResultVolume, volumeBefore, exactPredictedKeepVolume,
++                            exactPredictedRemoveVolume, exactPartitionDetail);
++                        HelivantaLocalization.LogMessageForDiagnostics("ThreadBuilder.surface-boundary-first-trim-arbitrated",
++                            "stage=" + stage + ";surface=" + spec.SourceFaceInternalName + ";removePositiveSide=" + initialRemovePositiveSide +
++                            ";" + firstTrimArbitration);
++                        if (firstResultKind == "keep-piece")
++                            throw new InvalidOperationException("Точный объём результата первой обрезки соответствует сохраняемой части кольца, но контрольные точки её не подтвердили; повторная обрезка с противоположной стороной запрещена, кольцо не будет присоединено (face=" +
++                                spec.SourceFaceInternalName + "; " + firstTrimArbitration + ").");
+                         try
+                         {
+-                            trimFeature.Delete(false, false, false);
++                            // Delete only the TrimSolid feature. The consumed split tool (WorkPlane /
++                            // WorkSurface) must be retained: the retry reuses it, and a deleted tool makes
++                            // SplitFeatures.TrimSolid fail with E_FAIL.
++                            trimFeature.Delete(true, true, true);
+                             created.Remove(trimFeature);
+                             doc.Update();
++                            string splitToolAliveDetail;
++                            if (!IsSplitToolAlive584(splitTool, out splitToolAliveDetail))
++                                throw new InvalidOperationException("Режущий инструмент недействителен после удаления первой обрезки: " + splitToolAliveDetail);
++                            string reacquireDetail;
++                            trimInputBody = ReacquireTrimInputBody584(trimInputBody, volumeBefore, out reacquireDetail);
+                             HelivantaLocalization.LogMessageForDiagnostics(
+                                 "ThreadBuilder.surface-boundary-trim-retry-input-preserved",
+-                                "surface=" + spec.SourceFaceInternalName + "; retryUsesOriginalInput=True; initialOutputWasDeleted=True");
++                                "surface=" + spec.SourceFaceInternalName + "; retryUsesOriginalInput=True; initialOutputWasDeleted=True; " +
++                                splitToolAliveDetail + "; " + reacquireDetail);
+                             trimFeature = def.Features.SplitFeatures.TrimSolid(
+                                 splitTool, trimInputBody, !initialRemovePositiveSide);
+                             if (trimFeature == null)
+@@ -7278,7 +7524,8 @@
+                         catch (Exception ex)
+                         {
+                             throw new InvalidOperationException(string.Format(CultureInfo.InvariantCulture,
+-                                "Обрезка по B-Rep-поверхности не соответствует контрольным точкам; не удалось пересоздать TrimSolid с противоположной стороной (face={0}; initial={1}; initialKept={2}/{3}; initialOppositeRetained={4}/{5}).",
++                                "Обрезка по B-Rep-поверхности не соответствует контрольным точкам; не удалось пересоздать TrimSolid с противоположной стороной (face={0}; initial={1}; initialKept={2}/{3}; initialOppositeRetained={4}/{5}); " +
++                                firstTrimArbitration,
+                                 spec.SourceFaceInternalName, initialRemovePositiveSide, firstKept, keepProbePoints.Count,
+                                 firstOppositeRetained, removeProbePoints.Count), ex);
+                         }

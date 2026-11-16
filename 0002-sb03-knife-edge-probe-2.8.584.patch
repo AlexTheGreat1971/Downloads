@@ -1,0 +1,228 @@
+--- a/src/HelivantaRuntimeAuditAutomation.cs
++++ b/src/HelivantaRuntimeAuditAutomation.cs
+@@ -287,6 +287,11 @@
+ #endif
+             } // fullControlAudit
+ 
++            // 2.8.584: optional SB03 knife-edge reproducer (set HELIVANTA_AUDIT_SB03_PROBE=1 for the runner).
++            // It is intentionally registered after the focused-selection count requirement above.
++            if (IsSb03KnifeEdgeProbeRequested())
++                RunCase(report, "PROBE-SB03-KNIFE-EDGE-TRIMSOLID", result => RunSb03KnifeEdgeProbe(result));
++
+             report.CompletedAt = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff", CultureInfo.InvariantCulture);
+             report.DurationSeconds = Math.Round(DateTime.Now.Subtract(DateTime.ParseExact(report.StartedAt,
+                 "yyyy-MM-dd HH:mm:ss.fff", CultureInfo.InvariantCulture)).TotalSeconds, 2);
+@@ -1140,6 +1145,213 @@
+             };
+         }
+ 
++        // ---- 2.8.584: SB03 knife-edge reproducer -----------------------------------------------------
++        // Enabled only with HELIVANTA_AUDIT_SB03_PROBE=1. It rebuilds the exact SB03 ring/plane state with the
++        // same API calls as ThreadBuilder (new-body revolve ring, hidden WorkPoint + AddByPlaneAndPoint on the
++        // source planar Face, SplitFeatures.TrimSolid) and records which piece TrimSolid keeps, exact volumes,
++        // and whether the split tool survives PartFeature.Delete(...). Each scenario uses a fresh fixture part.
++
++        private sealed class Sb03ProbeStep
++        {
++            public bool Succeeded;
++            public bool KeepPointRetained;
++            public double RemovedVolumeCm3 = double.NaN;
++            public string Summary = string.Empty;
++        }
++
++        private static bool IsSb03KnifeEdgeProbeRequested()
++        {
++            return string.Equals(SysEnvironment.GetEnvironmentVariable("HELIVANTA_AUDIT_SB03_PROBE"),
++                "1", StringComparison.Ordinal);
++        }
++
++        private static bool IsProbeObjectAlive(object comObject)
++        {
++            if (comObject == null) return false;
++            try
++            {
++                dynamic probe = comObject;
++                return Convert.ToString(probe.Name, CultureInfo.InvariantCulture) != null;
++            }
++            catch { return false; }
++        }
++
++        private static bool ProbePointInside(SurfaceBody body, double x, double y, double z)
++        {
++            try
++            {
++                dynamic bodyCom = body;
++                object containment = bodyCom.IsPointInside(new[] { x, y, z }, false);
++                return Convert.ToInt32(containment, CultureInfo.InvariantCulture) == 30978; // kInsideContainment
++            }
++            catch { return false; }
++        }
++
++        private Sb03ProbeStep ProbeSb03Trim(string tag, double ringEndCm, bool removePositive,
++            string deleteMode, bool retryOpposite)
++        {
++            // M20x2 internal ring of the matrix case: minor radius 8.9175 mm, bore radius 10 mm + 0.1*pitch collar.
++            const double ringLowCm = 0.89175;
++            const double ringHighCm = 1.02;
++            const double ringStartCm = -1.05;   // offset 2 mm from the MIN extreme (z = -1.25 cm)
++            Sb03ProbeStep step = new Sb03ProbeStep();
++            PartDocument document = null;
++            StringBuilder log = new StringBuilder();
++            try
++            {
++                SurfaceBoundaryRuntimeFixture fixture =
++                    CreateSurfaceBoundaryRuntimeFixtures().First(item => item.Id == "SB03");
++                string fixtureDetail;
++                document = CreateSurfaceBoundaryPart(fixture, true, out fixtureDetail);
++                PartComponentDefinition def = document.ComponentDefinition;
++                TransientGeometry tg = _app.TransientGeometry;
++                Face planeFace = null;
++                foreach (SurfaceBody hostBody in def.SurfaceBodies)
++                    foreach (Face candidate in hostBody.Faces)
++                        if (candidate.SurfaceType == SurfaceTypeEnum.kPlaneSurface) planeFace = candidate;
++                Require(planeFace != null, "SB03 probe: inclined planar B-Rep face not found.");
++
++                // Ring: exactly as ThreadBuilder.Ring() (fixed WorkPlane through the axis, rectangle, new-body revolve).
++                double span = ringEndCm - ringStartCm;
++                WorkPlane ringPlane = def.WorkPlanes.AddFixed(tg.CreatePoint(0.0, 0.0, ringStartCm),
++                    tg.CreateUnitVector(1.0, 0.0, 0.0), tg.CreateUnitVector(0.0, 0.0, 1.0), false);
++                ringPlane.Visible = false;
++                PlanarSketch sketch = def.Sketches.Add(ringPlane);
++                Func<double, double, Point2d> toSketch = (axial, radial) =>
++                    sketch.ModelToSketchSpace(tg.CreatePoint(radial, 0.0, ringStartCm + axial));
++                SketchLine axis = sketch.SketchLines.AddByTwoPoints(toSketch(0.0, 0.0), toSketch(span, 0.0));
++                axis.Construction = true;
++                SketchLine q1 = sketch.SketchLines.AddByTwoPoints(toSketch(0.0, ringLowCm), toSketch(span, ringLowCm));
++                SketchLine q2 = sketch.SketchLines.AddByTwoPoints(q1.EndSketchPoint, toSketch(span, ringHighCm));
++                SketchLine q3 = sketch.SketchLines.AddByTwoPoints(q2.EndSketchPoint, toSketch(0.0, ringHighCm));
++                sketch.SketchLines.AddByTwoPoints(q3.EndSketchPoint, q1.StartSketchPoint);
++                Profile profile = sketch.Profiles.AddForSolid();
++                RevolveFeature ring = def.Features.RevolveFeatures.AddFull(profile, axis,
++                    PartFeatureOperationEnum.kNewBodyOperation);
++                document.Update();
++                dynamic ringBodies = ring.SurfaceBodies;
++                Require(ringBodies != null && ringBodies.Count == 1, "SB03 probe: the ring must be exactly one new body.");
++                SurfaceBody ringBody = (SurfaceBody)ringBodies.Item(1);
++                double volumeBefore = ringBody.MassProperties.Volume;
++
++                // Split tool: exactly as ThreadBuilder (hidden construction WorkPoint on the face + AddByPlaneAndPoint).
++                WorkPoint splitPoint = def.WorkPoints.AddFixed(planeFace.PointOnFace, true);
++                WorkPlane splitPlane = def.WorkPlanes.AddByPlaneAndPoint(planeFace, splitPoint, true);
++                Plane splitGeometry = splitPlane.Plane;
++                Plane faceGeometry = (Plane)planeFace.Geometry;
++                double orientation = planeFace.IsParamReversed ? -1.0 : 1.0;
++                double[] outward = { orientation * faceGeometry.Normal.X, orientation * faceGeometry.Normal.Y, orientation * faceGeometry.Normal.Z };
++                double splitDotOutward = splitGeometry.Normal.X * outward[0] + splitGeometry.Normal.Y * outward[1] + splitGeometry.Normal.Z * outward[2];
++                log.Append("outwardNormalZ=").Append(outward[2].ToString("R", CultureInfo.InvariantCulture));
++                log.Append("; workPlaneNormalDotOutward=").Append(splitDotOutward.ToString("R", CultureInfo.InvariantCulture));
++                log.Append("; faceIsParamReversed=").Append(planeFace.IsParamReversed);
++                log.Append("; ringVolumeCm3=").Append(volumeBefore.ToString("R", CultureInfo.InvariantCulture));
++
++                SplitFeature trim = def.Features.SplitFeatures.TrimSolid(splitPlane, ringBody, removePositive);
++                document.Update();
++                dynamic trimBodies = trim.SurfaceBodies;
++                int bodyCount = trimBodies == null ? -1 : trimBodies.Count;
++                log.Append("; firstTrim.removePositive=").Append(removePositive).Append("; firstTrim.health=").Append(trim.HealthStatus);
++                log.Append("; firstTrim.bodyCount=").Append(bodyCount);
++                SurfaceBody after = bodyCount >= 1 ? (SurfaceBody)trimBodies.Item(1) : null;
++                if (after != null)
++                {
++                    double volumeAfter = after.MassProperties.Volume;
++                    bool keepInside = ProbePointInside(after, -0.95, 0.0, -0.40);
++                    bool outwardInside = ProbePointInside(after, -1.01, 0.0, ringEndCm - 0.005);
++                    step.KeepPointRetained = keepInside;
++                    step.RemovedVolumeCm3 = volumeBefore - volumeAfter;
++                    step.Succeeded = true;
++                    log.Append("; firstTrim.volumeAfterCm3=").Append(volumeAfter.ToString("R", CultureInfo.InvariantCulture));
++                    log.Append("; firstTrim.removedVolumeCm3=").Append(step.RemovedVolumeCm3.ToString("R", CultureInfo.InvariantCulture));
++                    log.Append("; firstTrim.keepPointRetained=").Append(keepInside);
++                    log.Append("; firstTrim.outwardPointRetained=").Append(outwardInside);
++                }
++
++                if (deleteMode != "none")
++                {
++                    if (deleteMode == "retain") trim.Delete(true, true, true);
++                    else trim.Delete(false, false, false);
++                    document.Update();
++                    log.Append("; splitPlaneAliveAfterDelete(").Append(deleteMode).Append(")=").Append(IsProbeObjectAlive(splitPlane));
++                    if (retryOpposite)
++                    {
++                        SurfaceBody retryInput = ringBody;
++                        try { dynamic fresh = ring.SurfaceBodies; retryInput = (SurfaceBody)fresh.Item(1); }
++                        catch (Exception reacquireException) { log.Append("; reacquire.exception=").Append(reacquireException.GetType().Name); }
++                        try
++                        {
++                            SplitFeature retry = def.Features.SplitFeatures.TrimSolid(splitPlane, retryInput, !removePositive);
++                            document.Update();
++                            dynamic retryBodies = retry.SurfaceBodies;
++                            int retryCount = retryBodies == null ? -1 : retryBodies.Count;
++                            log.Append("; retry.succeeded=True; retry.bodyCount=").Append(retryCount);
++                            if (retryCount >= 1)
++                            {
++                                SurfaceBody retryAfter = (SurfaceBody)retryBodies.Item(1);
++                                step.KeepPointRetained = ProbePointInside(retryAfter, -0.95, 0.0, -0.40);
++                                step.RemovedVolumeCm3 = volumeBefore - retryAfter.MassProperties.Volume;
++                                log.Append("; retry.removedVolumeCm3=").Append(step.RemovedVolumeCm3.ToString("R", CultureInfo.InvariantCulture));
++                                log.Append("; retry.keepPointRetained=").Append(step.KeepPointRetained);
++                            }
++                        }
++                        catch (Exception retryException)
++                        {
++                            step.Succeeded = false;
++                            log.Append("; retry.succeeded=False; retry.exception=").Append(retryException.GetType().Name)
++                                .Append("; retry.hresult=0x").Append(retryException.HResult.ToString("X8", CultureInfo.InvariantCulture));
++                        }
++                    }
++                }
++            }
++            catch (Exception ex)
++            {
++                step.Succeeded = false;
++                log.Append("; EXCEPTION=").Append(ex.GetType().Name).Append("; hresult=0x")
++                    .Append(ex.HResult.ToString("X8", CultureInfo.InvariantCulture)).Append("; message=").Append(ex.Message);
++            }
++            finally
++            {
++                try { CloseTestDocument(document, null); } catch { }
++            }
++            step.Summary = tag + ": " + log;
++            return step;
++        }
++
++        private void RunSb03KnifeEdgeProbe(RuntimeAuditCase result)
++        {
++            // Analytic expectation (see sb03_knife_edge_model.py): ring end exceeds the plane by 4.04 um at the bore
++            // radius and 0.184 mm at the collar; the cut-off sliver is 4.653e-5 cm3 (0.0465 mm3).
++            const double expectedSliverCm3 = 4.653e-5;
++            Sb03ProbeStep robustSignTrue = ProbeSb03Trim("X1-robust-ring-end+2.5mm-removePositive=True", 0.60, true, "none", false);
++            // Which piece does RemovePositiveSide=True remove? If the keep-side point survives, it removed the outward piece.
++            bool signTrueRemovesOutward = robustSignTrue.Succeeded && robustSignTrue.KeepPointRetained;
++            Sb03ProbeStep deleteDefault = ProbeSb03Trim("X3-robust-delete(false,false,false)-then-retry", 0.60, true, "false3", true);
++            Sb03ProbeStep deleteRetain = ProbeSb03Trim("X4-robust-delete(true,true,true)-then-retry", 0.60, true, "retain", true);
++            bool correctSign = signTrueRemovesOutward;   // RemovePositiveSide value that removes the outward (protruding) piece
++            Sb03ProbeStep knifeCorrect = ProbeSb03Trim("X5-knife-edge-ring-end-3.5mm-correct-sign=" + correctSign, 0.35, correctSign, "none", false);
++            Sb03ProbeStep knifeProduction = ProbeSb03Trim("X6-knife-edge-ring-end-3.5mm-production-first-sign=True", 0.35, true, "none", false);
++
++            result.Metrics["X1"] = robustSignTrue.Summary;
++            result.Metrics["X3"] = deleteDefault.Summary;
++            result.Metrics["X4"] = deleteRetain.Summary;
++            result.Metrics["X5"] = knifeCorrect.Summary;
++            result.Metrics["X6"] = knifeProduction.Summary;
++            result.Metrics["RemovePositiveSideTrueRemovesOutwardPiece"] = signTrueRemovesOutward.ToString();
++            result.Detail = "SB03 knife-edge probe: X1 identifies which piece RemovePositiveSide=True removes on the real split plane; " +
++                "X3/X4 show whether the split tool survives Delete(false,false,false) vs Delete(true,true,true); " +
++                "X5/X6 reproduce the knife-edge sliver (expected removed volume " +
++                expectedSliverCm3.ToString("R", CultureInfo.InvariantCulture) + " cm3).";
++
++            Require(robustSignTrue.Succeeded, "X1 failed: " + robustSignTrue.Summary);
++            double tolerance = 0.15 * expectedSliverCm3;
++            Require(knifeCorrect.Succeeded && knifeCorrect.KeepPointRetained &&
++                double.IsFinite(knifeCorrect.RemovedVolumeCm3) &&
++                Math.Abs(knifeCorrect.RemovedVolumeCm3 - expectedSliverCm3) <= tolerance,
++                "Knife-edge TrimSolid with the sign deduced from X1 did not remove exactly the predicted sliver while keeping the ring. " +
++                knifeCorrect.Summary + " | X6: " + knifeProduction.Summary);
++        }
++
+         private void RunSurfaceBoundaryRuntimeCase(SurfaceBoundaryRuntimeFixture fixture, bool internalThread, bool fullLength,
+             bool startFromMax, int chamferMode, string partsRoot, string runId, RuntimeAuditCase result)
+         {
