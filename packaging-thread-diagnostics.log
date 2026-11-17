@@ -1,0 +1,956 @@
+2026-11-17 09:46:55.075 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:46:55.079 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:46:55.081 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:46:55.096 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:46:55.098 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:46:55.562 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:46:55.576 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:46:55.578 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:46:55.581 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:46:55.595 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:46:55.598 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:46:56.070 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:46:56.084 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:46:56.086 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:46:56.089 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:46:56.103 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:46:56.105 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:46:56.701 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:46:56.715 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:46:56.718 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:46:56.721 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:46:56.735 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:46:56.737 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:46:57.083 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:46:57.097 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:46:57.099 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:46:57.102 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:46:57.118 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:46:57.121 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:46:57.586 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:46:57.601 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:46:57.603 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:46:57.606 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:46:57.620 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:46:57.622 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:46:58.076 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:46:58.090 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:46:58.092 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:46:58.095 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:46:58.109 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:46:58.111 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:46:58.587 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:46:58.601 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:46:58.603 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:46:58.606 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:46:58.621 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:46:58.623 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:46:59.078 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:46:59.092 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:46:59.094 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:46:59.097 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:46:59.111 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:46:59.113 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:46:59.584 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:46:59.598 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:46:59.600 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:46:59.603 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:46:59.617 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:46:59.619 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:00.089 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:00.109 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:00.112 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:00.115 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:00.136 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:00.139 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:00.581 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:00.602 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:00.604 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:00.607 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:00.628 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:00.631 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:01.088 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:01.102 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:01.104 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:01.107 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:01.122 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:01.124 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:01.580 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:01.593 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:01.596 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:01.599 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:01.613 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:01.615 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:02.098 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:02.118 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:02.121 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:02.124 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:02.147 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:02.149 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:02.617 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:02.637 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:02.639 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:02.642 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:02.664 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:02.667 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:03.118 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:03.132 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:03.135 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:03.138 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:03.152 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:03.154 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:03.607 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:03.621 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:03.623 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:03.626 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:03.641 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:03.643 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:04.112 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:04.126 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:04.129 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:04.131 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:04.146 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:04.148 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:04.616 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:04.630 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:04.632 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:04.635 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:04.648 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:04.651 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:05.114 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:05.129 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:05.131 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:05.134 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:05.148 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:05.151 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:05.626 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:05.640 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:05.642 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:05.645 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:05.660 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:05.662 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:06.133 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:06.147 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:06.149 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:06.152 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:06.166 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:06.169 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:06.881 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:06.895 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:06.897 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:06.900 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:06.915 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:06.917 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:07.125 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:07.146 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:07.149 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:07.152 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:07.172 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:07.175 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:07.628 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:07.642 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:07.644 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:07.647 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:07.662 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:07.664 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:08.148 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:08.162 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:08.165 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:08.168 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:08.182 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:08.184 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:08.641 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:08.655 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:08.657 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:08.660 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:08.674 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:08.677 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:09.145 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:09.159 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:09.161 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:09.164 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:09.179 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:09.181 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:09.643 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:09.657 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:09.660 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:09.662 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:09.677 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:09.679 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:10.144 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:10.158 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:10.161 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:10.163 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:10.178 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:10.180 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:10.642 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:10.657 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:10.659 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:10.662 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:10.677 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:10.679 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:11.142 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:11.157 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:11.160 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:11.163 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:11.178 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:11.180 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:11.644 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:11.658 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:11.660 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:11.663 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:11.677 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:11.679 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:12.153 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:12.167 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:12.169 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:12.172 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:12.187 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:12.189 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:12.657 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:12.672 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:12.674 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:12.677 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:12.691 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:12.694 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:13.162 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:13.176 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:13.178 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:13.181 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:13.195 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:13.197 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:13.671 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:13.685 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:13.688 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:13.690 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:13.705 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:13.707 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:14.179 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:14.193 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:14.195 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:14.198 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:14.212 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:14.214 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:14.677 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:14.691 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:14.693 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
+2026-11-17 09:47:14.696 pid=1180 thread=2 component=PackagingThread stage=packaging-selection-resolved
+context: {D69792AF-4C7B-90B6-DC13-2F8AE549A4DE}
+detail: source=interaction-onselect-cache;selectionType=System.__ComObject
+---
+2026-11-17 09:47:14.711 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-click-resolved
+context: Проверка резьб.ipt
+detail: source=graphics-view-ray-cylinder-intersection;selected=minimum-axial;axialStationMm=2.488484832997244;minimumAxialDistanceMm=2.488484832997244;maximumAxialDistanceMm=17.511515167002756;toleranceMm=0.25;radialDistanceMm=34.58403971564309;cylinderRadiusMm=34.600000000000016;radialDeviationMm=0.015960284356930643;radialToleranceMm=0.1;isExternal=False;axis=(0,0,-1);face={67272714-6192-3086-80AD-403B0BA6EB12}
+---
+2026-11-17 09:47:14.713 pid=1180 thread=2 component=PackagingThread stage=packaging-surface-start-boundary-selected
+context: Проверка резьб.ipt
+detail: source=graphics-click;resolvedFromGraphicsPick=True;selected=minimum-axial;isExternal=False;startEdgeComIdentity=27CB6185698;endEdgeComIdentity=27CB6184258
+---
