@@ -1,0 +1,29 @@
+{
+  "SchemaVersion": 1,
+  "Mode": "FAILED_CASES_ONLY",
+  "BaselineVersion": "2.8.585",
+  "BaselineRunId": "20261116-140755",
+  "BaselineFailureCount": 38,
+  "RegressionControlCaseCount": 3,
+  "MatrixCaseCount": 7,
+  "NonMatrixCaseCount": 3,
+  "CaseNames": [
+    "STANDARD-INTERNAL-GOST-BUTTRESS-BUILD-EDIT-UNDO",
+    "STANDARD-INTERNAL-GOST-METRIC-BUILD-EDIT",
+    "STANDARD-INTERNAL-GOST-TRAPEZOIDAL-BUILD-EDIT-UNDO",
+    "SURFACE-BOUNDARY-INNER-SB01-FULL-START-MIN-CHAMFER-0",
+    "SURFACE-BOUNDARY-INNER-SB02-FULL-START-MIN-CHAMFER-0",
+    "SURFACE-BOUNDARY-INNER-SB03-FULL-START-MIN-CHAMFER-0",
+    "SURFACE-BOUNDARY-INNER-SB03-PARTIAL-14MM-START-MIN-CHAMFER-0",
+    "SURFACE-BOUNDARY-INNER-SB08-FULL-START-MIN-CHAMFER-0",
+    "SURFACE-BOUNDARY-OUTER-SB05-FULL-START-MAX-CHAMFER-0",
+    "SURFACE-BOUNDARY-OUTER-SB05-FULL-START-MAX-CHAMFER-1"
+  ],
+  "RegressionControlCaseNames": [
+    "STANDARD-INTERNAL-GOST-METRIC-BUILD-EDIT",
+    "STANDARD-INTERNAL-GOST-TRAPEZOIDAL-BUILD-EDIT-UNDO",
+    "STANDARD-INTERNAL-GOST-BUTTRESS-BUILD-EDIT-UNDO"
+  ],
+  "ExcludedPreviouslyPassingCases": 162,
+  "Note": "Runs one representative full-length INNER case for each failing finite-plane fixture SB01/SB02/SB03/SB08, the original SB03 partial-length reproducer, two known-good OUTER SB05 chamfer controls, and three passing GOST edit regression controls. With HELIVANTA_AUDIT_FINITE_PLANE_WORKSURFACE_PROBE=1 the planar cases use the opt-in exact bounded WorkSurface splitter experiment; without it they exercise the production WorkPlane fail-closed guard."
+}
