@@ -1,0 +1,510 @@
+========== HELIVANTA INVENTOR RUNTIME AUDIT ==========
+Version: 2.8.597
+Inventor: 2027.2 (build 312334000)
+Run ID: 20261117-162557
+Audit mode: FAILED_CASES_ONLY
+Finite plane WorkSurface probe: False
+SB03 TrimSolid probe: False
+Failure baseline: 20261116-140755
+Selected failed cases: 10
+Started: 2026-11-17 16:25:57.412
+Completed: 2026-11-17 16:32:59.238
+Overall: FAIL
+PASS=5 FAIL=5 SKIP=0 WARN=0 Duration=421.83 sec
+
+[PASS] SURFACE-BOUNDARY-OUTER-SB05-FULL-START-MAX-CHAMFER-0 (14727 ms)
+PASS: Inventor создал физическую резьбу и прошёл B-rep/metadata проверки; Coil delta=1; Chamfer delta=0; Chamfer outcome=Disabled; volume removed=0.876005 cm^3.
+  TargetSurfaceStartFromMaxAxial=True
+  ResolvedStartFromMaxAxial=True
+  ResolvedAxisDotCanonical=-1
+  Fixture=Конус + сфера
+  ThreadType=OUTER
+  Internal=False
+  FixtureBuild=TransientBRep exact intersect; lower=Cone; upper=Sphere; target=outer Ø20 mm; stockOuterDiameterMm=20; wallThicknessMm=n/a; baseFeature=БазТело1; volumeCm3=11.320470649709662; bodyCount=1; faceCount=4
+  LowerBoundary=Cone
+  UpperBoundary=Sphere
+  AdjacentSurfaceTypes=kConeSurface;kSphereSurface
+  TargetLengthMm=25.789318062376974
+  TargetRadiusMm=10
+  TargetBoundaryEdgeCount=2
+  TargetBoundaryLoopCount=2
+  ExpectedLowerSurfaceType=kConeSurface
+  ExpectedUpperSurfaceType=kSphereSurface
+  FixtureFaceCountBefore=4
+  FixtureEdgeCountBefore=3
+  FixtureBodyCountBefore=1
+  External=True
+  FullLength=True
+  RequestedLengthMm=25.789318062376974
+  OffsetMm=0
+  StartFromMaxAxial=True
+  ChamferMode=0
+  ChamferMm=0
+  VolumeBeforeCm3=11.320470649709662
+  CoilFeatureCountBefore=0
+  ChamferFeatureCountBefore=0
+  CreatedObjects=1
+  PhysicalCoilFeatureCountAfter=1
+  PhysicalCoilFeatureDelta=1
+  ChamferFeatureCountAfter=0
+  ChamferFeatureDelta=0
+  ChamferOutcome=Disabled
+  ChamferWarning=
+  SolidBodyCountAfter=1
+  FaceCountAfter=19
+  EdgeCountAfter=52
+  ResultKind=PhysicalBuildPass
+  VolumeAfterCm3=10.444465959290012
+  VolumeRemovedCm3=0.8760046904196503
+  VolumeAddedCm3=0
+  VolumeChangeCm3=-0.8760046904196503
+  MetadataThreadId=44e3d24d30634eacb2b083a2803c846b
+  MetadataChamferMode=0
+  MetadataChamferMm=0
+  MetadataLengthMm=14
+  MetadataOffsetMm=0
+  MetadataFullLength=True
+  SurfaceBodyCount=1
+  FaceCount=19
+  EdgeCount=52
+  CoilFeatureCount=1
+  LoftFeatureCount=1
+  SweepFeatureCount=0
+  VolumeCm3=10.444465959290012
+  IPT: C:\1\Helivanta-2.8.597\test-results\inventor-runtime-audit\run-focused-20261117-162556-856\surface-boundary-matrix\20261117-162557\parts\20261117-162557-OUTER-SB05-FULL-MAX-CH0-PASS.ipt
+
+[PASS] SURFACE-BOUNDARY-OUTER-SB05-FULL-START-MAX-CHAMFER-1 (7392 ms)
+PASS: Inventor создал физическую резьбу и прошёл B-rep/metadata проверки; Coil delta=1; Chamfer delta=0; Chamfer outcome=Skipped; warning=Начало резьбы: автоматическая фаска пропущена. Резьба построена без этой фаски.; volume removed=0.876005 cm^3.
+  TargetSurfaceStartFromMaxAxial=True
+  ResolvedStartFromMaxAxial=True
+  ResolvedAxisDotCanonical=-1
+  Fixture=Конус + сфера
+  ThreadType=OUTER
+  Internal=False
+  FixtureBuild=TransientBRep exact intersect; lower=Cone; upper=Sphere; target=outer Ø20 mm; stockOuterDiameterMm=20; wallThicknessMm=n/a; baseFeature=БазТело1; volumeCm3=11.320470649709662; bodyCount=1; faceCount=4
+  LowerBoundary=Cone
+  UpperBoundary=Sphere
+  AdjacentSurfaceTypes=kConeSurface;kSphereSurface
+  TargetLengthMm=25.789318062376974
+  TargetRadiusMm=10
+  TargetBoundaryEdgeCount=2
+  TargetBoundaryLoopCount=2
+  ExpectedLowerSurfaceType=kConeSurface
+  ExpectedUpperSurfaceType=kSphereSurface
+  FixtureFaceCountBefore=4
+  FixtureEdgeCountBefore=3
+  FixtureBodyCountBefore=1
+  External=True
+  FullLength=True
+  RequestedLengthMm=25.789318062376974
+  OffsetMm=0
+  StartFromMaxAxial=True
+  ChamferMode=1
+  ChamferMm=0.5
+  VolumeBeforeCm3=11.320470649709662
+  CoilFeatureCountBefore=0
+  ChamferFeatureCountBefore=0
+  CreatedObjects=1
+  PhysicalCoilFeatureCountAfter=1
+  PhysicalCoilFeatureDelta=1
+  ChamferFeatureCountAfter=0
+  ChamferFeatureDelta=0
+  ChamferOutcome=Skipped
+  ChamferWarning=Начало резьбы: автоматическая фаска пропущена. Резьба построена без этой фаски.
+  SolidBodyCountAfter=1
+  FaceCountAfter=19
+  EdgeCountAfter=52
+  ResultKind=PhysicalBuildPass
+  VolumeAfterCm3=10.444465959290012
+  VolumeRemovedCm3=0.8760046904196503
+  VolumeAddedCm3=0
+  VolumeChangeCm3=-0.8760046904196503
+  MetadataThreadId=a2d81f06c874412e86d54a46f1b7bd75
+  MetadataChamferMode=1
+  MetadataChamferMm=0.5
+  MetadataLengthMm=14
+  MetadataOffsetMm=0
+  MetadataFullLength=True
+  SurfaceBodyCount=1
+  FaceCount=19
+  EdgeCount=52
+  CoilFeatureCount=1
+  LoftFeatureCount=1
+  SweepFeatureCount=0
+  VolumeCm3=10.444465959290012
+  IPT: C:\1\Helivanta-2.8.597\test-results\inventor-runtime-audit\run-focused-20261117-162556-856\surface-boundary-matrix\20261117-162557\parts\20261117-162557-OUTER-SB05-FULL-MAX-CH1-PASS.ipt
+
+[FAIL] SURFACE-BOUNDARY-INNER-SB01-FULL-START-MIN-CHAMFER-0 (75347 ms)
+System.InvalidOperationException: Surface boundary runtime case INNER/SB01; fullLength=True; startFromMax=False; chamferMode=0; diagnosticIpt=C:\1\Helivanta-2.8.597\test-results\inventor-runtime-audit\run-focused-20261117-162556-856\surface-boundary-matrix\20261117-162557\parts\20261117-162557-INNER-SB01-FULL-MIN-CH0-FAIL-DIAGNOSTIC.ipt; Обрезка по бесконечной опорной плоскости запрещена: не доказано, что вся измеренная линия пересечения кольца лежит внутри ограниченной исходной B-Rep-грани. method=exact-bounded-plane-annular-ring-intersection;axisPlaneDot=0.90630778703665;boundedPlaneFace=True;planeIntersections=8597;axialRejected=43;boundedPatchRejected=7560;angularSectors=360;radialBands=24;keepAdded=1037;removeAdded=1037;keepSectorCoverage=351/360;removeSectorCoverage=351/360;keepRadialBands=3/24;removeRadialBands=3/24;pointContainmentQueries=2152;keepSign=1;coverageSufficient=False
+ ---> System.InvalidOperationException: Обрезка по бесконечной опорной плоскости запрещена: не доказано, что вся измеренная линия пересечения кольца лежит внутри ограниченной исходной B-Rep-грани. method=exact-bounded-plane-annular-ring-intersection;axisPlaneDot=0.90630778703665;boundedPlaneFace=True;planeIntersections=8597;axialRejected=43;boundedPatchRejected=7560;angularSectors=360;radialBands=24;keepAdded=1037;removeAdded=1037;keepSectorCoverage=351/360;removeSectorCoverage=351/360;keepRadialBands=3/24;removeRadialBands=3/24;pointContainmentQueries=2152;keepSign=1;coverageSufficient=False
+   at ThreadPro.ThreadBuilder.<>c__DisplayClass111_0.<BuildAfterWallThicknessValidation>g__TrimJoinedRingBody|5(SurfaceBody ringBody, String stage, Double ringLowRadiusCm, Double ringHighRadiusCm, Double ringAxialStartCm, Double ringAxialEndCm)
+   at ThreadPro.ThreadBuilder.<>c__DisplayClass111_0.<BuildAfterWallThicknessValidation>g__JoinClippedRingToSelectedBody|6(SurfaceBody ringBody, String stage, Double ringLowRadiusCm, Double ringHighRadiusCm, Double ringAxialStartCm, Double ringAxialEndCm)
+   at ThreadPro.ThreadBuilder.<>c__DisplayClass111_0.<BuildAfterWallThicknessValidation>g__Ring|7(String featName, Double aStart, Double aEnd, Double rLow, Double rHigh, PartFeatureOperationEnum op)
+   at ThreadPro.ThreadBuilder.BuildAfterWallThicknessValidation(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadBuilder.BuildAll(Application app, IList`1 targets, ThreadParams p)
+   at ThreadPro.HelivantaRuntimeAuditAutomation.RunSurfaceBoundaryRuntimeCase(SurfaceBoundaryRuntimeFixture fixture, Boolean internalThread, Boolean fullLength, Boolean startFromMax, Int32 chamferMode, String partsRoot, String runId, RuntimeAuditCase result)
+   --- End of inner exception stack trace ---
+   at ThreadPro.HelivantaRuntimeAuditAutomation.RunSurfaceBoundaryRuntimeCase(SurfaceBoundaryRuntimeFixture fixture, Boolean internalThread, Boolean fullLength, Boolean startFromMax, Int32 chamferMode, String partsRoot, String runId, RuntimeAuditCase result)
+   at ThreadPro.HelivantaRuntimeAuditAutomation.<>c__DisplayClass30_4.<RunSurfaceBoundaryRuntimeMatrix>b__1(RuntimeAuditCase result)
+   at ThreadPro.HelivantaRuntimeAuditAutomation.RunCase(RuntimeAuditReport report, String name, Action`1 action)
+  TargetSurfaceStartFromMaxAxial=False
+  Fixture=Две наклонные плоскости
+  ThreadType=INNER
+  Internal=True
+  FixtureBuild=TransientBRep exact annular shell + bore cut + intersect; lower=Plane; upper=Plane; target=inner Ø20 mm; stockOuterDiameterMm=26; wallThicknessMm=3; baseFeature=БазТело1; volumeCm3=5.419247327442395; bodyCount=1; faceCount=4
+  LowerBoundary=Plane
+  UpperBoundary=Plane
+  AdjacentSurfaceTypes=kPlaneSurface
+  TargetLengthMm=37.475932846617155
+  TargetRadiusMm=10
+  TargetBoundaryEdgeCount=2
+  TargetBoundaryLoopCount=2
+  ExpectedLowerSurfaceType=kPlaneSurface
+  ExpectedUpperSurfaceType=kPlaneSurface
+  FixtureFaceCountBefore=4
+  FixtureEdgeCountBefore=4
+  FixtureBodyCountBefore=1
+  External=False
+  FullLength=True
+  RequestedLengthMm=37.475932846617155
+  OffsetMm=0
+  StartFromMaxAxial=False
+  ChamferMode=0
+  ChamferMm=0
+  VolumeBeforeCm3=5.419247327442395
+  CoilFeatureCountBefore=0
+  ChamferFeatureCountBefore=0
+  ResultKind=PhysicalBuildFailure
+  IPT: C:\1\Helivanta-2.8.597\test-results\inventor-runtime-audit\run-focused-20261117-162556-856\surface-boundary-matrix\20261117-162557\parts\20261117-162557-INNER-SB01-FULL-MIN-CH0-FAIL-DIAGNOSTIC.ipt
+
+[FAIL] SURFACE-BOUNDARY-INNER-SB02-FULL-START-MIN-CHAMFER-0 (84503 ms)
+System.InvalidOperationException: Surface boundary runtime case INNER/SB02; fullLength=True; startFromMax=False; chamferMode=0; diagnosticIpt=C:\1\Helivanta-2.8.597\test-results\inventor-runtime-audit\run-focused-20261117-162556-856\surface-boundary-matrix\20261117-162557\parts\20261117-162557-INNER-SB02-FULL-MIN-CH0-FAIL-DIAGNOSTIC.ipt; Обрезка по бесконечной опорной плоскости запрещена: не доказано, что вся измеренная линия пересечения кольца лежит внутри ограниченной исходной B-Rep-грани. method=exact-bounded-plane-annular-ring-intersection;axisPlaneDot=0.8660254037844387;boundedPlaneFace=True;planeIntersections=8597;axialRejected=43;boundedPatchRejected=7560;angularSectors=360;radialBands=24;keepAdded=1037;removeAdded=1037;keepSectorCoverage=351/360;removeSectorCoverage=351/360;keepRadialBands=3/24;removeRadialBands=3/24;pointContainmentQueries=2136;keepSign=1;coverageSufficient=False
+ ---> System.InvalidOperationException: Обрезка по бесконечной опорной плоскости запрещена: не доказано, что вся измеренная линия пересечения кольца лежит внутри ограниченной исходной B-Rep-грани. method=exact-bounded-plane-annular-ring-intersection;axisPlaneDot=0.8660254037844387;boundedPlaneFace=True;planeIntersections=8597;axialRejected=43;boundedPatchRejected=7560;angularSectors=360;radialBands=24;keepAdded=1037;removeAdded=1037;keepSectorCoverage=351/360;removeSectorCoverage=351/360;keepRadialBands=3/24;removeRadialBands=3/24;pointContainmentQueries=2136;keepSign=1;coverageSufficient=False
+   at ThreadPro.ThreadBuilder.<>c__DisplayClass111_0.<BuildAfterWallThicknessValidation>g__TrimJoinedRingBody|5(SurfaceBody ringBody, String stage, Double ringLowRadiusCm, Double ringHighRadiusCm, Double ringAxialStartCm, Double ringAxialEndCm)
+   at ThreadPro.ThreadBuilder.<>c__DisplayClass111_0.<BuildAfterWallThicknessValidation>g__JoinClippedRingToSelectedBody|6(SurfaceBody ringBody, String stage, Double ringLowRadiusCm, Double ringHighRadiusCm, Double ringAxialStartCm, Double ringAxialEndCm)
+   at ThreadPro.ThreadBuilder.<>c__DisplayClass111_0.<BuildAfterWallThicknessValidation>g__Ring|7(String featName, Double aStart, Double aEnd, Double rLow, Double rHigh, PartFeatureOperationEnum op)
+   at ThreadPro.ThreadBuilder.BuildAfterWallThicknessValidation(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadBuilder.BuildAll(Application app, IList`1 targets, ThreadParams p)
+   at ThreadPro.HelivantaRuntimeAuditAutomation.RunSurfaceBoundaryRuntimeCase(SurfaceBoundaryRuntimeFixture fixture, Boolean internalThread, Boolean fullLength, Boolean startFromMax, Int32 chamferMode, String partsRoot, String runId, RuntimeAuditCase result)
+   --- End of inner exception stack trace ---
+   at ThreadPro.HelivantaRuntimeAuditAutomation.RunSurfaceBoundaryRuntimeCase(SurfaceBoundaryRuntimeFixture fixture, Boolean internalThread, Boolean fullLength, Boolean startFromMax, Int32 chamferMode, String partsRoot, String runId, RuntimeAuditCase result)
+   at ThreadPro.HelivantaRuntimeAuditAutomation.<>c__DisplayClass30_4.<RunSurfaceBoundaryRuntimeMatrix>b__1(RuntimeAuditCase result)
+   at ThreadPro.HelivantaRuntimeAuditAutomation.RunCase(RuntimeAuditReport report, String name, Action`1 action)
+  TargetSurfaceStartFromMaxAxial=False
+  Fixture=Наклонная плоскость + сфера
+  ThreadType=INNER
+  Internal=True
+  FixtureBuild=TransientBRep exact annular shell + bore cut + intersect; lower=Plane; upper=Sphere; target=inner Ø20 mm; stockOuterDiameterMm=26; wallThicknessMm=3; baseFeature=БазТело1; volumeCm3=5.4097838206045035; bodyCount=1; faceCount=4
+  LowerBoundary=Plane
+  UpperBoundary=Sphere
+  AdjacentSurfaceTypes=kPlaneSurface;kSphereSurface
+  TargetLengthMm=31.386174368459343
+  TargetRadiusMm=10
+  TargetBoundaryEdgeCount=2
+  TargetBoundaryLoopCount=2
+  ExpectedLowerSurfaceType=kPlaneSurface
+  ExpectedUpperSurfaceType=kSphereSurface
+  FixtureFaceCountBefore=4
+  FixtureEdgeCountBefore=4
+  FixtureBodyCountBefore=1
+  External=False
+  FullLength=True
+  RequestedLengthMm=31.386174368459343
+  OffsetMm=0
+  StartFromMaxAxial=False
+  ChamferMode=0
+  ChamferMm=0
+  VolumeBeforeCm3=5.4097838206045035
+  CoilFeatureCountBefore=0
+  ChamferFeatureCountBefore=0
+  ResultKind=PhysicalBuildFailure
+  IPT: C:\1\Helivanta-2.8.597\test-results\inventor-runtime-audit\run-focused-20261117-162556-856\surface-boundary-matrix\20261117-162557\parts\20261117-162557-INNER-SB02-FULL-MIN-CH0-FAIL-DIAGNOSTIC.ipt
+
+[FAIL] SURFACE-BOUNDARY-INNER-SB03-FULL-START-MIN-CHAMFER-0 (90717 ms)
+System.InvalidOperationException: Surface boundary runtime case INNER/SB03; fullLength=True; startFromMax=False; chamferMode=0; diagnosticIpt=C:\1\Helivanta-2.8.597\test-results\inventor-runtime-audit\run-focused-20261117-162556-856\surface-boundary-matrix\20261117-162557\parts\20261117-162557-INNER-SB03-FULL-MIN-CH0-FAIL-DIAGNOSTIC.ipt; Обрезка по бесконечной опорной плоскости запрещена: не доказано, что вся измеренная линия пересечения кольца лежит внутри ограниченной исходной B-Rep-грани. method=exact-bounded-plane-annular-ring-intersection;axisPlaneDot=-0.7431448254773942;boundedPlaneFace=True;planeIntersections=8597;axialRejected=43;boundedPatchRejected=7560;angularSectors=360;radialBands=24;keepAdded=1037;removeAdded=1037;keepSectorCoverage=351/360;removeSectorCoverage=351/360;keepRadialBands=3/24;removeRadialBands=3/24;pointContainmentQueries=2119;keepSign=1;coverageSufficient=False
+ ---> System.InvalidOperationException: Обрезка по бесконечной опорной плоскости запрещена: не доказано, что вся измеренная линия пересечения кольца лежит внутри ограниченной исходной B-Rep-грани. method=exact-bounded-plane-annular-ring-intersection;axisPlaneDot=-0.7431448254773942;boundedPlaneFace=True;planeIntersections=8597;axialRejected=43;boundedPatchRejected=7560;angularSectors=360;radialBands=24;keepAdded=1037;removeAdded=1037;keepSectorCoverage=351/360;removeSectorCoverage=351/360;keepRadialBands=3/24;removeRadialBands=3/24;pointContainmentQueries=2119;keepSign=1;coverageSufficient=False
+   at ThreadPro.ThreadBuilder.<>c__DisplayClass111_0.<BuildAfterWallThicknessValidation>g__TrimJoinedRingBody|5(SurfaceBody ringBody, String stage, Double ringLowRadiusCm, Double ringHighRadiusCm, Double ringAxialStartCm, Double ringAxialEndCm)
+   at ThreadPro.ThreadBuilder.<>c__DisplayClass111_0.<BuildAfterWallThicknessValidation>g__JoinClippedRingToSelectedBody|6(SurfaceBody ringBody, String stage, Double ringLowRadiusCm, Double ringHighRadiusCm, Double ringAxialStartCm, Double ringAxialEndCm)
+   at ThreadPro.ThreadBuilder.<>c__DisplayClass111_0.<BuildAfterWallThicknessValidation>g__Ring|7(String featName, Double aStart, Double aEnd, Double rLow, Double rHigh, PartFeatureOperationEnum op)
+   at ThreadPro.ThreadBuilder.BuildAfterWallThicknessValidation(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadBuilder.BuildAll(Application app, IList`1 targets, ThreadParams p)
+   at ThreadPro.HelivantaRuntimeAuditAutomation.RunSurfaceBoundaryRuntimeCase(SurfaceBoundaryRuntimeFixture fixture, Boolean internalThread, Boolean fullLength, Boolean startFromMax, Int32 chamferMode, String partsRoot, String runId, RuntimeAuditCase result)
+   --- End of inner exception stack trace ---
+   at ThreadPro.HelivantaRuntimeAuditAutomation.RunSurfaceBoundaryRuntimeCase(SurfaceBoundaryRuntimeFixture fixture, Boolean internalThread, Boolean fullLength, Boolean startFromMax, Int32 chamferMode, String partsRoot, String runId, RuntimeAuditCase result)
+   at ThreadPro.HelivantaRuntimeAuditAutomation.<>c__DisplayClass30_4.<RunSurfaceBoundaryRuntimeMatrix>b__1(RuntimeAuditCase result)
+   at ThreadPro.HelivantaRuntimeAuditAutomation.RunCase(RuntimeAuditReport report, String name, Action`1 action)
+  TargetSurfaceStartFromMaxAxial=False
+  Fixture=Сфера + наклонная плоскость
+  ThreadType=INNER
+  Internal=True
+  FixtureBuild=TransientBRep exact annular shell + bore cut + intersect; lower=Sphere; upper=Plane; target=inner Ø20 mm; stockOuterDiameterMm=26; wallThicknessMm=3; baseFeature=БазТело1; volumeCm3=5.261541606681133; bodyCount=1; faceCount=4
+  LowerBoundary=Sphere
+  UpperBoundary=Plane
+  AdjacentSurfaceTypes=kPlaneSurface;kSphereSurface
+  TargetLengthMm=34.0040404429784
+  TargetRadiusMm=10
+  TargetBoundaryEdgeCount=2
+  TargetBoundaryLoopCount=2
+  ExpectedLowerSurfaceType=kSphereSurface
+  ExpectedUpperSurfaceType=kPlaneSurface
+  FixtureFaceCountBefore=4
+  FixtureEdgeCountBefore=4
+  FixtureBodyCountBefore=1
+  External=False
+  FullLength=True
+  RequestedLengthMm=34.0040404429784
+  OffsetMm=0
+  StartFromMaxAxial=False
+  ChamferMode=0
+  ChamferMm=0
+  VolumeBeforeCm3=5.261541606681133
+  CoilFeatureCountBefore=0
+  ChamferFeatureCountBefore=0
+  ResultKind=PhysicalBuildFailure
+  IPT: C:\1\Helivanta-2.8.597\test-results\inventor-runtime-audit\run-focused-20261117-162556-856\surface-boundary-matrix\20261117-162557\parts\20261117-162557-INNER-SB03-FULL-MIN-CH0-FAIL-DIAGNOSTIC.ipt
+
+[FAIL] SURFACE-BOUNDARY-INNER-SB03-PARTIAL-14MM-START-MIN-CHAMFER-0 (5243 ms)
+System.InvalidOperationException: Surface boundary runtime case INNER/SB03; fullLength=False; startFromMax=False; chamferMode=0; diagnosticIpt=C:\1\Helivanta-2.8.597\test-results\inventor-runtime-audit\run-focused-20261117-162556-856\surface-boundary-matrix\20261117-162557\parts\20261117-162557-INNER-SB03-PARTIAL14-MIN-CH0-FAIL-DIAGNOSTIC.ipt; Обрезка по B-Rep-поверхности не соответствует контрольным точкам; не удалось пересоздать TrimSolid с противоположной стороной (face={C09BC89B-FBF9-17D9-2061-7C7D1E95C6FD}; initial=True; initialKept=0/51; initialOppositeRetained=43/43); firstResultKind=prediction-unavailable; firstResultVolumeCm3=4.092439711331508E-05; inputVolumeCm3=1.078391392237092; predictedKeepCm3=NaN; predictedRemoveCm3=NaN; partition=keepSign=1;predictedKeepCm3=NaN;predictedRemoveCm3=NaN;partitionMismatchCm3=NaN;allowedMismatchCm3=1.078391392237092E-06;removeResult=transient-volume-read-failed;COMException;hresult=0x80004005;message=Неопознанная ошибка (0x80004005 (E_FAIL));keepResult=transient-volume-read-failed;COMException;hresult=0x80004005;message=Неопознанная ошибка (0x80004005 (E_FAIL));partition-identity-failed
+ ---> System.InvalidOperationException: Обрезка по B-Rep-поверхности не соответствует контрольным точкам; не удалось пересоздать TrimSolid с противоположной стороной (face={C09BC89B-FBF9-17D9-2061-7C7D1E95C6FD}; initial=True; initialKept=0/51; initialOppositeRetained=43/43); firstResultKind=prediction-unavailable; firstResultVolumeCm3=4.092439711331508E-05; inputVolumeCm3=1.078391392237092; predictedKeepCm3=NaN; predictedRemoveCm3=NaN; partition=keepSign=1;predictedKeepCm3=NaN;predictedRemoveCm3=NaN;partitionMismatchCm3=NaN;allowedMismatchCm3=1.078391392237092E-06;removeResult=transient-volume-read-failed;COMException;hresult=0x80004005;message=Неопознанная ошибка (0x80004005 (E_FAIL));keepResult=transient-volume-read-failed;COMException;hresult=0x80004005;message=Неопознанная ошибка (0x80004005 (E_FAIL));partition-identity-failed
+ ---> System.InvalidOperationException: Режущий инструмент недействителен после удаления первой обрезки: split-tool-inventory;collection=WorkPlanes;inspected=4;identityMatches=0;access=Count+Item
+   at ThreadPro.ThreadBuilder.<>c__DisplayClass111_0.<BuildAfterWallThicknessValidation>g__TrimJoinedRingBody|5(SurfaceBody ringBody, String stage, Double ringLowRadiusCm, Double ringHighRadiusCm, Double ringAxialStartCm, Double ringAxialEndCm)
+   --- End of inner exception stack trace ---
+   at ThreadPro.ThreadBuilder.<>c__DisplayClass111_0.<BuildAfterWallThicknessValidation>g__TrimJoinedRingBody|5(SurfaceBody ringBody, String stage, Double ringLowRadiusCm, Double ringHighRadiusCm, Double ringAxialStartCm, Double ringAxialEndCm)
+   at ThreadPro.ThreadBuilder.<>c__DisplayClass111_0.<BuildAfterWallThicknessValidation>g__JoinClippedRingToSelectedBody|6(SurfaceBody ringBody, String stage, Double ringLowRadiusCm, Double ringHighRadiusCm, Double ringAxialStartCm, Double ringAxialEndCm)
+   at ThreadPro.ThreadBuilder.<>c__DisplayClass111_0.<BuildAfterWallThicknessValidation>g__Ring|7(String featName, Double aStart, Double aEnd, Double rLow, Double rHigh, PartFeatureOperationEnum op)
+   at ThreadPro.ThreadBuilder.BuildAfterWallThicknessValidation(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadBuilder.BuildAll(Application app, IList`1 targets, ThreadParams p)
+   at ThreadPro.HelivantaRuntimeAuditAutomation.RunSurfaceBoundaryRuntimeCase(SurfaceBoundaryRuntimeFixture fixture, Boolean internalThread, Boolean fullLength, Boolean startFromMax, Int32 chamferMode, String partsRoot, String runId, RuntimeAuditCase result)
+   --- End of inner exception stack trace ---
+   at ThreadPro.HelivantaRuntimeAuditAutomation.RunSurfaceBoundaryRuntimeCase(SurfaceBoundaryRuntimeFixture fixture, Boolean internalThread, Boolean fullLength, Boolean startFromMax, Int32 chamferMode, String partsRoot, String runId, RuntimeAuditCase result)
+   at ThreadPro.HelivantaRuntimeAuditAutomation.<>c__DisplayClass30_4.<RunSurfaceBoundaryRuntimeMatrix>b__1(RuntimeAuditCase result)
+   at ThreadPro.HelivantaRuntimeAuditAutomation.RunCase(RuntimeAuditReport report, String name, Action`1 action)
+  TargetSurfaceStartFromMaxAxial=False
+  Fixture=Сфера + наклонная плоскость
+  ThreadType=INNER
+  Internal=True
+  FixtureBuild=TransientBRep exact annular shell + bore cut + intersect; lower=Sphere; upper=Plane; target=inner Ø20 mm; stockOuterDiameterMm=26; wallThicknessMm=3; baseFeature=БазТело1; volumeCm3=5.261541606681133; bodyCount=1; faceCount=4
+  LowerBoundary=Sphere
+  UpperBoundary=Plane
+  AdjacentSurfaceTypes=kPlaneSurface;kSphereSurface
+  TargetLengthMm=34.0040404429784
+  TargetRadiusMm=10
+  TargetBoundaryEdgeCount=2
+  TargetBoundaryLoopCount=2
+  ExpectedLowerSurfaceType=kSphereSurface
+  ExpectedUpperSurfaceType=kPlaneSurface
+  FixtureFaceCountBefore=4
+  FixtureEdgeCountBefore=4
+  FixtureBodyCountBefore=1
+  External=False
+  FullLength=False
+  RequestedLengthMm=14
+  OffsetMm=2
+  StartFromMaxAxial=False
+  ChamferMode=0
+  ChamferMm=0
+  VolumeBeforeCm3=5.261541606681133
+  CoilFeatureCountBefore=0
+  ChamferFeatureCountBefore=0
+  ResultKind=PhysicalBuildFailure
+  IPT: C:\1\Helivanta-2.8.597\test-results\inventor-runtime-audit\run-focused-20261117-162556-856\surface-boundary-matrix\20261117-162557\parts\20261117-162557-INNER-SB03-PARTIAL14-MIN-CH0-FAIL-DIAGNOSTIC.ipt
+
+[FAIL] SURFACE-BOUNDARY-INNER-SB08-FULL-START-MIN-CHAMFER-0 (58880 ms)
+System.InvalidOperationException: Surface boundary runtime case INNER/SB08; fullLength=True; startFromMax=False; chamferMode=0; diagnosticIpt=C:\1\Helivanta-2.8.597\test-results\inventor-runtime-audit\run-focused-20261117-162556-856\surface-boundary-matrix\20261117-162557\parts\20261117-162557-INNER-SB08-FULL-MIN-CH0-FAIL-DIAGNOSTIC.ipt; Обрезка по бесконечной опорной плоскости запрещена: не доказано, что вся измеренная линия пересечения кольца лежит внутри ограниченной исходной B-Rep-грани. method=exact-bounded-plane-annular-ring-intersection;axisPlaneDot=0.8191520442889919;boundedPlaneFace=True;planeIntersections=8597;axialRejected=43;boundedPatchRejected=7560;angularSectors=360;radialBands=24;keepAdded=1037;removeAdded=1037;keepSectorCoverage=351/360;removeSectorCoverage=351/360;keepRadialBands=3/24;removeRadialBands=3/24;pointContainmentQueries=2124;keepSign=1;coverageSufficient=False
+ ---> System.InvalidOperationException: Обрезка по бесконечной опорной плоскости запрещена: не доказано, что вся измеренная линия пересечения кольца лежит внутри ограниченной исходной B-Rep-грани. method=exact-bounded-plane-annular-ring-intersection;axisPlaneDot=0.8191520442889919;boundedPlaneFace=True;planeIntersections=8597;axialRejected=43;boundedPatchRejected=7560;angularSectors=360;radialBands=24;keepAdded=1037;removeAdded=1037;keepSectorCoverage=351/360;removeSectorCoverage=351/360;keepRadialBands=3/24;removeRadialBands=3/24;pointContainmentQueries=2124;keepSign=1;coverageSufficient=False
+   at ThreadPro.ThreadBuilder.<>c__DisplayClass111_0.<BuildAfterWallThicknessValidation>g__TrimJoinedRingBody|5(SurfaceBody ringBody, String stage, Double ringLowRadiusCm, Double ringHighRadiusCm, Double ringAxialStartCm, Double ringAxialEndCm)
+   at ThreadPro.ThreadBuilder.<>c__DisplayClass111_0.<BuildAfterWallThicknessValidation>g__JoinClippedRingToSelectedBody|6(SurfaceBody ringBody, String stage, Double ringLowRadiusCm, Double ringHighRadiusCm, Double ringAxialStartCm, Double ringAxialEndCm)
+   at ThreadPro.ThreadBuilder.<>c__DisplayClass111_0.<BuildAfterWallThicknessValidation>g__Ring|7(String featName, Double aStart, Double aEnd, Double rLow, Double rHigh, PartFeatureOperationEnum op)
+   at ThreadPro.ThreadBuilder.BuildAfterWallThicknessValidation(Application app, ThreadTarget t, ThreadParams p, Boolean ownTransaction, String threadIdOverride)
+   at ThreadPro.ThreadBuilder.BuildAll(Application app, IList`1 targets, ThreadParams p)
+   at ThreadPro.HelivantaRuntimeAuditAutomation.RunSurfaceBoundaryRuntimeCase(SurfaceBoundaryRuntimeFixture fixture, Boolean internalThread, Boolean fullLength, Boolean startFromMax, Int32 chamferMode, String partsRoot, String runId, RuntimeAuditCase result)
+   --- End of inner exception stack trace ---
+   at ThreadPro.HelivantaRuntimeAuditAutomation.RunSurfaceBoundaryRuntimeCase(SurfaceBoundaryRuntimeFixture fixture, Boolean internalThread, Boolean fullLength, Boolean startFromMax, Int32 chamferMode, String partsRoot, String runId, RuntimeAuditCase result)
+   at ThreadPro.HelivantaRuntimeAuditAutomation.<>c__DisplayClass30_4.<RunSurfaceBoundaryRuntimeMatrix>b__1(RuntimeAuditCase result)
+   at ThreadPro.HelivantaRuntimeAuditAutomation.RunCase(RuntimeAuditReport report, String name, Action`1 action)
+  TargetSurfaceStartFromMaxAxial=False
+  Fixture=Наклонная плоскость + конус
+  ThreadType=INNER
+  Internal=True
+  FixtureBuild=TransientBRep exact annular shell + bore cut + intersect; lower=Plane; upper=Cone; target=inner Ø20 mm; stockOuterDiameterMm=26; wallThicknessMm=3; baseFeature=БазТело1; volumeCm3=4.4689155497312445; bodyCount=1; faceCount=4
+  LowerBoundary=Plane
+  UpperBoundary=Cone
+  AdjacentSurfaceTypes=kConeSurface;kPlaneSurface
+  TargetLengthMm=32.83540871543045
+  TargetRadiusMm=10
+  TargetBoundaryEdgeCount=2
+  TargetBoundaryLoopCount=2
+  ExpectedLowerSurfaceType=kPlaneSurface
+  ExpectedUpperSurfaceType=kConeSurface
+  FixtureFaceCountBefore=4
+  FixtureEdgeCountBefore=4
+  FixtureBodyCountBefore=1
+  External=False
+  FullLength=True
+  RequestedLengthMm=32.83540871543045
+  OffsetMm=0
+  StartFromMaxAxial=False
+  ChamferMode=0
+  ChamferMm=0
+  VolumeBeforeCm3=4.4689155497312445
+  CoilFeatureCountBefore=0
+  ChamferFeatureCountBefore=0
+  ResultKind=PhysicalBuildFailure
+  IPT: C:\1\Helivanta-2.8.597\test-results\inventor-runtime-audit\run-focused-20261117-162556-856\surface-boundary-matrix\20261117-162557\parts\20261117-162557-INNER-SB08-FULL-MIN-CH0-FAIL-DIAGNOSTIC.ipt
+
+[PASS] STANDARD-INTERNAL-GOST-METRIC-BUILD-EDIT (28823 ms)
+GOST M20 internal build/edit; right-to-left; ThreadId preserved; warning=Подготовка внутренней резьбы Ø20 × 2 мм: исходное отверстие Ø20 мм будет предварительно заполнено материалом кольцом до малого диаметра внутреннего профиля Ø17,835 мм (изменение диаметра 2,165 мм). Затем винтовой профиль сформирует резьбу до номинального Ø20 мм. Номинальный диаметр в параметрах не меняется. Проверьте, что добавление материала допустимо.
+Не удалось сопоставить созданные операции с узлами дерева для папки «Резьба — ГОСТ 9150/8724 · M20 x 2 · 1 заход · Левая (L)»: объектов 65, верхнеуровневых узлов дерева 7, раскрытие истории при редактировании False.
+  FolderClickSelectionResolved=true
+  FolderClickExpansionStatePreserved=true
+  FolderClickExpansionStateBefore=False
+  FolderClickExpansionStateAfter=False
+  FolderClickSelectionThreadIdMatches=true
+  FolderClickSelectionMethod=BrowserFolder COM identity + NativeBrowserNodeDefinition.AllReferencedNodes + parent-chain COM identity
+  GeometryChangedAfterSuccessfulEdit=True
+  VolumeBeforeEditCm3=43.195433998482194
+  VolumeAfterEditCm3=43.02647700406221
+  BrowserNodesVisited=161
+  BrowserNativeObjectReadFailures=3
+  BrowserTreeEnumerationFailures=0
+  BrowserFolderNativeTypes=1
+  BrowserRootFoldersVisited=1
+  ExpectedFolderLabelFound=True
+  ExpectedFolderExactRootMatches=1
+  ExpectedFolderNumberedDuplicates=0
+  SeparateRunoutFolderCount=0
+  RunoutFeatureCountInThreadFolder=2
+  RunoutHelperObjectCount=82
+  VisibleRunoutHelperObjectCount=0
+  ThreadFolderNodesVisited=96
+  ThreadFolderNativeObjectReadFailures=1
+  ThreadFolderEnumerationFailures=0
+  SurfaceBodyCount=1
+  FaceCount=17
+  EdgeCount=28
+  CoilFeatureCount=1
+  LoftFeatureCount=2
+  SweepFeatureCount=0
+  VolumeCm3=43.02647700406221
+  MetadataThreadId=28d52f190a2b42e9a1068a9b1853513a
+  OriginalDesignation=M20 x 2.5
+  ReplacementDesignation=M20 x 2
+  WARNING: BrowserNode.NativeObject недоступен для вспомогательной проверки типа узла: Неопознанная ошибка (0x80004005 (E_FAIL))
+  WARNING: BrowserNode.NativeObject недоступен для вспомогательной проверки типа узла: Неопознанная ошибка (0x80004005 (E_FAIL))
+  WARNING: BrowserNode.NativeObject недоступен для вспомогательной проверки типа узла: Неопознанная ошибка (0x80004005 (E_FAIL))
+  WARNING: BrowserNode.NativeObject недоступен при дополнительной проверке папки сбега: Неопознанная ошибка (0x80004005 (E_FAIL))
+  IPT: C:\1\Helivanta-2.8.597\test-results\inventor-runtime-audit\run-focused-20261117-162556-856\20261117-162557-standard-gost-metric-internal-edit.ipt
+
+[PASS] STANDARD-INTERNAL-GOST-TRAPEZOIDAL-BUILD-EDIT-UNDO (31667 ms)
+GostTrapezoidal internal build/edit/Undo; ThreadId preserved; full pre-edit B-rep and catalogue metadata restored.
+  FolderClickSelectionResolved=true
+  FolderClickExpansionStatePreserved=true
+  FolderClickExpansionStateBefore=False
+  FolderClickExpansionStateAfter=False
+  FolderClickSelectionThreadIdMatches=true
+  FolderClickSelectionMethod=BrowserFolder COM identity + NativeBrowserNodeDefinition.AllReferencedNodes + parent-chain COM identity
+  CanUndoExactEditBeforeUndo=True
+  BrowserNodesVisited=184
+  BrowserNativeObjectReadFailures=3
+  BrowserTreeEnumerationFailures=0
+  BrowserFolderNativeTypes=1
+  BrowserRootFoldersVisited=1
+  ExpectedFolderLabelFound=True
+  ExpectedFolderExactRootMatches=1
+  ExpectedFolderNumberedDuplicates=0
+  SeparateRunoutFolderCount=0
+  RunoutFeatureCountInThreadFolder=4
+  RunoutHelperObjectCount=92
+  VisibleRunoutHelperObjectCount=0
+  ThreadFolderNodesVisited=111
+  ThreadFolderNativeObjectReadFailures=1
+  ThreadFolderEnumerationFailures=0
+  MetadataThreadId=3bde8b0842ee4569bfca1f279e8cc0eb
+  OriginalDesignation=Tr 20 x 4 (P2)
+  EditedDesignation=Tr 20 x 6 (P2)
+  GeometryChangedAfterSuccessfulEdit=True
+  VolumeBeforeEditCm3=42.8465802340407
+  VolumeAfterEditCm3=42.835578135034915
+  UndoRestoredFullSnapshot=True
+  EditWarning=Подготовка внутренней резьбы Ø20 × 2 мм: исходное отверстие Ø20 мм будет предварительно заполнено материалом кольцом до малого диаметра внутреннего профиля Ø18 мм (изменение диаметра 2 мм). Затем винтовой профиль сформирует резьбу до номинального Ø20 мм. Номинальный диаметр в параметрах не меняется. Проверьте, что добавление материала допустимо.
+Не удалось сопоставить созданные операции с узлами дерева для папки «Резьба — Tr (ГОСТ 9484-81) · 20 x 6 (P2) · 3 захода · Левая (L)»: объектов 91, верхнеуровневых узлов дерева 7, раскрытие истории при редактировании False.
+  SurfaceBodyCount=1
+  FaceCount=25
+  EdgeCount=55
+  CoilFeatureCount=2
+  LoftFeatureCount=4
+  SweepFeatureCount=0
+  VolumeCm3=42.8465802340407
+  WARNING: BrowserNode.NativeObject недоступен для вспомогательной проверки типа узла: Неопознанная ошибка (0x80004005 (E_FAIL))
+  WARNING: BrowserNode.NativeObject недоступен для вспомогательной проверки типа узла: Неопознанная ошибка (0x80004005 (E_FAIL))
+  WARNING: BrowserNode.NativeObject недоступен для вспомогательной проверки типа узла: Неопознанная ошибка (0x80004005 (E_FAIL))
+  WARNING: BrowserNode.NativeObject недоступен при дополнительной проверке папки сбега: Неопознанная ошибка (0x80004005 (E_FAIL))
+  IPT: C:\1\Helivanta-2.8.597\test-results\inventor-runtime-audit\run-focused-20261117-162556-856\20261117-162557-gosttrapezoidal-internal-edit-undo.ipt
+
+[PASS] STANDARD-INTERNAL-GOST-BUTTRESS-BUILD-EDIT-UNDO (24483 ms)
+GostButtress internal build/edit/Undo; ThreadId preserved; full pre-edit B-rep and catalogue metadata restored.
+  FolderClickSelectionResolved=true
+  FolderClickExpansionStatePreserved=true
+  FolderClickExpansionStateBefore=False
+  FolderClickExpansionStateAfter=False
+  FolderClickSelectionThreadIdMatches=true
+  FolderClickSelectionMethod=BrowserFolder COM identity + NativeBrowserNodeDefinition.AllReferencedNodes + parent-chain COM identity
+  CanUndoExactEditBeforeUndo=True
+  BrowserNodesVisited=161
+  BrowserNativeObjectReadFailures=3
+  BrowserTreeEnumerationFailures=0
+  BrowserFolderNativeTypes=1
+  BrowserRootFoldersVisited=1
+  ExpectedFolderLabelFound=True
+  ExpectedFolderExactRootMatches=1
+  ExpectedFolderNumberedDuplicates=0
+  SeparateRunoutFolderCount=0
+  RunoutFeatureCountInThreadFolder=2
+  RunoutHelperObjectCount=82
+  VisibleRunoutHelperObjectCount=0
+  ThreadFolderNodesVisited=96
+  ThreadFolderNativeObjectReadFailures=1
+  ThreadFolderEnumerationFailures=0
+  MetadataThreadId=26aba0380da54df4a549b2dfaa8a70c5
+  OriginalDesignation=S 20 x 2
+  EditedDesignation=S 20 x 4
+  GeometryChangedAfterSuccessfulEdit=True
+  VolumeBeforeEditCm3=43.176406489603316
+  VolumeAfterEditCm3=44.02081484341518
+  UndoRestoredFullSnapshot=True
+  EditWarning=Подготовка внутренней резьбы Ø20 × 4 мм: исходное отверстие Ø20 мм будет предварительно заполнено материалом кольцом до малого диаметра внутреннего профиля Ø14 мм (изменение диаметра 6 мм). Затем винтовой профиль сформирует резьбу до номинального Ø20 мм. Номинальный диаметр в параметрах не меняется. Проверьте, что добавление материала допустимо.
+Не удалось сопоставить созданные операции с узлами дерева для папки «Резьба — S (ГОСТ 10177-82) · 20 x 4 · 1 заход · Левая (L) · Зеркальный профиль»: объектов 57, верхнеуровневых узлов дерева 7, раскрытие истории при редактировании False.
+  SurfaceBodyCount=1
+  FaceCount=17
+  EdgeCount=30
+  CoilFeatureCount=1
+  LoftFeatureCount=2
+  SweepFeatureCount=0
+  VolumeCm3=43.176406489603316
+  WARNING: BrowserNode.NativeObject недоступен для вспомогательной проверки типа узла: Неопознанная ошибка (0x80004005 (E_FAIL))
+  WARNING: BrowserNode.NativeObject недоступен для вспомогательной проверки типа узла: Неопознанная ошибка (0x80004005 (E_FAIL))
+  WARNING: BrowserNode.NativeObject недоступен для вспомогательной проверки типа узла: Неопознанная ошибка (0x80004005 (E_FAIL))
+  WARNING: BrowserNode.NativeObject недоступен при дополнительной проверке папки сбега: Неопознанная ошибка (0x80004005 (E_FAIL))
+  IPT: C:\1\Helivanta-2.8.597\test-results\inventor-runtime-audit\run-focused-20261117-162556-856\20261117-162557-gostbuttress-internal-edit-undo.ipt
+
+Coverage / limitations:
+- FOCUSED FAILED-CASE MODE: selected representative inner finite-plane failures SB01/SB02/SB03/SB08 plus the SB03 partial-length reproducer, two passing OUTER SB05 controls, and three GOST edit regression controls from full baseline run 20261116-140755 (2.8.585). The GOST controls verify the folder-click selection contract and preserve its collapsed/expanded state.
+- To restore the full 215-case control audit, run tools\run-inventor-runtime-audit-full.bat. The default run-inventor-runtime-audit.bat remains focused until the failure set is cleared.
+- Основной Runtime Audit ограничен производственными сценариями: реальные Inventor B-rep операции для девяти цилиндрических семейств стандартных профилей (ID 0-8); отдельный runtime контроль ID, количеств и уникальных/общих пар независимых ГОСТ Tr/S каталогов относительно DIN; наружная ГОСТ Tr 32x3 с разрешённой многозаходностью (P3, n=2), сменой числа заходов, аварийным откатом и Undo; наружная ГОСТ S 30x3 с редактированием на другой табличный шаг, аварийным откатом и Undo; внутренние ГОСТ Tr 20x2 и ГОСТ S 20x2 с редактированием, левым направлением, зеркальным профилем ГОСТ S и восстановлением исходного B-rep через Undo; нормативный контроль 16 строк ГОСТ 6211-81 R/Rc, профиля 55°, конусности 1:16 и отказа для Rp/G; наружная R и внутренняя Rc с реальным Inventor build/edit/Undo и сохранением ID 9/ThreadId/метаданных; два независимых ГОСТ метрических ThreadId на разных телах с последовательным редактированием каждого; Cap/Neck с вентиляционными каналами; коническая NPT-резьба по фактической таблице Inventor; COM identity; вложенность папки сбега в папку резьбы; свёрнутое состояние и скрытая видимость WorkPlane/PlanarSketch. Экспериментальные Coil-профили, display-stroke диагностика и Guided Sweep прототипы оставлены только как opt-in диагностический код под HELIVANTA_ENABLE_LEGACY_TAPER_DIAGNOSTICS и в обычный запуск не входят.
+- Локализация: проверяются реальные RU/EN resource lookups для StatusBarText, Cap/Neck summary и accessibility-описаний подтверждений; отдельный runtime case перечитывает сохранённые Settings и через ту же production policy, что используется при первом Load главного окна, проверяет все 9 элементов списка Template в RU и EN, порядок, отсутствие кириллической утечки в EN и совпадение с языком настроек. Отдельный live Inventor сценарий строит две независимые Cap/Neck детали с явными языками папки en и ru и проверяет точные имена корневых BrowserFolder плюс COM membership всех feature/metadata nodes. Основной Cap/Neck сценарий дополнительно проверяет язык активного интерфейса, противоположный сохранённый язык модели при редактировании, P4.0→P4.2→P4.4 и точный Undo. DisplayCulture (RU comma / EN dot) проверяется без изменения пользовательских настроек. Runtime policy cases также проверяют положительную BrowserFolder COM identity (включая прямую идентичность NativeObject с BrowserFolder API object), отказ при name-only/unavailable identity и запрет ремонта по partial/null-child BrowserTree snapshot. Визуальное обновление открытых WinForms layout/paint состояний не эмулируется этим policy case; если требуется пиксельная проверка, она остаётся отдельным UI Automation уровнем.
+- BrowserFolder rename: отдельный fault-injection сценарий заставляет тестовый setter изменить имя и затем выбросить исключение; проверяются восстановление старого имени по readback и сохранение mutation flag, который запрещает best-effort commit после возможной COM-мутации. Пользовательский документ для этого сценария не изменяется.
+- BrowserFolder inventory: проверяются уникальное имя при наличии базовой папки и суффиксов, ровно одно точное совпадение, отказ при дубликатах и injected enumeration failure. Production code не подменяет недоступный COM-инвентарь базовым именем и не создаёт новую папку после неуверенного fallback lookup.
+- Непредсказуемые COM-сбои NativeObject/BrowserPane и отказ GetIUnknownForObject нельзя безопасно инициировать в живом Inventor без специального fault-injection shim. Проверяются штатные COM identity и полнота фактического обхода TopNode.BrowserFolders и BrowserTree.
+- ThreadDialog edit recovery: отдельный live Inventor сценарий строит две реальные независимые ГОСТ M30 группы на двух телах (P2 и P3), начинает редактирование первой, затем под точной audit-gate имитирует недоступный snapshot первой группы и исключение после частичной загрузки диаметра/шага второй. Проверяются fail-closed latch, сохранение исходного ThreadId, блокировка фактических Apply/Undo/Preview handlers даже при их прямом вызове, выключенные кнопки, неизменность B-rep/обеих metadata-групп и успешное восстановление только после полного Reset из сохранённого snapshot первой группы. Инъекция ограничена временным тестовым PartDocument и не подменяет COM/B-rep операции.
+- Cap/Neck AutoPitch: отдельный live Inventor сценарий включает AutoPitch в настоящем PackagingThreadDialog, инжектирует один отказ BuildCore после StartTransaction, проверяет Abort, повторное BindKeyToObject/SelectSet readback и COM identity; вторая CAD-попытка обязана получить именно восстановленный Edge и завершить реальное построение. Отдельный policy case сохраняет отрицательные проверки неоднозначного ключа, устаревшего Edge fallback, неполного снимка и недоступной identity.
+- Последовательное преобразование штатных резьб: отдельный live Inventor Runtime Audit сценарий на временном IPT выбирает реальное круговое Edge, вызывает production helper очистки native SelectSet и подтверждает COM readback счётчика 1→0. Неудачный COM Clear не инжектируется в Inventor; для этой ветви отдельно проверяется fail-closed source contract: следующий Browser picker не запускается, кнопка «Следующая» остаётся доступной для повторной попытки.
+- Автоматизация не кликает по WinForms диалогам и не оценивает визуальную компоновку окон. Для этого нужен отдельный UI Automation этап; текущий запуск не подтверждает расположение кнопок и поведение модальных окон.
+- Скрипт не вызывает Marshal.FinalReleaseComObject для объектов, принадлежащих Inventor, чтобы не повредить RCW и состояние самого Inventor.
+- THREAD-FAMILY-RUNTIME-MATRIX: для каждого из девяти цилиндрических семейств ID 0-8 выполняются пять независимых наружных B-rep построений: минимальная строка каталога, максимальная строка, промежуточный диаметр, 10% ниже минимума и 25% выше максимума; отдельный companion case каждого семейства выполняет успешное редактирование, реальный Abort некорректного редактирования, проверку полного fingerprint и Undo. Для GOST R/Rc и NPT выполняются отдельные пятидиаметральные FreeGeometry матрицы (18/20/22/26/30 мм), при этом GOST R Ø22 мм выполняет build, инъекцию неудачного edit с Abort/rollback, успешное edit и точный Undo; номинальный NPT fixture выполняет edit/Undo, а Rc strict и NPT strict остаются отдельными табличными регрессиями. Cap/Neck получает пять независимых построений D=15/40/55/65/100 мм с пропорциональным шагом, а основной Cap/Neck сценарий проверяет повторное редактирование и точный Undo. Внутренние цилиндрические построения дополнительно проверяются отдельными существующими ISO, GOST Metric, GOST Tr и GOST S сценариями; для остальных стандартов внутренний полный lifecycle не заявляется этим этапом.
+- SURFACE-BOUNDARY-AUTOGENERATED-RUNTIME-MATRIX: восемь аналитических сочетаний границ автоматически строятся через Inventor TransientBRep в двух реальных вариантах: наружная сплошная заготовка Ø20 мм и внутренняя кольцевая заготовка Ø26/Ø20 мм со стенкой 3 мм (отверстие создаётся Boolean Cut до пересечения с граничными поверхностями). Для каждого из 8 сочетаний проверяются OUTER и INNER цели; production AnalyzeCylindricalSurface обязан подтвердить IsExternal. Для каждого типа резьбы выполняются 4 сценария полной/частичной длины с обоих концов плюс 6 сценариев фасок (start/end/both с обоих концов): всего 160 вызовов production ThreadBuilder.BuildAll (80 наружных + 80 внутренних). Проверяются SurfaceType смежных граней, фактическая длина цилиндрической грани, solid/body/face/edge/Coil/Chamfer counts, знаковое изменение объёма, метаданные и безопасный пропуск геометрически недопустимой фаски без отката резьбы. Все IPT, JSON и CSV сохраняются в подкаталоге surface-boundary-matrix текущего запуска.
+- Восемь сочетаний граничных поверхностей и оба варианта тела генерируются заново для каждого из 160 сценариев, а не переиспользуются как статические IPT. Перед вызовом BuildAll проверяются тип резьбы, обе ожидаемые SurfaceType соседних граней и тип цилиндрической поверхности; в CSV/JSON сохраняются INNER/OUTER, ожидаемые и фактические типы, edge/loop/face/body counts, длительность, signed volume delta, Coil/Chamfer deltas, ThreadId и ArtifactPath. Сгенерированные успешные и диагностические IPT позволяют повторно открыть конкретный провал в Inventor.
+- Все созданные детали принадлежат запуску Runtime Audit. Успешные сценарии сохраняются в каталоге отчёта; каждый тестовый документ закрывается даже после ошибки. При ошибке закрытия это отражается как FAIL.
+
+JSON: C:\1\Helivanta-2.8.597\test-results\inventor-runtime-audit\run-focused-20261117-162556-856\runtime-audit.json
+Output: C:\1\Helivanta-2.8.597\test-results\inventor-runtime-audit\run-focused-20261117-162556-856
+======================================================
