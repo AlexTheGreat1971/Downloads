@@ -1,0 +1,1256 @@
+2026-11-18 15:25:16.303 pid=3676 thread=15 component=PackagingThread stage=end-1-runout-begin
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=65 mm; P=6.5 mm; starts=1; lead=6.5 mm; H=3.25 mm; embed=0.65 mm; wall=13 mm; RH=True
+detail: length=0.253 mm; sections=3; startPhase=0 deg; handSign=1; internal=False; operation=join-positive-rib; profile=PCO-1881-Detail-B; loadFlank=20deg; rampFlank=10deg; rootFilletR=0.5mm; crestFilletR=0.4mm; terminalCrestFactor=0.0415; minTerminalDepth=0.2 mm
+---
+2026-11-18 15:25:16.477 pid=3676 thread=15 component=PackagingThread stage=end-1-runout-section
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=65 mm; P=6.5 mm; starts=1; lead=6.5 mm; H=3.25 mm; embed=0.65 mm; wall=13 mm; RH=True
+detail: section=1/3; t=0; station=23.747 mm; crestFactor=1; widthFactor=1; rootFactor=1; phase=1315.231 deg
+---
+2026-11-18 15:25:16.672 pid=3676 thread=15 component=PackagingThread stage=end-1-runout-section
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=65 mm; P=6.5 mm; starts=1; lead=6.5 mm; H=3.25 mm; embed=0.65 mm; wall=13 mm; RH=True
+detail: section=2/3; t=0.5; station=23.874 mm; crestFactor=0.5208; widthFactor=0.7634; rootFactor=0.55; phase=1322.231 deg
+---
+2026-11-18 15:25:16.857 pid=3676 thread=15 component=PackagingThread stage=end-1-runout-section
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=65 mm; P=6.5 mm; starts=1; lead=6.5 mm; H=3.25 mm; embed=0.65 mm; wall=13 mm; RH=True
+detail: section=3/3; t=1; station=24 mm; crestFactor=0.0415; widthFactor=0.3232; rootFactor=0.1; phase=1329.231 deg
+---
+2026-11-18 15:25:17.151 pid=3676 thread=15 component=PackagingThread stage=end-1-runout-verified
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=65 mm; P=6.5 mm; starts=1; lead=6.5 mm; H=3.25 mm; embed=0.65 mm; wall=13 mm; RH=True
+detail: Loft verified; operation=join-positive-rib; featureName=HVPkg_0A5983FFAD0D_S1of1_P0deg; sectionCount=3; volumeDelta=0.0372391146 cm^3; bodyCount=1; terminalCrestFactor=0.042; internal=False.
+---
+2026-11-18 15:25:17.153 pid=3676 thread=15 component=PackagingThread stage=packaging-thread-chamfer-anchor-resolved
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=65 mm; P=6.5 mm; starts=1; lead=6.5 mm; H=3.25 mm; embed=0.65 mm; wall=13 mm; RH=True
+detail: type=external-root-core-cylinder-open-front; mode=1; targetRadius=29.25mm; startStation=-4.875mm; endStation=24.75mm; frontEdgeStation=-4.875mm; threadEndStation=24mm; originalRadius=32.5mm; clearance=0.15mm.
+---
+2026-11-18 15:25:17.348 pid=3676 thread=15 component=PackagingThread stage=packaging-thread-chamfer-created
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=65 mm; P=6.5 mm; starts=1; lead=6.5 mm; H=3.25 mm; embed=0.65 mm; wall=13 mm; RH=True
+detail: method=revolved-45-degree-cut; mode=start; requestedDistance=1 mm; compensatedRadius=29.25 mm; startStation=-4.875 mm; coneEndStation=-0.625 mm; coneEndRadius=32.5 mm; cutterOuterRadius=33 mm; coneSlope=1; crest-intersection-cut=allowed; health=kUpToDateHealth.
+---
+2026-11-18 15:25:17.350 pid=3676 thread=15 component=PackagingThread stage=vent-slot-overrun-resolved
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=65 mm; P=6.5 mm; starts=1; lead=6.5 mm; H=3.25 mm; embed=0.65 mm; wall=13 mm; RH=True
+detail: spanMode=external-root-core-to-transition; startOverrun=4.875 mm; selected-edge inset=4.875 mm; end-boundary safety inset=0.02 mm; preferred generic tool overrun=6.5 mm; remaining cylinder after thread=19.125 mm; actual end overrun=0.73 mm; axialCutRange=-4.875..24.73 mm.
+---
+2026-11-18 15:25:17.352 pid=3676 thread=15 component=PackagingThread stage=vent-slots-begin
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=65 mm; P=6.5 mm; starts=1; lead=6.5 mm; H=3.25 mm; embed=0.65 mm; wall=13 mm; RH=True
+detail: count=2; width=14 deg; spacing=180 deg; sweepRadians=0.2443461; internal=False; positiveRibCut=true; radialRange=2.923..3.252 cm; axialRange=-0.4875..2.473 cm; radialOvercut=0.02 mm; startOverrun=4.875 mm; endOverrun=0.73 mm; zeroEndOverrunAllowed=true.
+---
+2026-11-18 15:25:17.355 pid=3676 thread=15 component=PackagingThread stage=vent-slot-01-create-plane
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=65 mm; P=6.5 mm; starts=1; lead=6.5 mm; H=3.25 mm; embed=0.65 mm; wall=13 mm; RH=True
+detail: slot=1/2; startAngle=131.615 deg; centreAngle=124.615 deg; width=14 deg; internal=False.
+---
+2026-11-18 15:25:17.448 pid=3676 thread=15 component=PackagingThread stage=vent-slot-01-cut-operation
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=65 mm; P=6.5 mm; starts=1; lead=6.5 mm; H=3.25 mm; embed=0.65 mm; wall=13 mm; RH=True
+detail: sweep=AddByAngle(0.2443461 rad); operation=kCutOperation; radialMin=2.923 cm; radialMax=3.252 cm.
+---
+2026-11-18 15:25:17.596 pid=3676 thread=15 component=PackagingThread stage=vent-slot-01-verified
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=65 mm; P=6.5 mm; starts=1; lead=6.5 mm; H=3.25 mm; embed=0.65 mm; wall=13 mm; RH=True
+detail: Vent slot cut verified; name=HVPkgV_0950B6BA68_SLOT01OF02; angle=131.615 deg; width=14 deg; volumeRemoved=0.351456741 cm^3; bodies=1; internal=False.
+---
+2026-11-18 15:25:17.602 pid=3676 thread=15 component=PackagingThread stage=vent-slot-02-create-plane
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=65 mm; P=6.5 mm; starts=1; lead=6.5 mm; H=3.25 mm; embed=0.65 mm; wall=13 mm; RH=True
+detail: slot=2/2; startAngle=311.615 deg; centreAngle=304.615 deg; width=14 deg; internal=False.
+---
+2026-11-18 15:25:17.699 pid=3676 thread=15 component=PackagingThread stage=vent-slot-02-cut-operation
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=65 mm; P=6.5 mm; starts=1; lead=6.5 mm; H=3.25 mm; embed=0.65 mm; wall=13 mm; RH=True
+detail: sweep=AddByAngle(0.2443461 rad); operation=kCutOperation; radialMin=2.923 cm; radialMax=3.252 cm.
+---
+2026-11-18 15:25:17.846 pid=3676 thread=15 component=PackagingThread stage=vent-slot-02-verified
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=65 mm; P=6.5 mm; starts=1; lead=6.5 mm; H=3.25 mm; embed=0.65 mm; wall=13 mm; RH=True
+detail: Vent slot cut verified; name=HVPkgV_7E182A5BDF_SLOT02OF02; angle=311.615 deg; width=14 deg; volumeRemoved=0.2646147808 cm^3; bodies=1; internal=False.
+---
+2026-11-18 15:25:17.848 pid=3676 thread=15 component=PackagingThread stage=vent-slot-cuts-complete
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=65 mm; P=6.5 mm; starts=1; lead=6.5 mm; H=3.25 mm; embed=0.65 mm; wall=13 mm; RH=True
+detail: expectedCount=2; verifiedCutFeatures=2; requestedHand=RH; centres=124,61538461538464,304,61538461538464 deg.
+---
+2026-11-18 15:25:17.855 pid=3676 thread=15 component=PackagingThread stage=browser-folder-mapping-policy
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=65 mm; P=6.5 mm; starts=1; lead=6.5 mm; H=3.25 mm; embed=0.65 mm; wall=13 mm; RH=True
+detail: family=CapNeck; threadIdOverridePresent=False; exposeHistoryForMapping=False; requireFolderMapping=True; createdObjects=29; mode=new-build-required-folder
+---
+2026-11-18 15:25:19.583 pid=3676 thread=15 component=PackagingThread stage=packaging-thread-metadata-attached
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=65 mm; P=6.5 mm; starts=1; lead=6.5 mm; H=3.25 mm; embed=0.65 mm; wall=13 mm; RH=True
+detail: threadId=14957cb5f9454e968b62789b03bb6ec4; objectCount=29; family=CapNeck; schema=2.
+---
+2026-11-18 15:25:19.585 pid=3676 thread=15 component=PackagingThread stage=packaging-thread-folder-created
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=65 mm; P=6.5 mm; starts=1; lead=6.5 mm; H=3.25 mm; embed=0.65 mm; wall=13 mm; RH=True
+detail: All packaging-thread construction features were assigned to folder: Резьба крышек/горловин — наружная · D65 мм · P6.5 мм · 1 заход · Правая (R); registeredObjects=29; browserFolderPerformance=Папка «Резьба крышек/горловин — наружная · D65 мм · P6.5 мм · 1 заход · Правая (R)»: объектов 29, узлов сгруппировано 22; TopNode 0 мс, поиск имени 1 мс, снимок дерева 26 мс, резервный поиск узлов 0 мс, создание + группировка 10 мс (batch BrowserNodes), резервные folder.Add 0 мс, BrowserNode папки 0 мс, SetEndOfPart 12 мс, Reorder 0 мс, всего 88 мс.
+---
+2026-11-18 15:25:19.587 pid=3676 thread=15 component=PackagingThread stage=commit-transaction
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=65 mm; P=6.5 mm; starts=1; lead=6.5 mm; H=3.25 mm; embed=0.65 mm; wall=13 mm; RH=True
+detail: Final volume/body checks passed; coreCoils=1; runoutLofts=2; ventSlotCuts=2; clearanceReliefs=1; nativeChamfers=0; revolvedChamferCuts=1; terminalFaceHealCleanup=not-used; ventSlotCount=2; ventSlotWidthDeg=14; startRunout=0.253 mm; endRunout=0.253 mm; clearance=0.15 mm; positiveRibBothSides=False; transaction=Helivanta: резьба крышек/горловин (эксперимент) BFFBE2A6E4.
+---
+2026-11-18 15:25:20.904 pid=3676 thread=15 component=PackagingThread stage=resolve-edge-cylinder
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=100 mm; P=10 mm; starts=1; lead=10 mm; H=5 mm; embed=1 mm; wall=20 mm; RH=True
+detail: Resolving cylindrical face adjacent to selected circular edge.
+---
+2026-11-18 15:25:20.910 pid=3676 thread=15 component=PackagingThread stage=resolve-thread-type
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=100 mm; P=10 mm; starts=1; lead=10 mm; H=5 mm; embed=1 mm; wall=20 mm; RH=True
+detail: face.IsParamReversed=True; autoDetectedType=external; suppliedType=external.
+---
+2026-11-18 15:25:21.098 pid=3676 thread=15 component=PackagingThread stage=existing-thread-overlap-metadata-scan
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=100 mm; P=10 mm; starts=1; lead=10 mm; H=5 mm; embed=1 mm; wall=20 mm; RH=True
+detail: groupsLoaded=0; sameCylinderCandidates=0; matchingIntervalsReadable=0; diagnosticRecordsLogged=0; candidates=
+---
+2026-11-18 15:25:21.100 pid=3676 thread=15 component=PackagingThread stage=existing-thread-overlap-preflight
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=100 mm; P=10 mm; starts=1; lead=10 mm; H=5 mm; embed=1 mm; wall=20 mm; RH=True
+detail: status=Clear; proposedOffsetMm=7.5; requestedLengthMm=24; proposedFaceSpanMm=48; conflictingThreadId=; overlapLengthMm=0; detail=No persisted Helivanta thread interval overlaps the proposed interval.
+---
+2026-11-18 15:25:21.102 pid=3676 thread=15 component=PackagingThread stage=runout-policy-resolved
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=100 mm; P=10 mm; starts=1; lead=10 mm; H=5 mm; embed=1 mm; wall=20 mm; RH=True
+detail: autoDetectedType=external; maxRunoutAngle=14 deg; effectiveRunoutAngle=14 deg; targetRunoutTurnFraction=0.038889; effectiveRunoutTurnFraction=0.038889; lead=10 mm; startRunout=0.389 mm; endRunout=0.389 mm; coreLength=23.222 mm; coreTurns=2.322222; terminalCrestFactor=0.02; minTerminalDepth=0.2 mm.
+---
+2026-11-18 15:25:21.104 pid=3676 thread=15 component=PackagingThread stage=mating-profile-dimensions
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=100 mm; P=10 mm; starts=1; lead=10 mm; H=5 mm; embed=1 mm; wall=20 mm; RH=True
+detail: D-reference=100mm; H=5mm; C-total-diametral=0.15mm; radial-half-clearance=0.075mm; external-crest=100mm; external-root/valley=90mm; internal-root/valley=100.15mm; internal-crest=90.15mm; outer-clearance=0.15mm; inner-clearance=0.15mm; profile=PCO-1881-Detail-B; loadFlank=20deg; rampFlank=10deg; rootFilletR=0.5mm; crestFilletR=0.4mm.
+---
+2026-11-18 15:25:21.106 pid=3676 thread=15 component=PackagingThread stage=build-begin
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=100 mm; P=10 mm; starts=1; lead=10 mm; H=5 mm; embed=1 mm; wall=20 mm; RH=True
+detail: edgeIsLow=False; edgeAxial=4.8 cm; minAxial=0 cm; maxAxial=4.8 cm; radius=4.5 cm; profileWidth=0.8 cm; totalLength=2.4 cm; startRunout=0.389 mm; endRunout=0.389 mm; coreLength=23.222 mm; coreRevolutions=2.322222; phaseCount=1; internal=False
+---
+2026-11-18 15:25:21.129 pid=3676 thread=15 component=PackagingThread stage=clearance-relief-begin
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=100 mm; P=10 mm; starts=1; lead=10 mm; H=5 mm; embed=1 mm; wall=20 mm; RH=True
+detail: type=external-open-front-root-core-relief; originalRadius=50mm; compensatedRadius=45mm; blendRadius=5mm; contourRange=-12.5..29.75mm; frontEdgeStation=-7.5mm; threadEndStation=24mm; postThreadStraightExtension=0.75mm; cutterOuterRadius=51.25mm; arcAnchors=small-edge-after-post-thread-extension.
+---
+2026-11-18 15:25:21.244 pid=3676 thread=15 component=PackagingThread stage=clearance-relief-profile-ready
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=100 mm; P=10 mm; starts=1; lead=10 mm; H=5 mm; embed=1 mm; wall=20 mm; RH=True
+detail: profile=outside-final-silhouette; exactCircularArcs=2; arcRadius=5mm; startArc=larger-to-smaller-open-front; endArc=smaller-at-24.75mm-after-0.75mm-post-thread-extension-to-stock-radius; cutterOuterRadius=51.25mm; connectedSketchPointLoop=true.
+---
+2026-11-18 15:25:21.339 pid=3676 thread=15 component=PackagingThread stage=clearance-relief-verified
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=100 mm; P=10 mm; starts=1; lead=10 mm; H=5 mm; embed=1 mm; wall=20 mm; RH=True
+detail: Feature=HVPkg_External_ClearanceEnvelope_F8292C6712; removedVolume=54.0319758251cm^3; bodies=1; health=kUpToDateHealth; cutSide=outside-final-contour.
+---
+2026-11-18 15:25:21.341 pid=3676 thread=15 component=PackagingThread stage=vent-slot-endpoint-aware-input
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=100 mm; P=10 mm; starts=1; lead=10 mm; H=5 mm; embed=1 mm; wall=20 mm; RH=True
+detail: requestedHand=RH; edgeIsLow=False; buildDirection=(-0,-0,-1); requestedCount=2; width=14 deg; endpointPhases=0,144 deg.
+---
+2026-11-18 15:25:21.343 pid=3676 thread=15 component=PackagingThread stage=vent-slot-endpoint-aware-layout
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=100 mm; P=10 mm; starts=1; lead=10 mm; H=5 mm; embed=1 mm; wall=20 mm; RH=True
+detail: centres=72,252 deg; spacing=180 deg; endpointPhases=0,144 deg; equal spacing verified; minimum quarter-clear-sector endpoint margin enforced.
+---
+2026-11-18 15:25:21.344 pid=3676 thread=15 component=PackagingThread stage=resolve-handedness
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=100 mm; P=10 mm; starts=1; lead=10 mm; H=5 mm; embed=1 mm; wall=20 mm; RH=True
+detail: requestedHand=RH; edgeIsLow=False; buildDirectionReversed=True; radialFrameReversed=True; buildDirection=(-0,-0,-1); radial=(-1,-0,-0); profilePlaneNormal=(0,-1,0); ClockwiseRotation=False; helixPhaseSign=1; internal=False
+---
+2026-11-18 15:25:21.346 pid=3676 thread=15 component=PackagingThread stage=start-1-create-plane
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=100 mm; P=10 mm; starts=1; lead=10 mm; H=5 mm; embed=1 mm; wall=20 mm; RH=True
+detail: basePhase=0 deg; coreStartPhase=14 deg; startRunout=0.389 mm; internal=False; ClockwiseRotation=False
+---
+2026-11-18 15:25:21.550 pid=3676 thread=15 component=PackagingThread stage=pco-bell-profile
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=100 mm; P=10 mm; starts=1; lead=10 mm; H=5 mm; embed=1 mm; wall=20 mm; RH=True
+detail: profileHeight=5mm; rootEmbed=1mm; baseWidth=8mm; crownLand=3.913mm; rootFillet=0.5mm; crestFillet=0.4mm; radiusScale=1; rootTangencyAtStock=true; undercutRoot=false
+---
+2026-11-18 15:25:21.552 pid=3676 thread=15 component=PackagingThread stage=start-1-coil-operation
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=100 mm; P=10 mm; starts=1; lead=10 mm; H=5 mm; embed=1 mm; wall=20 mm; RH=True
+detail: basePhase=0 deg; coreStartPhase=14 deg; width=8 mm; H=5 mm; embed=1 mm; lead=10 mm; coreTurns=2.322; internal=False; operation=join-positive-rib; rootFillet=0.5mm; crestFillet=0.4mm; ClockwiseRotation=False
+---
+2026-11-18 15:25:21.629 pid=3676 thread=15 component=PackagingThread stage=start-1-assign-feature-name-success
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=100 mm; P=10 mm; starts=1; lead=10 mm; H=5 mm; embed=1 mm; wall=20 mm; RH=True
+detail: Assigned unique Inventor-safe feature name: HVPkg_EA5076F6AE38_S1of1_P0deg
+---
+2026-11-18 15:25:21.646 pid=3676 thread=15 component=PackagingThread stage=start-1-verified
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=100 mm; P=10 mm; starts=1; lead=10 mm; H=5 mm; embed=1 mm; wall=20 mm; RH=True
+detail: Core Coil updated; health/volume/body count checks passed.
+---
+2026-11-18 15:25:21.650 pid=3676 thread=15 component=PackagingThread stage=start-1-runout-begin
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=100 mm; P=10 mm; starts=1; lead=10 mm; H=5 mm; embed=1 mm; wall=20 mm; RH=True
+detail: length=0.389 mm; sections=3; startPhase=0 deg; handSign=1; internal=False; operation=join-positive-rib; profile=PCO-1881-Detail-B; loadFlank=20deg; rampFlank=10deg; rootFilletR=0.5mm; crestFilletR=0.4mm; terminalCrestFactor=0.02; minTerminalDepth=0.2 mm
+---
+2026-11-18 15:25:21.817 pid=3676 thread=15 component=PackagingThread stage=start-1-runout-section
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=100 mm; P=10 mm; starts=1; lead=10 mm; H=5 mm; embed=1 mm; wall=20 mm; RH=True
+detail: section=1/3; t=0; station=0 mm; crestFactor=0.02; widthFactor=0.2702; rootFactor=0.1; phase=0 deg
+---
+2026-11-18 15:25:21.979 pid=3676 thread=15 component=PackagingThread stage=start-1-runout-section
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=100 mm; P=10 mm; starts=1; lead=10 mm; H=5 mm; embed=1 mm; wall=20 mm; RH=True
+detail: section=2/3; t=0.5; station=0.194 mm; crestFactor=0.51; widthFactor=0.757; rootFactor=0.55; phase=7 deg
+---
+2026-11-18 15:25:22.166 pid=3676 thread=15 component=PackagingThread stage=start-1-runout-section
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=100 mm; P=10 mm; starts=1; lead=10 mm; H=5 mm; embed=1 mm; wall=20 mm; RH=True
+detail: section=3/3; t=1; station=0.389 mm; crestFactor=1; widthFactor=1; rootFactor=1; phase=14 deg
+---
+2026-11-18 15:25:22.329 pid=3676 thread=15 component=PackagingThread stage=start-1-runout-verified
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=100 mm; P=10 mm; starts=1; lead=10 mm; H=5 mm; embed=1 mm; wall=20 mm; RH=True
+detail: Loft verified; operation=join-positive-rib; featureName=HVPkg_3ACB11154351_S1of1_P0deg; sectionCount=3; volumeDelta=0.1448107493 cm^3; bodyCount=1; terminalCrestFactor=0.02; internal=False.
+---
+2026-11-18 15:25:22.331 pid=3676 thread=15 component=PackagingThread stage=end-1-runout-begin
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=100 mm; P=10 mm; starts=1; lead=10 mm; H=5 mm; embed=1 mm; wall=20 mm; RH=True
+detail: length=0.389 mm; sections=3; startPhase=0 deg; handSign=1; internal=False; operation=join-positive-rib; profile=PCO-1881-Detail-B; loadFlank=20deg; rampFlank=10deg; rootFilletR=0.5mm; crestFilletR=0.4mm; terminalCrestFactor=0.02; minTerminalDepth=0.2 mm
+---
+2026-11-18 15:25:22.514 pid=3676 thread=15 component=PackagingThread stage=end-1-runout-section
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=100 mm; P=10 mm; starts=1; lead=10 mm; H=5 mm; embed=1 mm; wall=20 mm; RH=True
+detail: section=1/3; t=0; station=23.611 mm; crestFactor=1; widthFactor=1; rootFactor=1; phase=850 deg
+---
+2026-11-18 15:25:22.701 pid=3676 thread=15 component=PackagingThread stage=end-1-runout-section
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=100 mm; P=10 mm; starts=1; lead=10 mm; H=5 mm; embed=1 mm; wall=20 mm; RH=True
+detail: section=2/3; t=0.5; station=23.806 mm; crestFactor=0.51; widthFactor=0.757; rootFactor=0.55; phase=857 deg
+---
+2026-11-18 15:25:22.868 pid=3676 thread=15 component=PackagingThread stage=end-1-runout-section
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=100 mm; P=10 mm; starts=1; lead=10 mm; H=5 mm; embed=1 mm; wall=20 mm; RH=True
+detail: section=3/3; t=1; station=24 mm; crestFactor=0.02; widthFactor=0.2702; rootFactor=0.1; phase=864 deg
+---
+2026-11-18 15:25:23.108 pid=3676 thread=15 component=PackagingThread stage=end-1-runout-verified
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=100 mm; P=10 mm; starts=1; lead=10 mm; H=5 mm; embed=1 mm; wall=20 mm; RH=True
+detail: Loft verified; operation=join-positive-rib; featureName=HVPkg_CC81A2216FF4_S1of1_P0deg; sectionCount=3; volumeDelta=0.1424352521 cm^3; bodyCount=1; terminalCrestFactor=0.02; internal=False.
+---
+2026-11-18 15:25:23.111 pid=3676 thread=15 component=PackagingThread stage=packaging-thread-chamfer-anchor-resolved
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=100 mm; P=10 mm; starts=1; lead=10 mm; H=5 mm; embed=1 mm; wall=20 mm; RH=True
+detail: type=external-root-core-cylinder-open-front; mode=1; targetRadius=45mm; startStation=-7.5mm; endStation=24.75mm; frontEdgeStation=-7.5mm; threadEndStation=24mm; originalRadius=50mm; clearance=0.15mm.
+---
+2026-11-18 15:25:23.311 pid=3676 thread=15 component=PackagingThread stage=packaging-thread-chamfer-created
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=100 mm; P=10 mm; starts=1; lead=10 mm; H=5 mm; embed=1 mm; wall=20 mm; RH=True
+detail: method=revolved-45-degree-cut; mode=start; requestedDistance=1 mm; compensatedRadius=45 mm; startStation=-7.5 mm; coneEndStation=-1.5 mm; coneEndRadius=50 mm; cutterOuterRadius=50.5 mm; coneSlope=1; crest-intersection-cut=allowed; health=kUpToDateHealth.
+---
+2026-11-18 15:25:23.313 pid=3676 thread=15 component=PackagingThread stage=vent-slot-overrun-resolved
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=100 mm; P=10 mm; starts=1; lead=10 mm; H=5 mm; embed=1 mm; wall=20 mm; RH=True
+detail: spanMode=external-root-core-to-transition; startOverrun=7.5 mm; selected-edge inset=7.5 mm; end-boundary safety inset=0.02 mm; preferred generic tool overrun=10 mm; remaining cylinder after thread=16.5 mm; actual end overrun=0.73 mm; axialCutRange=-7.5..24.73 mm.
+---
+2026-11-18 15:25:23.315 pid=3676 thread=15 component=PackagingThread stage=vent-slots-begin
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=100 mm; P=10 mm; starts=1; lead=10 mm; H=5 mm; embed=1 mm; wall=20 mm; RH=True
+detail: count=2; width=14 deg; spacing=180 deg; sweepRadians=0.2443461; internal=False; positiveRibCut=true; radialRange=4.498..5.002 cm; axialRange=-0.75..2.473 cm; radialOvercut=0.02 mm; startOverrun=7.5 mm; endOverrun=0.73 mm; zeroEndOverrunAllowed=true.
+---
+2026-11-18 15:25:23.318 pid=3676 thread=15 component=PackagingThread stage=vent-slot-01-create-plane
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=100 mm; P=10 mm; starts=1; lead=10 mm; H=5 mm; embed=1 mm; wall=20 mm; RH=True
+detail: slot=1/2; startAngle=79 deg; centreAngle=72 deg; width=14 deg; internal=False.
+---
+2026-11-18 15:25:23.414 pid=3676 thread=15 component=PackagingThread stage=vent-slot-01-cut-operation
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=100 mm; P=10 mm; starts=1; lead=10 mm; H=5 mm; embed=1 mm; wall=20 mm; RH=True
+detail: sweep=AddByAngle(0.2443461 rad); operation=kCutOperation; radialMin=4.498 cm; radialMax=5.002 cm.
+---
+2026-11-18 15:25:23.537 pid=3676 thread=15 component=PackagingThread stage=vent-slot-01-verified
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=100 mm; P=10 mm; starts=1; lead=10 mm; H=5 mm; embed=1 mm; wall=20 mm; RH=True
+detail: Vent slot cut verified; name=HVPkgV_A9C7247614_SLOT01OF02; angle=79 deg; width=14 deg; volumeRemoved=0.9809085285 cm^3; bodies=1; internal=False.
+---
+2026-11-18 15:25:23.541 pid=3676 thread=15 component=PackagingThread stage=vent-slot-02-create-plane
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=100 mm; P=10 mm; starts=1; lead=10 mm; H=5 mm; embed=1 mm; wall=20 mm; RH=True
+detail: slot=2/2; startAngle=259 deg; centreAngle=252 deg; width=14 deg; internal=False.
+---
+2026-11-18 15:25:23.647 pid=3676 thread=15 component=PackagingThread stage=vent-slot-02-cut-operation
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=100 mm; P=10 mm; starts=1; lead=10 mm; H=5 mm; embed=1 mm; wall=20 mm; RH=True
+detail: sweep=AddByAngle(0.2443461 rad); operation=kCutOperation; radialMin=4.498 cm; radialMax=5.002 cm.
+---
+2026-11-18 15:25:23.770 pid=3676 thread=15 component=PackagingThread stage=vent-slot-02-verified
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=100 mm; P=10 mm; starts=1; lead=10 mm; H=5 mm; embed=1 mm; wall=20 mm; RH=True
+detail: Vent slot cut verified; name=HVPkgV_9E8836E9FC_SLOT02OF02; angle=259 deg; width=14 deg; volumeRemoved=0.6869000079 cm^3; bodies=1; internal=False.
+---
+2026-11-18 15:25:23.772 pid=3676 thread=15 component=PackagingThread stage=vent-slot-cuts-complete
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=100 mm; P=10 mm; starts=1; lead=10 mm; H=5 mm; embed=1 mm; wall=20 mm; RH=True
+detail: expectedCount=2; verifiedCutFeatures=2; requestedHand=RH; centres=72,252 deg.
+---
+2026-11-18 15:25:23.781 pid=3676 thread=15 component=PackagingThread stage=browser-folder-mapping-policy
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=100 mm; P=10 mm; starts=1; lead=10 mm; H=5 mm; embed=1 mm; wall=20 mm; RH=True
+detail: family=CapNeck; threadIdOverridePresent=False; exposeHistoryForMapping=False; requireFolderMapping=True; createdObjects=29; mode=new-build-required-folder
+---
+2026-11-18 15:25:24.564 pid=3676 thread=15 component=PackagingThread stage=packaging-thread-metadata-attached
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=100 mm; P=10 mm; starts=1; lead=10 mm; H=5 mm; embed=1 mm; wall=20 mm; RH=True
+detail: threadId=eb2d66f548ec4ae78c7c71afd1cb3ee1; objectCount=29; family=CapNeck; schema=2.
+---
+2026-11-18 15:25:24.566 pid=3676 thread=15 component=PackagingThread stage=packaging-thread-folder-created
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=100 mm; P=10 mm; starts=1; lead=10 mm; H=5 mm; embed=1 mm; wall=20 mm; RH=True
+detail: All packaging-thread construction features were assigned to folder: Резьба крышек/горловин — наружная · D100 мм · P10 мм · 1 заход · Правая (R); registeredObjects=29; browserFolderPerformance=Папка «Резьба крышек/горловин — наружная · D100 мм · P10 мм · 1 заход · Правая (R)»: объектов 29, узлов сгруппировано 22; TopNode 0 мс, поиск имени 1 мс, снимок дерева 27 мс, резервный поиск узлов 5 мс, создание + группировка 10 мс (batch BrowserNodes), резервные folder.Add 0 мс, BrowserNode папки 0 мс, SetEndOfPart 10 мс, Reorder 0 мс, всего 84 мс.
+---
+2026-11-18 15:25:24.568 pid=3676 thread=15 component=PackagingThread stage=commit-transaction
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=100 mm; P=10 mm; starts=1; lead=10 mm; H=5 mm; embed=1 mm; wall=20 mm; RH=True
+detail: Final volume/body checks passed; coreCoils=1; runoutLofts=2; ventSlotCuts=2; clearanceReliefs=1; nativeChamfers=0; revolvedChamferCuts=1; terminalFaceHealCleanup=not-used; ventSlotCount=2; ventSlotWidthDeg=14; startRunout=0.389 mm; endRunout=0.389 mm; clearance=0.15 mm; positiveRibBothSides=False; transaction=Helivanta: резьба крышек/горловин (эксперимент) 6E778231F0.
+---
+2026-11-18 15:25:26.515 pid=3676 thread=15 component=PackagingThread stage=resolve-edge-cylinder
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: Resolving cylindrical face adjacent to selected circular edge.
+---
+2026-11-18 15:25:26.524 pid=3676 thread=15 component=PackagingThread stage=resolve-thread-type
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: face.IsParamReversed=True; autoDetectedType=external; suppliedType=external.
+---
+2026-11-18 15:25:26.782 pid=3676 thread=15 component=PackagingThread stage=existing-thread-overlap-metadata-scan
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: groupsLoaded=0; sameCylinderCandidates=0; matchingIntervalsReadable=0; diagnosticRecordsLogged=0; candidates=
+---
+2026-11-18 15:25:26.784 pid=3676 thread=15 component=PackagingThread stage=existing-thread-overlap-preflight
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: status=Clear; proposedOffsetMm=6.056; requestedLengthMm=24; proposedFaceSpanMm=50; conflictingThreadId=; overlapLengthMm=0; detail=No persisted Helivanta thread interval overlaps the proposed interval.
+---
+2026-11-18 15:25:26.786 pid=3676 thread=15 component=PackagingThread stage=runout-policy-resolved
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: autoDetectedType=external; maxRunoutAngle=14 deg; effectiveRunoutAngle=14 deg; targetRunoutTurnFraction=0.038889; effectiveRunoutTurnFraction=0.038889; lead=5 mm; startRunout=0.194 mm; endRunout=0.194 mm; coreLength=23.611 mm; coreTurns=4.722222; terminalCrestFactor=0.08; minTerminalDepth=0.2 mm.
+---
+2026-11-18 15:25:26.788 pid=3676 thread=15 component=PackagingThread stage=mating-profile-dimensions
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: D-reference=40mm; H=2mm; C-total-diametral=0.15mm; radial-half-clearance=0.075mm; external-crest=40mm; external-root/valley=36mm; internal-root/valley=40.15mm; internal-crest=36.15mm; outer-clearance=0.15mm; inner-clearance=0.15mm; profile=PCO-1881-Detail-B; loadFlank=20deg; rampFlank=10deg; rootFilletR=0.5mm; crestFilletR=0.4mm.
+---
+2026-11-18 15:25:26.793 pid=3676 thread=15 component=PackagingThread stage=build-begin
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: edgeIsLow=False; edgeAxial=5 cm; minAxial=0 cm; maxAxial=5 cm; radius=1.8 cm; profileWidth=0.33 cm; totalLength=2.4 cm; startRunout=0.194 mm; endRunout=0.194 mm; coreLength=23.611 mm; coreRevolutions=4.722222; phaseCount=1; internal=False
+---
+2026-11-18 15:25:26.827 pid=3676 thread=15 component=PackagingThread stage=clearance-relief-begin
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: type=external-open-front-root-core-relief; originalRadius=20mm; compensatedRadius=18mm; blendRadius=2mm; contourRange=-8.055556..26.75mm; frontEdgeStation=-6.055556mm; threadEndStation=24mm; postThreadStraightExtension=0.75mm; cutterOuterRadius=20.5mm; arcAnchors=small-edge-after-post-thread-extension.
+---
+2026-11-18 15:25:26.965 pid=3676 thread=15 component=PackagingThread stage=clearance-relief-profile-ready
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: profile=outside-final-silhouette; exactCircularArcs=2; arcRadius=2mm; startArc=larger-to-smaller-open-front; endArc=smaller-at-24.75mm-after-0.75mm-post-thread-extension-to-stock-radius; cutterOuterRadius=20.5mm; connectedSketchPointLoop=true.
+---
+2026-11-18 15:25:27.025 pid=3676 thread=15 component=PackagingThread stage=clearance-relief-verified
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: Feature=HVPkg_External_ClearanceEnvelope_8BDE2285A7; removedVolume=7.733195549cm^3; bodies=1; health=kUpToDateHealth; cutSide=outside-final-contour.
+---
+2026-11-18 15:25:27.027 pid=3676 thread=15 component=PackagingThread stage=vent-slot-endpoint-aware-input
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: requestedHand=RH; edgeIsLow=False; buildDirection=(-0,-0,-1); requestedCount=2; width=14 deg; endpointPhases=0,288 deg.
+---
+2026-11-18 15:25:27.029 pid=3676 thread=15 component=PackagingThread stage=vent-slot-endpoint-aware-layout
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: centres=54,234 deg; spacing=180 deg; endpointPhases=0,288 deg; equal spacing verified; minimum quarter-clear-sector endpoint margin enforced.
+---
+2026-11-18 15:25:27.031 pid=3676 thread=15 component=PackagingThread stage=resolve-handedness
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: requestedHand=RH; edgeIsLow=False; buildDirectionReversed=True; radialFrameReversed=True; buildDirection=(-0,-0,-1); radial=(-1,-0,-0); profilePlaneNormal=(0,-1,0); ClockwiseRotation=False; helixPhaseSign=1; internal=False
+---
+2026-11-18 15:25:27.032 pid=3676 thread=15 component=PackagingThread stage=start-1-create-plane
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: basePhase=0 deg; coreStartPhase=14 deg; startRunout=0.194 mm; internal=False; ClockwiseRotation=False
+---
+2026-11-18 15:25:27.209 pid=3676 thread=15 component=PackagingThread stage=pco-bell-profile
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: profileHeight=2mm; rootEmbed=0.4mm; baseWidth=3.3mm; crownLand=0.834mm; rootFillet=0.5mm; crestFillet=0.4mm; radiusScale=1; rootTangencyAtStock=true; undercutRoot=false
+---
+2026-11-18 15:25:27.210 pid=3676 thread=15 component=PackagingThread stage=start-1-coil-operation
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: basePhase=0 deg; coreStartPhase=14 deg; width=3.3 mm; H=2 mm; embed=0.4 mm; lead=5 mm; coreTurns=4.722; internal=False; operation=join-positive-rib; rootFillet=0.5mm; crestFillet=0.4mm; ClockwiseRotation=False
+---
+2026-11-18 15:25:27.351 pid=3676 thread=15 component=PackagingThread stage=start-1-assign-feature-name-success
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: Assigned unique Inventor-safe feature name: HVPkg_C0B5EB96672F_S1of1_P0deg
+---
+2026-11-18 15:25:27.372 pid=3676 thread=15 component=PackagingThread stage=start-1-verified
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: Core Coil updated; health/volume/body count checks passed.
+---
+2026-11-18 15:25:27.375 pid=3676 thread=15 component=PackagingThread stage=start-1-runout-begin
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: length=0.194 mm; sections=3; startPhase=0 deg; handSign=1; internal=False; operation=join-positive-rib; profile=PCO-1881-Detail-B; loadFlank=20deg; rampFlank=10deg; rootFilletR=0.5mm; crestFilletR=0.4mm; terminalCrestFactor=0.08; minTerminalDepth=0.2 mm
+---
+2026-11-18 15:25:27.550 pid=3676 thread=15 component=PackagingThread stage=start-1-runout-section
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: section=1/3; t=0; station=0 mm; crestFactor=0.08; widthFactor=0.3904; rootFactor=0.1; phase=0 deg
+---
+2026-11-18 15:25:27.718 pid=3676 thread=15 component=PackagingThread stage=start-1-runout-section
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: section=2/3; t=0.5; station=0.097 mm; crestFactor=0.54; widthFactor=0.7746; rootFactor=0.55; phase=7 deg
+---
+2026-11-18 15:25:27.883 pid=3676 thread=15 component=PackagingThread stage=start-1-runout-section
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: section=3/3; t=1; station=0.194 mm; crestFactor=1; widthFactor=1; rootFactor=1; phase=14 deg
+---
+2026-11-18 15:25:28.029 pid=3676 thread=15 component=PackagingThread stage=start-1-runout-verified
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: Loft verified; operation=join-positive-rib; featureName=HVPkg_99F188351D20_S1of1_P0deg; sectionCount=3; volumeDelta=0.0080937011 cm^3; bodyCount=1; terminalCrestFactor=0.08; internal=False.
+---
+2026-11-18 15:25:28.031 pid=3676 thread=15 component=PackagingThread stage=end-1-runout-begin
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: length=0.194 mm; sections=3; startPhase=0 deg; handSign=1; internal=False; operation=join-positive-rib; profile=PCO-1881-Detail-B; loadFlank=20deg; rampFlank=10deg; rootFilletR=0.5mm; crestFilletR=0.4mm; terminalCrestFactor=0.08; minTerminalDepth=0.2 mm
+---
+2026-11-18 15:25:28.225 pid=3676 thread=15 component=PackagingThread stage=end-1-runout-section
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: section=1/3; t=0; station=23.806 mm; crestFactor=1; widthFactor=1; rootFactor=1; phase=1714 deg
+---
+2026-11-18 15:25:28.409 pid=3676 thread=15 component=PackagingThread stage=end-1-runout-section
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: section=2/3; t=0.5; station=23.903 mm; crestFactor=0.54; widthFactor=0.7746; rootFactor=0.55; phase=1721 deg
+---
+2026-11-18 15:25:28.599 pid=3676 thread=15 component=PackagingThread stage=end-1-runout-section
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: section=3/3; t=1; station=24 mm; crestFactor=0.08; widthFactor=0.3904; rootFactor=0.1; phase=1728 deg
+---
+2026-11-18 15:25:29.919 pid=3676 thread=15 component=PackagingThread stage=end-1-runout-verified
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: Loft verified; operation=join-positive-rib; featureName=HVPkg_8A27F75DED37_S1of1_P0deg; sectionCount=3; volumeDelta=0.0081608718 cm^3; bodyCount=1; terminalCrestFactor=0.08; internal=False.
+---
+2026-11-18 15:25:29.920 pid=3676 thread=15 component=PackagingThread stage=vent-slot-overrun-resolved
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: spanMode=external-root-core-to-transition; startOverrun=6.056 mm; selected-edge inset=6.056 mm; end-boundary safety inset=0.02 mm; preferred generic tool overrun=5 mm; remaining cylinder after thread=19.944 mm; actual end overrun=0.73 mm; axialCutRange=-6.055556..24.73 mm.
+---
+2026-11-18 15:25:29.922 pid=3676 thread=15 component=PackagingThread stage=vent-slots-begin
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: count=2; width=14 deg; spacing=180 deg; sweepRadians=0.2443461; internal=False; positiveRibCut=true; radialRange=1.798..2.002 cm; axialRange=-0.605556..2.473 cm; radialOvercut=0.02 mm; startOverrun=6.056 mm; endOverrun=0.73 mm; zeroEndOverrunAllowed=true.
+---
+2026-11-18 15:25:29.928 pid=3676 thread=15 component=PackagingThread stage=vent-slot-01-create-plane
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: slot=1/2; startAngle=61 deg; centreAngle=54 deg; width=14 deg; internal=False.
+---
+2026-11-18 15:25:30.025 pid=3676 thread=15 component=PackagingThread stage=vent-slot-01-cut-operation
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: sweep=AddByAngle(0.2443461 rad); operation=kCutOperation; radialMin=1.798 cm; radialMax=2.002 cm.
+---
+2026-11-18 15:25:30.173 pid=3676 thread=15 component=PackagingThread stage=vent-slot-01-verified
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: Vent slot cut verified; name=HVPkgV_F660E26FAE_SLOT01OF02; angle=61 deg; width=14 deg; volumeRemoved=0.0950305671 cm^3; bodies=1; internal=False.
+---
+2026-11-18 15:25:30.176 pid=3676 thread=15 component=PackagingThread stage=vent-slot-02-create-plane
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: slot=2/2; startAngle=241 deg; centreAngle=234 deg; width=14 deg; internal=False.
+---
+2026-11-18 15:25:30.282 pid=3676 thread=15 component=PackagingThread stage=vent-slot-02-cut-operation
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: sweep=AddByAngle(0.2443461 rad); operation=kCutOperation; radialMin=1.798 cm; radialMax=2.002 cm.
+---
+2026-11-18 15:25:30.480 pid=3676 thread=15 component=PackagingThread stage=vent-slot-02-verified
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: Vent slot cut verified; name=HVPkgV_F258FF1CD8_SLOT02OF02; angle=241 deg; width=14 deg; volumeRemoved=0.0949459089 cm^3; bodies=1; internal=False.
+---
+2026-11-18 15:25:30.482 pid=3676 thread=15 component=PackagingThread stage=vent-slot-cuts-complete
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: expectedCount=2; verifiedCutFeatures=2; requestedHand=RH; centres=54,234 deg.
+---
+2026-11-18 15:25:30.489 pid=3676 thread=15 component=PackagingThread stage=browser-folder-mapping-policy
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: family=CapNeck; threadIdOverridePresent=False; exposeHistoryForMapping=False; requireFolderMapping=True; createdObjects=26; mode=new-build-required-folder
+---
+2026-11-18 15:25:31.215 pid=3676 thread=15 component=PackagingThread stage=packaging-thread-metadata-attached
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: threadId=fa4953ac1fe64c578afc266ce3295562; objectCount=26; family=CapNeck; schema=2.
+---
+2026-11-18 15:25:31.217 pid=3676 thread=15 component=PackagingThread stage=packaging-thread-folder-created
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: All packaging-thread construction features were assigned to folder: Резьба крышек/горловин — наружная · D40 мм · P5 мм · 1 заход · Правая (R); registeredObjects=26; browserFolderPerformance=Папка «Резьба крышек/горловин — наружная · D40 мм · P5 мм · 1 заход · Правая (R)»: объектов 26, узлов сгруппировано 20; TopNode 0 мс, поиск имени 1 мс, снимок дерева 32 мс, резервный поиск узлов 0 мс, создание + группировка 11 мс (batch BrowserNodes), резервные folder.Add 0 мс, BrowserNode папки 1 мс, SetEndOfPart 11 мс, Reorder 0 мс, всего 84 мс.
+---
+2026-11-18 15:25:31.218 pid=3676 thread=15 component=PackagingThread stage=commit-transaction
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: Final volume/body checks passed; coreCoils=1; runoutLofts=2; ventSlotCuts=2; clearanceReliefs=1; nativeChamfers=0; revolvedChamferCuts=0; terminalFaceHealCleanup=not-used; ventSlotCount=2; ventSlotWidthDeg=14; startRunout=0.194 mm; endRunout=0.194 mm; clearance=0.15 mm; positiveRibBothSides=False; transaction=Helivanta: резьба крышек/горловин (эксперимент) 2CEBA19877.
+---
+2026-11-18 15:25:32.504 pid=3676 thread=15 component=PackagingThread stage=resolve-edge-cylinder
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=external; smoothStart=True; smoothEnd=False; ventSlots=False; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: Resolving cylindrical face adjacent to selected circular edge.
+---
+2026-11-18 15:25:32.511 pid=3676 thread=15 component=PackagingThread stage=resolve-thread-type
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=external; smoothStart=True; smoothEnd=False; ventSlots=False; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: face.IsParamReversed=True; autoDetectedType=external; suppliedType=external.
+---
+2026-11-18 15:25:32.723 pid=3676 thread=15 component=PackagingThread stage=existing-thread-overlap-metadata-scan
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=external; smoothStart=True; smoothEnd=False; ventSlots=False; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: groupsLoaded=0; sameCylinderCandidates=0; matchingIntervalsReadable=0; diagnosticRecordsLogged=0; candidates=
+---
+2026-11-18 15:25:32.725 pid=3676 thread=15 component=PackagingThread stage=existing-thread-overlap-preflight
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=external; smoothStart=True; smoothEnd=False; ventSlots=False; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: status=Clear; proposedOffsetMm=9.306; requestedLengthMm=18; proposedFaceSpanMm=50; conflictingThreadId=; overlapLengthMm=0; detail=No persisted Helivanta thread interval overlaps the proposed interval.
+---
+2026-11-18 15:25:32.727 pid=3676 thread=15 component=PackagingThread stage=runout-policy-resolved
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=external; smoothStart=True; smoothEnd=False; ventSlots=False; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: autoDetectedType=external; maxRunoutAngle=14 deg; effectiveRunoutAngle=14 deg; targetRunoutTurnFraction=0.038889; effectiveRunoutTurnFraction=0.038889; lead=5 mm; startRunout=0.194 mm; endRunout=0 mm; coreLength=17.806 mm; coreTurns=3.561111; terminalCrestFactor=0.08; minTerminalDepth=0.2 mm.
+---
+2026-11-18 15:25:32.728 pid=3676 thread=15 component=PackagingThread stage=mating-profile-dimensions
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=external; smoothStart=True; smoothEnd=False; ventSlots=False; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: D-reference=40mm; H=2mm; C-total-diametral=0.15mm; radial-half-clearance=0.075mm; external-crest=40mm; external-root/valley=36mm; internal-root/valley=40.15mm; internal-crest=36.15mm; outer-clearance=0.15mm; inner-clearance=0.15mm; profile=PCO-1881-Detail-B; loadFlank=20deg; rampFlank=10deg; rootFilletR=0.5mm; crestFilletR=0.4mm.
+---
+2026-11-18 15:25:32.757 pid=3676 thread=15 component=PackagingThread stage=build-begin
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=external; smoothStart=True; smoothEnd=False; ventSlots=False; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: edgeIsLow=False; edgeAxial=5 cm; minAxial=0 cm; maxAxial=5 cm; radius=1.8 cm; profileWidth=0.38 cm; totalLength=1.8 cm; startRunout=0.194 mm; endRunout=0 mm; coreLength=17.806 mm; coreRevolutions=3.561111; phaseCount=1; internal=False
+---
+2026-11-18 15:25:32.775 pid=3676 thread=15 component=PackagingThread stage=clearance-relief-begin
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=external; smoothStart=True; smoothEnd=False; ventSlots=False; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: type=external-open-front-root-core-relief; originalRadius=20mm; compensatedRadius=18mm; blendRadius=2mm; contourRange=-11.305556..20.75mm; frontEdgeStation=-9.305556mm; threadEndStation=18mm; postThreadStraightExtension=0.75mm; cutterOuterRadius=20.5mm; arcAnchors=small-edge-after-post-thread-extension.
+---
+2026-11-18 15:25:32.917 pid=3676 thread=15 component=PackagingThread stage=clearance-relief-profile-ready
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=external; smoothStart=True; smoothEnd=False; ventSlots=False; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: profile=outside-final-silhouette; exactCircularArcs=2; arcRadius=2mm; startArc=larger-to-smaller-open-front; endArc=smaller-at-18.75mm-after-0.75mm-post-thread-extension-to-stock-radius; cutterOuterRadius=20.5mm; connectedSketchPointLoop=true.
+---
+2026-11-18 15:25:32.999 pid=3676 thread=15 component=PackagingThread stage=clearance-relief-verified
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=external; smoothStart=True; smoothEnd=False; ventSlots=False; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: Feature=HVPkg_External_ClearanceEnvelope_19168A35BD; removedVolume=7.0766026844cm^3; bodies=1; health=kUpToDateHealth; cutSide=outside-final-contour.
+---
+2026-11-18 15:25:33.001 pid=3676 thread=15 component=PackagingThread stage=resolve-handedness
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=external; smoothStart=True; smoothEnd=False; ventSlots=False; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: requestedHand=RH; edgeIsLow=False; buildDirectionReversed=True; radialFrameReversed=True; buildDirection=(-0,-0,-1); radial=(-1,-0,-0); profilePlaneNormal=(0,-1,0); ClockwiseRotation=False; helixPhaseSign=1; internal=False
+---
+2026-11-18 15:25:33.002 pid=3676 thread=15 component=PackagingThread stage=start-1-create-plane
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=external; smoothStart=True; smoothEnd=False; ventSlots=False; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: basePhase=0 deg; coreStartPhase=14 deg; startRunout=0.194 mm; internal=False; ClockwiseRotation=False
+---
+2026-11-18 15:25:33.182 pid=3676 thread=15 component=PackagingThread stage=pco-bell-profile
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=external; smoothStart=True; smoothEnd=False; ventSlots=False; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: profileHeight=2mm; rootEmbed=0.4mm; baseWidth=3.8mm; crownLand=1.334mm; rootFillet=0.5mm; crestFillet=0.4mm; radiusScale=1; rootTangencyAtStock=true; undercutRoot=false
+---
+2026-11-18 15:25:33.183 pid=3676 thread=15 component=PackagingThread stage=start-1-coil-operation
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=external; smoothStart=True; smoothEnd=False; ventSlots=False; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: basePhase=0 deg; coreStartPhase=14 deg; width=3.8 mm; H=2 mm; embed=0.4 mm; lead=5 mm; coreTurns=3.561; internal=False; operation=join-positive-rib; rootFillet=0.5mm; crestFillet=0.4mm; ClockwiseRotation=False
+---
+2026-11-18 15:25:33.278 pid=3676 thread=15 component=PackagingThread stage=start-1-assign-feature-name-success
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=external; smoothStart=True; smoothEnd=False; ventSlots=False; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: Assigned unique Inventor-safe feature name: HVPkg_818B72592860_S1of1_P0deg
+---
+2026-11-18 15:25:33.295 pid=3676 thread=15 component=PackagingThread stage=start-1-verified
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=external; smoothStart=True; smoothEnd=False; ventSlots=False; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: Core Coil updated; health/volume/body count checks passed.
+---
+2026-11-18 15:25:33.298 pid=3676 thread=15 component=PackagingThread stage=start-1-runout-begin
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=external; smoothStart=True; smoothEnd=False; ventSlots=False; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: length=0.194 mm; sections=3; startPhase=0 deg; handSign=1; internal=False; operation=join-positive-rib; profile=PCO-1881-Detail-B; loadFlank=20deg; rampFlank=10deg; rootFilletR=0.5mm; crestFilletR=0.4mm; terminalCrestFactor=0.08; minTerminalDepth=0.2 mm
+---
+2026-11-18 15:25:33.466 pid=3676 thread=15 component=PackagingThread stage=start-1-runout-section
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=external; smoothStart=True; smoothEnd=False; ventSlots=False; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: section=1/3; t=0; station=0 mm; crestFactor=0.08; widthFactor=0.3904; rootFactor=0.1; phase=0 deg
+---
+2026-11-18 15:25:33.642 pid=3676 thread=15 component=PackagingThread stage=start-1-runout-section
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=external; smoothStart=True; smoothEnd=False; ventSlots=False; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: section=2/3; t=0.5; station=0.097 mm; crestFactor=0.54; widthFactor=0.7746; rootFactor=0.55; phase=7 deg
+---
+2026-11-18 15:25:33.806 pid=3676 thread=15 component=PackagingThread stage=start-1-runout-section
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=external; smoothStart=True; smoothEnd=False; ventSlots=False; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: section=3/3; t=1; station=0.194 mm; crestFactor=1; widthFactor=1; rootFactor=1; phase=14 deg
+---
+2026-11-18 15:25:33.951 pid=3676 thread=15 component=PackagingThread stage=start-1-runout-verified
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=external; smoothStart=True; smoothEnd=False; ventSlots=False; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: Loft verified; operation=join-positive-rib; featureName=HVPkg_C079E15589D3_S1of1_P0deg; sectionCount=3; volumeDelta=0.0102143751 cm^3; bodyCount=1; terminalCrestFactor=0.08; internal=False.
+---
+2026-11-18 15:25:33.960 pid=3676 thread=15 component=PackagingThread stage=browser-folder-mapping-policy
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=external; smoothStart=True; smoothEnd=False; ventSlots=False; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: family=CapNeck; threadIdOverridePresent=False; exposeHistoryForMapping=False; requireFolderMapping=True; createdObjects=13; mode=new-build-required-folder
+---
+2026-11-18 15:25:34.323 pid=3676 thread=15 component=PackagingThread stage=packaging-thread-metadata-attached
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=external; smoothStart=True; smoothEnd=False; ventSlots=False; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: threadId=b87308ed8853498da6bcd76d730c371c; objectCount=13; family=CapNeck; schema=2.
+---
+2026-11-18 15:25:34.325 pid=3676 thread=15 component=PackagingThread stage=packaging-thread-folder-created
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=external; smoothStart=True; smoothEnd=False; ventSlots=False; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: All packaging-thread construction features were assigned to folder: Резьба крышек/горловин — наружная · D40 мм · P5 мм · 1 заход · Правая (R); registeredObjects=13; browserFolderPerformance=Папка «Резьба крышек/горловин — наружная · D40 мм · P5 мм · 1 заход · Правая (R)»: объектов 13, узлов сгруппировано 10; TopNode 0 мс, поиск имени 2 мс, снимок дерева 17 мс, резервный поиск узлов 0 мс, создание + группировка 9 мс (batch BrowserNodes), резервные folder.Add 0 мс, BrowserNode папки 0 мс, SetEndOfPart 8 мс, Reorder 0 мс, всего 63 мс.
+---
+2026-11-18 15:25:34.327 pid=3676 thread=15 component=PackagingThread stage=commit-transaction
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=external; smoothStart=True; smoothEnd=False; ventSlots=False; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=0; chamferMm=0; D=40 mm; P=5 mm; starts=1; lead=5 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: Final volume/body checks passed; coreCoils=1; runoutLofts=1; ventSlotCuts=0; clearanceReliefs=1; nativeChamfers=0; revolvedChamferCuts=0; terminalFaceHealCleanup=not-used; ventSlotCount=0; ventSlotWidthDeg=0; startRunout=0.194 mm; endRunout=0 mm; clearance=0.15 mm; positiveRibBothSides=False; transaction=Helivanta: резьба крышек/горловин (эксперимент) F695DBD1A6.
+---
+2026-11-18 15:25:35.468 pid=3676 thread=15 component=PackagingThread stage=resolve-edge-cylinder
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=True; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: Resolving cylindrical face adjacent to selected circular edge.
+---
+2026-11-18 15:25:35.475 pid=3676 thread=15 component=PackagingThread stage=resolve-thread-type
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=True; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: face.IsParamReversed=False; autoDetectedType=internal-positive-rib; suppliedType=internal-positive-rib.
+---
+2026-11-18 15:25:35.704 pid=3676 thread=15 component=PackagingThread stage=existing-thread-overlap-metadata-scan
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=True; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: groupsLoaded=0; sameCylinderCandidates=0; matchingIntervalsReadable=0; diagnosticRecordsLogged=0; candidates=
+---
+2026-11-18 15:25:35.706 pid=3676 thread=15 component=PackagingThread stage=existing-thread-overlap-preflight
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=True; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: status=Clear; proposedOffsetMm=4.483; requestedLengthMm=18; proposedFaceSpanMm=50; conflictingThreadId=; overlapLengthMm=0; detail=No persisted Helivanta thread interval overlaps the proposed interval.
+---
+2026-11-18 15:25:35.707 pid=3676 thread=15 component=PackagingThread stage=runout-policy-resolved
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=True; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: autoDetectedType=internal-positive-rib; maxRunoutAngle=14 deg; effectiveRunoutAngle=14 deg; targetRunoutTurnFraction=0.038889; effectiveRunoutTurnFraction=0.038889; lead=3 mm; startRunout=0.117 mm; endRunout=0.117 mm; coreLength=17.767 mm; coreTurns=5.922222; terminalCrestFactor=0.3083; minTerminalDepth=0.2 mm.
+---
+2026-11-18 15:25:35.709 pid=3676 thread=15 component=PackagingThread stage=mating-profile-dimensions
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=True; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: D-reference=12mm; H=0.6mm; C-total-diametral=0.15mm; radial-half-clearance=0.075mm; external-crest=12mm; external-root/valley=10.8mm; internal-root/valley=12.15mm; internal-crest=10.95mm; outer-clearance=0.15mm; inner-clearance=0.15mm; profile=PCO-1881-Detail-B; loadFlank=20deg; rampFlank=10deg; rootFilletR=0.5mm; crestFilletR=0.4mm.
+---
+2026-11-18 15:25:35.711 pid=3676 thread=15 component=PackagingThread stage=build-begin
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=True; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: edgeIsLow=False; edgeAxial=5 cm; minAxial=0 cm; maxAxial=5 cm; radius=0.6075 cm; profileWidth=0.18 cm; totalLength=1.8 cm; startRunout=0.117 mm; endRunout=0.117 mm; coreLength=17.767 mm; coreRevolutions=5.922222; phaseCount=1; internal=True
+---
+2026-11-18 15:25:35.761 pid=3676 thread=15 component=PackagingThread stage=clearance-relief-begin
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=True; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: type=internal-bore-expand; originalRadius=6mm; compensatedRadius=6.075mm; radialRange=6..6.075mm; axialRange=-4.733333..21mm; frontEdgeStation=-4.483333mm; threadEndStation=18mm; transitionAnchor=internal-existing-overrun-boundaries.
+---
+2026-11-18 15:25:35.989 pid=3676 thread=15 component=PackagingThread stage=clearance-relief-profile-ready
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=True; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: radialMin=6mm; radialMax=6.075mm; start=-4.733333mm; end=21mm; transitionRadius=0.075mm; contourSegments=18; connectedSketchPointLoop=true; profile=8-segment-quarter-circle-polyline.
+---
+2026-11-18 15:25:36.061 pid=3676 thread=15 component=PackagingThread stage=clearance-relief-verified
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=True; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: Feature=HVPkg_ClearanceRelief_3865D305D8; removedVolume=0.0724557289cm^3; bodies=1; health=kUpToDateHealth.
+---
+2026-11-18 15:25:36.064 pid=3676 thread=15 component=PackagingThread stage=resolve-handedness
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=True; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: requestedHand=RH; edgeIsLow=False; buildDirectionReversed=True; radialFrameReversed=True; buildDirection=(-0,-0,-1); radial=(-1,-0,-0); profilePlaneNormal=(0,-1,0); ClockwiseRotation=False; helixPhaseSign=1; internal=True
+---
+2026-11-18 15:25:36.065 pid=3676 thread=15 component=PackagingThread stage=start-1-create-plane
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=True; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: basePhase=0 deg; coreStartPhase=14 deg; startRunout=0.117 mm; internal=True; ClockwiseRotation=False
+---
+2026-11-18 15:25:36.237 pid=3676 thread=15 component=PackagingThread stage=pco-bell-profile
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=True; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: profileHeight=0.6mm; rootEmbed=0.12mm; baseWidth=1.8mm; crownLand=0.451mm; rootFillet=0.37mm; crestFillet=0.296mm; radiusScale=0.7395; rootTangencyAtStock=true; undercutRoot=false
+---
+2026-11-18 15:25:36.238 pid=3676 thread=15 component=PackagingThread stage=start-1-coil-operation
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=True; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: basePhase=0 deg; coreStartPhase=14 deg; width=1.8 mm; H=0.6 mm; embed=0.12 mm; lead=3 mm; coreTurns=5.922; internal=True; operation=join-positive-rib; rootFillet=0.5mm; crestFillet=0.4mm; ClockwiseRotation=False
+---
+2026-11-18 15:25:36.367 pid=3676 thread=15 component=PackagingThread stage=start-1-assign-feature-name-success
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=True; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: Assigned unique Inventor-safe feature name: HVPkg_A4A1BFC543F4_S1of1_P0deg
+---
+2026-11-18 15:25:36.390 pid=3676 thread=15 component=PackagingThread stage=start-1-verified
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=True; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: Core Coil updated; health/volume/body count checks passed.
+---
+2026-11-18 15:25:36.392 pid=3676 thread=15 component=PackagingThread stage=start-1-runout-begin
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=True; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: length=0.117 mm; sections=3; startPhase=0 deg; handSign=1; internal=True; operation=join-positive-rib; profile=PCO-1881-Detail-B; loadFlank=20deg; rampFlank=10deg; rootFilletR=0.5mm; crestFilletR=0.4mm; terminalCrestFactor=0.3083; minTerminalDepth=0.2 mm
+---
+2026-11-18 15:25:36.554 pid=3676 thread=15 component=PackagingThread stage=start-1-runout-section
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=True; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: section=1/3; t=0; station=0 mm; crestFactor=0.3083; widthFactor=0.622; rootFactor=0.125; phase=0 deg
+---
+2026-11-18 15:25:36.763 pid=3676 thread=15 component=PackagingThread stage=start-1-runout-section
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=True; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: section=2/3; t=0.5; station=0.058 mm; crestFactor=0.6542; widthFactor=0.8375; rootFactor=0.5625; phase=7 deg
+---
+2026-11-18 15:25:36.932 pid=3676 thread=15 component=PackagingThread stage=start-1-runout-section
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=True; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: section=3/3; t=1; station=0.117 mm; crestFactor=1; widthFactor=1; rootFactor=1; phase=14 deg
+---
+2026-11-18 15:25:37.077 pid=3676 thread=15 component=PackagingThread stage=start-1-runout-verified
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=True; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: Loft verified; operation=join-positive-rib; featureName=HVPkg_E1909F1AAF5C_S1of1_P0deg; sectionCount=3; volumeDelta=0.0005925755 cm^3; bodyCount=1; terminalCrestFactor=0.308; internal=True.
+---
+2026-11-18 15:25:37.079 pid=3676 thread=15 component=PackagingThread stage=end-1-runout-begin
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=True; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: length=0.117 mm; sections=3; startPhase=0 deg; handSign=1; internal=True; operation=join-positive-rib; profile=PCO-1881-Detail-B; loadFlank=20deg; rampFlank=10deg; rootFilletR=0.5mm; crestFilletR=0.4mm; terminalCrestFactor=0.3083; minTerminalDepth=0.2 mm
+---
+2026-11-18 15:25:37.243 pid=3676 thread=15 component=PackagingThread stage=end-1-runout-section
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=True; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: section=1/3; t=0; station=17.883 mm; crestFactor=1; widthFactor=1; rootFactor=1; phase=2146 deg
+---
+2026-11-18 15:25:37.416 pid=3676 thread=15 component=PackagingThread stage=end-1-runout-section
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=True; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: section=2/3; t=0.5; station=17.942 mm; crestFactor=0.6542; widthFactor=0.8375; rootFactor=0.5625; phase=2153 deg
+---
+2026-11-18 15:25:37.590 pid=3676 thread=15 component=PackagingThread stage=end-1-runout-section
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=True; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: section=3/3; t=1; station=18 mm; crestFactor=0.3083; widthFactor=0.622; rootFactor=0.125; phase=2160 deg
+---
+2026-11-18 15:25:37.736 pid=3676 thread=15 component=PackagingThread stage=end-1-runout-verified
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=True; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: Loft verified; operation=join-positive-rib; featureName=HVPkg_8FB2451119E7_S1of1_P0deg; sectionCount=3; volumeDelta=0.0005920358 cm^3; bodyCount=1; terminalCrestFactor=0.308; internal=True.
+---
+2026-11-18 15:25:37.744 pid=3676 thread=15 component=PackagingThread stage=browser-folder-mapping-policy
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=True; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: family=CapNeck; threadIdOverridePresent=False; exposeHistoryForMapping=False; requireFolderMapping=True; createdObjects=20; mode=new-build-required-folder
+---
+2026-11-18 15:25:38.293 pid=3676 thread=15 component=PackagingThread stage=packaging-thread-metadata-attached
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=True; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: threadId=f7ec172c60534c4eba2d37d1bb6ca3b4; objectCount=20; family=CapNeck; schema=2.
+---
+2026-11-18 15:25:38.295 pid=3676 thread=15 component=PackagingThread stage=packaging-thread-folder-created
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=True; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: All packaging-thread construction features were assigned to folder: Резьба крышек/горловин — внутренняя · D12 мм · P3 мм · 1 заход · Правая (R); registeredObjects=20; browserFolderPerformance=Папка «Резьба крышек/горловин — внутренняя · D12 мм · P3 мм · 1 заход · Правая (R)»: объектов 20, узлов сгруппировано 16; TopNode 0 мс, поиск имени 1 мс, снимок дерева 20 мс, резервный поиск узлов 0 мс, создание + группировка 9 мс (batch BrowserNodes), резервные folder.Add 0 мс, BrowserNode папки 7 мс, SetEndOfPart 10 мс, Reorder 0 мс, всего 71 мс.
+---
+2026-11-18 15:25:38.297 pid=3676 thread=15 component=PackagingThread stage=commit-transaction
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=True; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: Final volume/body checks passed; coreCoils=1; runoutLofts=2; ventSlotCuts=0; clearanceReliefs=1; nativeChamfers=0; revolvedChamferCuts=0; terminalFaceHealCleanup=not-used; ventSlotCount=0; ventSlotWidthDeg=0; startRunout=0.117 mm; endRunout=0.117 mm; clearance=0.15 mm; positiveRibBothSides=True; transaction=Helivanta: резьба крышек/горловин (эксперимент) 67F07A1B2D.
+---
+2026-11-18 15:25:41.462 pid=3676 thread=15 component=PackagingThread stage=resolve-edge-cylinder
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: Resolving cylindrical face adjacent to selected circular edge.
+---
+2026-11-18 15:25:41.471 pid=3676 thread=15 component=PackagingThread stage=resolve-thread-type
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: face.IsParamReversed=False; autoDetectedType=internal-positive-rib; suppliedType=internal-positive-rib.
+---
+2026-11-18 15:25:41.640 pid=3676 thread=15 component=PackagingThread stage=existing-thread-overlap-metadata-scan
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: groupsLoaded=0; sameCylinderCandidates=0; matchingIntervalsReadable=0; diagnosticRecordsLogged=0; candidates=
+---
+2026-11-18 15:25:41.642 pid=3676 thread=15 component=PackagingThread stage=existing-thread-overlap-preflight
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: status=Clear; proposedOffsetMm=6.8; requestedLengthMm=18; proposedFaceSpanMm=50; conflictingThreadId=; overlapLengthMm=0; detail=No persisted Helivanta thread interval overlaps the proposed interval.
+---
+2026-11-18 15:25:41.644 pid=3676 thread=15 component=PackagingThread stage=runout-policy-resolved
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: autoDetectedType=internal-positive-rib; maxRunoutAngle=14 deg; effectiveRunoutAngle=14 deg; targetRunoutTurnFraction=0.038889; effectiveRunoutTurnFraction=0.038889; lead=3 mm; startRunout=0 mm; endRunout=0.117 mm; coreLength=17.883 mm; coreTurns=5.961111; terminalCrestFactor=0.3083; minTerminalDepth=0.2 mm.
+---
+2026-11-18 15:25:41.645 pid=3676 thread=15 component=PackagingThread stage=mating-profile-dimensions
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: D-reference=12mm; H=0.6mm; C-total-diametral=0.15mm; radial-half-clearance=0.075mm; external-crest=12mm; external-root/valley=10.8mm; internal-root/valley=12.15mm; internal-crest=10.95mm; outer-clearance=0.15mm; inner-clearance=0.15mm; profile=PCO-1881-Detail-B; loadFlank=20deg; rampFlank=10deg; rootFilletR=0.5mm; crestFilletR=0.4mm.
+---
+2026-11-18 15:25:41.647 pid=3676 thread=15 component=PackagingThread stage=build-begin
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: edgeIsLow=False; edgeAxial=5 cm; minAxial=0 cm; maxAxial=5 cm; radius=0.6075 cm; profileWidth=0.22 cm; totalLength=1.8 cm; startRunout=0 mm; endRunout=0.117 mm; coreLength=17.883 mm; coreRevolutions=5.961111; phaseCount=1; internal=True
+---
+2026-11-18 15:25:41.669 pid=3676 thread=15 component=PackagingThread stage=clearance-relief-begin
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: type=internal-bore-expand; originalRadius=6mm; compensatedRadius=6.075mm; radialRange=6..6.075mm; axialRange=-7.05..21mm; frontEdgeStation=-6.8mm; threadEndStation=18mm; transitionAnchor=internal-existing-overrun-boundaries.
+---
+2026-11-18 15:25:41.894 pid=3676 thread=15 component=PackagingThread stage=clearance-relief-profile-ready
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: radialMin=6mm; radialMax=6.075mm; start=-7.05mm; end=21mm; transitionRadius=0.075mm; contourSegments=18; connectedSketchPointLoop=true; profile=8-segment-quarter-circle-polyline.
+---
+2026-11-18 15:25:41.955 pid=3676 thread=15 component=PackagingThread stage=clearance-relief-verified
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: Feature=HVPkg_ClearanceRelief_0808021CA6; removedVolume=0.0790468884cm^3; bodies=1; health=kUpToDateHealth.
+---
+2026-11-18 15:25:41.957 pid=3676 thread=15 component=PackagingThread stage=resolve-handedness
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: requestedHand=RH; edgeIsLow=False; buildDirectionReversed=True; radialFrameReversed=True; buildDirection=(-0,-0,-1); radial=(-1,-0,-0); profilePlaneNormal=(0,-1,0); ClockwiseRotation=False; helixPhaseSign=1; internal=True
+---
+2026-11-18 15:25:41.958 pid=3676 thread=15 component=PackagingThread stage=start-1-create-plane
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: basePhase=0 deg; coreStartPhase=0 deg; startRunout=0 mm; internal=True; ClockwiseRotation=False
+---
+2026-11-18 15:25:42.208 pid=3676 thread=15 component=PackagingThread stage=pco-bell-profile
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: profileHeight=0.6mm; rootEmbed=0.12mm; baseWidth=2.2mm; crownLand=0.851mm; rootFillet=0.37mm; crestFillet=0.296mm; radiusScale=0.7395; rootTangencyAtStock=true; undercutRoot=false
+---
+2026-11-18 15:25:42.209 pid=3676 thread=15 component=PackagingThread stage=start-1-coil-operation
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: basePhase=0 deg; coreStartPhase=0 deg; width=2.2 mm; H=0.6 mm; embed=0.12 mm; lead=3 mm; coreTurns=5.961; internal=True; operation=join-positive-rib; rootFillet=0.5mm; crestFillet=0.4mm; ClockwiseRotation=False
+---
+2026-11-18 15:25:42.347 pid=3676 thread=15 component=PackagingThread stage=start-1-assign-feature-name-success
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: Assigned unique Inventor-safe feature name: HVPkg_8601B2F41680_S1of1_P0deg
+---
+2026-11-18 15:25:42.367 pid=3676 thread=15 component=PackagingThread stage=start-1-verified
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: Core Coil updated; health/volume/body count checks passed.
+---
+2026-11-18 15:25:42.370 pid=3676 thread=15 component=PackagingThread stage=end-1-runout-begin
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: length=0.117 mm; sections=3; startPhase=0 deg; handSign=1; internal=True; operation=join-positive-rib; profile=PCO-1881-Detail-B; loadFlank=20deg; rampFlank=10deg; rootFilletR=0.5mm; crestFilletR=0.4mm; terminalCrestFactor=0.3083; minTerminalDepth=0.2 mm
+---
+2026-11-18 15:25:42.584 pid=3676 thread=15 component=PackagingThread stage=end-1-runout-section
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: section=1/3; t=0; station=17.883 mm; crestFactor=1; widthFactor=1; rootFactor=1; phase=2146 deg
+---
+2026-11-18 15:25:42.754 pid=3676 thread=15 component=PackagingThread stage=end-1-runout-section
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: section=2/3; t=0.5; station=17.942 mm; crestFactor=0.6542; widthFactor=0.8375; rootFactor=0.5625; phase=2153 deg
+---
+2026-11-18 15:25:42.919 pid=3676 thread=15 component=PackagingThread stage=end-1-runout-section
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: section=3/3; t=1; station=18 mm; crestFactor=0.3083; widthFactor=0.622; rootFactor=0.125; phase=2160 deg
+---
+2026-11-18 15:25:43.061 pid=3676 thread=15 component=PackagingThread stage=end-1-runout-verified
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: Loft verified; operation=join-positive-rib; featureName=HVPkg_B93088936990_S1of1_P0deg; sectionCount=3; volumeDelta=0.0007896833 cm^3; bodyCount=1; terminalCrestFactor=0.308; internal=True.
+---
+2026-11-18 15:25:43.069 pid=3676 thread=15 component=PackagingThread stage=browser-folder-mapping-policy
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: family=CapNeck; threadIdOverridePresent=False; exposeHistoryForMapping=False; requireFolderMapping=True; createdObjects=13; mode=new-build-required-folder
+---
+2026-11-18 15:25:43.415 pid=3676 thread=15 component=PackagingThread stage=packaging-thread-metadata-attached
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: threadId=628a54104c784e7288738ef1342d3097; objectCount=13; family=CapNeck; schema=2.
+---
+2026-11-18 15:25:43.417 pid=3676 thread=15 component=PackagingThread stage=packaging-thread-folder-created
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: All packaging-thread construction features were assigned to folder: Резьба крышек/горловин — внутренняя · D12 мм · P3 мм · 1 заход · Правая (R); registeredObjects=13; browserFolderPerformance=Папка «Резьба крышек/горловин — внутренняя · D12 мм · P3 мм · 1 заход · Правая (R)»: объектов 13, узлов сгруппировано 10; TopNode 0 мс, поиск имени 1 мс, снимок дерева 20 мс, резервный поиск узлов 0 мс, создание + группировка 8 мс (batch BrowserNodes), резервные folder.Add 0 мс, BrowserNode папки 0 мс, SetEndOfPart 8 мс, Reorder 0 мс, всего 56 мс.
+---
+2026-11-18 15:25:43.418 pid=3676 thread=15 component=PackagingThread stage=commit-transaction
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: Final volume/body checks passed; coreCoils=1; runoutLofts=1; ventSlotCuts=0; clearanceReliefs=1; nativeChamfers=0; revolvedChamferCuts=0; terminalFaceHealCleanup=not-used; ventSlotCount=0; ventSlotWidthDeg=0; startRunout=0 mm; endRunout=0.117 mm; clearance=0.15 mm; positiveRibBothSides=True; transaction=Helivanta: резьба крышек/горловин (эксперимент) 4CFE37A8C1.
+---
+2026-11-18 15:25:43.969 pid=3676 thread=15 component=PackagingThread stage=cap-neck-folder-language-snapshot
+context: Деталь237
+detail: threadId=628a54104c784e7288738ef1342d3097; snapshot=Found; originalFolder=Резьба крышек/горловин — внутренняя · D12 мм · P3 мм · 1 заход · Правая (R); currentUiLanguage=ru; selectedFolderLanguage=ru
+---
+2026-11-18 15:25:44.486 pid=3676 thread=15 component=PackagingThread stage=resolve-edge-cylinder
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: Resolving cylindrical face adjacent to selected circular edge.
+---
+2026-11-18 15:25:44.494 pid=3676 thread=15 component=PackagingThread stage=resolve-thread-type
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: face.IsParamReversed=False; autoDetectedType=internal-positive-rib; suppliedType=internal-positive-rib.
+---
+2026-11-18 15:25:44.648 pid=3676 thread=15 component=PackagingThread stage=runout-policy-resolved
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: autoDetectedType=internal-positive-rib; maxRunoutAngle=14 deg; effectiveRunoutAngle=14 deg; targetRunoutTurnFraction=0.038889; effectiveRunoutTurnFraction=0.038889; lead=3 mm; startRunout=0 mm; endRunout=0.117 mm; coreLength=17.883 mm; coreTurns=5.961111; terminalCrestFactor=0.3083; minTerminalDepth=0.2 mm.
+---
+2026-11-18 15:25:44.650 pid=3676 thread=15 component=PackagingThread stage=mating-profile-dimensions
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: D-reference=12mm; H=0.6mm; C-total-diametral=0.15mm; radial-half-clearance=0.075mm; external-crest=12mm; external-root/valley=10.8mm; internal-root/valley=12.15mm; internal-crest=10.95mm; outer-clearance=0.15mm; inner-clearance=0.15mm; profile=PCO-1881-Detail-B; loadFlank=20deg; rampFlank=10deg; rootFilletR=0.5mm; crestFilletR=0.4mm.
+---
+2026-11-18 15:25:44.652 pid=3676 thread=15 component=PackagingThread stage=build-begin
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: edgeIsLow=False; edgeAxial=5 cm; minAxial=0 cm; maxAxial=5 cm; radius=0.6075 cm; profileWidth=0.205 cm; totalLength=1.8 cm; startRunout=0 mm; endRunout=0.117 mm; coreLength=17.883 mm; coreRevolutions=5.961111; phaseCount=1; internal=True
+---
+2026-11-18 15:25:44.670 pid=3676 thread=15 component=PackagingThread stage=clearance-relief-begin
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: type=internal-bore-expand; originalRadius=6mm; compensatedRadius=6.075mm; radialRange=6..6.075mm; axialRange=-7.65..21mm; frontEdgeStation=-7.4mm; threadEndStation=18mm; transitionAnchor=internal-existing-overrun-boundaries.
+---
+2026-11-18 15:25:44.897 pid=3676 thread=15 component=PackagingThread stage=clearance-relief-profile-ready
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: radialMin=6mm; radialMax=6.075mm; start=-7.65mm; end=21mm; transitionRadius=0.075mm; contourSegments=18; connectedSketchPointLoop=true; profile=8-segment-quarter-circle-polyline.
+---
+2026-11-18 15:25:44.964 pid=3676 thread=15 component=PackagingThread stage=clearance-relief-verified
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: Feature=HVPkg_ClearanceRelief_76C334105D; removedVolume=0.0807539513cm^3; bodies=1; health=kUpToDateHealth.
+---
+2026-11-18 15:25:44.966 pid=3676 thread=15 component=PackagingThread stage=resolve-handedness
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: requestedHand=RH; edgeIsLow=False; buildDirectionReversed=True; radialFrameReversed=True; buildDirection=(-0,-0,-1); radial=(-1,-0,-0); profilePlaneNormal=(0,-1,0); ClockwiseRotation=False; helixPhaseSign=1; internal=True
+---
+2026-11-18 15:25:44.968 pid=3676 thread=15 component=PackagingThread stage=start-1-create-plane
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: basePhase=0 deg; coreStartPhase=0 deg; startRunout=0 mm; internal=True; ClockwiseRotation=False
+---
+2026-11-18 15:25:45.140 pid=3676 thread=15 component=PackagingThread stage=pco-bell-profile
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: profileHeight=0.6mm; rootEmbed=0.12mm; baseWidth=2.05mm; crownLand=0.701mm; rootFillet=0.37mm; crestFillet=0.296mm; radiusScale=0.7395; rootTangencyAtStock=true; undercutRoot=false
+---
+2026-11-18 15:25:45.142 pid=3676 thread=15 component=PackagingThread stage=start-1-coil-operation
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: basePhase=0 deg; coreStartPhase=0 deg; width=2.05 mm; H=0.6 mm; embed=0.12 mm; lead=3 mm; coreTurns=5.961; internal=True; operation=join-positive-rib; rootFillet=0.5mm; crestFillet=0.4mm; ClockwiseRotation=False
+---
+2026-11-18 15:25:45.269 pid=3676 thread=15 component=PackagingThread stage=start-1-assign-feature-name-success
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: Assigned unique Inventor-safe feature name: HVPkg_5262A29C8DA0_S1of1_P0deg
+---
+2026-11-18 15:25:45.287 pid=3676 thread=15 component=PackagingThread stage=start-1-verified
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: Core Coil updated; health/volume/body count checks passed.
+---
+2026-11-18 15:25:45.289 pid=3676 thread=15 component=PackagingThread stage=end-1-runout-begin
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: length=0.117 mm; sections=3; startPhase=0 deg; handSign=1; internal=True; operation=join-positive-rib; profile=PCO-1881-Detail-B; loadFlank=20deg; rampFlank=10deg; rootFilletR=0.5mm; crestFilletR=0.4mm; terminalCrestFactor=0.3083; minTerminalDepth=0.2 mm
+---
+2026-11-18 15:25:45.454 pid=3676 thread=15 component=PackagingThread stage=end-1-runout-section
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: section=1/3; t=0; station=17.883 mm; crestFactor=1; widthFactor=1; rootFactor=1; phase=2146 deg
+---
+2026-11-18 15:25:45.625 pid=3676 thread=15 component=PackagingThread stage=end-1-runout-section
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: section=2/3; t=0.5; station=17.942 mm; crestFactor=0.6542; widthFactor=0.8375; rootFactor=0.5625; phase=2153 deg
+---
+2026-11-18 15:25:45.786 pid=3676 thread=15 component=PackagingThread stage=end-1-runout-section
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: section=3/3; t=1; station=18 mm; crestFactor=0.3083; widthFactor=0.622; rootFactor=0.125; phase=2160 deg
+---
+2026-11-18 15:25:45.986 pid=3676 thread=15 component=PackagingThread stage=end-1-runout-verified
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: Loft verified; operation=join-positive-rib; featureName=HVPkg_875F7D4486C6_S1of1_P0deg; sectionCount=3; volumeDelta=0.0007163275 cm^3; bodyCount=1; terminalCrestFactor=0.308; internal=True.
+---
+2026-11-18 15:25:45.994 pid=3676 thread=15 component=PackagingThread stage=browser-folder-mapping-policy
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: family=CapNeck; threadIdOverridePresent=True; exposeHistoryForMapping=True; requireFolderMapping=False; createdObjects=13; mode=edit-replacement-best-effort-folder
+---
+2026-11-18 15:25:46.733 pid=3676 thread=15 component=PackagingThread stage=packaging-thread-metadata-attached
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: threadId=628a54104c784e7288738ef1342d3097; objectCount=13; family=CapNeck; schema=2.
+---
+2026-11-18 15:25:46.735 pid=3676 thread=15 component=PackagingThread stage=packaging-thread-folder-created
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: All packaging-thread construction features were assigned to folder: Резьба крышек/горловин — внутренняя · D12 мм · P3 мм · 1 заход · Правая (R); registeredObjects=13; browserFolderPerformance=Папка «Резьба крышек/горловин — внутренняя · D12 мм · P3 мм · 1 заход · Правая (R)»: сохранена существующая папка «Резьба крышек/горловин — внутренняя · D12 мм · P3 мм · 1 заход · Правая (R)»: PartFeature в ней=3/3, PartFeature на TopNode=0, видимых объектов группы=13, уже в папке=13, без BrowserNode=0, перенесено корневых узлов=0; владельцы определены обходом дерева, без повторного Update/Refresh и без повторной группировки.; группировка не повторялась, чтобы сохранить наследованную membership при редактировании. Всего 436 мс.
+---
+2026-11-18 15:25:46.737 pid=3676 thread=15 component=PackagingThread stage=commit-transaction
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=18 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=True; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=12 mm; P=3 mm; starts=1; lead=3 mm; H=0.6 mm; embed=0.12 mm; wall=6 mm; RH=True
+detail: Final volume/body checks passed; coreCoils=1; runoutLofts=1; ventSlotCuts=0; clearanceReliefs=1; nativeChamfers=0; revolvedChamferCuts=0; terminalFaceHealCleanup=not-used; ventSlotCount=0; ventSlotWidthDeg=0; startRunout=0 mm; endRunout=0.117 mm; clearance=0.15 mm; positiveRibBothSides=True; transaction=Helivanta: резьба крышек/горловин (эксперимент) 47983C72F0.
+---
+2026-11-18 15:25:48.679 pid=3676 thread=15 component=PackagingThread stage=resolve-edge-cylinder
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=6 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=False; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=69.2 mm; P=6 mm; starts=1; lead=6 mm; H=1 mm; embed=0.2 mm; wall=6.4 mm; RH=True
+detail: Resolving cylindrical face adjacent to selected circular edge.
+---
+2026-11-18 15:25:48.694 pid=3676 thread=15 component=PackagingThread stage=resolve-thread-type
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=6 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=False; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=69.2 mm; P=6 mm; starts=1; lead=6 mm; H=1 mm; embed=0.2 mm; wall=6.4 mm; RH=True
+detail: face.IsParamReversed=False; autoDetectedType=internal-positive-rib; suppliedType=internal-positive-rib.
+---
+2026-11-18 15:25:50.072 pid=3676 thread=15 component=PackagingThread stage=existing-thread-overlap-metadata-scan
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=6 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=False; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=69.2 mm; P=6 mm; starts=1; lead=6 mm; H=1 mm; embed=0.2 mm; wall=6.4 mm; RH=True
+detail: groupsLoaded=0; sameCylinderCandidates=0; matchingIntervalsReadable=0; diagnosticRecordsLogged=0; candidates=
+---
+2026-11-18 15:25:50.073 pid=3676 thread=15 component=PackagingThread stage=existing-thread-overlap-preflight
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=6 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=False; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=69.2 mm; P=6 mm; starts=1; lead=6 mm; H=1 mm; embed=0.2 mm; wall=6.4 mm; RH=True
+detail: status=Clear; proposedOffsetMm=4.5; requestedLengthMm=6; proposedFaceSpanMm=50; conflictingThreadId=; overlapLengthMm=0; detail=No persisted Helivanta thread interval overlaps the proposed interval.
+---
+2026-11-18 15:25:50.075 pid=3676 thread=15 component=PackagingThread stage=runout-policy-resolved
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=6 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=False; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=69.2 mm; P=6 mm; starts=1; lead=6 mm; H=1 mm; embed=0.2 mm; wall=6.4 mm; RH=True
+detail: autoDetectedType=internal-positive-rib; maxRunoutAngle=14 deg; effectiveRunoutAngle=0 deg; targetRunoutTurnFraction=0.038889; effectiveRunoutTurnFraction=0; lead=6 mm; startRunout=0 mm; endRunout=0 mm; coreLength=6 mm; coreTurns=1; terminalCrestFactor=0.18; minTerminalDepth=0.2 mm.
+---
+2026-11-18 15:25:50.077 pid=3676 thread=15 component=PackagingThread stage=mating-profile-dimensions
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=6 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=False; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=69.2 mm; P=6 mm; starts=1; lead=6 mm; H=1 mm; embed=0.2 mm; wall=6.4 mm; RH=True
+detail: D-reference=69.2mm; H=1mm; C-total-diametral=0.15mm; radial-half-clearance=0.075mm; external-crest=69.2mm; external-root/valley=67.2mm; internal-root/valley=69.35mm; internal-crest=67.35mm; outer-clearance=0.15mm; inner-clearance=0.15mm; profile=PCO-1881-Detail-B; loadFlank=20deg; rampFlank=10deg; rootFilletR=0.5mm; crestFilletR=0.4mm.
+---
+2026-11-18 15:25:50.079 pid=3676 thread=15 component=PackagingThread stage=build-begin
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=6 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=False; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=69.2 mm; P=6 mm; starts=1; lead=6 mm; H=1 mm; embed=0.2 mm; wall=6.4 mm; RH=True
+detail: edgeIsLow=False; edgeAxial=5 cm; minAxial=0 cm; maxAxial=5 cm; radius=3.4675 cm; profileWidth=0.1 cm; totalLength=0.6 cm; startRunout=0 mm; endRunout=0 mm; coreLength=6 mm; coreRevolutions=1; phaseCount=1; internal=True
+---
+2026-11-18 15:25:50.101 pid=3676 thread=15 component=PackagingThread stage=clearance-relief-begin
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=6 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=False; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=69.2 mm; P=6 mm; starts=1; lead=6 mm; H=1 mm; embed=0.2 mm; wall=6.4 mm; RH=True
+detail: type=internal-bore-expand; originalRadius=34.6mm; compensatedRadius=34.675mm; radialRange=34.6..34.675mm; axialRange=-4.75..12mm; frontEdgeStation=-4.5mm; threadEndStation=6mm; transitionAnchor=internal-existing-overrun-boundaries.
+---
+2026-11-18 15:25:50.331 pid=3676 thread=15 component=PackagingThread stage=clearance-relief-profile-ready
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=6 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=False; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=69.2 mm; P=6 mm; starts=1; lead=6 mm; H=1 mm; embed=0.2 mm; wall=6.4 mm; RH=True
+detail: radialMin=34.6mm; radialMax=34.675mm; start=-4.75mm; end=12mm; transitionRadius=0.075mm; contourSegments=18; connectedSketchPointLoop=true; profile=8-segment-quarter-circle-polyline.
+---
+2026-11-18 15:25:50.394 pid=3676 thread=15 component=PackagingThread stage=clearance-relief-verified
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=6 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=False; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=69.2 mm; P=6 mm; starts=1; lead=6 mm; H=1 mm; embed=0.2 mm; wall=6.4 mm; RH=True
+detail: Feature=HVPkg_ClearanceRelief_F50F8D58CB; removedVolume=0.2690528272cm^3; bodies=1; health=kUpToDateHealth.
+---
+2026-11-18 15:25:50.396 pid=3676 thread=15 component=PackagingThread stage=resolve-handedness
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=6 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=False; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=69.2 mm; P=6 mm; starts=1; lead=6 mm; H=1 mm; embed=0.2 mm; wall=6.4 mm; RH=True
+detail: requestedHand=RH; edgeIsLow=False; buildDirectionReversed=True; radialFrameReversed=True; buildDirection=(-0,-0,-1); radial=(-1,-0,-0); profilePlaneNormal=(0,-1,0); ClockwiseRotation=False; helixPhaseSign=1; internal=True
+---
+2026-11-18 15:25:50.398 pid=3676 thread=15 component=PackagingThread stage=start-1-create-plane
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=6 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=False; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=69.2 mm; P=6 mm; starts=1; lead=6 mm; H=1 mm; embed=0.2 mm; wall=6.4 mm; RH=True
+detail: basePhase=0 deg; coreStartPhase=0 deg; startRunout=0 mm; internal=True; ClockwiseRotation=False
+---
+2026-11-18 15:25:50.576 pid=3676 thread=15 component=PackagingThread stage=pco-bell-profile
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=6 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=False; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=69.2 mm; P=6 mm; starts=1; lead=6 mm; H=1 mm; embed=0.2 mm; wall=6.4 mm; RH=True
+detail: profileHeight=1mm; rootEmbed=0.2mm; baseWidth=1mm; crownLand=0.05mm; rootFillet=0.148mm; crestFillet=0.118mm; radiusScale=0.2957; rootTangencyAtStock=true; undercutRoot=false
+---
+2026-11-18 15:25:50.578 pid=3676 thread=15 component=PackagingThread stage=start-1-coil-operation
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=6 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=False; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=69.2 mm; P=6 mm; starts=1; lead=6 mm; H=1 mm; embed=0.2 mm; wall=6.4 mm; RH=True
+detail: basePhase=0 deg; coreStartPhase=0 deg; width=1 mm; H=1 mm; embed=0.2 mm; lead=6 mm; coreTurns=1; internal=True; operation=join-positive-rib; rootFillet=0.5mm; crestFillet=0.4mm; ClockwiseRotation=False
+---
+2026-11-18 15:25:50.647 pid=3676 thread=15 component=PackagingThread stage=start-1-assign-feature-name-success
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=6 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=False; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=69.2 mm; P=6 mm; starts=1; lead=6 mm; H=1 mm; embed=0.2 mm; wall=6.4 mm; RH=True
+detail: Assigned unique Inventor-safe feature name: HVPkg_5CC701DE62F9_S1of1_P0deg
+---
+2026-11-18 15:25:50.660 pid=3676 thread=15 component=PackagingThread stage=start-1-verified
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=6 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=False; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=69.2 mm; P=6 mm; starts=1; lead=6 mm; H=1 mm; embed=0.2 mm; wall=6.4 mm; RH=True
+detail: Core Coil updated; health/volume/body count checks passed.
+---
+2026-11-18 15:25:50.667 pid=3676 thread=15 component=PackagingThread stage=browser-folder-mapping-policy
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=6 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=False; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=69.2 mm; P=6 mm; starts=1; lead=6 mm; H=1 mm; embed=0.2 mm; wall=6.4 mm; RH=True
+detail: family=CapNeck; threadIdOverridePresent=False; exposeHistoryForMapping=False; requireFolderMapping=True; createdObjects=6; mode=new-build-required-folder
+---
+2026-11-18 15:25:50.849 pid=3676 thread=15 component=PackagingThread stage=packaging-thread-metadata-attached
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=6 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=False; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=69.2 mm; P=6 mm; starts=1; lead=6 mm; H=1 mm; embed=0.2 mm; wall=6.4 mm; RH=True
+detail: threadId=6e29cca58aa24df3abe474cedc49f801; objectCount=6; family=CapNeck; schema=2.
+---
+2026-11-18 15:25:50.850 pid=3676 thread=15 component=PackagingThread stage=packaging-thread-folder-created
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=6 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=False; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=69.2 mm; P=6 mm; starts=1; lead=6 mm; H=1 mm; embed=0.2 mm; wall=6.4 mm; RH=True
+detail: All packaging-thread construction features were assigned to folder: Резьба крышек/горловин — внутренняя · D69.2 мм · P6 мм · 1 заход · Правая (R); registeredObjects=6; browserFolderPerformance=Папка «Резьба крышек/горловин — внутренняя · D69.2 мм · P6 мм · 1 заход · Правая (R)»: объектов 6, узлов сгруппировано 4; TopNode 0 мс, поиск имени 1 мс, снимок дерева 10 мс, резервный поиск узлов 0 мс, создание + группировка 8 мс (batch BrowserNodes), резервные folder.Add 0 мс, BrowserNode папки 0 мс, SetEndOfPart 6 мс, Reorder 0 мс, всего 40 мс.
+---
+2026-11-18 15:25:50.852 pid=3676 thread=15 component=PackagingThread stage=commit-transaction
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=6 mm; type=internal-positive-rib; smoothStart=False; smoothEnd=False; ventSlots=False; ventSlotCount=1; ventSlotWidthDeg=18; chamferMode=0; chamferMm=0; D=69.2 mm; P=6 mm; starts=1; lead=6 mm; H=1 mm; embed=0.2 mm; wall=6.4 mm; RH=True
+detail: Final volume/body checks passed; coreCoils=1; runoutLofts=0; ventSlotCuts=0; clearanceReliefs=1; nativeChamfers=0; revolvedChamferCuts=0; terminalFaceHealCleanup=not-used; ventSlotCount=0; ventSlotWidthDeg=0; startRunout=0 mm; endRunout=0 mm; clearance=0.15 mm; positiveRibBothSides=True; transaction=Helivanta: резьба крышек/горловин (эксперимент) 7F1EBC26A0.
+---
+2026-11-18 15:25:51.868 pid=3676 thread=15 component=PackagingThread stage=resolve-edge-cylinder
+context: selectedEdge=provided; browserFolderLanguage=en; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: Resolving cylindrical face adjacent to selected circular edge.
+---
+2026-11-18 15:25:51.875 pid=3676 thread=15 component=PackagingThread stage=resolve-thread-type
+context: selectedEdge=provided; browserFolderLanguage=en; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: face.IsParamReversed=True; autoDetectedType=external; suppliedType=external.
+---
+2026-11-18 15:25:52.111 pid=3676 thread=15 component=PackagingThread stage=existing-thread-overlap-metadata-scan
+context: selectedEdge=provided; browserFolderLanguage=en; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: groupsLoaded=0; sameCylinderCandidates=0; matchingIntervalsReadable=0; diagnosticRecordsLogged=0; candidates=
+---
+2026-11-18 15:25:52.113 pid=3676 thread=15 component=PackagingThread stage=existing-thread-overlap-preflight
+context: selectedEdge=provided; browserFolderLanguage=en; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: status=Clear; proposedOffsetMm=3; requestedLengthMm=24; proposedFaceSpanMm=48; conflictingThreadId=; overlapLengthMm=0; detail=No persisted Helivanta thread interval overlaps the proposed interval.
+---
+2026-11-18 15:25:52.136 pid=3676 thread=15 component=PackagingThread stage=runout-policy-resolved
+context: selectedEdge=provided; browserFolderLanguage=en; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: autoDetectedType=external; maxRunoutAngle=14 deg; effectiveRunoutAngle=14 deg; targetRunoutTurnFraction=0.038889; effectiveRunoutTurnFraction=0.038889; lead=4 mm; startRunout=0.156 mm; endRunout=0.156 mm; coreLength=23.689 mm; coreTurns=5.922222; terminalCrestFactor=0.08; minTerminalDepth=0.2 mm.
+---
+2026-11-18 15:25:52.138 pid=3676 thread=15 component=PackagingThread stage=mating-profile-dimensions
+context: selectedEdge=provided; browserFolderLanguage=en; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: D-reference=40mm; H=2mm; C-total-diametral=0.15mm; radial-half-clearance=0.075mm; external-crest=40mm; external-root/valley=36mm; internal-root/valley=40.15mm; internal-crest=36.15mm; outer-clearance=0.15mm; inner-clearance=0.15mm; profile=PCO-1881-Detail-B; loadFlank=20deg; rampFlank=10deg; rootFilletR=0.5mm; crestFilletR=0.4mm.
+---
+2026-11-18 15:25:52.142 pid=3676 thread=15 component=PackagingThread stage=build-begin
+context: selectedEdge=provided; browserFolderLanguage=en; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: edgeIsLow=False; edgeAxial=4.8 cm; minAxial=0 cm; maxAxial=4.8 cm; radius=1.8 cm; profileWidth=0.32 cm; totalLength=2.4 cm; startRunout=0.156 mm; endRunout=0.156 mm; coreLength=23.689 mm; coreRevolutions=5.922222; phaseCount=1; internal=False
+---
+2026-11-18 15:25:52.161 pid=3676 thread=15 component=PackagingThread stage=clearance-relief-begin
+context: selectedEdge=provided; browserFolderLanguage=en; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: type=external-open-front-root-core-relief; originalRadius=20mm; compensatedRadius=18mm; blendRadius=2mm; contourRange=-5..26.75mm; frontEdgeStation=-3mm; threadEndStation=24mm; postThreadStraightExtension=0.75mm; cutterOuterRadius=20.5mm; arcAnchors=small-edge-after-post-thread-extension.
+---
+2026-11-18 15:25:52.291 pid=3676 thread=15 component=PackagingThread stage=clearance-relief-profile-ready
+context: selectedEdge=provided; browserFolderLanguage=en; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: profile=outside-final-silhouette; exactCircularArcs=2; arcRadius=2mm; startArc=larger-to-smaller-open-front; endArc=smaller-at-24.75mm-after-0.75mm-post-thread-extension-to-stock-radius; cutterOuterRadius=20.5mm; connectedSketchPointLoop=true.
+---
+2026-11-18 15:25:52.341 pid=3676 thread=15 component=PackagingThread stage=clearance-relief-verified
+context: selectedEdge=provided; browserFolderLanguage=en; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: Feature=HVPkg_External_ClearanceEnvelope_E67CF8ED44; removedVolume=7.0036479216cm^3; bodies=1; health=kUpToDateHealth; cutSide=outside-final-contour.
+---
+2026-11-18 15:25:52.343 pid=3676 thread=15 component=PackagingThread stage=vent-slot-endpoint-aware-input
+context: selectedEdge=provided; browserFolderLanguage=en; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: requestedHand=RH; edgeIsLow=False; buildDirection=(-0,-0,-1); requestedCount=2; width=14 deg; endpointPhases=0,0 deg.
+---
+2026-11-18 15:25:52.345 pid=3676 thread=15 component=PackagingThread stage=vent-slot-endpoint-aware-layout
+context: selectedEdge=provided; browserFolderLanguage=en; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: centres=90,270 deg; spacing=180 deg; endpointPhases=0,0 deg; equal spacing verified; minimum quarter-clear-sector endpoint margin enforced.
+---
+2026-11-18 15:25:52.346 pid=3676 thread=15 component=PackagingThread stage=resolve-handedness
+context: selectedEdge=provided; browserFolderLanguage=en; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: requestedHand=RH; edgeIsLow=False; buildDirectionReversed=True; radialFrameReversed=True; buildDirection=(-0,-0,-1); radial=(-1,-0,-0); profilePlaneNormal=(0,-1,0); ClockwiseRotation=False; helixPhaseSign=1; internal=False
+---
+2026-11-18 15:25:52.348 pid=3676 thread=15 component=PackagingThread stage=start-1-create-plane
+context: selectedEdge=provided; browserFolderLanguage=en; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: basePhase=0 deg; coreStartPhase=14 deg; startRunout=0.156 mm; internal=False; ClockwiseRotation=False
+---
+2026-11-18 15:25:52.517 pid=3676 thread=15 component=PackagingThread stage=pco-bell-profile
+context: selectedEdge=provided; browserFolderLanguage=en; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: profileHeight=2mm; rootEmbed=0.4mm; baseWidth=3.2mm; crownLand=0.734mm; rootFillet=0.5mm; crestFillet=0.4mm; radiusScale=1; rootTangencyAtStock=true; undercutRoot=false
+---
+2026-11-18 15:25:52.519 pid=3676 thread=15 component=PackagingThread stage=start-1-coil-operation
+context: selectedEdge=provided; browserFolderLanguage=en; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: basePhase=0 deg; coreStartPhase=14 deg; width=3.2 mm; H=2 mm; embed=0.4 mm; lead=4 mm; coreTurns=5.922; internal=False; operation=join-positive-rib; rootFillet=0.5mm; crestFillet=0.4mm; ClockwiseRotation=False
+---
+2026-11-18 15:25:52.628 pid=3676 thread=15 component=PackagingThread stage=start-1-assign-feature-name-success
+context: selectedEdge=provided; browserFolderLanguage=en; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: Assigned unique Inventor-safe feature name: HVPkg_FCB2F8C62C0A_S1of1_P0deg
+---
+2026-11-18 15:25:52.648 pid=3676 thread=15 component=PackagingThread stage=start-1-verified
+context: selectedEdge=provided; browserFolderLanguage=en; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: Core Coil updated; health/volume/body count checks passed.
+---
+2026-11-18 15:25:52.651 pid=3676 thread=15 component=PackagingThread stage=start-1-runout-begin
+context: selectedEdge=provided; browserFolderLanguage=en; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: length=0.156 mm; sections=3; startPhase=0 deg; handSign=1; internal=False; operation=join-positive-rib; profile=PCO-1881-Detail-B; loadFlank=20deg; rampFlank=10deg; rootFilletR=0.5mm; crestFilletR=0.4mm; terminalCrestFactor=0.08; minTerminalDepth=0.2 mm
+---
+2026-11-18 15:25:52.819 pid=3676 thread=15 component=PackagingThread stage=start-1-runout-section
+context: selectedEdge=provided; browserFolderLanguage=en; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: section=1/3; t=0; station=0 mm; crestFactor=0.08; widthFactor=0.3904; rootFactor=0.1; phase=0 deg
+---
+2026-11-18 15:25:52.971 pid=3676 thread=15 component=PackagingThread stage=start-1-runout-section
+context: selectedEdge=provided; browserFolderLanguage=en; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: section=2/3; t=0.5; station=0.078 mm; crestFactor=0.54; widthFactor=0.7746; rootFactor=0.55; phase=7 deg
+---
+2026-11-18 15:25:53.142 pid=3676 thread=15 component=PackagingThread stage=start-1-runout-section
+context: selectedEdge=provided; browserFolderLanguage=en; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: section=3/3; t=1; station=0.156 mm; crestFactor=1; widthFactor=1; rootFactor=1; phase=14 deg
+---
+2026-11-18 15:25:53.279 pid=3676 thread=15 component=PackagingThread stage=start-1-runout-verified
+context: selectedEdge=provided; browserFolderLanguage=en; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: Loft verified; operation=join-positive-rib; featureName=HVPkg_174680D99330_S1of1_P0deg; sectionCount=3; volumeDelta=0.0076944431 cm^3; bodyCount=1; terminalCrestFactor=0.08; internal=False.
+---
+2026-11-18 15:25:53.281 pid=3676 thread=15 component=PackagingThread stage=end-1-runout-begin
+context: selectedEdge=provided; browserFolderLanguage=en; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: length=0.156 mm; sections=3; startPhase=0 deg; handSign=1; internal=False; operation=join-positive-rib; profile=PCO-1881-Detail-B; loadFlank=20deg; rampFlank=10deg; rootFilletR=0.5mm; crestFilletR=0.4mm; terminalCrestFactor=0.08; minTerminalDepth=0.2 mm
+---
+2026-11-18 15:25:53.450 pid=3676 thread=15 component=PackagingThread stage=end-1-runout-section
+context: selectedEdge=provided; browserFolderLanguage=en; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: section=1/3; t=0; station=23.844 mm; crestFactor=1; widthFactor=1; rootFactor=1; phase=2146 deg
+---
+2026-11-18 15:25:53.615 pid=3676 thread=15 component=PackagingThread stage=end-1-runout-section
+context: selectedEdge=provided; browserFolderLanguage=en; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: section=2/3; t=0.5; station=23.922 mm; crestFactor=0.54; widthFactor=0.7746; rootFactor=0.55; phase=2153 deg
+---
+2026-11-18 15:25:53.788 pid=3676 thread=15 component=PackagingThread stage=end-1-runout-section
+context: selectedEdge=provided; browserFolderLanguage=en; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: section=3/3; t=1; station=24 mm; crestFactor=0.08; widthFactor=0.3904; rootFactor=0.1; phase=2160 deg
+---
+2026-11-18 15:25:53.940 pid=3676 thread=15 component=PackagingThread stage=end-1-runout-verified
+context: selectedEdge=provided; browserFolderLanguage=en; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: Loft verified; operation=join-positive-rib; featureName=HVPkg_A86CF40A971A_S1of1_P0deg; sectionCount=3; volumeDelta=0.0077364412 cm^3; bodyCount=1; terminalCrestFactor=0.08; internal=False.
+---
+2026-11-18 15:25:53.942 pid=3676 thread=15 component=PackagingThread stage=packaging-thread-chamfer-anchor-resolved
+context: selectedEdge=provided; browserFolderLanguage=en; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: type=external-root-core-cylinder-open-front; mode=1; targetRadius=18mm; startStation=-3mm; endStation=24.75mm; frontEdgeStation=-3mm; threadEndStation=24mm; originalRadius=20mm; clearance=0.15mm.
+---
+2026-11-18 15:25:54.184 pid=3676 thread=15 component=PackagingThread stage=packaging-thread-chamfer-created
+context: selectedEdge=provided; browserFolderLanguage=en; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: method=revolved-45-degree-cut; mode=start; requestedDistance=1 mm; compensatedRadius=18 mm; startStation=-3 mm; coneEndStation=-0 mm; coneEndRadius=20 mm; cutterOuterRadius=20.5 mm; coneSlope=1; crest-intersection-cut=allowed; health=kUpToDateHealth.
+---
+2026-11-18 15:25:54.186 pid=3676 thread=15 component=PackagingThread stage=vent-slot-overrun-resolved
+context: selectedEdge=provided; browserFolderLanguage=en; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: spanMode=external-root-core-to-transition; startOverrun=3 mm; selected-edge inset=3 mm; end-boundary safety inset=0.02 mm; preferred generic tool overrun=4 mm; remaining cylinder after thread=21 mm; actual end overrun=0.73 mm; axialCutRange=-3..24.73 mm.
+---
+2026-11-18 15:25:54.188 pid=3676 thread=15 component=PackagingThread stage=vent-slots-begin
+context: selectedEdge=provided; browserFolderLanguage=en; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: count=2; width=14 deg; spacing=180 deg; sweepRadians=0.2443461; internal=False; positiveRibCut=true; radialRange=1.798..2.002 cm; axialRange=-0.3..2.473 cm; radialOvercut=0.02 mm; startOverrun=3 mm; endOverrun=0.73 mm; zeroEndOverrunAllowed=true.
+---
+2026-11-18 15:25:54.192 pid=3676 thread=15 component=PackagingThread stage=vent-slot-01-create-plane
+context: selectedEdge=provided; browserFolderLanguage=en; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: slot=1/2; startAngle=97 deg; centreAngle=90 deg; width=14 deg; internal=False.
+---
+2026-11-18 15:25:54.294 pid=3676 thread=15 component=PackagingThread stage=vent-slot-01-cut-operation
+context: selectedEdge=provided; browserFolderLanguage=en; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: sweep=AddByAngle(0.2443461 rad); operation=kCutOperation; radialMin=1.798 cm; radialMax=2.002 cm.
+---
+2026-11-18 15:25:54.446 pid=3676 thread=15 component=PackagingThread stage=vent-slot-01-verified
+context: selectedEdge=provided; browserFolderLanguage=en; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: Vent slot cut verified; name=HVPkgV_E5AC2D795A_SLOT01OF02; angle=97 deg; width=14 deg; volumeRemoved=0.1075686145 cm^3; bodies=1; internal=False.
+---
+2026-11-18 15:25:54.450 pid=3676 thread=15 component=PackagingThread stage=vent-slot-02-create-plane
+context: selectedEdge=provided; browserFolderLanguage=en; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: slot=2/2; startAngle=277 deg; centreAngle=270 deg; width=14 deg; internal=False.
+---
+2026-11-18 15:25:54.553 pid=3676 thread=15 component=PackagingThread stage=vent-slot-02-cut-operation
+context: selectedEdge=provided; browserFolderLanguage=en; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: sweep=AddByAngle(0.2443461 rad); operation=kCutOperation; radialMin=1.798 cm; radialMax=2.002 cm.
+---
+2026-11-18 15:25:54.757 pid=3676 thread=15 component=PackagingThread stage=vent-slot-02-verified
+context: selectedEdge=provided; browserFolderLanguage=en; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: Vent slot cut verified; name=HVPkgV_6366DA0368_SLOT02OF02; angle=277 deg; width=14 deg; volumeRemoved=0.1075683447 cm^3; bodies=1; internal=False.
+---
+2026-11-18 15:25:54.759 pid=3676 thread=15 component=PackagingThread stage=vent-slot-cuts-complete
+context: selectedEdge=provided; browserFolderLanguage=en; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: expectedCount=2; verifiedCutFeatures=2; requestedHand=RH; centres=90,270 deg.
+---
+2026-11-18 15:25:54.765 pid=3676 thread=15 component=PackagingThread stage=browser-folder-mapping-policy
+context: selectedEdge=provided; browserFolderLanguage=en; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: family=CapNeck; threadIdOverridePresent=False; exposeHistoryForMapping=False; requireFolderMapping=True; createdObjects=29; mode=new-build-required-folder
+---
+2026-11-18 15:25:55.526 pid=3676 thread=15 component=PackagingThread stage=packaging-thread-metadata-attached
+context: selectedEdge=provided; browserFolderLanguage=en; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: threadId=6bbc1e7741dd4630984ca2410782da90; objectCount=29; family=CapNeck; schema=2.
+---
+2026-11-18 15:25:55.528 pid=3676 thread=15 component=PackagingThread stage=packaging-thread-folder-created
+context: selectedEdge=provided; browserFolderLanguage=en; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: All packaging-thread construction features were assigned to folder: Cap/neck thread — External · D40 mm · P4 mm · 1 start · Right-hand (R); registeredObjects=29; browserFolderPerformance=Папка «Cap/neck thread — External · D40 mm · P4 mm · 1 start · Right-hand (R)»: объектов 29, узлов сгруппировано 22; TopNode 0 мс, поиск имени 1 мс, снимок дерева 33 мс, резервный поиск узлов 10 мс, создание + группировка 9 мс (batch BrowserNodes), резервные folder.Add 0 мс, BrowserNode папки 1 мс, SetEndOfPart 10 мс, Reorder 0 мс, всего 93 мс.
+---
+2026-11-18 15:25:55.530 pid=3676 thread=15 component=PackagingThread stage=commit-transaction
+context: selectedEdge=provided; browserFolderLanguage=en; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: Final volume/body checks passed; coreCoils=1; runoutLofts=2; ventSlotCuts=2; clearanceReliefs=1; nativeChamfers=0; revolvedChamferCuts=1; terminalFaceHealCleanup=not-used; ventSlotCount=2; ventSlotWidthDeg=14; startRunout=0.156 mm; endRunout=0.156 mm; clearance=0.15 mm; positiveRibBothSides=False; transaction=Helivanta: резьба крышек/горловин (эксперимент) 7AC46A7B09.
+---
+2026-11-18 15:25:57.657 pid=3676 thread=15 component=PackagingThread stage=resolve-edge-cylinder
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: Resolving cylindrical face adjacent to selected circular edge.
+---
+2026-11-18 15:25:57.665 pid=3676 thread=15 component=PackagingThread stage=resolve-thread-type
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: face.IsParamReversed=True; autoDetectedType=external; suppliedType=external.
+---
+2026-11-18 15:25:57.859 pid=3676 thread=15 component=PackagingThread stage=existing-thread-overlap-metadata-scan
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: groupsLoaded=0; sameCylinderCandidates=0; matchingIntervalsReadable=0; diagnosticRecordsLogged=0; candidates=
+---
+2026-11-18 15:25:57.862 pid=3676 thread=15 component=PackagingThread stage=existing-thread-overlap-preflight
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: status=Clear; proposedOffsetMm=3; requestedLengthMm=24; proposedFaceSpanMm=48; conflictingThreadId=; overlapLengthMm=0; detail=No persisted Helivanta thread interval overlaps the proposed interval.
+---
+2026-11-18 15:25:57.864 pid=3676 thread=15 component=PackagingThread stage=runout-policy-resolved
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: autoDetectedType=external; maxRunoutAngle=14 deg; effectiveRunoutAngle=14 deg; targetRunoutTurnFraction=0.038889; effectiveRunoutTurnFraction=0.038889; lead=4 mm; startRunout=0.156 mm; endRunout=0.156 mm; coreLength=23.689 mm; coreTurns=5.922222; terminalCrestFactor=0.08; minTerminalDepth=0.2 mm.
+---
+2026-11-18 15:25:57.867 pid=3676 thread=15 component=PackagingThread stage=mating-profile-dimensions
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: D-reference=40mm; H=2mm; C-total-diametral=0.15mm; radial-half-clearance=0.075mm; external-crest=40mm; external-root/valley=36mm; internal-root/valley=40.15mm; internal-crest=36.15mm; outer-clearance=0.15mm; inner-clearance=0.15mm; profile=PCO-1881-Detail-B; loadFlank=20deg; rampFlank=10deg; rootFilletR=0.5mm; crestFilletR=0.4mm.
+---
+2026-11-18 15:25:57.870 pid=3676 thread=15 component=PackagingThread stage=build-begin
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: edgeIsLow=False; edgeAxial=4.8 cm; minAxial=0 cm; maxAxial=4.8 cm; radius=1.8 cm; profileWidth=0.32 cm; totalLength=2.4 cm; startRunout=0.156 mm; endRunout=0.156 mm; coreLength=23.689 mm; coreRevolutions=5.922222; phaseCount=1; internal=False
+---
+2026-11-18 15:25:57.930 pid=3676 thread=15 component=PackagingThread stage=clearance-relief-begin
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: type=external-open-front-root-core-relief; originalRadius=20mm; compensatedRadius=18mm; blendRadius=2mm; contourRange=-5..26.75mm; frontEdgeStation=-3mm; threadEndStation=24mm; postThreadStraightExtension=0.75mm; cutterOuterRadius=20.5mm; arcAnchors=small-edge-after-post-thread-extension.
+---
+2026-11-18 15:25:58.088 pid=3676 thread=15 component=PackagingThread stage=clearance-relief-profile-ready
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: profile=outside-final-silhouette; exactCircularArcs=2; arcRadius=2mm; startArc=larger-to-smaller-open-front; endArc=smaller-at-24.75mm-after-0.75mm-post-thread-extension-to-stock-radius; cutterOuterRadius=20.5mm; connectedSketchPointLoop=true.
+---
+2026-11-18 15:25:58.141 pid=3676 thread=15 component=PackagingThread stage=clearance-relief-verified
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: Feature=HVPkg_External_ClearanceEnvelope_4D0F478EE3; removedVolume=7.0036479216cm^3; bodies=1; health=kUpToDateHealth; cutSide=outside-final-contour.
+---
+2026-11-18 15:25:58.143 pid=3676 thread=15 component=PackagingThread stage=vent-slot-endpoint-aware-input
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: requestedHand=RH; edgeIsLow=False; buildDirection=(-0,-0,-1); requestedCount=2; width=14 deg; endpointPhases=0,0 deg.
+---
+2026-11-18 15:25:58.145 pid=3676 thread=15 component=PackagingThread stage=vent-slot-endpoint-aware-layout
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: centres=90,270 deg; spacing=180 deg; endpointPhases=0,0 deg; equal spacing verified; minimum quarter-clear-sector endpoint margin enforced.
+---
+2026-11-18 15:25:58.147 pid=3676 thread=15 component=PackagingThread stage=resolve-handedness
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: requestedHand=RH; edgeIsLow=False; buildDirectionReversed=True; radialFrameReversed=True; buildDirection=(-0,-0,-1); radial=(-1,-0,-0); profilePlaneNormal=(0,-1,0); ClockwiseRotation=False; helixPhaseSign=1; internal=False
+---
+2026-11-18 15:25:58.149 pid=3676 thread=15 component=PackagingThread stage=start-1-create-plane
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: basePhase=0 deg; coreStartPhase=14 deg; startRunout=0.156 mm; internal=False; ClockwiseRotation=False
+---
+2026-11-18 15:25:58.326 pid=3676 thread=15 component=PackagingThread stage=pco-bell-profile
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: profileHeight=2mm; rootEmbed=0.4mm; baseWidth=3.2mm; crownLand=0.734mm; rootFillet=0.5mm; crestFillet=0.4mm; radiusScale=1; rootTangencyAtStock=true; undercutRoot=false
+---
+2026-11-18 15:25:58.327 pid=3676 thread=15 component=PackagingThread stage=start-1-coil-operation
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: basePhase=0 deg; coreStartPhase=14 deg; width=3.2 mm; H=2 mm; embed=0.4 mm; lead=4 mm; coreTurns=5.922; internal=False; operation=join-positive-rib; rootFillet=0.5mm; crestFillet=0.4mm; ClockwiseRotation=False
+---
+2026-11-18 15:25:58.491 pid=3676 thread=15 component=PackagingThread stage=start-1-assign-feature-name-success
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: Assigned unique Inventor-safe feature name: HVPkg_64BD2617FF7B_S1of1_P0deg
+---
+2026-11-18 15:25:58.513 pid=3676 thread=15 component=PackagingThread stage=start-1-verified
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: Core Coil updated; health/volume/body count checks passed.
+---
+2026-11-18 15:25:58.517 pid=3676 thread=15 component=PackagingThread stage=start-1-runout-begin
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: length=0.156 mm; sections=3; startPhase=0 deg; handSign=1; internal=False; operation=join-positive-rib; profile=PCO-1881-Detail-B; loadFlank=20deg; rampFlank=10deg; rootFilletR=0.5mm; crestFilletR=0.4mm; terminalCrestFactor=0.08; minTerminalDepth=0.2 mm
+---
+2026-11-18 15:25:58.711 pid=3676 thread=15 component=PackagingThread stage=start-1-runout-section
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: section=1/3; t=0; station=0 mm; crestFactor=0.08; widthFactor=0.3904; rootFactor=0.1; phase=0 deg
+---
+2026-11-18 15:25:59.802 pid=3676 thread=15 component=PackagingThread stage=start-1-runout-section
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: section=2/3; t=0.5; station=0.078 mm; crestFactor=0.54; widthFactor=0.7746; rootFactor=0.55; phase=7 deg
+---
+2026-11-18 15:25:59.970 pid=3676 thread=15 component=PackagingThread stage=start-1-runout-section
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: section=3/3; t=1; station=0.156 mm; crestFactor=1; widthFactor=1; rootFactor=1; phase=14 deg
+---
+2026-11-18 15:26:00.113 pid=3676 thread=15 component=PackagingThread stage=start-1-runout-verified
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: Loft verified; operation=join-positive-rib; featureName=HVPkg_029CFB2B4AA9_S1of1_P0deg; sectionCount=3; volumeDelta=0.0076944431 cm^3; bodyCount=1; terminalCrestFactor=0.08; internal=False.
+---
+2026-11-18 15:26:00.115 pid=3676 thread=15 component=PackagingThread stage=end-1-runout-begin
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: length=0.156 mm; sections=3; startPhase=0 deg; handSign=1; internal=False; operation=join-positive-rib; profile=PCO-1881-Detail-B; loadFlank=20deg; rampFlank=10deg; rootFilletR=0.5mm; crestFilletR=0.4mm; terminalCrestFactor=0.08; minTerminalDepth=0.2 mm
+---
+2026-11-18 15:26:00.286 pid=3676 thread=15 component=PackagingThread stage=end-1-runout-section
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: section=1/3; t=0; station=23.844 mm; crestFactor=1; widthFactor=1; rootFactor=1; phase=2146 deg
+---
+2026-11-18 15:26:00.459 pid=3676 thread=15 component=PackagingThread stage=end-1-runout-section
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: section=2/3; t=0.5; station=23.922 mm; crestFactor=0.54; widthFactor=0.7746; rootFactor=0.55; phase=2153 deg
+---
+2026-11-18 15:26:00.643 pid=3676 thread=15 component=PackagingThread stage=end-1-runout-section
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: section=3/3; t=1; station=24 mm; crestFactor=0.08; widthFactor=0.3904; rootFactor=0.1; phase=2160 deg
+---
+2026-11-18 15:26:00.788 pid=3676 thread=15 component=PackagingThread stage=end-1-runout-verified
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: Loft verified; operation=join-positive-rib; featureName=HVPkg_7552A9C6CAE8_S1of1_P0deg; sectionCount=3; volumeDelta=0.0077364412 cm^3; bodyCount=1; terminalCrestFactor=0.08; internal=False.
+---
+2026-11-18 15:26:00.789 pid=3676 thread=15 component=PackagingThread stage=packaging-thread-chamfer-anchor-resolved
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: type=external-root-core-cylinder-open-front; mode=1; targetRadius=18mm; startStation=-3mm; endStation=24.75mm; frontEdgeStation=-3mm; threadEndStation=24mm; originalRadius=20mm; clearance=0.15mm.
+---
+2026-11-18 15:26:00.992 pid=3676 thread=15 component=PackagingThread stage=packaging-thread-chamfer-created
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: method=revolved-45-degree-cut; mode=start; requestedDistance=1 mm; compensatedRadius=18 mm; startStation=-3 mm; coneEndStation=-0 mm; coneEndRadius=20 mm; cutterOuterRadius=20.5 mm; coneSlope=1; crest-intersection-cut=allowed; health=kUpToDateHealth.
+---
+2026-11-18 15:26:00.993 pid=3676 thread=15 component=PackagingThread stage=vent-slot-overrun-resolved
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: spanMode=external-root-core-to-transition; startOverrun=3 mm; selected-edge inset=3 mm; end-boundary safety inset=0.02 mm; preferred generic tool overrun=4 mm; remaining cylinder after thread=21 mm; actual end overrun=0.73 mm; axialCutRange=-3..24.73 mm.
+---
+2026-11-18 15:26:00.995 pid=3676 thread=15 component=PackagingThread stage=vent-slots-begin
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: count=2; width=14 deg; spacing=180 deg; sweepRadians=0.2443461; internal=False; positiveRibCut=true; radialRange=1.798..2.002 cm; axialRange=-0.3..2.473 cm; radialOvercut=0.02 mm; startOverrun=3 mm; endOverrun=0.73 mm; zeroEndOverrunAllowed=true.
+---
+2026-11-18 15:26:00.999 pid=3676 thread=15 component=PackagingThread stage=vent-slot-01-create-plane
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: slot=1/2; startAngle=97 deg; centreAngle=90 deg; width=14 deg; internal=False.
+---
+2026-11-18 15:26:01.105 pid=3676 thread=15 component=PackagingThread stage=vent-slot-01-cut-operation
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: sweep=AddByAngle(0.2443461 rad); operation=kCutOperation; radialMin=1.798 cm; radialMax=2.002 cm.
+---
+2026-11-18 15:26:01.263 pid=3676 thread=15 component=PackagingThread stage=vent-slot-01-verified
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: Vent slot cut verified; name=HVPkgV_D14E82C142_SLOT01OF02; angle=97 deg; width=14 deg; volumeRemoved=0.1075686145 cm^3; bodies=1; internal=False.
+---
+2026-11-18 15:26:01.267 pid=3676 thread=15 component=PackagingThread stage=vent-slot-02-create-plane
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: slot=2/2; startAngle=277 deg; centreAngle=270 deg; width=14 deg; internal=False.
+---
+2026-11-18 15:26:01.377 pid=3676 thread=15 component=PackagingThread stage=vent-slot-02-cut-operation
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: sweep=AddByAngle(0.2443461 rad); operation=kCutOperation; radialMin=1.798 cm; radialMax=2.002 cm.
+---
+2026-11-18 15:26:01.573 pid=3676 thread=15 component=PackagingThread stage=vent-slot-02-verified
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: Vent slot cut verified; name=HVPkgV_2DF121BAF3_SLOT02OF02; angle=277 deg; width=14 deg; volumeRemoved=0.1075683447 cm^3; bodies=1; internal=False.
+---
+2026-11-18 15:26:01.576 pid=3676 thread=15 component=PackagingThread stage=vent-slot-cuts-complete
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: expectedCount=2; verifiedCutFeatures=2; requestedHand=RH; centres=90,270 deg.
+---
+2026-11-18 15:26:01.583 pid=3676 thread=15 component=PackagingThread stage=browser-folder-mapping-policy
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: family=CapNeck; threadIdOverridePresent=False; exposeHistoryForMapping=False; requireFolderMapping=True; createdObjects=29; mode=new-build-required-folder
+---
+2026-11-18 15:26:02.412 pid=3676 thread=15 component=PackagingThread stage=packaging-thread-metadata-attached
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: threadId=23f585b1f4c84bc0bfea64a70284c8ca; objectCount=29; family=CapNeck; schema=2.
+---
+2026-11-18 15:26:02.414 pid=3676 thread=15 component=PackagingThread stage=packaging-thread-folder-created
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: All packaging-thread construction features were assigned to folder: Резьба крышек/горловин — наружная · D40 мм · P4 мм · 1 заход · Правая (R); registeredObjects=29; browserFolderPerformance=Папка «Резьба крышек/горловин — наружная · D40 мм · P4 мм · 1 заход · Правая (R)»: объектов 29, узлов сгруппировано 22; TopNode 0 мс, поиск имени 1 мс, снимок дерева 33 мс, резервный поиск узлов 0 мс, создание + группировка 10 мс (batch BrowserNodes), резервные folder.Add 0 мс, BrowserNode папки 0 мс, SetEndOfPart 11 мс, Reorder 0 мс, всего 94 мс.
+---
+2026-11-18 15:26:02.415 pid=3676 thread=15 component=PackagingThread stage=commit-transaction
+context: selectedEdge=provided; browserFolderLanguage=ru; axialLength=24 mm; type=external; smoothStart=True; smoothEnd=True; ventSlots=True; ventSlotCount=2; ventSlotWidthDeg=14; chamferMode=1; chamferMm=1; D=40 mm; P=4 mm; starts=1; lead=4 mm; H=2 mm; embed=0.4 mm; wall=10 mm; RH=True
+detail: Final volume/body checks passed; coreCoils=1; runoutLofts=2; ventSlotCuts=2; clearanceReliefs=1; nativeChamfers=0; revolvedChamferCuts=1; terminalFaceHealCleanup=not-used; ventSlotCount=2; ventSlotWidthDeg=14; startRunout=0.156 mm; endRunout=0.156 mm; clearance=0.15 mm; positiveRibBothSides=False; transaction=Helivanta: резьба крышек/горловин (эксперимент) 9CD9249529.
+---
